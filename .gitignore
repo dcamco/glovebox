@@ -1,0 +1,9 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# OS / editor
+.DS_Store
+*.swp
+
+# Personal documents are kept outside the repo (~/Documents/Garage/); never commit invoices here.

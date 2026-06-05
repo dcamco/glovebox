@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Garage — Drew's Owned Vehicles</title>
+<style>
+  :root{
+    --ink:#1c1c1c;--muted:#5c5c5c;--paper:#ece9e1;--card:#fff;--line:#d9d4c7;
+    --brc:#1f3d2b;--pc:#16161a;--fc:#7c0a02;--lr:#3a4a3f;
+    --accent:#c9a14a;--red:#9c2b22;--amber:#b5791f;--green:#2c5239;--blue:#2f4170;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--paper);line-height:1.5}
+  header.top{background:linear-gradient(135deg,#15281c,#26412e);color:#f2efe6;padding:30px 28px;border-bottom:4px solid var(--accent)}
+  header.top .wrap{max-width:1080px;margin:0 auto}
+  .kicker{letter-spacing:.22em;text-transform:uppercase;font-size:12px;color:var(--accent);font-weight:700}
+  header.top h1{margin:6px 0 2px;font-size:30px}
+  header.top p{margin:0;color:#cdd6cd;font-size:14px}
+  .stats{display:flex;gap:10px;margin-top:16px;flex-wrap:wrap}
+  .stats .s{background:rgba(255,255,255,.07);border:1px solid rgba(201,161,74,.35);border-radius:8px;padding:7px 14px;font-size:13px}
+  .stats .s b{font-size:18px;display:block;color:#fff}
+  main{max-width:1080px;margin:0 auto;padding:24px 28px 70px}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  @media(max-width:760px){.grid{grid-template-columns:1fr}}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.06);display:flex;flex-direction:column}
+  .card .bar{height:8px}
+  .card .body{padding:16px 18px 18px;display:flex;flex-direction:column;flex:1}
+  .card h2{margin:0 0 2px;font-size:19px}
+  .card .sub{color:var(--muted);font-size:13px;margin-bottom:10px}
+  .specs{font-size:13.5px;border-top:1px solid var(--line);margin-top:4px}
+  .specs div{display:flex;justify-content:space-between;gap:10px;padding:4px 0;border-bottom:1px dashed #eee}
+  .specs div span:first-child{color:var(--muted)}
+  .specs div span:last-child{text-align:right;font-weight:600}
+  .pills{margin:10px 0 4px;display:flex;flex-wrap:wrap;gap:6px}
+  .pill{font-size:11px;font-weight:700;padding:2px 9px;border-radius:20px;letter-spacing:.02em}
+  .pill.open{background:#fbe0dc;color:#8a241c;border:1px solid #e0a39c}
+  .pill.ok{background:#dcefe0;color:#2c5239;border:1px solid #a9cdb2}
+  .pill.draft{background:#fbe9c8;color:#7a5a10;border:1px solid #e3c478}
+  .pill.info{background:#e6ecf7;color:#2f4170;border:1px solid #b9c6e0}
+  .flag{font-size:13px;background:#fbefed;border-left:4px solid var(--red);padding:7px 11px;border-radius:0 6px 6px 0;margin:10px 0 0}
+  .flag.amber{background:#fbf5e8;border-color:var(--amber)}
+  .flag.green{background:#eef4ee;border-color:var(--green)}
+  .actions{margin-top:auto;padding-top:14px;display:flex;gap:8px;flex-wrap:wrap}
+  .btn{text-decoration:none;font-size:13px;font-weight:600;padding:7px 13px;border-radius:8px;border:1px solid var(--line)}
+  .btn.primary{background:var(--brc);color:#fff;border-color:var(--brc)}
+  .btn.ghost{background:#f4f2ea;color:var(--ink)}
+  footer{max-width:1080px;margin:0 auto;padding:0 28px 50px;color:var(--muted);font-size:12.5px}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <div class="kicker">The Garage</div>
+    <h1>Drew's Owned Vehicles</h1>
+    <p>Single landing page for the cars I own — specs, status, and links to each manual &amp; document folder.</p>
+    <div class="stats">
+      <div class="s"><b>4</b> vehicles</div>
+      <div class="s"><b>2</b> open issues</div>
+      <div class="s"><b>1</b> needs data</div>
+    </div>
+  </div>
+</header>
+
+<main>
+<div class="grid">
+
+  <!-- LAZARUS -->
+  <div class="card">
+    <div class="bar" style="background:#1f3d2b"></div>
+    <div class="body">
+      <h2>&ldquo;Lazarus&rdquo;</h2>
+      <div class="sub">1995 Range Rover Classic County LWB · British Racing Green</div>
+      <div class="pills">
+        <span class="pill open">HOT NO-START · OPEN</span>
+        <span class="pill ok">belts n/a</span>
+      </div>
+      <div class="specs">
+        <div><span>Engine</span><span>4.6 / 5.1 stroker · Megajolt DIS</span></div>
+        <div><span>Drivetrain</span><span>ARB lockers F&amp;R · EAS</span></div>
+        <div><span>Mileage</span><span>~300k (chassis)</span></div>
+      </div>
+      <div class="flag">Active: heat-gated hot no-start — leading suspect the VR crank-signal chain (manual §5A). Next: hot spark test.</div>
+      <div class="actions">
+        <a class="btn primary" href="file:///Users/drewcampbell/glovebox/manuals/lazarus.html">Open manual</a>
+        <a class="btn ghost" href="file:///Users/drewcampbell/Documents/Garage/lazarus/">Documents</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 911SC -->
+  <div class="card">
+    <div class="bar" style="background:#16161a"></div>
+    <div class="body">
+      <h2>1980 Porsche 911 SC</h2>
+      <div class="sub">Coupe · Black Metallic / Champagne</div>
+      <div class="pills">
+        <span class="pill open">tensioner? · VERIFY</span>
+        <span class="pill info">recent mods</span>
+      </div>
+      <div class="specs">
+        <div><span>VIN</span><span>91A0140115</span></div>
+        <div><span>Engine</span><span>3.0 flat-six · 172 hp · K-Jet</span></div>
+        <div><span>Gearbox</span><span>915 5-speed</span></div>
+        <div><span>Mileage</span><span>156k (TMU)</span></div>
+      </div>
+      <div class="flag amber">Open: confirm Carrera tensioner update (German Auto 2022 top-end invoice). A/C deleted. Recent: WEVO shifter, MOMO Prototipo, 917 knob, paint correction.</div>
+      <div class="actions">
+        <a class="btn primary" href="file:///Users/drewcampbell/glovebox/manuals/911sc.html">Open manual</a>
+        <a class="btn ghost" href="file:///Users/drewcampbell/Documents/Garage/911sc/">Documents</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 308 GTSi -->
+  <div class="card">
+    <div class="bar" style="background:#7c0a02"></div>
+    <div class="body">
+      <h2>1982 Ferrari 308 GTSi</h2>
+      <div class="sub">Targa · Rosso Corsa / Nero</div>
+      <div class="pills">
+        <span class="pill ok">cam belts DONE</span>
+        <span class="pill info">ex-Lougheed</span>
+      </div>
+      <div class="specs">
+        <div><span>VIN</span><span>ZFFAA02A7C0039245</span></div>
+        <div><span>Engine</span><span>2.9 V8 · K-Jet · 5-spd</span></div>
+        <div><span>Mileage</span><span>43,616</span></div>
+      </div>
+      <div class="flag green">Cam belt + water pump done by Moorespeed ($23,271). Next: get the receipt to date the next belt interval.</div>
+      <div class="actions">
+        <a class="btn primary" href="file:///Users/drewcampbell/glovebox/manuals/308gtsi.html">Open manual</a>
+        <a class="btn ghost" href="file:///Users/drewcampbell/Documents/Garage/308gtsi/">Documents</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 88 RRC -->
+  <div class="card">
+    <div class="bar" style="background:#3a4a3f"></div>
+    <div class="body">
+      <h2>1988 Range Rover Classic</h2>
+      <div class="sub">A separate truck from Lazarus</div>
+      <div class="pills">
+        <span class="pill draft">SKELETON · NEEDS DATA</span>
+      </div>
+      <div class="specs">
+        <div><span>Engine</span><span>— (stock 3.5 EFI?)</span></div>
+        <div><span>Suspension</span><span>— (coils?)</span></div>
+        <div><span>Mileage</span><span>—</span></div>
+      </div>
+      <div class="flag amber">Manual is a stub. Need basics: engine (stock vs swapped), suspension, mileage, condition — or a listing/photos to seed it.</div>
+      <div class="actions">
+        <a class="btn primary" href="file:///Users/drewcampbell/glovebox/manuals/rrc88.html">Open manual</a>
+        <a class="btn ghost" href="file:///Users/drewcampbell/Documents/Garage/rrc88/">Documents</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+</main>
+
+<footer>
+  Garage dashboard · static index over the per-car manuals. Vehicles &amp; routing defined in <code>~/glovebox/registry.tsv</code>. Open a manual for full build / history / maintenance detail.
+</footer>
+</body>
+</html>

@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lazarus — 1995 Range Rover Classic County LWB — Owner's Manual</title>
+<style>
+  :root{
+    --brc-green:#1f3d2b;      /* British Racing Green */
+    --brc-green-2:#2c5239;
+    --accent:#c9a14a;          /* brass */
+    --ink:#1c1c1c;
+    --muted:#5c5c5c;
+    --paper:#f6f4ee;
+    --card:#ffffff;
+    --line:#d9d4c7;
+    --red:#9c2b22;
+    --amber:#b5791f;
+    --yellow:#7a6310;
+    --code-bg:#0f1c14;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--ink);background:var(--paper);line-height:1.55;font-size:16px;
+  }
+  a{color:var(--brc-green-2)}
+  .wrap{display:grid;grid-template-columns:260px 1fr;max-width:1200px;margin:0 auto;}
+  /* Sidebar */
+  nav.toc{
+    position:sticky;top:0;align-self:start;height:100vh;overflow:auto;
+    background:var(--brc-green);color:#e9e6dc;padding:24px 18px;
+  }
+  nav.toc h2{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin:18px 0 8px}
+  nav.toc h2:first-child{margin-top:0}
+  nav.toc a{display:block;color:#cfd8cf;text-decoration:none;padding:4px 6px;border-radius:5px;font-size:14px}
+  nav.toc a:hover{background:rgba(255,255,255,.08);color:#fff}
+  nav.toc .badge{font-size:11px;color:var(--brc-green);background:var(--accent);border-radius:10px;padding:1px 7px;font-weight:700}
+  /* Main */
+  main{padding:0 36px 80px}
+  header.hero{
+    background:linear-gradient(135deg,var(--brc-green),var(--brc-green-2));
+    color:#f3f1e8;padding:40px 36px;margin:0 -36px 28px;border-bottom:4px solid var(--accent);
+  }
+  header.hero .kicker{letter-spacing:.2em;text-transform:uppercase;font-size:12px;color:var(--accent);font-weight:700}
+  header.hero h1{margin:6px 0 4px;font-size:38px;letter-spacing:.01em}
+  header.hero p{margin:0;color:#cdd6cd;max-width:60ch}
+  header.hero .vin-strip{margin-top:18px;display:flex;flex-wrap:wrap;gap:10px}
+  header.hero .vin-strip span{background:rgba(0,0,0,.25);border:1px solid rgba(201,161,74,.4);padding:5px 12px;border-radius:6px;font-size:13px}
+  section{margin:0 0 38px;scroll-margin-top:14px}
+  h2.sec{font-size:24px;border-bottom:2px solid var(--line);padding-bottom:8px;margin:34px 0 16px;color:var(--brc-green)}
+  h3{font-size:18px;margin:22px 0 8px;color:var(--brc-green-2)}
+  p{margin:10px 0}
+  .lead{font-size:17px;color:var(--muted)}
+  table{border-collapse:collapse;width:100%;margin:14px 0;background:var(--card);border:1px solid var(--line);font-size:14.5px}
+  th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{background:#eceade;font-size:12px;letter-spacing:.05em;text-transform:uppercase;color:#4a4a4a}
+  tr:last-child td{border-bottom:none}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px 20px;margin:14px 0;box-shadow:0 1px 2px rgba(0,0,0,.04)}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  ul{margin:8px 0;padding-left:22px}
+  li{margin:4px 0}
+  code{background:#e7e3d6;padding:1px 6px;border-radius:4px;font-family:"SF Mono",Menlo,Consolas,monospace;font-size:.9em}
+  pre{background:var(--code-bg);color:#d6f0dd;padding:16px 18px;border-radius:10px;overflow:auto;font-family:"SF Mono",Menlo,Consolas,monospace;font-size:13px;line-height:1.5}
+  pre .c{color:#7fae8c}
+  /* callouts */
+  .callout{border-left:5px solid var(--accent);background:#fbf8ef;padding:12px 16px;border-radius:0 8px 8px 0;margin:14px 0}
+  .callout.red{border-color:var(--red);background:#fbefed}
+  .callout.amber{border-color:var(--amber);background:#fbf5e8}
+  .callout.green{border-color:var(--brc-green-2);background:#eef4ee}
+  .callout .tag{font-weight:700;text-transform:uppercase;font-size:11px;letter-spacing:.08em;display:block;margin-bottom:3px}
+  .callout.red .tag{color:var(--red)} .callout.amber .tag{color:var(--amber)} .callout.green .tag{color:var(--brc-green-2)}
+  .sev{display:inline-block;width:11px;height:11px;border-radius:50%;margin-right:7px;vertical-align:middle}
+  .sev.r{background:var(--red)} .sev.a{background:var(--amber)} .sev.y{background:#d4b43a} .sev.g{background:#3c8a52}
+  .pill{display:inline-block;font-size:11px;font-weight:700;padding:2px 9px;border-radius:20px;letter-spacing:.04em}
+  .pill.verify{background:#fbe9c8;color:#7a5a10;border:1px solid #e3c478}
+  .pill.done{background:#dcefe0;color:#2c5239;border:1px solid #a9cdb2}
+  .pill.open{background:#fbe0dc;color:#8a241c;border:1px solid #e0a39c}
+  .src{font-size:13px;color:var(--muted)}
+  footer{border-top:1px solid var(--line);margin-top:40px;padding-top:18px;font-size:13px;color:var(--muted)}
+  .who{display:inline-block;font-size:12px;font-weight:700;padding:1px 7px;border-radius:5px;margin-right:4px}
+  .who.carlos{background:#e6efe8;color:#2c5239}
+  .who.noah{background:#e8ecf5;color:#2f4170}
+  @media (max-width:860px){
+    .wrap{grid-template-columns:1fr}
+    nav.toc{position:static;height:auto}
+    .grid2{grid-template-columns:1fr}
+    main{padding:0 18px 60px}
+    header.hero{margin:0 -18px 24px;padding:30px 22px}
+  }
+  @media print{
+    nav.toc{display:none} .wrap{display:block} header.hero{background:var(--brc-green)!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    a{color:var(--ink);text-decoration:none}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<nav class="toc">
+  <h2>Lazarus Manual</h2>
+  <a href="#overview">1 · Vehicle Overview</a>
+  <a href="#history">2 · Ownership &amp; History</a>
+  <a href="#engine">3 · Engine &amp; Drivetrain</a>
+  <a href="#ignition">4 · Ignition <span class="badge">!</span></a>
+  <a href="#crank">5 · Crank Sensor / No-Start</a>
+  <a href="#active-diag" style="padding-left:20px;font-size:13px">5A · Active Diagnosis <span class="badge">OPEN</span></a>
+  <a href="#suspension">6 · Suspension &amp; EAS</a>
+  <a href="#offroad">7 · Drivetrain / Off-road</a>
+  <a href="#electrical">8 · Electrical &amp; Lighting</a>
+  <a href="#interior">9 · Interior &amp; Audio</a>
+  <h2>Service</h2>
+  <a href="#issues">10 · Known Issues</a>
+  <a href="#log">11 · Maintenance Log</a>
+  <a href="#parts">12 · Parts Reference</a>
+  <a href="#verify">13 · Verify on Truck</a>
+  <a href="#sources">14 · Sources</a>
+</nav>
+
+<main>
+<header class="hero">
+  <div class="kicker">Owner's Reference Manual</div>
+  <h1>&ldquo;Lazarus&rdquo;</h1>
+  <p>1995 Range Rover Classic &mdash; County, Long Wheelbase, Soft Dash. A heavily modified, twice-resurrected V8 build. Compiled from the build &amp; ownership posts of <strong>Carlos (forum: 95classiclwb)</strong> and <strong>Noah (forum: NoahWeb)</strong> on rangerovers.net.</p>
+  <div class="vin-strip">
+    <span>🟢 British Racing Green</span>
+    <span>🔧 4.6/5.1 V8 swap</span>
+    <span>⚡ Megajolt distributorless ignition</span>
+    <span>🔒 ARB lockers F&amp;R</span>
+    <span>🛞 EAS air suspension</span>
+    <span>📍 Clean TX title</span>
+  </div>
+</header>
+
+<div class="callout">
+  <span class="tag">How to read this manual</span>
+  Facts are attributed to their source &mdash; <span class="who carlos">CARLOS</span> = the builder (95classiclwb, former dealer tech), <span class="who noah">NOAH</span> = the prior owner (NoahWeb, active-duty military). Items marked <span class="pill verify">VERIFY</span> are unconfirmed and should be checked on the physical truck. This is a field reference, not factory documentation; the truck is non-stock and individual builds vary.
+</div>
+
+<!-- 1 -->
+<section id="overview">
+<h2 class="sec">1 · Vehicle Overview</h2>
+<table>
+  <tr><th>Item</th><th>Detail</th><th>Source</th></tr>
+  <tr><td>Model</td><td>1995 Range Rover Classic, County trim, <strong>LWB</strong> (long wheelbase), soft dash</td><td>Both</td></tr>
+  <tr><td>Original color</td><td>British Racing Green (Noah considered a green/white-roof respray; abandoned &mdash; quotes were $8&ndash;12k)</td><td>Both</td></tr>
+  <tr><td>Nickname</td><td>&ldquo;Lazarus&rdquo; &mdash; resurrected after a major 2013 wreck; Carlos titled his build &ldquo;Lazarus, the money pit&rdquo;</td><td>Carlos</td></tr>
+  <tr><td>Engine</td><td>Rover V8 swap. Builder spec = <strong>5.1L stroker</strong> (see §3). Noah advertised as &ldquo;4.6L swapped.&rdquo; <span class="pill verify">VERIFY</span></td><td>Both</td></tr>
+  <tr><td>Ignition</td><td><strong>Distributorless (DIS)</strong> &mdash; Megajolt / Ford-EDIS conversion, Thor coil packs (see §4)</td><td>Both</td></tr>
+  <tr><td>Suspension</td><td>Factory EAS (electronic air suspension), retained &mdash; with a long history of gremlins</td><td>Carlos</td></tr>
+  <tr><td>Traction</td><td>ARB air lockers, <strong>front and rear</strong></td><td>Both</td></tr>
+  <tr><td>Chassis mileage</td><td>~300,000 miles (engine is a swap; engine hours unknown)</td><td>Noah</td></tr>
+  <tr><td>Title</td><td>Clean Texas title</td><td>Noah</td></tr>
+  <tr><td>Economy</td><td>~7&ndash;13 MPG observed</td><td>Noah</td></tr>
+</table>
+</section>
+
+<!-- 2 -->
+<section id="history">
+<h2 class="sec">2 · Ownership &amp; History</h2>
+<div class="grid2">
+  <div class="card">
+    <h3>Chain of custody</h3>
+    <ul>
+      <li><span class="who carlos">CARLOS</span> <strong>95classiclwb</strong> &mdash; built the truck, named it Lazarus. Former Land Rover dealer tech, northern Virginia. Owns/owned a 2000 P38 4.6 and an &rsquo;01 Disco 2 as well.</li>
+      <li><span class="who noah">NOAH</span> <strong>NoahWeb</strong> &mdash; bought it from Carlos (drove ~1,100 mi home, DC&rarr;Kansas). Active-duty military (used the on-post Auto Skills Center). Treated it as a &ldquo;sleeper, keep it original&rdquo; project.</li>
+      <li><strong>You (Drew)</strong> &mdash; bought from Noah out of his for-sale listing.</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h3>Why &ldquo;Lazarus&rdquo;</h3>
+    <p>Carlos: <em>&ldquo;if it could talk it would say it has been well used and abused&hellip; has fallen to its knees many times, but somehow I always managed to get it rolling again.&rdquo;</em></p>
+    <p>The defining event: a <strong>2013 highway wreck</strong> into the center divider (see §10) &mdash; the truck was rebuilt from severe front-end damage. Hence the resurrection name.</p>
+  </div>
+</div>
+</section>
+
+<!-- 3 -->
+<section id="engine">
+<h2 class="sec">3 · Engine &amp; Drivetrain</h2>
+<p class="lead">This is not a stock 4.6. Per Carlos's build sheet it is a stroked Rover V8 with mixed GM/Rover internals.</p>
+<table>
+  <tr><th>Component</th><th>Spec (per Carlos's showcase)</th></tr>
+  <tr><td>Block</td><td>4.0 / 4.6 Rover V8 block</td></tr>
+  <tr><td>Crank &amp; rods</td><td><strong>GM crankshaft and rods</strong></td></tr>
+  <tr><td>Pistons</td><td>Rover pistons</td></tr>
+  <tr><td>Displacement</td><td><strong>Re-stroked to 5.1 litre</strong></td></tr>
+  <tr><td>Camshaft</td><td>Crower cam</td></tr>
+  <tr><td>Output</td><td>Dyno-tested <strong>300 hp / 250 lb-ft at the flywheel</strong></td></tr>
+  <tr><td>Planned (2019, status unknown)</td><td>&ldquo;flow-matched heads, cam, and fuel-map chip in ECU&rdquo; <span class="pill verify">VERIFY</span></td></tr>
+</table>
+<div class="callout amber">
+  <span class="tag">Discrepancy to resolve</span>
+  Carlos's showcase says <strong>5.1L stroker</strong>; Noah's sale ad said <strong>&ldquo;4.6L swapped.&rdquo;</strong> Noah most likely didn't know the full internal spec. Treat the engine as a <strong>5.1 stroker</strong> for parts/tuning purposes until physically confirmed (build paperwork, valve-cover check, or measurement). This affects everything from head-gasket/lifter parts to expected behavior.
+</div>
+</section>
+
+<!-- 4 -->
+<section id="ignition">
+<h2 class="sec">4 · Ignition System <span class="pill open">MOST IMPORTANT</span></h2>
+<p class="lead">The factory distributor is gone. The engine runs an aftermarket <strong>Megajolt / Ford-EDIS distributorless ignition (DIS)</strong>. Noah underlined this in his ad: <em>&ldquo;distributorless ignition (not a type-o).&rdquo;</em></p>
+
+<h3>System architecture</h3>
+<pre><span class="c">  36-1 toothed TRIGGER WHEEL  (bolted to front crank pulley/damper)</span>
+            │  spins past
+            ▼
+  ┌──────────────────────┐     ┌──────────────────┐     ┌─────────────────┐
+  │  VR CRANK SENSOR      │ ──▶ │  FORD EDIS-8      │ ──▶ │  THOR COIL PACKS │ ──▶ plugs
+  │  (2-wire, on RV8 bkt) │     │  IGNITION MODULE  │     │  (P38 / Disco 2) │
+  └──────────────────────┘     └──────────────────┘     └─────────────────┘
+            ▲                            ▲
+            │ position/RPM               │ SAW (timing advance)
+            └──────────── MEGAJOLT CONTROLLER ◀── MAP/throttle input
+                          (holds the timing map)</pre>
+
+<table>
+  <tr><th>Part of system</th><th>What's on this truck</th><th>Source</th></tr>
+  <tr><td>Controller</td><td><strong>Megajolt</strong> (Carlos started a thread literally titled &ldquo;megajolt&rdquo;)</td><td>Carlos</td></tr>
+  <tr><td>Conversion kit</td><td><strong>Trigger Wheels</strong> (trigger-wheels.com) DIS kit &mdash; Carlos: &ldquo;a D.I.S conversion <em>from trigger wheels</em>, on [my] 4.6&rdquo;</td><td>Carlos</td></tr>
+  <tr><td>Coils</td><td><strong>Thor coil packs</strong> from a P38 / Discovery 2 (wasted-spark). Carlos wired these in himself.</td><td>Carlos</td></tr>
+  <tr><td>Trigger</td><td>36&minus;1 trigger wheel on the front crank pulley + 2-wire VR sensor</td><td>Std. for this kit</td></tr>
+</table>
+
+<div class="callout green">
+  <span class="tag">Key takeaway</span>
+  Because ignition is fully aftermarket, <strong>there is no factory Land Rover crank sensor and no LR part number</strong> for it, and <strong>the engine throws no OBD trouble codes.</strong> All ignition diagnosis is done at the Megajolt/EDIS hardware. Get the Megajolt tune/map file backed up (ask Noah if any laptop files/paperwork came with it) &mdash; it is effectively irreplaceable.
+</div>
+</section>
+
+<!-- 5 -->
+<section id="crank">
+<h2 class="sec">5 · Crank Sensor &amp; No-Start Diagnosis</h2>
+<p class="lead">Your suspected &ldquo;crank sensor&rdquo; is the <strong>VR (variable-reluctance) sensor</strong> that reads the 36-1 wheel &mdash; not a Land Rover sensor. It is a generic Ford-EDIS-type pickup.</p>
+
+<h3>What the part actually is</h3>
+<ul>
+  <li><strong>Type:</strong> 2-wire variable-reluctance (magnetic) sensor. Polarized &mdash; if the two wires are swapped, EDIS produces <em>no spark</em>.</li>
+  <li><strong>Bracket:</strong> Trigger Wheels Rover-V8 adjustable bracket, P/N <code>RV8-VR-Bkt</code> (may use 5&nbsp;mm spacers).</li>
+  <li><strong>Sensor donor:</strong> a Ford-EDIS VR sensor. These kits are &ldquo;tested with both Ford and GM VR pickups,&rdquo; Ford OEM recommended. Common community donors: Ford CVH/Zetec crank sensor (Escort / Fiesta / Mondeo / Focus era), or a &rsquo;99&ndash;&rsquo;01 Miata CKP &mdash; effectively <em>any</em> Ford VR sensor of the right body.</li>
+</ul>
+
+<div class="callout red">
+  <span class="tag">Do not order blind</span>
+  Go to the truck first. Find the 2-wire sensor pointed at the toothed wheel on the front of the crank. Read its casting/label numbers, then buy the exact match (or the cross-referenced Ford sensor). Builds differ &mdash; the markings on <em>your</em> sensor are the source of truth.
+</div>
+
+<h3>Bench / on-car test of the VR sensor</h3>
+<table>
+  <tr><th>Check</th><th>Spec / method</th><th>Bad result</th></tr>
+  <tr><td>Coil resistance</td><td>Ohmmeter across the 2 pins. Ford-EDIS VR ≈ <strong>300&ndash;1,400 Ω</strong> (often ~500 Ω)</td><td>Open (∞) or way out of range = dead sensor</td></tr>
+  <tr><td>Air gap</td><td>Feeler gauge, sensor tip to trigger-wheel tooth ≈ <strong>0.5&ndash;1.5 mm</strong></td><td>Too wide = weak/erratic signal &amp; no-start</td></tr>
+  <tr><td>AC output</td><td>Meter on AC volts across pins while cranking</td><td>No/low AC = sensor or wiring fault</td></tr>
+  <tr><td>Wiring/connector</td><td>Inspect lead for heat/chafe damage; check shield/ground</td><td>Common failure near the hot engine</td></tr>
+  <tr><td>Trigger wheel</td><td>Visual: bent/damaged teeth, debris, loose mount</td><td>Damage or wobble = misfire/cutout</td></tr>
+  <tr><td>Polarity</td><td>If you replace/re-pin: confirm wire orientation</td><td>Reversed = no spark even with good sensor</td></tr>
+</table>
+
+<h3>No-start / stall flowchart (Megajolt truck)</h3>
+<pre>Engine cranks but won't fire, or cuts out at speed?
+ │
+ ├─ Is there spark at the coils?  ── NO ─┐
+ │                                       ▼
+ │                         Suspect CRANK (VR) SIGNAL chain:
+ │                         1) VR sensor resistance &amp; AC output
+ │                         2) sensor air gap to trigger wheel
+ │                         3) sensor wiring/connector + polarity
+ │                         4) EDIS module power/ground
+ │                         5) Megajolt power/ground &amp; config
+ │
+ ├─ Spark present, no start? ─▶ fuel side (pump/pressure/filter,
+ │                              injectors, ECU temp/O2 — Carlos's
+ │                              standard EFI checklist)
+ │
+ └─ Note: if the Megajolt controller fails but the crank signal is
+    GOOD, EDIS limps on a fixed ~10° BTDC and the engine still runs.
+    So a true crank-no-start points hard at the VR sensor chain.</pre>
+<p class="src">VR/EDIS specs from the Trigger Wheels Rover-V8 product line and the Autosport Labs MegaJolt/EDIS install guides; ignition layout from Carlos's own forum threads.</p>
+
+<h3 id="active-diag" style="scroll-margin-top:14px">5A · Active Diagnosis Log &mdash; Hot No-Start / Hot Stall <span class="pill open">OPEN · UNRESOLVED</span></h3>
+<div class="callout red">
+  <span class="tag">Status: open investigation &mdash; not concluded</span>
+  This is a <strong>working theory, not a verdict.</strong> Root cause is NOT confirmed until the hot spark test (or a live signal measurement) is performed. Do not close this entry, and do not replace parts on assumption alone. <em>Last update: investigation in progress &mdash; no on-truck electrical test completed yet.</em>
+</div>
+
+<h4 style="margin:16px 0 4px;color:var(--brc-green-2);font-size:15px">Symptoms (observed by Drew)</h4>
+<ul>
+  <li><strong>Hard HOT starting, progressively worsening</strong> &mdash; cranks and cranks, eventually catches when hot; required crank time has grown steadily over time.</li>
+  <li><strong>Cold starts perfect, every time</strong> &mdash; the fault is heat-gated.</li>
+  <li><strong>Won't hold idle when hot</strong> &mdash; dies the moment the throttle closes.</li>
+  <li><strong>Stays alive if RPM is held</strong> &mdash; drove home two-footing the throttle; let off at the destination and it died, would not restart.</li>
+  <li><strong>Recovers after ~1&ndash;2 min of sitting</strong>, then fires. Continued idling never recovers it; a short cooldown does.</li>
+</ul>
+
+<h4 style="margin:16px 0 4px;color:var(--brc-green-2);font-size:15px">Leading hypothesis (unconfirmed)</h4>
+<p>Heat-marginal <strong>crank-signal amplitude in the VR &rarr; EDIS chain.</strong> A VR sensor's output voltage rises with RPM against the EDIS module's fixed trigger threshold &mdash; which accounts for <em>every</em> symptom: idle-death, rev-rescue, long hot cranking (lowest RPM = weakest signal), progressive worsening (a degrading part), and short-cooldown recovery (a marginal junction dropping below failure temperature).</p>
+
+<div class="callout green">
+  <span class="tag">Fuel &mdash; down-ranked, not being chased</span>
+  The throttle-rescue behavior is <strong>backwards for fuel starvation</strong> (a weak pump struggles most under load, not least). Cold-start-perfect plus the clean 1&ndash;2 min recovery also argue against pump/rail heat-soak. Held only as a possible <em>separate</em> rough-hot-idle contributor, not the no-start cause.
+</div>
+
+<h4 style="margin:16px 0 4px;color:var(--brc-green-2);font-size:15px">Suspect ranking (all heat-gated, same signal chain)</h4>
+<table>
+  <tr><th>#</th><th>Suspect</th><th>Why it fits / note</th><th>Cost</th></tr>
+  <tr><td>1</td><td>VR crank sensor (weak amplitude)</td><td>Best fit to the RPM-dependent rev-rescue; classic heat-marginal winding/junction</td><td>~£24 (TW <code>p25</code>) / ~$20&ndash;40 cross</td></tr>
+  <tr><td>2</td><td>VR connector / wiring / ground</td><td>A resistive joint attenuates the signal identically &amp; goes intermittent with heat. <strong>Connector noted &ldquo;a bit oily.&rdquo;</strong></td><td>free&ndash;cheap</td></tr>
+  <tr><td>3</td><td>Air gap (sanity check only)</td><td>Re-ranked DOWN: a static gap error would hurt cold starts too. Only thermal drift could make it heat-gated.</td><td>free</td></tr>
+  <tr><td>4</td><td>EDIS-8 module</td><td>Heat-fails, but tends to cut regardless of RPM &mdash; the clean rev-rescue argues against it</td><td>~$20&ndash;50 salvage</td></tr>
+</table>
+
+<h4 style="margin:16px 0 4px;color:var(--brc-green-2);font-size:15px">Tests NOT yet done &mdash; next actions (in order)</h4>
+<ol>
+  <li><strong>Hot spark test (the splitter):</strong> when it dies hot, check for spark while cranking. <em>No spark hot &rArr; confirmed ignition/signal chain. Spark present &rArr; pivot to fuel / 14CUX.</em></li>
+  <li><strong>Measure VR signal at the sensor vs. at the EDIS module input</strong> &mdash; good at sensor / weak at module &rArr; wiring/connection; weak at both &rArr; the sensor.</li>
+  <li><strong>Voltage-drop test</strong> on the EDIS/Megajolt ground + 12V feed (hot/cranking). &gt;~0.1&ndash;0.2 V on the ground leg = bad ground.</li>
+  <li><strong>Heat-gun resistance test</strong> of the pulled sensor: cold &asymp; 300&ndash;1,400 &Omega;, then heat it &mdash; resistance climbing toward open = confirmed bad sensor.</li>
+  <li><strong>Freeze-spray isolation:</strong> chill only the sensor, then only the module, when it's down &mdash; whichever revives it is the culprit.</li>
+  <li><strong>Monitor RPM in the (free) Megajolt software</strong> as it dies &mdash; ragged/dropout = upstream signal; clean &amp; steady = output/SAW side.</li>
+  <li><strong>Clean</strong> the sensor tip (inspect for ferrous debris on the magnet) + connector pins; <strong>trace the oil source</strong> (front crank seal / timing-cover leak slung by the trigger wheel). Note: oil is unlikely to be the heat-gated root cause by itself.</li>
+</ol>
+
+<h4 style="margin:16px 0 4px;color:var(--brc-green-2);font-size:15px">Parts staged (confirm by reading the installed sensor's markings first)</h4>
+<ul>
+  <li><strong>VR sensor:</strong> Trigger Wheels &ldquo;Crank / Camshaft sensor,&rdquo; product <code>p25</code>, ~£24 &mdash; matched to the <code>RV8-VR-Bkt</code> bracket bore. US-fast alternative: any 2-wire VR/reluctor of matching body diameter + connector.</li>
+  <li><strong>Spare EDIS-8 module</strong> (Motorcraft &mdash; the module is always Ford; brand says nothing about the sensor). Cheap salvage; keep as a glovebox backup.</li>
+</ul>
+<p class="src"><strong>Resolution: PENDING.</strong> Update this log when the hot spark test or signal measurement is performed &mdash; only then assign a root cause and move the &sect;10 issue status off OPEN.</p>
+</section>
+
+<!-- 6 -->
+<section id="suspension">
+<h2 class="sec">6 · Suspension &amp; EAS</h2>
+<p>The truck <strong>retains factory EAS</strong> (electronic air suspension). Carlos's own words on the build sheet: <em>&ldquo;stock air ride, with all eternal gremlins of EAS.&rdquo;</em></p>
+<h3>Documented EAS history</h3>
+<ul>
+  <li><span class="who carlos">CARLOS</span> <strong>~2010:</strong> full EAS refurb &mdash; new bags, all 4 height sensors, valve-block seals, recalibrated for heavy towing. Worked correctly.</li>
+  <li><span class="who carlos">CARLOS</span> <strong>2013 wreck aftermath:</strong> chronic problems &mdash; could not communicate with the EAS ECU using either Autologic or RSW tools; suspected the <strong>valve-block driver</strong>. Accumulated ~5 EAS ECUs, 2 drivers, a valve block chasing it. Ran on manual inflation (MARS-style, all four springs ~65 psi for near-full fixed height). Considered an <strong>AccuAir e-Level</strong> conversion (keeps compressor/reservoir/dryer).</li>
+  <li><span class="who noah">NOAH</span> reported the truck <strong>&ldquo;sags in the mornings a bit&rdquo;</strong> (overnight rear droop = a leak or valve-block seep). Had <strong>new rear air springs on hand</strong> to install (may or may not be fitted).</li>
+</ul>
+<div class="callout amber">
+  <span class="tag">Expect to fight EAS</span>
+  Get a laptop EAS tool (RSW / EAS Unlock-style). Priorities: confirm ECU comms, then air springs &rarr; valve-block seals &rarr; height sensors &rarr; driver, in that order of likelihood. The AccuAir path is the documented &ldquo;nuclear option&rdquo; if the OEM ECU/driver won't behave.
+</div>
+</section>
+
+<!-- 7 -->
+<section id="offroad">
+<h2 class="sec">7 · Drivetrain / Off-road Equipment</h2>
+<ul>
+  <li><strong>ARB Air Lockers &mdash; front and rear</strong> (existing on the truck per both owners). Needs the ARB air compressor + the two locker solenoid switches. Noah listed &ldquo;re-locate ARB locker switches&rdquo; as a to-do, so switch placement may be non-stock.</li>
+  <li><strong>Hidden winch</strong> + <strong>custom A-frame brush guard</strong>.</li>
+  <li>Towing: Carlos's 2010 EAS recalibration was specifically &ldquo;for heavy towing.&rdquo;</li>
+</ul>
+<div class="callout"><span class="tag">Find &amp; document</span> Locate the ARB compressor and trace the locker air lines &amp; switches; confirm both lockers actually engage. This was a Carlos-era install with non-stock switch routing.</div>
+</section>
+
+<!-- 8 -->
+<section id="electrical">
+<h2 class="sec">8 · Electrical &amp; Lighting</h2>
+<h3>Lighting (built up over both owners)</h3>
+<ul>
+  <li>Full LED lighting; <strong>heated headlights</strong>; 4× <strong>Hella 550</strong> driving lights (dark lenses, 6000K bulbs); clear-lens <strong>IPF</strong> rectangular driving lights with yellow Euro bulbs <span class="src">(Carlos)</span>.</li>
+  <li><strong>Grote LED headlight</strong> units + <strong>Euro-spec indicators</strong>; <strong>D2 fender-mount turn signals</strong>; new rear lenses; painted front grille <span class="src">(Noah)</span>.</li>
+</ul>
+<h3>Known electrical faults (open unless noted)</h3>
+<table>
+  <tr><th>Symptom</th><th>Likely cause / note</th><th>Status</th></tr>
+  <tr><td>Rear window switch dead; LR window intermittent</td><td>Forum-diagnosed as <strong>dry solder joints in the window-lift ECU</strong> (rears fail first). Re-solder the board &mdash; switches rarely the cause.</td><td><span class="pill open">OPEN</span></td></tr>
+  <tr><td>ABS &amp; Traction-Control lights on intermittently</td><td>Never diagnosed by either owner. Classic culprits: ABS modulator/accumulator or a wheel-speed sensor.</td><td><span class="pill open">OPEN</span></td></tr>
+  <tr><td>Rear parking lights stopped working</td><td>Bulbs not yet checked (Noah)</td><td><span class="pill open">OPEN</span></td></tr>
+  <tr><td>Front-right turn signal not flashing</td><td>Not yet diagnosed (Noah)</td><td><span class="pill open">OPEN</span></td></tr>
+  <tr><td>New 12V battery</td><td>Installed by Noah</td><td><span class="pill done">DONE</span></td></tr>
+</table>
+</section>
+
+<!-- 9 -->
+<section id="interior">
+<h2 class="sec">9 · Interior &amp; Audio</h2>
+<h3>Audio system</h3>
+<ul>
+  <li><strong>7&Prime; double-DIN head unit</strong>, satellite radio, <strong>14 speakers, 3 amplifiers, power capacitors</strong> <span class="src">(Carlos)</span>.</li>
+  <li><span class="pill verify">VERIFY</span> The center fascia is reportedly a <strong>Discovery part modified to accept the double-DIN</strong> (a forum regular: &ldquo;Laz had the original [fascia] replaced with one from a Discovery, then modified for a double DIN&rdquo;). These are rare &mdash; the original RRC plastic is brittle; treat the modified Disco fascia as unobtainium.</li>
+</ul>
+<h3>Interior refresh (Noah, in progress)</h3>
+<ul>
+  <li>Headliner replaced with <strong>Alcantara (beige, Italian)</strong>.</li>
+  <li><strong>L-Seat leather skins</strong> (black) and <strong>black Rimmer Bros carpet</strong> &mdash; on hand / partially installed.</li>
+  <li>Old sound deadener removed; <strong>Dynamat</strong> planned/partially done.</li>
+  <li>New seat belts (black) to install; <strong>two rear-seat mounting screws sheared off in their holes</strong> (need extraction).</li>
+  <li>D-pillar re-trim vinyl kit (from UK) on hand; new under-hood insulation; speaker grille surrounds on order.</li>
+  <li>Original stereo plan: period-correct single-DIN-look head unit (forum suggestion: Blaupunkt Bremen SQR 46 DAB) &mdash; Noah was still deciding.</li>
+</ul>
+</section>
+
+<!-- 10 -->
+<section id="issues">
+<h2 class="sec">10 · Known Issues &amp; Accident History</h2>
+<table>
+  <tr><th>Sev.</th><th>Issue</th><th>Detail &amp; source</th><th>Status</th></tr>
+  <tr><td><span class="sev r"></span></td><td>Hot no-start / hot stall <strong>(active)</strong></td><td>Heat-gated hard-hot-start + dies at closed-throttle idle; leading suspect = the VR crank-signal chain. Full working diagnosis &amp; next tests in <a href="#active-diag">&sect;5A</a>. <strong>Not yet root-caused.</strong></td><td><span class="pill open">OPEN</span></td></tr>
+  <tr><td><span class="sev r"></span></td><td>2013 highway wreck</td><td>Carlos hit the center divider &mdash; severe <strong>left-front</strong> damage (blew LF air spring, broke LF height sensor); rebuilt with major sheet-metal, paint, glass &amp; mechanical work. <em>Inspect LF structure / panel fit / prior repair quality.</em></td><td>Repaired (history)</td></tr>
+  <tr><td><span class="sev a"></span></td><td>EAS gremlins</td><td>Chronic comms/calibration issues; overnight rear sag. See §6.</td><td><span class="pill open">OPEN</span></td></tr>
+  <tr><td><span class="sev a"></span></td><td>Warm-idle tick</td><td>Noah: &ldquo;clicking/ticking once warmed up and not under load&hellip; lifter? Only when warm.&rdquo; Never resolved. Suspect a lifter or exhaust-manifold leak. (A parallel owner mentioned doing lifters on a similar build.)</td><td><span class="pill open">OPEN</span></td></tr>
+  <tr><td><span class="sev g"></span></td><td>Power-steering box leak</td><td>Was leaking badly; Noah <strong>rebuilt/resealed the box + new O-rings</strong> on the PS lines to box. Should be like-new &mdash; verify.</td><td><span class="pill done">FIXED</span></td></tr>
+  <tr><td><span class="sev a"></span></td><td>ABS / TC lights</td><td>Intermittent, undiagnosed. See §8.</td><td><span class="pill open">OPEN</span></td></tr>
+  <tr><td><span class="sev a"></span></td><td>Rust</td><td>Two rear load-floor areas patched by a body shop; one rear-interior area only <strong>coated</strong> with anti-rust treatment (not cut/replaced) &mdash; &ldquo;resistant,&rdquo; not fixed. Carlos addressed front lower areas earlier; minor rust remains. Check front floors under carpet (factory mats are sponges) and the <strong>front mudflap mounting posts</strong> (known rot point &mdash; seal from both sides).</td><td><span class="pill open">PARTIAL</span></td></tr>
+  <tr><td><span class="sev y"></span></td><td>Sunroof leak</td><td>Glass delaminating from a corroded support frame (the classic failure). Noah dropped &amp; re-seated it and it stopped. A <strong>P38 sunroof is a direct swap</strong> if yours fails; clear-tint original glass can be re-glued to a good P38 frame.</td><td>Mitigated</td></tr>
+  <tr><td><span class="sev y"></span></td><td>Weak A/C</td><td>&ldquo;Needs a rest after a few hours&rdquo; / &ldquo;AC is weak.&rdquo; Classic RRC A/C is marginal; check charge, condenser, blower.</td><td><span class="pill open">OPEN</span></td></tr>
+  <tr><td><span class="sev y"></span></td><td>Fuel economy</td><td>~7&ndash;13 MPG. Expected for a stroked V8 LWB; not a fault.</td><td>Normal</td></tr>
+</table>
+</section>
+
+<!-- 11 -->
+<section id="log">
+<h2 class="sec">11 · Maintenance Log (as documented)</h2>
+<h3><span class="who carlos">CARLOS</span> era (build)</h3>
+<ul>
+  <li>4.6 block stroked to 5.1L (GM crank/rods, Rover pistons), Crower cam, 300 hp/250 lb-ft dyno.</li>
+  <li>Megajolt / Trigger-Wheels DIS conversion; Thor (P38/D2) coil packs.</li>
+  <li>ARB air lockers front &amp; rear; hidden winch; custom A-frame brush guard.</li>
+  <li>~2010 full EAS refurb (bags, 4 sensors, valve-block seals, tow recalibration).</li>
+  <li>2013 post-wreck rebuild: LF sheet metal/paint/glass, LF air spring + height sensor.</li>
+  <li>Full LED/Hella/IPF lighting; D2 fender turn signals; 35% tint all around.</li>
+  <li>Double-DIN audio: 14 speakers, 3 amps, caps; Discovery center fascia modified for double-DIN.</li>
+  <li>Saddle/stone leather interior (original build).</li>
+</ul>
+<h3><span class="who noah">NOAH</span> era (refresh / maintenance)</h3>
+<ul>
+  <li>4× Bilstein shocks; new steering damper; LR shock-mount-to-frame bracket.</li>
+  <li><strong>Power-steering box rebuilt/resealed &amp; painted</strong> + new O-rings on PS lines.</li>
+  <li>New 12V battery; oil change; 8× spark plugs; 8× ignition wires.</li>
+  <li>4&ndash;5× new tires &mdash; <strong>Pirelli Scorpion ATR, 205/80R16</strong>; spare replaced.</li>
+  <li>AliSport/aluminum coolant overflow tank + new coolant lines.</li>
+  <li>Front lower air dam + front bumper hardware; restored bumper corners; painted front grille.</li>
+  <li>Grote LED headlights; Euro indicators; new rear lenses.</li>
+  <li>Alcantara headliner (beige); door seals all around; sunroof drained/re-seated.</li>
+  <li>Rear load-floor rust patched; interior stripped to metal for Dynamat (in progress).</li>
+  <li>On hand / in progress: rear air springs, L-Seat black leather, black carpet, black seat belts, D-pillar vinyl, under-hood insulation, speaker grille surrounds.</li>
+</ul>
+</section>
+
+<!-- 12 -->
+<section id="parts">
+<h2 class="sec">12 · Parts &amp; Reference Quick-List</h2>
+<table>
+  <tr><th>System</th><th>Part / spec to source</th><th>Notes</th></tr>
+  <tr><td>Crank sensor</td><td>Ford-EDIS VR sensor (match markings on installed unit)</td><td>NOT a LR part. Bracket = Trigger Wheels <code>RV8-VR-Bkt</code>.</td></tr>
+  <tr><td>Ignition module</td><td>Ford EDIS-8 module</td><td>Cheap from Ford V8 donors / eBay; keep a spare.</td></tr>
+  <tr><td>Coils</td><td>P38 / Discovery 2 &ldquo;Thor&rdquo; coil packs</td><td>Wasted-spark; pinouts in RAVE ETM (C0052 / C0156).</td></tr>
+  <tr><td>Ignition control</td><td>Megajolt controller + saved timing map</td><td>Back up the map; software via Autosport Labs.</td></tr>
+  <tr><td>Tires</td><td>205/80R16 (Pirelli Scorpion ATR fitted)</td><td>—</td></tr>
+  <tr><td>Shocks</td><td>Bilstein (fitted)</td><td>—</td></tr>
+  <tr><td>EAS</td><td>Air springs, valve-block seals, height sensors, driver</td><td>AccuAir e-Level = documented fallback.</td></tr>
+  <tr><td>Lockers</td><td>ARB front &amp; rear + ARB compressor</td><td>Locker switches re-located (non-stock).</td></tr>
+  <tr><td>Sunroof</td><td>P38 (Mk2) sunroof = direct swap</td><td>For the corroded-frame leak.</td></tr>
+  <tr><td>Carpet / leather</td><td>Rimmer Bros carpet; L-Seat skins</td><td>LHD RRC stock colors at Rimmer.</td></tr>
+  <tr><td>Diagnostics</td><td>RoverGauge (EFI), EAS laptop tool, Megajolt software</td><td>No generic OBD for engine.</td></tr>
+</table>
+</section>
+
+<!-- 13 -->
+<section id="verify">
+<h2 class="sec">13 · Verify on the Physical Truck</h2>
+<ol>
+  <li><strong>Confirm displacement</strong> &mdash; 5.1 stroker vs. plain 4.6. Changes parts &amp; expectations.</li>
+  <li><strong>Photograph &amp; ohm the crank VR sensor + trigger wheel</strong>; read markings; then buy the matching Ford-EDIS sensor (§5).</li>
+  <li><strong>Get the Megajolt map/config file</strong> &mdash; ask Noah for any laptop files or build paperwork from Carlos.</li>
+  <li><strong>Inspect the 2013 left-front repair</strong> &mdash; structure, panel gaps, weld/filler quality.</li>
+  <li><strong>EAS health</strong> &mdash; confirm ECU comms; test the valve block &amp; driver; install the on-hand rear springs.</li>
+  <li><strong>ARB lockers</strong> &mdash; find compressor, trace lines, confirm both engage.</li>
+  <li><strong>Rust audit</strong> &mdash; lift carpet (front floors), check mudflap posts &amp; the &ldquo;coated-not-cut&rdquo; rear area.</li>
+  <li><strong>Trace the warm-idle tick</strong> &mdash; rule out exhaust-manifold leak before assuming a lifter.</li>
+</ol>
+</section>
+
+<!-- 14 -->
+<section id="sources">
+<h2 class="sec">14 · Sources</h2>
+<p class="src">All primary data from rangerovers.net posts by Carlos (95classiclwb) and Noah (NoahWeb):</p>
+<ul class="src">
+  <li><a href="https://www.rangerovers.net/showcase/lazarus-the-money-pit.14258/">Showcase — &ldquo;Lazarus, the money pit&rdquo; (build sheet)</a></li>
+  <li><a href="https://www.rangerovers.net/threads/d-i-s-conversion.356756/">D.I.S conversion</a> · <a href="https://www.rangerovers.net/threads/megajolt.356838/">megajolt</a> · <a href="https://www.rangerovers.net/threads/ignition-coil-pin-out.317889/">ignition coil pin out</a></li>
+  <li><a href="https://www.rangerovers.net/threads/venerable-and-eternal-eas-woes.239034/">venerable and eternal EAS woes (2013 wreck + EAS history)</a></li>
+  <li><a href="https://www.rangerovers.net/threads/1995-rrc-country-lwb-soft-dash-f-s.363203/">NoahWeb for-sale listing</a> · <a href="https://www.rangerovers.net/threads/%E2%80%9895-rrc-country-lwb-update.359640/">NoahWeb update thread</a> · <a href="https://www.rangerovers.net/threads/newly-acquired-%E2%80%9895-lwb-introductions.359036/">new-owner intro</a></li>
+  <li>Crank-sensor hardware: <a href="http://www.trigger-wheels.com/store/contents/en-uk/p33.html">Trigger Wheels RV8 sensor bracket</a> · <a href="https://wiki.autosportlabs.com/MJLJ_V4_vehicle_installation_guide">Autosport Labs MegaJolt/EDIS guide</a></li>
+</ul>
+<footer>
+  Compiled for Drew Campbell · &ldquo;Lazarus&rdquo; 1995 Range Rover Classic County LWB · field reference only, not factory documentation · verify all non-stock items on the physical vehicle before ordering parts or performing work.
+</footer>
+</section>
+
+</main>
+</div>
+</body>
+</html>

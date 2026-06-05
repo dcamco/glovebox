@@ -1,0 +1,14 @@
+# Glovebox registry — one OWNED vehicle per line.
+# Columns are TAB-separated:
+#   id <TAB> display <TAB> manual_path <TAB> model_regex <TAB> strong_regex
+#
+#   model_regex  = marque/model terms. These ONLY trigger the router when the prompt ALSO
+#                  contains an ownership cue (my / mine / our / "I own" / "I bought" / ...).
+#                  Keep these to CAR-UNIQUE identifiers; do NOT use shared tech (both the
+#                  911SC and 308 use K-Jet/CIS).
+#   strong_regex = identifiers that name THIS specific car and therefore trigger on their own,
+#                  even without an ownership word. Use ONLY the nickname and the VIN. Blank if none.
+lazarus	1995 Range Rover Classic County LWB "Lazarus" (4.6/5.1 stroker, Megajolt DIS, EAS, ARB lockers)	/Users/drewcampbell/glovebox/manuals/lazarus.html	95 lwb|95 classic|95 rrc|95 county|4\.6|5\.1|megajolt|\bedis\b|stroker|thor coil|trigger wheel|vr sensor	lazarus
+rrc88	1988 Range Rover Classic	/Users/drewcampbell/glovebox/manuals/rrc88.html	\b88\b|1988|88 range|88 rrc|88 classic|88 county|early classic
+911sc	1980 Porsche 911 SC	/Users/drewcampbell/glovebox/manuals/911sc.html	porsche|\b911\b|911 ?sc|1980 911|carrera tensioner|\b915\b	91a0140115
+308gtsi	1982 Ferrari 308 GTSi	/Users/drewcampbell/glovebox/manuals/308gtsi.html	ferrari|\b308\b|308 ?gts|gtsi|1982 ferrari	zffaa02a7c0039245
