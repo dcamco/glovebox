@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ferrari 360 Modena F1 (Giallo, US-spec) — Owner's Manual &amp; History</title>
+<style>
+  :root{
+    --giallo:#e6b40c;        /* Giallo Modena */
+    --giallo-2:#c8960c;
+    --nero:#16161a;
+    --accent:#e6b40c;
+    --ink:#1c1c1c;
+    --muted:#5c5c5c;
+    --paper:#f5f2ea;
+    --card:#ffffff;
+    --line:#ded8cb;
+    --red:#9c2b22;
+    --amber:#b5791f;
+    --green:#2c5239;
+    --code-bg:#16140f;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--paper);line-height:1.55;font-size:16px}
+  a{color:var(--giallo-2)}
+  .wrap{display:grid;grid-template-columns:260px 1fr;max-width:1200px;margin:0 auto}
+  nav.toc{position:sticky;top:0;align-self:start;height:100vh;overflow:auto;background:var(--nero);color:#e9e6dc;padding:24px 18px}
+  nav.toc h2{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin:18px 0 8px}
+  nav.toc h2:first-child{margin-top:0}
+  nav.toc a{display:block;color:#cfcfcf;text-decoration:none;padding:4px 6px;border-radius:5px;font-size:14px}
+  nav.toc a:hover{background:rgba(255,255,255,.08);color:#fff}
+  nav.toc .badge{font-size:11px;color:var(--nero);background:var(--accent);border-radius:10px;padding:1px 7px;font-weight:700}
+  main{padding:0 36px 80px}
+  header.hero{background:linear-gradient(135deg,var(--giallo-2),var(--nero));color:#fdf8e8;padding:40px 36px;margin:0 -36px 28px;border-bottom:4px solid var(--accent)}
+  header.hero .kicker{letter-spacing:.2em;text-transform:uppercase;font-size:12px;color:var(--accent);font-weight:700}
+  header.hero h1{margin:6px 0 4px;font-size:38px;letter-spacing:.01em}
+  header.hero p{margin:0;color:#efe4c5;max-width:62ch}
+  header.hero .vin-strip{margin-top:18px;display:flex;flex-wrap:wrap;gap:10px}
+  header.hero .vin-strip span{background:rgba(0,0,0,.30);border:1px solid rgba(230,180,12,.5);padding:5px 12px;border-radius:6px;font-size:13px}
+  section{margin:0 0 38px;scroll-margin-top:14px}
+  h2.sec{font-size:24px;border-bottom:2px solid var(--line);padding-bottom:8px;margin:34px 0 16px;color:var(--giallo-2)}
+  h3{font-size:18px;margin:22px 0 8px;color:var(--nero)}
+  p{margin:10px 0}
+  .lead{font-size:17px;color:var(--muted)}
+  table{border-collapse:collapse;width:100%;margin:14px 0;background:var(--card);border:1px solid var(--line);font-size:14.5px}
+  th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{background:#efe9dd;font-size:12px;letter-spacing:.05em;text-transform:uppercase;color:#4a4a4a}
+  tr:last-child td{border-bottom:none}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px 20px;margin:14px 0;box-shadow:0 1px 2px rgba(0,0,0,.04)}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  ul,ol{margin:8px 0;padding-left:22px}
+  li{margin:4px 0}
+  code{background:#e9e3d5;padding:1px 6px;border-radius:4px;font-family:"SF Mono",Menlo,Consolas,monospace;font-size:.9em}
+  .callout{border-left:5px solid var(--accent);background:#fbf6e6;padding:12px 16px;border-radius:0 8px 8px 0;margin:14px 0}
+  .callout.red{border-color:var(--red);background:#fbefed}
+  .callout.amber{border-color:var(--amber);background:#fbf5e8}
+  .callout.green{border-color:var(--green);background:#eef4ee}
+  .callout .tag{font-weight:700;text-transform:uppercase;font-size:11px;letter-spacing:.08em;display:block;margin-bottom:3px}
+  .callout.red .tag{color:var(--red)} .callout.amber .tag{color:var(--amber)} .callout.green .tag{color:var(--green)}
+  .sev{display:inline-block;width:11px;height:11px;border-radius:50%;margin-right:7px;vertical-align:middle}
+  .sev.r{background:var(--red)} .sev.a{background:var(--amber)} .sev.y{background:#d4b43a} .sev.g{background:#3c8a52}
+  .pill{display:inline-block;font-size:11px;font-weight:700;padding:2px 9px;border-radius:20px;letter-spacing:.04em}
+  .pill.verify{background:#fbe9c8;color:#7a5a10;border:1px solid #e3c478}
+  .pill.done{background:#dcefe0;color:#2c5239;border:1px solid #a9cdb2}
+  .pill.open{background:#fbe0dc;color:#8a241c;border:1px solid #e0a39c}
+  .src{font-size:13px;color:var(--muted)}
+  footer{border-top:1px solid var(--line);margin-top:40px;padding-top:18px;font-size:13px;color:var(--muted)}
+  .who{display:inline-block;font-size:12px;font-weight:700;padding:1px 7px;border-radius:5px;margin-right:4px}
+  .who.sf{background:#fbf1d4;color:#8a6a0c}        /* service file */
+  .who.ls{background:#e6ecf7;color:#2f4170}        /* listing */
+  .who.ph{background:#eef4ee;color:#2c5239}        /* photo */
+  .moneyrow td:last-child{font-variant-numeric:tabular-nums;font-weight:600}
+  @media (max-width:860px){
+    .wrap{grid-template-columns:1fr}
+    nav.toc{position:static;height:auto}
+    .grid2{grid-template-columns:1fr}
+    main{padding:0 18px 60px}
+    header.hero{margin:0 -18px 24px;padding:30px 22px}
+  }
+  @media print{
+    nav.toc{display:none} .wrap{display:block} header.hero{background:var(--nero)!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    a{color:var(--ink);text-decoration:none}
+  }
+</style>
+</head>
+<body>
+<nav style="background:#15281c;padding:9px 28px;border-bottom:2px solid #c9a14a"><a href="../index.html" style="color:#c9a14a;text-decoration:none;font-weight:700;font-size:13px;letter-spacing:.08em">&larr; THE GARAGE</a></nav>
+<div class="wrap">
+
+<nav class="toc">
+  <h2>360 (Yellow) Manual</h2>
+  <a href="#overview">1 · Vehicle Overview</a>
+  <a href="#provenance">2 · Provenance &amp; Timeline</a>
+  <a href="#usspec">3 · US-Spec — the advantage <span class="badge">★</span></a>
+  <a href="#mileage">4 · Mileage &amp; Title</a>
+  <a href="#belts">5 · Major-Service History</a>
+  <a href="#recurring">6 · Recurring Systems Log</a>
+  <a href="#known360">7 · 360 Known Issues</a>
+  <a href="#status">8 · Current Status / What's Due</a>
+  <a href="#deal">8A · Seller, Price &amp; Red-vs-Yellow <span class="badge">$</span></a>
+  <h2>Buying / Service</h2>
+  <a href="#ppi">9 · PPI &amp; Verify Checklist</a>
+  <a href="#cost">10 · Documented Cost History</a>
+  <a href="#parts">11 · Parts &amp; Specs Reference</a>
+  <a href="#sources">12 · Sources</a>
+</nav>
+
+<main>
+<header class="hero">
+  <div class="kicker">Owner's Reference &amp; History Dossier · Car #2</div>
+  <h1>Ferrari 360 Modena F1 — Giallo</h1>
+  <p>Giallo Modena over Nero · 3.6 V8 · F1 paddle-shift · <strong>US-spec (VIN-A)</strong>. A ~17k-mile California car — <strong>3 owners</strong> (the long-term third, Esmaeili, kept it ~20 yrs at Bay-Area specialists), now in Houston. The US-spec counterpart to the red Euro car — no gray-market discount, but the cam belts are even older, it carries a <strong>chronic CA smog-failure history</strong>, and the asking price is fantasy.</p>
+  <div class="vin-strip">
+    <span>🟡 Giallo Modena / Nero</span>
+    <span>🏎 3.6L V8 · ~395 hp</span>
+    <span>⚙ F1 automated manual</span>
+    <span>🇺🇸 US-spec (no Euro penalty)</span>
+    <span>🧾 VIN ZFFYR51A2X0118611</span>
+    <span>💵 Asking $119,990</span>
+  </div>
+</header>
+
+<div class="callout">
+  <span class="tag">How to read this manual</span>
+  Facts are tagged to source &mdash; <span class="who sf">SERVICE FILE</span> = the itemized records (Brian Crall / Ferrari of San Francisco / Ferrari Silicon Valley / Dino Motors / MPerformance / Midas, 2007&ndash;2023), <span class="who ls">LISTING</span> = the Everest Motors (Houston) sale listing, <span class="who ph">PHOTO</span> = document/odometer photos. <span class="pill verify">VERIFY</span> = unconfirmed; check on the car, the title, or the Carfax. Field reference compiled from documents, not a substitute for a PPI. <strong>Companion file: the red Euro-spec 360 (<code>360modena.html</code>) — see §8A for the head-to-head.</strong>
+</div>
+
+<!-- 1 -->
+<section id="overview">
+<h2 class="sec">1 · Vehicle Overview</h2>
+<table>
+  <tr><th>Item</th><th>Detail</th><th>Source</th></tr>
+  <tr><td>Model</td><td>Ferrari <strong>360 Modena</strong> Berlinetta, <strong>F1</strong> gearbox (listing mislabels it &ldquo;Automatic&rdquo;; records say &ldquo;360 Modena F1&rdquo;)</td><td><span class="who sf">SF</span></td></tr>
+  <tr><td>VIN</td><td><code>ZFFYR51A2X0118611</code> &mdash; note <strong>position 8 = A</strong> ⇒ <strong>US-spec</strong> (the red car is &hellip;<strong>B</strong> = Euro)</td><td>Both</td></tr>
+  <tr><td>Year</td><td><strong>1999</strong> model; produced 02/14/2000, delivered new <strong>18 Jan 2000</strong> (original FNA delivery checklist on file)</td><td><span class="who sf">SF</span></td></tr>
+  <tr><td>Color</td><td><strong>Giallo Modena</strong> (yellow) / <strong>Nero</strong> black leather (&ldquo;YELLOW/NERO&rdquo; on dealer ROs)</td><td><span class="who sf">SF</span></td></tr>
+  <tr><td>Engine</td><td>3.6 L F131 V8, ~395&ndash;400 hp @ 8,500 rpm</td><td>Spec</td></tr>
+  <tr><td>Audio</td><td>Factory Hi-Fi + CD changer (on the delivery checklist). Listing claims <strong>&ldquo;McIntosh&rdquo;</strong> — Ferrari didn't factory-fit McIntosh on the 360, so likely aftermarket or listing shorthand <span class="pill verify">VERIFY</span></td><td><span class="who ls">LISTING</span></td></tr>
+  <tr><td>Odometer</td><td><strong>17,083 mi</strong> (listing); 16,871 in Jan 2023 — barely driven since</td><td><span class="who ls">LISTING</span></td></tr>
+  <tr><td>Books/tools</td><td>Original delivery checklist shows owner's manual, tool kit, both keys, both remotes (black &amp; red), battery charger, car cover all delivered — a strong sign the books/tools are present <span class="pill verify">confirm present</span></td><td><span class="who sf">SF</span></td></tr>
+  <tr><td>Location / price</td><td>Everest Motors Inc, Houston TX · asking <strong>$119,990</strong></td><td><span class="who ls">LISTING</span></td></tr>
+</table>
+</section>
+
+<!-- 2 -->
+<section id="provenance">
+<h2 class="sec">2 · Provenance &amp; Ownership Timeline</h2>
+<p class="lead">A <strong>3-owner</strong> California car whose long-term <strong>third owner</strong> (Ahmad Esmaeili, 2005&ndash;present, ~20 yrs) maintained it almost entirely at top Bay-Area Ferrari specialists, then relocated it to Houston — where it has now entered the dealer market. (Owner 1: 2000&ndash;03; Owner 2: 2003&ndash;05; both CA.)</p>
+<table>
+  <tr><th>Date</th><th>Mi</th><th>Event</th></tr>
+  <tr><td>18 Jan 2000</td><td>0</td><td>Delivered new (Ferrari North America delivery checklist). Production 02/14/2000.</td></tr>
+  <tr><td>2007&ndash;2014</td><td>10,990 → 16,186</td><td><strong>Ahmad Esmaeili</strong>, Los Altos → San Mateo, CA. Serviced at <strong>Brian Crall</strong> (San Ramon), <strong>Ferrari of San Francisco</strong>, <strong>Ferrari Maserati of Silicon Valley</strong>, <strong>Dino Motors</strong>. Annual CA smog.</td></tr>
+  <tr><td>2022&ndash;2023</td><td>16,778 → 16,871</td><td>Same owner, now in <strong>Houston, TX</strong> — cosmetic refresh at MPerformance (Conroe) and A/C service at Midas (Houston). Owner relocated CA → TX.</td></tr>
+  <tr><td>2026</td><td>17,083</td><td>Listed for sale at <strong>Everest Motors Inc, Houston</strong> ($119,990). &ldquo;In make ready.&rdquo;</td></tr>
+</table>
+<div class="callout green">
+  <span class="tag">Read on provenance</span>
+  ~20 years with one devoted owner (the third), almost all at <strong>marque specialists</strong> (Brian Crall is a respected name), original delivery documentation surviving — a strong, legible history. Two corrections from the Carfax: it's a <strong>3-owner car</strong> (not one-owner), and it has a <strong>chronic failed-emissions record</strong> in CA (see §4/§6). Carfax confirms <strong>no accidents/structural/airbag</strong> and no odometer issue, so the 2022 bumper/quarter repaint reads as cosmetic, not collision.
+</div>
+</section>
+
+<!-- 3 -->
+<section id="usspec">
+<h2 class="sec">3 · US-Spec — the structural advantage <span class="pill done">VIN-A</span></h2>
+<p class="lead">This is the single biggest point in this car's favor versus the red Euro car. Position 8 of the VIN is <strong>A</strong> ⇒ a <strong>US-delivery car</strong>.</p>
+<ul>
+  <li><strong>No gray-market discount.</strong> US-spec is the full-value baseline — though note the measured Euro penalty on the red car is only ~$3&ndash;5k (not the folklore $15k), so this advantage is real but modest.</li>
+  <li><strong>Any shop will service it.</strong> No Euro-only software/parts hesitation; standard US OBD-II, standard emissions hardware. It has passed California smog (the strictest in the US) repeatedly.</li>
+  <li><strong>Broader resale pool</strong> and cleaner future exit.</li>
+  <li><strong>Recalls/campaigns done:</strong> the <strong>Exhaust Variator recall (Campaign 87/97)</strong> and the <strong>OBD2-connector campaign (148)</strong> were both performed under warranty at Ferrari of San Francisco in Aug 2009 — two known 360 service-campaign items already closed out.</li>
+</ul>
+<div class="callout amber">
+  <span class="tag">The catch that offsets it</span>
+  US-spec earns a modestly higher baseline (~$3&ndash;5k, measured) &mdash; but this car's <strong>cam belts are even older</strong> (2009 vs 2013), it has a <strong>chronic emissions/driveability history</strong> the red lacks, and the <strong>ask is $40k over fair</strong>. The spec advantage is real but small; it doesn't justify the price gap. See §5 and §8A.
+</div>
+</section>
+
+<!-- 4 -->
+<section id="mileage">
+<h2 class="sec">4 · Mileage &amp; Title</h2>
+<div class="grid2">
+  <div class="card">
+    <h3>Genuinely low miles</h3>
+    <ul>
+      <li>Now ~<strong>17,083 mi</strong>; ~16,871 in Jan 2023 — ~200 mi in three years.</li>
+      <li>Monotonic service-record trail: 10,990 (’07) → 11,868 (’09) → 13,446 (’11) → 15,675 (’14) → 16,778 (’22) → 17,083 (now). No anomalies.</li>
+      <li>Even <strong>lower-mileage than the red car</strong> (~17k vs ~23.5k).</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h3>Title &amp; Carfax — pulled 6/26/26 <span class="pill done">obtained</span></h3>
+    <ul>
+      <li><strong>Clean:</strong> no accidents, no structural, no airbag, no odometer issue, no title brands. Clean TX title (CA→TX). The 2022 bumper/quarter repaint reads cosmetic.</li>
+      <li><strong>3 owners</strong> (not one): Owner 1 ’00&ndash;03, Owner 2 ’03&ndash;05, Owner 3 (Esmaeili) ’05&ndash;present. Clutch replaced under Owner 1 (12/2000, 2,791 mi).</li>
+      <li><strong>⚠ Chronic failed emissions (CA):</strong> failed smog <strong>2005, 2007, 2009 (×3), 2011, 2012, 2014 (×2)</strong> — passing only after work each time. Now <strong>exempt from TX emissions</strong> (25+ yrs), so the issue is hidden. See §6.</li>
+      <li>Minor: 10/2022 TX title oddly notes color <strong>&ldquo;Red&rdquo;</strong> (later entries say Yellow) — clerical; confirm VIN on the physical title.</li>
+    </ul>
+  </div>
+</div>
+</section>
+
+<!-- 5 -->
+<section id="belts">
+<h2 class="sec">5 · Major-Service History <span class="pill open">BELTS 17 YRS OLD</span></h2>
+<p class="lead">The good news: the variator recall and a full belt service are both documented. The catch: the belt service was <strong>2009</strong> — by time, it's the most overdue item on either car.</p>
+<table>
+  <tr><th>Date</th><th>Mi</th><th>Major work</th><th>Source</th></tr>
+  <tr><td><strong>Jul 2009</strong></td><td>11,868</td><td><strong>Cam-belt service</strong> (Brian Crall RO 704): timing belts + <strong>Hill Engineering tensioner bearings</strong> + accessory belts (A/C, P/S, water-pump/alternator).</td><td><span class="who sf">SF</span></td></tr>
+  <tr><td><strong>Aug 2009</strong></td><td>12,791</td><td><strong>Exhaust Variator recall (Campaign 87/97)</strong> — new variators &mdash; <strong>+ OBD2-connector campaign (148)</strong>, both under warranty at Ferrari of SF.</td><td><span class="who sf">SF</span></td></tr>
+  <tr><td>Dec 2011</td><td>13,446</td><td>&ldquo;15k service&rdquo;: fluids, 8 plugs, filters; fixed a misfire/fuel-trim fault; steering-rack-boot leak; <strong>transmission mount</strong>; battery; rolled a fender lip (tire rub).</td><td><span class="who sf">SF</span></td></tr>
+  <tr><td>May 2014</td><td>15,675</td><td>Driveability: CEL / rich both banks — <strong>leaking intake gaskets, upstream O2 sensors, injector-nozzle cleaning, air-flow meters, ECU reprogram</strong> ($5,025).</td><td><span class="who sf">SF</span></td></tr>
+</table>
+<div class="callout red">
+  <span class="tag">Belts are the headline cost — even older than the red car</span>
+  Last cam-belt service: <strong>verified Jul 2009 @ 11,868 mi (Brian Crall RO #704)</strong> — timing belt + Hill Eng tensioner bearings + accessory belts, $2,710.57 (done engine-in). <strong>~17 years ago</strong> (only ~5,500 mi since, but time is what matters). Ferrari's own TSB on the invoices: belts <strong>every 3 yrs / 30k mi</strong>. Near-certain <strong>$8&ndash;10k engine-out service</strong> (current rates) day one. The <strong>clutch (2000 unit) read ~48% in 2014</strong> @ 15,315 mi — read it now; do it with the belts.
+</div>
+</section>
+
+<!-- 6 -->
+<section id="recurring">
+<h2 class="sec">6 · Recurring Systems Log</h2>
+<table>
+  <tr><th>System</th><th>History on THIS car</th><th>Status</th></tr>
+  <tr><td><strong>Driveability / emissions</strong> ⚠</td><td><strong>Chronic CA smog failures: 2005, 2007, 2009 (×3), 2011, 2012, 2014 (×2)</strong> — Carfax. Each time fixed to pass: misfire/fuel-trim (2011); rich-running CEL, intake gaskets, O2 sensors, injectors, air-flow meters, ECU reprogram (2014, $5,025). Shop: injector issues &ldquo;with this car before.&rdquo; May be cured since the big 2014 job — but unverified 12 yrs, and TX no longer tests it.</td><td><span class="pill open">PPI: scan + readiness + cats/O2</span></td></tr>
+  <tr><td><strong>A/C</strong></td><td>A/C compressor leak flagged 2009; <strong>evac &amp; recharge with dye</strong> 2023 (Houston) — suggests an ongoing slow refrigerant leak.</td><td><span class="pill verify">Verify A/C blows cold &amp; holds</span></td></tr>
+  <tr><td><strong>Battery / aftermarket alarm</strong></td><td>Repeated dead/weak batteries; 2014 note: <strong>battery drains from excessive draw from an aftermarket alarm/electronics</strong>; alarm motion sensors replaced (2014).</td><td><span class="pill verify">Check parasitic draw</span></td></tr>
+  <tr><td><strong>Motor &amp; trans mounts</strong></td><td>&ldquo;Motor mounts collapsed&rdquo; noted 2009; 1st-design <strong>transmission mount</strong> flagged 2007, replaced 2011.</td><td><span class="pill done">Trans mount done</span> — check motor mounts</td></tr>
+  <tr><td><strong>Paint &amp; cosmetics</strong></td><td>2022: <strong>front bumper, rear bumper, and left-rear quarter panel repainted</strong>; all wheels refinished. Earlier: fender-lip rub, scrapes on front fenders/bumper (2009).</td><td><span class="pill verify">NOT all-original paint</span></td></tr>
+  <tr><td><strong>Tires</strong></td><td>New <strong>Michelin</strong> 245/45/18 front + 275/40/18 rear in 2022.</td><td><span class="pill done">Recent (2022)</span></td></tr>
+</table>
+<div class="callout">
+  <span class="tag">Reading the pattern</span>
+  More <strong>driveability/electrical gremlins</strong> in this car's file than the red one (injectors, intake, O2, alarm-draw) &mdash; all apparently resolved by 2014, but they're a theme. Against that, the <strong>variator recall is done</strong> and tires are fresh. The two biggest open mechanical items are the <strong>17-year-old belts</strong> and a likely <strong>tired clutch</strong>.
+</div>
+</section>
+
+<!-- 7 -->
+<section id="known360">
+<h2 class="sec">7 · 360 Known Issues — cross-referenced</h2>
+<table>
+  <tr><th>Sev.</th><th>Known 360 weak point</th><th>On this car?</th></tr>
+  <tr><td><span class="sev r"></span></td><td><strong>Cam belts / tensioner bearings</strong></td><td>Done 2009 (Hill Eng bearings) — but <strong>~17 yrs overdue now</strong>. Biggest cost.</td></tr>
+  <tr><td><span class="sev g"></span></td><td><strong>Exhaust variator failure</strong> (the notorious 360 noise/recall)</td><td><strong>Recall done 2009</strong> (Campaign 87/97). A genuine plus.</td></tr>
+  <tr><td><span class="sev a"></span></td><td><strong>F1 clutch wear</strong></td><td>~48% remaining in 2014; get a current read. Budget a clutch.</td></tr>
+  <tr><td><span class="sev a"></span></td><td><strong>Sticky/melting interior trim</strong></td><td>Not documented as repaired — <span class="pill verify">inspect dash, console, switches</span>.</td></tr>
+  <tr><td><span class="sev a"></span></td><td><strong>Injector / intake driveability</strong></td><td>Happened &amp; fixed 2014 (intake gaskets, injectors, O2). Confirm it stayed fixed.</td></tr>
+  <tr><td><span class="sev y"></span></td><td><strong>Weak A/C</strong></td><td>Compressor leak history; recharged 2023. Verify.</td></tr>
+  <tr><td><span class="sev y"></span></td><td><strong>Motor mounts collapse</strong></td><td>Noted collapsed 2009 — confirm replaced or budget it.</td></tr>
+</table>
+</section>
+
+<!-- 8 -->
+<section id="status">
+<h2 class="sec">8 · Current Status &amp; What's Due</h2>
+<div class="grid2">
+  <div class="card">
+    <h3><span class="pill done">Done / recent</span></h3>
+    <ul>
+      <li>Exhaust variator recall + OBD2 campaign (2009)</li>
+      <li>Intake gaskets, O2 sensors, injectors, ECU reprogram (2014)</li>
+      <li>Transmission mount (2011)</li>
+      <li>New Michelin tires + wheel refinish (2022)</li>
+      <li>A/C recharge w/ dye (2023)</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h3><span class="pill open">Due / to confirm</span></h3>
+    <ul>
+      <li><strong>Cam-belt service — OVERDUE</strong> (2009, ~17 yrs). $8&ndash;12k, near-certain.</li>
+      <li><strong>Clutch</strong> — ~48% in 2014; read it, budget replacement.</li>
+      <li><strong>A/C</strong> — confirm it holds charge (dye was added for a reason).</li>
+      <li><strong>Parasitic battery draw</strong> from aftermarket alarm — verify.</li>
+      <li><strong>Carfax</strong> + the 2022 repaint reconciliation.</li>
+      <li><strong>Motor mounts</strong>, CEL-free scan, books/tools/2 keys present.</li>
+    </ul>
+  </div>
+</div>
+</section>
+
+<!-- 8A -->
+<section id="deal">
+<h2 class="sec">8A · Seller, Price &amp; Red-vs-Yellow <span class="pill open">ASK $119,990</span></h2>
+<div class="card">
+  <h3>Listing</h3>
+  <ul>
+    <li><strong>Everest Motors Inc</strong>, Houston TX 77031. Asking <strong>$119,990</strong>, &ldquo;in make ready.&rdquo; 17,083 mi, Yellow/Black, McIntosh audio listed.</li>
+    <li>This is a <strong>dealer</strong> car (the long-time owner appears to have sold/consigned it). Get the full service file (you have scans) + Carfax + a PPI.</li>
+  </ul>
+</div>
+
+<h3>Valuation</h3>
+<table>
+  <tr><th>Factor</th><th>Direction</th><th>$ effect</th></tr>
+  <tr><td>US-spec sorted low-mile baseline (17k, hot market, model runs light)</td><td>start</td><td>~$90,000&ndash;95,000</td></tr>
+  <tr><td>Cam belts ~17 yrs overdue (engine-out, current rates)</td><td>&minus;&minus;</td><td>&minus;$8,000&ndash;10,000</td></tr>
+  <tr><td>Clutch (2000 unit, ~48% in ’14) — do with belts</td><td>&minus;</td><td>&minus;$2,000&ndash;3,000</td></tr>
+  <tr><td><strong>Chronic emissions/driveability history</strong> (unverified 12 yrs)</td><td>&minus;</td><td>&minus;$2,000&ndash;4,000</td></tr>
+  <tr><td>Repaint (2 bumpers + LR quarter) / not all-original</td><td>&minus;</td><td>&minus;$2,000&ndash;3,000</td></tr>
+  <tr><td>A/C dye-chase + aftermarket-alarm draw</td><td>&minus;</td><td>&minus;$1,000</td></tr>
+  <tr><td>Variator recall done, very low miles, US-spec (risk-reducers; one-owner ~0)</td><td>+</td><td>+</td></tr>
+  <tr><td><strong>= Fair buy</strong></td><td></td><td><strong>~$74,000&ndash;80,000</strong></td></tr>
+</table>
+<div class="callout amber">
+  <span class="tag">Where the number lands</span>
+  Corrected comps: a <em>sorted</em> US-spec low-mile F1 coupe is ~$90&ndash;95k today (not the stale &ldquo;$77k average&rdquo;), but this car's overdue belts, tired clutch, emissions ghost and repaint net a <strong>fair buy ~$74&ndash;80k</strong>. The <strong>$119,990 ask is ~$40&ndash;45k high</strong> — pure dealer-lot aspiration. Open high-$70s if at all; a dealer is unlikely to move $40k. <strong>Not PPI-safe to drive home</strong> (17-yr belts); trailer it.
+</div>
+
+<h3>Red (Euro) vs Yellow (US) — head to head</h3>
+<table>
+  <tr><th></th><th>🔴 Red — <code>…B…121655</code></th><th>🟡 Yellow — <code>…A2X0118611</code></th></tr>
+  <tr><td>Spec</td><td>Euro (−$3&ndash;5k, measured — not the $15k folklore)</td><td><strong>US (full value, liquid)</strong></td></tr>
+  <tr><td>Year / miles</td><td>2000/2001 · ~23,529</td><td>1999 · <strong>~17,083</strong> (lower)</td></tr>
+  <tr><td>Owners</td><td><strong>Verified one-owner</strong> (federalization titles)</td><td>3 owners (long-term 3rd)</td></tr>
+  <tr><td>Cam belts</td><td>2013 (~13 yrs)</td><td>2009 (~17 yrs) — older</td></tr>
+  <tr><td>Emissions/driveability</td><td>Clean</td><td><strong>⚠ chronic CA smog failures ’05&ndash;’14</strong></td></tr>
+  <tr><td>Variator recall</td><td>Variators done 2006/2013 (service)</td><td><strong>Recall done 2009</strong></td></tr>
+  <tr><td>Recent big-ticket done</td><td><strong>F1 pump, clutch, heat exchanger, fuel pumps</strong> — deep</td><td>Intake/O2/injectors, mounts — lighter</td></tr>
+  <tr><td>Clutch</td><td>Replaced 2006</td><td>2000 unit, ~48% in ’14 — sooner</td></tr>
+  <tr><td>Cosmetics</td><td>Front bumper + rockers repaint</td><td>2 bumpers + LR quarter repaint</td></tr>
+  <tr><td>Ask / status</td><td>$110k — <strong>Drew offered $85k</strong> (motivated private)</td><td>$119,990 (dealer lot, firm)</td></tr>
+  <tr><td>Fair buy</td><td><strong>~$78&ndash;83k</strong></td><td>~$74&ndash;80k</td></tr>
+</table>
+<div class="callout green">
+  <span class="tag">Bottom line</span>
+  The yellow is the <strong>structurally nicer car</strong> (US-spec, lower miles, variator recall done) — but it is <strong>not the better deal</strong>. US-spec is only worth ~$3&ndash;5k more (not $15k), which doesn't bridge a <strong>$35k ask gap</strong> ($120k dealer vs $85k motivated private), and the yellow carries a <strong>chronic emissions/driveability history the red doesn't</strong>. <strong>The red at $85k is the buy.</strong> The yellow only makes sense if Everest collapses to high-$70s/low-$80s <em>and</em> a PPI clears the emissions ghost — unlikely from a dealer. Both need ~$8&ndash;10k of belts immediately.
+</div>
+</section>
+
+<!-- 9 -->
+<section id="ppi">
+<h2 class="sec">9 · PPI / Verify Checklist</h2>
+<ol>
+  <li><strong>Belt-service clock</strong> — price the engine-out belt/tensioner job; it's due immediately. Use as leverage.</li>
+  <li><strong>Clutch %</strong> via Ferrari SD/Leonardo (was ~48% in 2014); plus F1 system health, no stored faults.</li>
+  <li><strong>CEL-free scan</strong> — confirm the 2014 intake/O2/injector fix held; no rich-running codes; readiness monitors set.</li>
+  <li><strong>A/C</strong> — blows cold and <em>holds</em> (dye was added in 2023 to chase a leak).</li>
+  <li><strong>Parasitic draw</strong> — check the aftermarket alarm isn't still killing the battery; consider removing it.</li>
+  <li><strong>Paint-depth gauge</strong> — front &amp; rear bumpers + left-rear quarter (documented 2022 repaint); look for bodywork behind it.</li>
+  <li><strong>Carfax</strong> — pull it; reconcile &ldquo;no accidents&rdquo; vs the quarter-panel repaint; confirm title chain CA→TX.</li>
+  <li><strong>Motor mounts</strong>, suspension boots, cam-cover oil seepage (noted 2009).</li>
+  <li><strong>Completeness</strong> — both keys + both remotes, owner's books, tool kit, McIntosh/Hi-Fi function.</li>
+</ol>
+</section>
+
+<!-- 10 -->
+<section id="cost">
+<h2 class="sec">10 · Documented Cost History</h2>
+<table>
+  <tr><th>Date</th><th>Shop</th><th>Mi</th><th>Work</th><th>Total</th></tr>
+  <tr class="moneyrow"><td>Aug 2007</td><td>Brian Crall</td><td>10,990</td><td>Chassis service, battery, airbag light; clutch 57% wear noted; trans mount flagged</td><td>$1,176.95</td></tr>
+  <tr class="moneyrow"><td>Jul 2009</td><td>Brian Crall</td><td>11,868</td><td><strong>Cam-belt service</strong> + Hill Eng tensioner bearings + accessory belts</td><td>$2,710.57</td></tr>
+  <tr class="moneyrow"><td>Aug 2009</td><td>Ferrari SF</td><td>12,791</td><td><strong>Variator recall (87/97) + OBD2 campaign (148)</strong></td><td>$0 (warranty)</td></tr>
+  <tr class="moneyrow"><td>Dec 2011</td><td>Brian Crall</td><td>13,446</td><td>15k service, misfire fix, steering-rack boot, trans mount, battery</td><td>$5,389.00</td></tr>
+  <tr class="moneyrow"><td>Feb 2014</td><td>Dino Motors</td><td>15,315</td><td>Oil service, 2 alarm/motion sensors; clutch ~48% remaining</td><td>$1,977.55</td></tr>
+  <tr class="moneyrow"><td>May 2014</td><td>Brian Crall</td><td>15,675</td><td><strong>Intake gaskets, O2 sensors, injector clean, air-flow meters, ECU reprogram</strong></td><td>$5,025.19</td></tr>
+  <tr class="moneyrow"><td>Sep 2014</td><td>Ferrari Silicon Valley</td><td>16,186</td><td>Smog ECU programming/readiness, multipoint inspection, battery test</td><td>$574.95</td></tr>
+  <tr class="moneyrow"><td>Sep 2022</td><td>MPerformance (TX)</td><td>16,778</td><td><strong>Repaint front+rear bumpers + LR quarter, refinish wheels, Michelins, oil</strong></td><td>$5,277.61</td></tr>
+  <tr class="moneyrow"><td>Jan 2023</td><td>Midas (Houston)</td><td>16,871</td><td>A/C evac &amp; recharge with dye</td><td>$314.20</td></tr>
+</table>
+<p class="src">≈ $22,400 documented across 2007&ndash;2023 (excl. warranty campaigns) — a solid file, lighter than the red car's ~$104k, and notably <strong>without a recent belt service</strong>.</p>
+</section>
+
+<!-- 11 -->
+<section id="parts">
+<h2 class="sec">11 · Parts &amp; Specs Quick Reference</h2>
+<table>
+  <tr><th>System</th><th>Spec / part seen in records</th><th>Notes</th></tr>
+  <tr><td>Engine</td><td>3.6 L F131 V8; Redline 5W-40 / Motul oils; NGK PMR8B plugs (×8)</td><td>Intake gaskets + O2 + injectors done 2014</td></tr>
+  <tr><td>Gearbox</td><td>F1 6-speed; Redline 75W-90; hydraulic oil</td><td>Clutch ~48% (2014) — read it</td></tr>
+  <tr><td>Cam belts</td><td>Timing belts + <strong>Hill Engineering tensioner bearings</strong> (PT-360)</td><td>Last 2009 — overdue</td></tr>
+  <tr><td>Variators</td><td>Exhaust variators replaced under recall 2009</td><td>Campaign 87/97 closed</td></tr>
+  <tr><td>Tires</td><td>245/45ZR18 front · 275/40ZR18 rear (Michelin, 2022)</td><td>—</td></tr>
+  <tr><td>Cooling</td><td>Coolant pressure cap, steering-rack boots; watch motor mounts</td><td>—</td></tr>
+  <tr><td>A/C</td><td>R134a; recharged w/ dye 2023</td><td>Possible slow leak</td></tr>
+  <tr><td>Electrical</td><td>Aftermarket alarm (parasitic draw); Interstate battery</td><td>Consider removing alarm</td></tr>
+</table>
+</section>
+
+<!-- 12 -->
+<section id="sources">
+<h2 class="sec">12 · Sources</h2>
+<p class="src">Compiled from documents in <code>~/Documents/Garage/360yellow/</code> (originals: <code>~/Downloads/360_2/</code>), reviewed by computer vision:</p>
+<ul class="src">
+  <li><strong>Service file</strong> — Brian Crall Company (San Ramon), Ferrari of San Francisco, Ferrari Maserati of Silicon Valley (Redwood City), Dino Motors (San Mateo), MPerformance (Conroe TX), Midas (Houston), 2007&ndash;2023; CA smog/OBD readiness reports; Ferrari North America delivery checklist (18 Jan 2000).</li>
+  <li><strong>Listing</strong> — Everest Motors Inc, Houston TX: 1999 360 Modena, Yellow/Black, 17,083 mi, $119,990, VIN ZFFYR51A2X0118611.</li>
+  <li><strong>Carfax</strong> — obtained 6/26/26 (1999, VIN ZFFYR51A2X0118611, Everest Motors): 3 owners, clean (no accidents/brands), chronic CA emissions failures ’05&ndash;’14, clutch replaced 2000. <em>Note: an earlier Carfax in the folder was for a DIFFERENT car (2003, VIN ZFFYU51A630131791, 5-owner Montana-titled) — mismatch caught and corrected.</em></li>
+</ul>
+<footer>
+  Compiled for Drew Campbell · Ferrari 360 Modena F1 (Giallo, US-spec) · VIN ZFFYR51A2X0118611 · history dossier from the service file + listing · field reference only, not factory documentation. Verify the <span class="pill verify">VERIFY</span> items (Carfax, belts, clutch %, A/C, repaint, books/keys) before purchase. Companion: the red Euro-spec 360 at <code>360modena.html</code>.
+</footer>
+</section>
+
+</main>
+</div>
+</body>
+</html>

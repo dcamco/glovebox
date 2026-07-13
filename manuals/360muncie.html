@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2003 Ferrari 360 (Giallo, US-spec) — History Dossier</title>
+<style>
+  :root{
+    --giallo:#e6b40c;--giallo-2:#b8870c;--nero:#16161a;--accent:#e6b40c;
+    --ink:#1c1c1c;--muted:#5c5c5c;--paper:#f5f2ea;--card:#fff;--line:#ded8cb;
+    --red:#9c2b22;--amber:#b5791f;--green:#2c5239;--code-bg:#16140f;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--paper);line-height:1.55;font-size:16px}
+  a{color:var(--giallo-2)}
+  .wrap{display:grid;grid-template-columns:260px 1fr;max-width:1200px;margin:0 auto}
+  nav.toc{position:sticky;top:0;align-self:start;height:100vh;overflow:auto;background:var(--nero);color:#e9e6dc;padding:24px 18px}
+  nav.toc h2{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin:18px 0 8px}
+  nav.toc h2:first-child{margin-top:0}
+  nav.toc a{display:block;color:#cfcfcf;text-decoration:none;padding:4px 6px;border-radius:5px;font-size:14px}
+  nav.toc a:hover{background:rgba(255,255,255,.08);color:#fff}
+  nav.toc .badge{font-size:11px;color:var(--nero);background:var(--accent);border-radius:10px;padding:1px 7px;font-weight:700}
+  main{padding:0 36px 80px}
+  header.hero{background:linear-gradient(135deg,var(--giallo-2),var(--nero));color:#fdf8e8;padding:40px 36px;margin:0 -36px 28px;border-bottom:4px solid var(--accent)}
+  header.hero .kicker{letter-spacing:.2em;text-transform:uppercase;font-size:12px;color:var(--accent);font-weight:700}
+  header.hero h1{margin:6px 0 4px;font-size:36px}
+  header.hero p{margin:0;color:#efe4c5;max-width:62ch}
+  header.hero .vin-strip{margin-top:18px;display:flex;flex-wrap:wrap;gap:10px}
+  header.hero .vin-strip span{background:rgba(0,0,0,.30);border:1px solid rgba(230,180,12,.5);padding:5px 12px;border-radius:6px;font-size:13px}
+  section{margin:0 0 38px;scroll-margin-top:14px}
+  h2.sec{font-size:24px;border-bottom:2px solid var(--line);padding-bottom:8px;margin:34px 0 16px;color:var(--giallo-2)}
+  h3{font-size:18px;margin:22px 0 8px;color:var(--nero)}
+  p{margin:10px 0}.lead{font-size:17px;color:var(--muted)}
+  table{border-collapse:collapse;width:100%;margin:14px 0;background:var(--card);border:1px solid var(--line);font-size:14.5px}
+  th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{background:#efe9dd;font-size:12px;letter-spacing:.05em;text-transform:uppercase;color:#4a4a4a}
+  tr:last-child td{border-bottom:none}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px 20px;margin:14px 0;box-shadow:0 1px 2px rgba(0,0,0,.04)}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  ul,ol{margin:8px 0;padding-left:22px}li{margin:4px 0}
+  code{background:#e9e3d5;padding:1px 6px;border-radius:4px;font-family:"SF Mono",Menlo,Consolas,monospace;font-size:.9em}
+  .callout{border-left:5px solid var(--accent);background:#fbf6e6;padding:12px 16px;border-radius:0 8px 8px 0;margin:14px 0}
+  .callout.red{border-color:var(--red);background:#fbefed}.callout.amber{border-color:var(--amber);background:#fbf5e8}.callout.green{border-color:var(--green);background:#eef4ee}
+  .callout .tag{font-weight:700;text-transform:uppercase;font-size:11px;letter-spacing:.08em;display:block;margin-bottom:3px}
+  .callout.red .tag{color:var(--red)}.callout.amber .tag{color:var(--amber)}.callout.green .tag{color:var(--green)}
+  .sev{display:inline-block;width:11px;height:11px;border-radius:50%;margin-right:7px;vertical-align:middle}
+  .sev.r{background:var(--red)}.sev.a{background:var(--amber)}.sev.y{background:#d4b43a}.sev.g{background:#3c8a52}
+  .pill{display:inline-block;font-size:11px;font-weight:700;padding:2px 9px;border-radius:20px;letter-spacing:.04em}
+  .pill.verify{background:#fbe9c8;color:#7a5a10;border:1px solid #e3c478}
+  .pill.done{background:#dcefe0;color:#2c5239;border:1px solid #a9cdb2}
+  .pill.open{background:#fbe0dc;color:#8a241c;border:1px solid #e0a39c}
+  .src{font-size:13px;color:var(--muted)}
+  footer{border-top:1px solid var(--line);margin-top:40px;padding-top:18px;font-size:13px;color:var(--muted)}
+  .moneyrow td:last-child{font-variant-numeric:tabular-nums;font-weight:600}
+  @media (max-width:860px){.wrap{grid-template-columns:1fr}nav.toc{position:static;height:auto}.grid2{grid-template-columns:1fr}main{padding:0 18px 60px}header.hero{margin:0 -18px 24px;padding:30px 22px}}
+  @media print{nav.toc{display:none}.wrap{display:block}header.hero{background:var(--nero)!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}a{color:var(--ink);text-decoration:none}}
+</style>
+</head>
+<body>
+<nav style="background:#15281c;padding:9px 28px;border-bottom:2px solid #c9a14a"><a href="../index.html" style="color:#c9a14a;text-decoration:none;font-weight:700;font-size:13px;letter-spacing:.08em">&larr; THE GARAGE</a></nav>
+<div class="wrap">
+
+<nav class="toc">
+  <h2>2003 360 (Muncie) Manual</h2>
+  <a href="#overview">1 · Vehicle Overview</a>
+  <a href="#bodyflag">2 · VIN / Body-Style Flag <span class="badge">!</span></a>
+  <a href="#provenance">3 · Provenance &amp; Owners</a>
+  <a href="#belts">4 · Belts &amp; Service <span class="badge">★</span></a>
+  <a href="#flags">5 · Risk Flags</a>
+  <a href="#compare">6 · 3-Way Comparison <span class="badge">$</span></a>
+  <a href="#ppi">7 · PPI &amp; Verify Checklist</a>
+  <a href="#sources">8 · Sources</a>
+</nav>
+
+<main>
+<header class="hero">
+  <div class="kicker">History Dossier · Car #3 (Carfax-only)</div>
+  <h1>2003 Ferrari 360 — Giallo, US-spec</h1>
+  <p>The third 360 in play. Yellow, US-spec, ~29k mi. <strong>The one with fresh cam belts (2024)</strong> — but also <strong>5 owners</strong>, a heavy 2024&ndash;26 dealer-flip trail, a Montana-LLC registration, and <strong>only a Carfax, no service file</strong>. Sold by a non-specialist Toyota dealer in Indiana.</p>
+  <div class="vin-strip">
+    <span>🟡 Giallo / Nero</span>
+    <span>🏎 3.6L V8 · F1</span>
+    <span>🇺🇸 US-spec (VIN-A)</span>
+    <span>🧾 ZFFYU51A630131791</span>
+    <span>🛞 ~29,262 mi</span>
+    <span>👥 5 owners</span>
+  </div>
+</header>
+
+<div class="callout">
+  <span class="tag">How to read this</span>
+  This dossier is built from the <strong>CARFAX only</strong> (no itemized service records exist for this car yet) plus the Toyota of Muncie listing. That's a much thinner evidentiary base than the red car (<code>360modena.html</code>) or the other yellow car (<code>360yellow.html</code>), both of which have deep paper trails. Treat everything as <span class="pill verify">VERIFY</span> until a PPI and real records confirm it.
+</div>
+
+<!-- 1 -->
+<section id="overview">
+<h2 class="sec">1 · Vehicle Overview</h2>
+<table>
+  <tr><th>Item</th><th>Detail</th></tr>
+  <tr><td>Model / year</td><td><strong>2003</strong> Ferrari 360 (listed as Modena Berlinetta) · <strong>F1</strong> gearbox</td></tr>
+  <tr><td>VIN</td><td><code>ZFFYU51A630131791</code> — <strong>confirmed Modena coupe</strong> (§2: ZFFYU51 = later-MY coupe code; 132 coupes / 0 Spiders in the DB). Position 8 = <strong>A = US-spec</strong>.</td></tr>
+  <tr><td>Color</td><td><strong>Giallo Modena</strong> (yellow) / Nero — &ldquo;Yellow&rdquo; on every FL title record since new</td></tr>
+  <tr><td>Mileage</td><td><strong>29,262 mi</strong> (5/2026) — the highest-mileage of the three 360s, still low overall</td></tr>
+  <tr><td>Title</td><td>Clean — no accident/total-loss/structural/airbag/salvage/rollback/recall flags (CARFAX)</td></tr>
+  <tr><td>Seller / ask</td><td><strong>Toyota of Muncie</strong>, Muncie IN — a non-Ferrari dealer. <strong>Asking $103,878</strong> (lowest of the three, but ~$20k above defensible value — see §6).</td></tr>
+</table>
+</section>
+
+<!-- 2 -->
+<section id="bodyflag">
+<h2 class="sec">2 · VIN / Body-Style — RESOLVED <span class="pill done">COUPE</span></h2>
+<div class="callout green">
+  <span class="tag">It's a coupe — the earlier &ldquo;Spider?&rdquo; flag was wrong</span>
+  An earlier draft flagged <code>ZFF<strong>YU</strong>51</code> as a possible Spider code. <strong>Incorrect.</strong> Checked against the sold-comp database: <code>ZFFYU51</code> appears on <strong>132 Modena coupes and zero Spiders</strong> — it's simply the <em>later-model-year</em> coupe code (early coupes are <code>ZFFYR51</code>). The 360 <strong>Spider is <code>ZFFYT53</code></strong> (15 in the DB). Same prefix as the black BaT Modena coupe just tracked. <strong>This is a Modena coupe, exactly as listed — no body-style problem.</strong>
+</div>
+</section>
+
+<!-- 3 -->
+<section id="provenance">
+<h2 class="sec">3 · Provenance &amp; Ownership</h2>
+<p class="lead">A long, quiet Florida life followed by a frantic two-year run through the dealer/flipper circuit — the opposite shape from the other two cars' single-owner histories.</p>
+<table>
+  <tr><th>Owner</th><th>Years</th><th>Where</th><th>Notes</th></tr>
+  <tr><td>1 (Corporate)</td><td>2003</td><td>Miami, FL</td><td>Sold new by <strong>The Collection</strong>, Coral Gables (premier FL Ferrari dealer). 98 mi.</td></tr>
+  <tr><td>2 (Personal)</td><td>2003&ndash;04</td><td>Miami, FL</td><td>Key reprogrammed; lien reported.</td></tr>
+  <tr><td>3 (Personal)</td><td>2004&ndash;2021</td><td>Miami / Ft. Lauderdale, FL</td><td><strong>~17 years, one owner.</strong> Serviced at The Collection (A/C, belts-era fluids). ~5.4k mi by 2006; ~20.5k by 2021 (very low use).</td></tr>
+  <tr><td>4 (Personal)</td><td>2021&ndash;2024</td><td>Hollywood, FL</td><td>Bought at 20,530 mi; ~7k mi in 3 yrs.</td></tr>
+  <tr><td>—</td><td>2024</td><td>MO → FL → GA</td><td><strong>Flip chain:</strong> RP Exotics (St. Louis) → Porsche Naples → White Glove Exotic (MO) → Ferrari/Maserati of Atlanta → Enzo's Automotive (GA).</td></tr>
+  <tr><td>5 (Personal)</td><td>2026</td><td>Anaconda, <strong>Montana</strong></td><td><strong>Montana-LLC registration</strong> (a sales-tax-avoidance domicile, common for flippers) — held ~1 month.</td></tr>
+  <tr><td>Now</td><td>2026</td><td>Muncie, <strong>Indiana</strong></td><td>At Toyota of Muncie; dealer-prep oil change &amp; A/C check 6/2026.</td></tr>
+</table>
+<div class="callout amber">
+  <span class="tag">Read on provenance</span>
+  The FL years (owners 1&ndash;3) are clean and stable. The concern is <strong>2024&ndash;2026</strong>: at least four dealers/flippers in two years, a Montana-LLC pass-through, and now a <strong>Toyota store in Indiana</strong> that doesn't specialize in Ferraris. Cars that bounce that fast through wholesale hands are often <em>chasing a problem or a margin</em>. With <strong>no service file</strong> behind it, you're buying on the Carfax and the PPI alone.
+</div>
+</section>
+
+<!-- 4 -->
+<section id="belts">
+<h2 class="sec">4 · Belts &amp; Service <span class="pill done">BELTS FRESH (2024)</span></h2>
+<p class="lead">This car's single biggest advantage over the other two: the cam-belt clock was reset recently.</p>
+<table>
+  <tr><th>Date</th><th>Mi</th><th>Service (per CARFAX)</th></tr>
+  <tr><td>2003&ndash;06</td><td>→5,423</td><td>The Collection (FL): PDI, A/C, brake fluid, diff &amp; PS fluid, oil — proper early care.</td></tr>
+  <tr><td>04/2024</td><td>27,636</td><td><strong>Carketa mechanical inspection</strong> (at the flip).</td></tr>
+  <tr><td>08/2024</td><td>28,918</td><td>Ferrari/Maserati of Atlanta — brakes checked.</td></tr>
+  <tr><td><strong>09/25/2024</strong></td><td><strong>28,924</strong></td><td><strong>Timing belt replaced</strong> + serpentine belt + coolant flush (Enzo's Automotive, Marietta GA).</td></tr>
+  <tr><td>06/2026</td><td>29,262</td><td>Toyota of Muncie — oil &amp; filter, A/C/heat check (dealer sale prep).</td></tr>
+</table>
+<div class="callout green">
+  <span class="tag">Belts: the differentiator</span>
+  <strong>Belts done 09/2024, ~340 miles ago.</strong> Unlike the red car (2013) and the other yellow car (2009), this one does <strong>not</strong> carry a near-term ~$8&ndash;12k belt bill. <span class="pill verify">BUT verify it was a proper Ferrari belt service</span> — &ldquo;timing belt replaced&rdquo; at a general independent (Enzo's) should also cover <strong>variators, tensioner bearings, and seals</strong>, done the correct (engine-out or factory) way. Get the actual Enzo's invoice; a half-done belt job is worse than none.
+</div>
+</section>
+
+<!-- 5 -->
+<section id="flags">
+<h2 class="sec">5 · Risk Flags</h2>
+<table>
+  <tr><th>Sev.</th><th>Flag</th><th>Detail</th></tr>
+  <tr><td><span class="sev g"></span></td><td>Body style — resolved</td><td>DB-confirmed <strong>coupe</strong> (ZFFYU51 = 132 coupes/0 Spiders); the earlier Spider flag was wrong.</td></tr>
+  <tr><td><span class="sev a"></span></td><td><strong>5 owners + flip churn</strong></td><td>4+ dealers in 2024&ndash;26; Montana LLC; non-specialist seller. Buying blind on records.</td></tr>
+  <tr><td><span class="sev a"></span></td><td><strong>Failed emissions</strong></td><td>Missouri, 07/30/2024 — <em>passed safety, FAILED emissions.</em> Could be readiness monitors / a CEL / cats. Verify it now passes &amp; is CEL-free.</td></tr>
+  <tr><td><span class="sev a"></span></td><td>No service file</td><td>Only the CARFAX exists; no itemized history like the other two cars. Higher unknowns.</td></tr>
+  <tr><td><span class="sev y"></span></td><td>Belt-job quality</td><td>Done at a general indie — confirm variators/tensioners/seals included (§4).</td></tr>
+  <tr><td><span class="sev g"></span></td><td>Clean title</td><td>No accident/structural/salvage/rollback/recall flags — a genuine positive.</td></tr>
+  <tr><td><span class="sev g"></span></td><td>US-spec</td><td>VIN-A — no Euro discount, fully liquid.</td></tr>
+</table>
+</section>
+
+<!-- 6 -->
+<section id="compare">
+<h2 class="sec">6 · Three-Way Comparison</h2>
+<table>
+  <tr><th></th><th>🔴 Red Euro</th><th>🟡 Yellow US (Houston)</th><th>🟡 2003 (Muncie)</th></tr>
+  <tr><td>VIN</td><td>…B…121655</td><td>…A2X0118611</td><td>…<strong>U</strong>51A…131791</td></tr>
+  <tr><td>Year / miles</td><td>’00 · 23,529</td><td>’99 · 17,083</td><td>’03 · 29,262</td></tr>
+  <tr><td>Spec</td><td>Euro (−$3&ndash;5k, measured)</td><td>US</td><td>US</td></tr>
+  <tr><td>Body</td><td>Coupe</td><td>Coupe</td><td><strong>Coupe ✓ (DB-confirmed)</strong></td></tr>
+  <tr><td>Owners</td><td><strong>1 (verified)</strong></td><td>3 (long 3rd)</td><td><strong>5</strong></td></tr>
+  <tr><td><strong>Cam belts</strong></td><td>2013 (~13 yr ⚠)</td><td>2009 (~17 yr ⚠)</td><td><strong>2024 ✓ fresh</strong></td></tr>
+  <tr><td>Records</td><td>Deep ($104k file)</td><td>Deep (specialist file)</td><td><strong>Carfax only</strong></td></tr>
+  <tr><td>Big mechanicals done</td><td>F1 pump, clutch, heat exch, fuel pumps</td><td>Variator recall, intake/O2/injectors</td><td>Belts; brakes checked</td></tr>
+  <tr><td>Watch-outs</td><td>Euro resale; belts due</td><td>Belts due; A/C; driveability</td><td>5 owners, flip churn, failed emissions, no file</td></tr>
+  <tr><td>Ask / status</td><td>$110k → <strong>$100k offered to Drew</strong></td><td>$119,990</td><td><strong>$103,878</strong></td></tr>
+  <tr><td>Defensible (fair buy)</td><td>~$78&ndash;83k</td><td>~$74&ndash;80k</td><td><strong>~$78&ndash;85k</strong> (coupe ✓, if belts done right)</td></tr>
+  <tr><td>All-in incl. belts</td><td>~$88&ndash;93k</td><td>~$83&ndash;90k</td><td><strong>~$78&ndash;85k (belts already done)</strong></td></tr>
+</table>
+<div class="callout amber">
+  <span class="tag">Offer math vs the $103k ask</span>
+  Realized F1-coupe market averages ~$77k; excellent <em>low-mile</em> US cars reach ~$90&ndash;100k. This is <strong>not</strong> an excellent-low-mile car — 29k mi, <strong>5 owners</strong>, flip churn, failed emissions, no service file — so it belongs <em>at or below</em> the ~$77k average, then add back the <strong>~$8&ndash;10k of fresh belts</strong> ⇒ defensible <strong>~$75&ndash;85k</strong>. The $103k ask is <strong>~$20&ndash;28k high</strong>. A non-specialist Toyota dealer likely bought it cheap at auction and has room. <strong>Open ~$76&ndash;78k, target ~$82k, ceiling ~$85k</strong> — contingent on a clean PPI, the Enzo's belt invoice, an emissions pass, and confirmation it's a coupe. Below ~$85k it's competitive on an all-in basis with the others (no belt bill); above $90k, walk.
+</div>
+<div class="callout green">
+  <span class="tag">Where this one fits</span>
+  Its <strong>one real edge is fresh belts</strong> (saves you the ~$10k the other two need). But it's the <strong>weakest on provenance</strong> — 5 owners, rapid flips, a Montana LLC, a failed emissions test, and <em>no service file</em> — and it's the highest-mileage. Net: it's only the pick if (a) it's confirmed a coupe, (b) the 2024 belt job is documented and complete, (c) it passes a clean PPI / emissions, <em>and</em> the price is well under the other two. On documentation and confidence, the red and the Houston-yellow cars are stronger. <strong>The flip churn + thin records make this the highest-risk of the three.</strong>
+</div>
+</section>
+
+<!-- 7 -->
+<section id="ppi">
+<h2 class="sec">7 · PPI / Verify Checklist</h2>
+<ol>
+  <li><strong>Body style</strong> — coupe vs Spider, from photos / build sheet (§2). Everything else is moot until this is settled.</li>
+  <li><strong>The 2024 belt job</strong> — get Enzo's Automotive invoice; confirm variators + tensioner bearings + seals, done correctly.</li>
+  <li><strong>Emissions / CEL</strong> — it failed MO emissions 7/2024; confirm it now passes, readiness monitors set, no stored codes, cats healthy.</li>
+  <li><strong>Full PPI at a Ferrari specialist</strong> — this is the car that most needs one, given the thin paper trail. Clutch %, F1 health, leaks, suspension.</li>
+  <li><strong>Title</strong> — confirm clean IN/MT title transfers cleanly; understand the Montana-LLC link.</li>
+  <li><strong>Get the real asking price</strong> from Toyota of Muncie; aggregator prices conflict.</li>
+  <li><strong>Books, tools, both keys/remotes</strong> — often missing on multi-flip cars.</li>
+  <li><strong>Why so many hands?</strong> — ask the dealer the story; cross-check the Carketa inspection report (4/2024).</li>
+</ol>
+</section>
+
+<!-- 8 -->
+<section id="sources">
+<h2 class="sec">8 · Sources</h2>
+<ul class="src">
+  <li><strong>CARFAX</strong> for VIN ZFFYU51A630131791, pulled 6/26/26 by Toyota of Muncie (10 service records, 47 detailed records, 5 owners) — <code>~/Documents/Garage/360muncie/</code>.</li>
+  <li><strong>Listing</strong> — Toyota of Muncie, Muncie IN (dynamic page; price unconfirmed).</li>
+  <li>No itemized service file exists for this car (Carfax-only).</li>
+</ul>
+<footer>
+  Compiled for Drew Campbell · 2003 Ferrari 360 (Giallo, US-spec) · VIN ZFFYU51A630131791 · <strong>Carfax-only</strong> dossier — thinner basis than the other two 360s; verify body style, the 2024 belt job, emissions, and price before acting. Companions: <code>360modena.html</code> (red Euro), <code>360yellow.html</code> (yellow US).
+</footer>
+</section>
+
+</main>
+</div>
+</body>
+</html>

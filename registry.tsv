@@ -12,3 +12,8 @@ lazarus	1995 Range Rover Classic County LWB "Lazarus" (4.6/5.1 stroker, Megajolt
 rrc88	1988 Range Rover Classic	/Users/drewcampbell/glovebox/manuals/rrc88.html	\b88\b|1988|88 range|88 rrc|88 classic|88 county|early classic
 911sc	1980 Porsche 911 SC	/Users/drewcampbell/glovebox/manuals/911sc.html	porsche|\b911\b|911 ?sc|1980 911|carrera tensioner|\b915\b	91a0140115
 308gtsi	1982 Ferrari 308 GTSi	/Users/drewcampbell/glovebox/manuals/308gtsi.html	ferrari|\b308\b|308 ?gts|gtsi|1982 ferrari	zffaa02a7c0039245
+360modena	Ferrari 360 Modena F1 (Euro-spec, Rosso Corsa/Nero) — red keeper, bought 1 Jul 2026 @ $100k	/Users/drewcampbell/glovebox/manuals/360modena.html	\b360\b|360 ?modena|f360|red euro	zffyr51b000121655
+# NOTE: 360modena.html is now an OWNED vehicle (registered above; purchased 1 Jul 2026 @ $100k) — its
+# dossier holds owner/history + the belt-service price reference. The OTHER two 360 dossiers
+# (360yellow.html, 360muncie.html) remain PURCHASE CANDIDATES — NOT owned, deliberately NOT registered
+# so the garage-router doesn't misfire "owned vehicle" on buy-side analysis.

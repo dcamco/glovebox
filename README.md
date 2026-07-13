@@ -12,7 +12,7 @@ load the right car's manual whenever I talk about one of my cars.
 ## Layout
 ```
 glovebox/
-├── dashboard.html        # landing page over all owned cars (open in a browser)
+├── index.html        # landing page over all owned cars (open in a browser)
 ├── manuals/              # one HTML manual per car
 │   ├── lazarus.html      #   1995 Range Rover Classic County LWB "Lazarus"
 │   ├── rrc88.html        #   1988 Range Rover Classic (skeleton)
@@ -37,6 +37,6 @@ Invoices/records are kept **outside this repo** at `~/Documents/Garage/<id>/` (p
 ## Add a car
 1. Create `manuals/<id>.html` (copy an existing manual's structure).
 2. Add a line to `registry.tsv` with a `model_regex` that won't collide with the other cars.
-3. (Optional) add a card to `dashboard.html` and a `~/Documents/Garage/<id>/` folder for its records.
+3. (Optional) add a card to `index.html` and a `~/Documents/Garage/<id>/` folder for its records.
 
 No code changes needed.
