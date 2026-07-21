@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Closing Line — Issue 001</title>
+<style>
+  :root{--ink:#1b1b1f;--muted:#5a5a60;--paper:#f4f1e8;--card:#fff;--line:#ddd8ca;
+        --accent:#9c2b22;--gold:#b8860b;--green:#2c5239;}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:Georgia,'Times New Roman',serif;color:var(--ink);background:var(--paper);line-height:1.65;font-size:17px}
+  header{background:#16161a;color:#f2efe6;padding:38px 24px 30px;text-align:center;border-bottom:4px solid var(--accent)}
+  .masthead{font-size:40px;letter-spacing:.02em;margin:0;font-weight:700}
+  .masthead .tick{color:var(--accent)}
+  .tagline{color:#b9b2a2;font-size:15px;margin-top:6px;font-style:italic}
+  .issue{margin-top:14px;font-family:-apple-system,Helvetica,sans-serif;font-size:12px;letter-spacing:.25em;text-transform:uppercase;color:var(--gold)}
+  main{max-width:720px;margin:0 auto;padding:34px 22px 60px}
+  h2{font-size:26px;margin:44px 0 10px;line-height:1.25}
+  h2:first-of-type{margin-top:8px}
+  .kicker{font-family:-apple-system,Helvetica,sans-serif;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);font-weight:700}
+  p{margin:14px 0}
+  .lede{font-size:19px}
+  table{width:100%;border-collapse:collapse;margin:18px 0;font-family:-apple-system,Helvetica,sans-serif;font-size:14px;background:var(--card)}
+  th{background:#16161a;color:#f2efe6;text-align:left;padding:8px 10px;font-weight:600}
+  td{padding:8px 10px;border-bottom:1px solid var(--line)}
+  tr:last-child td{border-bottom:none}
+  .num{text-align:right;font-variant-numeric:tabular-nums}
+  .win{color:var(--green);font-weight:700}
+  .callout{background:var(--card);border-left:4px solid var(--gold);padding:14px 18px;margin:22px 0;font-size:16px}
+  .miss{border-left-color:var(--accent)}
+  .footer-note{margin-top:52px;padding-top:18px;border-top:1px solid var(--line);font-size:13.5px;color:var(--muted);font-family:-apple-system,Helvetica,sans-serif;line-height:1.6}
+  .sig{margin-top:30px;font-style:italic;color:var(--muted)}
+  @media(max-width:560px){body{font-size:16px}.masthead{font-size:30px}}
+</style>
+</head>
+<body>
+<header>
+  <h1 class="masthead">The Closing Line<span class="tick">.</span></h1>
+  <div class="tagline">Graded forecasts from the collector-car futures market</div>
+  <div class="issue">Issue 001 &nbsp;·&nbsp; July 21, 2026</div>
+</header>
+<main>
+
+<div class="kicker">This week</div>
+<h2>The Week the Paperwork Got Paid</h2>
+
+<p class="lede">A 1979 Porsche 911SC — no low miles, no rare spec, no build — hammered for
+<strong>$131,000</strong> on Bring a Trailer last Monday. Our model said $73,500 and it wasn't
+being timid; that was already a premium over the comps. The car's entire case was six words in
+the title: <em>43-Years-Family-Owned</em>. The market paid roughly double spec-sheet value for
+provenance you could verify.</p>
+
+<p>It wasn't a one-off. The same seven days: a 1,300-mile F355 GTS did <strong>$355,000</strong>
+against our $188k line (we were 47% light and we'll own it below). A 27-years-family-owned 308
+QV cleared 11% over its median. A 21k-mile S2000 went 67% over. Meanwhile the <em>ordinary</em>
+examples — no story, no paper — went begging: a no-history 911SC targa died at a $51,000 high
+bid, a 38k-mile 550 Maranello printed 11% <em>under</em> median, and dealer asks across the
+modern-Ferrari board took another week of price cuts.</p>
+
+<div class="callout">
+<strong>The read:</strong> this market has bifurcated into two currencies — documentation and
+everything else. Cars that can <em>prove</em> their story (receipts, ownership chains, invoices
+naming the scary jobs) are printing 30–100% over model. Cars that merely <em>claim</em> one are
+clearing at spec-sheet value or not at all. The spread between a documented car and its
+undocumented twin has never been wider, and it is measurable to the dollar — see below.
+</div>
+
+<div class="kicker">Case study</div>
+<h2>Four Forecasts, One Silver Ferrari</h2>
+
+<p>Last Sunday a 16k-mile Euro-spec 2001 Ferrari 360 Modena F1 — Argento Nurburgring over blue,
+a polarizing combo — closed on BaT. Ten minutes before the hammer it sat at $83,000 and looked
+dead. Thirty minutes of extension sniping later it sold for <strong>$115,000</strong>.</p>
+
+<p>We had four forecasts on the books, all locked before the ending — including a
+comment-informed re-forecast made at 3:50 that morning by a model that is <em>never shown the
+current bid</em> (it reprices on news, not on price; the bid is recorded separately purely to
+audit that discipline).</p>
+
+<table>
+<tr><th>Forecaster</th><th class="num">Line</th><th class="num">Error vs $115,000</th></tr>
+<tr><td>Comment-informed closing line (masked)</td><td class="num">$113,000</td><td class="num win">1.7%</td></tr>
+<tr><td>AI listing-read (locked at discovery)</td><td class="num">$112,500</td><td class="num">2.2%</td></tr>
+<tr><td>Deterministic comp model</td><td class="num">$111,948</td><td class="num">2.7%</td></tr>
+<tr><td>Human (logged 3 days prior)</td><td class="num">$120,000</td><td class="num">4.3%</td></tr>
+</table>
+
+<p>Three lessons out of one hammer. First: <strong>the Euro discount is dead</strong> — a
+Euro-spec car with a fumbled service question in its thread just cleared what US cars cleared
+in spring. Second: <strong>color is not a discount, it's a variance-widener.</strong> This car
+drew 7 bidders where red equivalents draw 15–18; thin pools don't lower every outcome, they
+make the outcome depend on who shows up. Sunday, the right two people showed up. Third: a
+thin ladder at T-minus-10 is not a thin pool. Snipers wait. They always wait.</p>
+
+<div class="kicker">Accountability corner</div>
+<h2>What We Got Wrong (Graded in Public)</h2>
+
+<p>Publishing only wins is marketing; grading everything is a method. The recent tape, both
+directions:</p>
+
+<table>
+<tr><th>Lot</th><th class="num">Our line</th><th class="num">Result</th><th class="num">Error</th></tr>
+<tr><td>43k-mile F430 Spider</td><td class="num">$122,000</td><td class="num">$123,000</td><td class="num win">0.8%</td></tr>
+<tr><td>JDM 35k-km 550 Maranello</td><td class="num">$204,000</td><td class="num">$199,000</td><td class="num win">2.5%</td></tr>
+<tr><td>50k-mile E46 M3 6-speed</td><td class="num">$44,500</td><td class="num">$44,000</td><td class="num win">1.1%</td></tr>
+<tr><td>1999 Viper GTS</td><td class="num">$61,000</td><td class="num">$62,000</td><td class="num win">1.6%</td></tr>
+<tr><td>1,300-mile F355 GTS</td><td class="num">$192,000</td><td class="num">$355,000</td><td class="num">46% low</td></tr>
+<tr><td>43-yr-family 911SC</td><td class="num">$78,000</td><td class="num">$131,000</td><td class="num">40% low</td></tr>
+<tr><td>'87 Range Rover (comment re-forecast)</td><td class="num">$44,000</td><td class="num">$26,750</td><td class="num">64% high</td></tr>
+</table>
+
+<div class="callout miss">
+<strong>The pattern in our misses is the story of the market:</strong> the models are surgical
+on ordinary cars (five of the last ten graded calls landed inside 3%) and structurally blind to
+<em>story premiums</em> — the family-provenance, time-capsule, last-of-its-kind lots where the
+crowd pays for something no spec sheet carries. We've shipped one calibration fix (anchoring
+trophy candidates to the top of each model's real price distribution, which cut the worst
+errors roughly in half in backtest) and the next issue will grade it live. The '87 Range Rover
+teaches the opposite lesson: comment-thread enthusiasm about an <em>ordinary</em> car is not a
+trophy signal. The crowd loved that truck right up to 40% below our excited re-forecast.
+</div>
+
+<div class="kicker">The ladder</div>
+<h2>What Three Pedals Are Worth: the Gated-360 Hierarchy, Priced</h2>
+
+<p>Over ten days the market priced every rung of the Ferrari 360 transmission ladder in public
+— a natural experiment we may never see run this cleanly again:</p>
+
+<table>
+<tr><th>Configuration</th><th class="num">Market evidence</th></tr>
+<tr><td>Factory 6-speed, documented</td><td class="num">$245k–$302k sold (spring prints); two live lots bid $230k+ this week</td></tr>
+<tr><td>Gated <em>conversion</em>, documented installer</td><td class="num">~$170k (best prints, both venues)</td></tr>
+<tr><td>Gated conversion, <strong>unknown installer</strong></td><td class="num">bid to $114k — reserve not met</td></tr>
+<tr><td>F1 (as built), sorted</td><td class="num">$109k–$115k sold</td></tr>
+</table>
+
+<p>Read the middle rows twice. The market paid essentially <em>nothing</em> for a conversion it
+couldn't verify — $114k is F1-coupe money — while attributed conversions carry a ~$60k premium
+over the same car with paddles. On a $25–30k conversion, <strong>the paperwork is worth more
+than the parts.</strong> The lot that proved it had no installer of record, no answer to
+"did the gearbox come out," and a single fresh belt invoice against 27 years of unknown; the
+thread noticed, and the bidding stopped a tier short of the reserve. In this market, invoices
+are a powertrain component.</p>
+
+<div class="kicker">Next issue</div>
+<h2>The Five-360 Census</h2>
+
+<p>As we publish, <strong>five</strong> Ferrari 360s are live on BaT simultaneously — three
+factory gated cars, a conversion, and a low-mile F1 coupe. That's not a coincidence; it's a
+supply response to the spring repricing, and it's the first real stress test of whether the
+gated premium survives competition for the same deep-pocketed pool. All five are on the books
+with locked forecasts. Next issue grades every one — including whether the third gated car in
+line finds the room exhausted. If you want to know what a market top looks like, it looks like
+everyone deciding to sell at once.</p>
+
+<div class="sig">— dcamco</div>
+
+<div class="footer-note">
+<strong>Method:</strong> all prices are hammer (seller-side) unless stated — buyers pay a
+premium on top (5% capped at $7,500 on BaT), which means published results systematically
+understate willingness-to-pay by ~5%. Forecasts are locked before outcomes and graded after;
+comment-informed re-forecasts never see the current bid. Data: ~14,000 auction results across
+five sources, refreshed nightly.<br><br>
+<strong>Disclosure:</strong> the author owns collector cars, including an F1-gearbox Ferrari
+360, and trades in this market. Positions inform, and are informed by, these models. Forecasts
+are published <em>after</em> the lots settle; nothing here is investment advice, an appraisal,
+or a solicitation. Auction data referenced is publicly available on the respective platforms.<br><br>
+<em>The Closing Line is an experiment. If you read this far, issue 002 depends on you —
+feedback to the usual channels.</em>
+</div>
+
+</main>
+</body>
+</html>
