@@ -3,188 +3,150 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>The Garage — Drew's Owned Vehicles</title>
-<style>
-  :root{
-    --ink:#1c1c1c;--muted:#5c5c5c;--paper:#ece9e1;--card:#fff;--line:#d9d4c7;
-    --brc:#1f3d2b;--pc:#16161a;--fc:#7c0a02;--lr:#3a4a3f;
-    --accent:#c9a14a;--red:#9c2b22;--amber:#b5791f;--green:#2c5239;--blue:#2f4170;
-  }
-  *{box-sizing:border-box}
-  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--paper);line-height:1.5}
-  header.top{background:linear-gradient(135deg,#15281c,#26412e);color:#f2efe6;padding:30px 28px;border-bottom:4px solid var(--accent)}
-  header.top .wrap{max-width:1080px;margin:0 auto}
-  .kicker{letter-spacing:.22em;text-transform:uppercase;font-size:12px;color:var(--accent);font-weight:700}
-  header.top h1{margin:6px 0 2px;font-size:30px}
-  header.top p{margin:0;color:#cdd6cd;font-size:14px}
-  .stats{display:flex;gap:10px;margin-top:16px;flex-wrap:wrap}
-  .stats .s{background:rgba(255,255,255,.07);border:1px solid rgba(201,161,74,.35);border-radius:8px;padding:7px 14px;font-size:13px}
-  .stats .s b{font-size:18px;display:block;color:#fff}
-  main{max-width:1080px;margin:0 auto;padding:24px 28px 70px}
-  .grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-  @media(max-width:760px){.grid{grid-template-columns:1fr}}
-  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.06);display:flex;flex-direction:column}
-  .card .bar{height:8px}
-  .card .body{padding:16px 18px 18px;display:flex;flex-direction:column;flex:1}
-  .card h2{margin:0 0 2px;font-size:19px}
-  .card .sub{color:var(--muted);font-size:13px;margin-bottom:10px}
-  .specs{font-size:13.5px;border-top:1px solid var(--line);margin-top:4px}
-  .specs div{display:flex;justify-content:space-between;gap:10px;padding:4px 0;border-bottom:1px dashed #eee}
-  .specs div span:first-child{color:var(--muted)}
-  .specs div span:last-child{text-align:right;font-weight:600}
-  .pills{margin:10px 0 4px;display:flex;flex-wrap:wrap;gap:6px}
-  .pill{font-size:11px;font-weight:700;padding:2px 9px;border-radius:20px;letter-spacing:.02em}
-  .pill.open{background:#fbe0dc;color:#8a241c;border:1px solid #e0a39c}
-  .pill.ok{background:#dcefe0;color:#2c5239;border:1px solid #a9cdb2}
-  .pill.draft{background:#fbe9c8;color:#7a5a10;border:1px solid #e3c478}
-  .pill.info{background:#e6ecf7;color:#2f4170;border:1px solid #b9c6e0}
-  .flag{font-size:13px;background:#fbefed;border-left:4px solid var(--red);padding:7px 11px;border-radius:0 6px 6px 0;margin:10px 0 0}
-  .flag.amber{background:#fbf5e8;border-color:var(--amber)}
-  .flag.green{background:#eef4ee;border-color:var(--green)}
-  .actions{margin-top:auto;padding-top:14px;display:flex;gap:8px;flex-wrap:wrap}
-  .btn{text-decoration:none;font-size:13px;font-weight:600;padding:7px 13px;border-radius:8px;border:1px solid var(--line)}
-  .btn.primary{background:var(--brc);color:#fff;border-color:var(--brc)}
-  .btn.ghost{background:#f4f2ea;color:var(--ink)}
-  footer{max-width:1080px;margin:0 auto;padding:0 28px 50px;color:var(--muted);font-size:12.5px}
-</style>
+<title>Glovebox · The Garage</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/glovebox.css">
+<style>.hero::after{content:"G"}</style>
 </head>
 <body>
-<header class="top">
+
+<div class="mast"><div class="wrap">
+  <a class="brand" href="index.html">Glovebox</a>
+  <nav><a href="#collection">The Collection</a></nav>
+</div></div>
+
+<header class="hero index">
   <div class="wrap">
-    <div class="kicker">The Garage</div>
-    <h1>Drew's Owned Vehicles</h1>
-    <p>Single landing page for the cars I own — specs, status, and links to each manual.</p>
-    <div class="stats">
-      <div class="s"><b>5</b> vehicles</div>
-      <div class="s"><b>2</b> keepers</div>
-      <div class="s"><b>2</b> sale prep</div>
-      <div class="s"><b>1</b> open issue</div>
+    <div class="label">Private Garage · Records &amp; Provenance</div>
+    <h1>The <em>Collection</em></h1>
+    <p class="sub">Specification, service history and current condition for each vehicle, kept to auction-file standard.</p>
+    <div class="tally">
+      <div><b>5</b><span>Vehicles</span></div>
+      <div><b>2</b><span>Keepers</span></div>
+      <div><b>2</b><span>Sale preparation</span></div>
+      <div><b>2</b><span>Open matters</span></div>
     </div>
   </div>
 </header>
 
-<main>
-<div class="grid">
+<main class="wrap" id="collection">
+<div class="lots">
 
-  <!-- 360 MODENA -->
-  <div class="card">
-    <div class="bar" style="background:linear-gradient(90deg,#7c0a02,#16161a)"></div>
-    <div class="body">
-      <h2>2000 Ferrari 360 Modena F1</h2>
-      <div class="sub">Coupe · Rosso Corsa / Nero · Euro-spec (federalized) · &ldquo;the keeper&rdquo;</div>
-      <div class="pills">
-        <span class="pill ok">OWNED · Jul 2026</span>
-        <span class="pill open">belt major BOOKED</span>
-        <span class="pill info">CS TCU incoming</span>
-      </div>
-      <div class="specs">
-        <div><span>VIN</span><span>ZFFYR51B000121655</span></div>
-        <div><span>Engine</span><span>3.6 V8 · ~395 hp · F1</span></div>
-        <div><span>Mileage</span><span>23,529 (genuine)</span></div>
-        <div><span>Service trail</span><span>~$104.5k documented</span></div>
-      </div>
-      <div class="flag green">One-owner Euro car, delivered 12 Jul 2026. Next: H&amp;S belt major incl. variators, cam cover gaskets &amp; valve timing ($13,500 all-in), Challenge Stradale TCU install, PS4S tires.</div>
-      <div class="actions">
-        <a class="btn primary" href="manuals/360modena.html">Open manual</a>
-      </div>
+  <article class="lot">
+    <div class="no">No. 01</div>
+    <div>
+      <div class="yr">2000 · Ferrari</div>
+      <h2><a href="manuals/360modena.html">360 Modena F1</a></h2>
+      <p class="desc">Rosso Corsa over Nero. European specification, federalised. The keeper.</p>
+      <dl>
+        <div><dt>VIN</dt><dd class="vin">ZFFYR51B000121655</dd></div>
+        <div><dt>Engine</dt><dd>3.6 L V8, F1</dd></div>
+        <div><dt>Mileage</dt><dd>23,529</dd></div>
+        <div><dt>Documented</dt><dd>~$104,500</dd></div>
+      </dl>
     </div>
-  </div>
+    <aside>
+      <span class="st due">Booked</span>
+      <p>One owner; delivered 12 July 2026. Next: belt major at H&amp;S including variators, cam-cover gaskets and valve timing ($13,500 all-in), Challenge Stradale TCU, Michelin PS4S.</p>
+      <a class="open-link" href="manuals/360modena.html">View record</a>
+    </aside>
+  </article>
 
-  <!-- 308 GTSi -->
-  <div class="card">
-    <div class="bar" style="background:#7c0a02"></div>
-    <div class="body">
-      <h2>1982 Ferrari 308 GTSi</h2>
-      <div class="sub">Targa · Rosso Corsa / Nero</div>
-      <div class="pills">
-        <span class="pill ok">cam belts DONE</span>
-        <span class="pill info">ex-Lougheed</span>
-      </div>
-      <div class="specs">
-        <div><span>VIN</span><span>ZFFAA02A7C0039245</span></div>
-        <div><span>Engine</span><span>2.9 V8 · K-Jet · 5-spd</span></div>
-        <div><span>Mileage</span><span>43,616</span></div>
-      </div>
-      <div class="flag green">30K major service done 25 Sep 2024 @ 43,142 (Moorespeed RO 15665, $23,271 — receipt on file). Accessory belts + A/C due now; cam belts Sep 2027 (shop spec).</div>
-      <div class="actions">
-        <a class="btn primary" href="manuals/308gtsi.html">Open manual</a>
-      </div>
+  <article class="lot">
+    <div class="no">No. 02</div>
+    <div>
+      <div class="yr">1982 · Ferrari</div>
+      <h2><a href="manuals/308gtsi.html">308 GTSi</a></h2>
+      <p class="desc">Rosso Corsa over Nero, Targa. Ex-Scott Lougheed Collection.</p>
+      <dl>
+        <div><dt>VIN</dt><dd class="vin">ZFFAA02A7C0039245</dd></div>
+        <div><dt>Engine</dt><dd>2.9 L V8, K-Jet</dd></div>
+        <div><dt>Mileage</dt><dd>43,616</dd></div>
+        <div><dt>Last major</dt><dd>Sep 2024</dd></div>
+      </dl>
     </div>
-  </div>
+    <aside>
+      <span class="st open">Attention</span>
+      <p>Coolant weep at the water-pump end, under investigation. 30,000-mile major completed 25 September 2024 at 43,142 miles (Moorespeed RO 15665, $23,271). Accessory belts and A/C due; cam belts September 2027.</p>
+      <a class="open-link" href="manuals/308gtsi.html">View record</a>
+    </aside>
+  </article>
 
-  <!-- 911SC -->
-  <div class="card">
-    <div class="bar" style="background:#16161a"></div>
-    <div class="body">
-      <h2>1980 Porsche 911 SC</h2>
-      <div class="sub">Coupe · Black Metallic / Champagne · Type 915 5-speed</div>
-      <div class="pills">
-        <span class="pill ok">tensioner UPDATED ✓</span>
-        <span class="pill ok">27 receipts filed</span>
-        <span class="pill draft">SALE PREP</span>
-      </div>
-      <div class="specs">
-        <div><span>VIN</span><span>91A0140115</span></div>
-        <div><span>Engine</span><span>3.0 flat-six · 172 hp · K-Jet</span></div>
-        <div><span>Gearbox</span><span>915 5-speed</span></div>
-        <div><span>Mileage</span><span>~156k (documented ladder)</span></div>
-      </div>
-      <div class="flag green">2022 engine-out top-end fully documented ($9,581 invoice): head studs replaced, valves done, UPDATED chain tensioner. Odometer ladder 1995&rarr;2023 on file. Remaining: leak-down, PPS, pro photos.</div>
-      <div class="actions">
-        <a class="btn primary" href="manuals/911sc.html">Open manual</a>
-      </div>
+  <article class="lot">
+    <div class="no">No. 03</div>
+    <div>
+      <div class="yr">1980 · Porsche</div>
+      <h2><a href="manuals/911sc.html">911 SC Coupé</a></h2>
+      <p class="desc">Black Metallic over Champagne. Type 915 five-speed.</p>
+      <dl>
+        <div><dt>VIN</dt><dd class="vin">91A0140115</dd></div>
+        <div><dt>Engine</dt><dd>3.0 L flat-six, 172 hp</dd></div>
+        <div><dt>Mileage</dt><dd>~156,000</dd></div>
+        <div><dt>Receipts</dt><dd>27 on file</dd></div>
+      </dl>
     </div>
-  </div>
+    <aside>
+      <span class="st note">Sale preparation</span>
+      <p>2022 engine-out top end fully documented ($9,581): head studs, valves, updated chain tensioner. Odometer ladder 1995–2023 on file. Remaining: leak-down, PPS, professional photography.</p>
+      <a class="open-link" href="manuals/911sc.html">View record</a>
+    </aside>
+  </article>
 
-  <!-- LAZARUS — 95 RRC LWB -->
-  <div class="card">
-    <div class="bar" style="background:#1f3d2b"></div>
-    <div class="body">
-      <h2>1995 Range Rover Classic County LWB</h2>
-      <div class="sub">&ldquo;Lazarus&rdquo; · British Racing Green</div>
-      <div class="pills">
-        <span class="pill open">HOT NO-START · OPEN</span>
-        <span class="pill info">5.1 stroker build</span>
-      </div>
-      <div class="specs">
-        <div><span>Engine</span><span>4.6 / 5.1 stroker · Megajolt DIS</span></div>
-        <div><span>Drivetrain</span><span>ARB lockers F&amp;R · EAS</span></div>
-        <div><span>Mileage</span><span>~300k (chassis)</span></div>
-      </div>
-      <div class="flag">Active: heat-gated hot no-start — leading suspect the VR crank-signal chain (manual §5A). Next: hot spark test.</div>
-      <div class="actions">
-        <a class="btn primary" href="manuals/lazarus.html">Open manual</a>
-      </div>
+  <article class="lot">
+    <div class="no">No. 04</div>
+    <div>
+      <div class="yr">1995 · Land Rover</div>
+      <h2><a href="manuals/lazarus.html">Range Rover County LWB <em>“Lazarus”</em></a></h2>
+      <p class="desc">British Racing Green. 5.1 stroker, Megajolt DIS, ARB lockers front and rear, EAS.</p>
+      <dl>
+        <div><dt>Engine</dt><dd>4.6 / 5.1 stroker</dd></div>
+        <div><dt>Ignition</dt><dd>Megajolt DIS</dd></div>
+        <div><dt>Drivetrain</dt><dd>ARB F&amp;R · EAS</dd></div>
+        <div><dt>Chassis</dt><dd>~300,000 mi</dd></div>
+      </dl>
     </div>
-  </div>
+    <aside>
+      <span class="st open">Open</span>
+      <p>Heat-related hot no-start. Leading suspect is the VR crank-signal chain. Next: hot spark test.</p>
+      <a class="open-link" href="manuals/lazarus.html">View record</a>
+    </aside>
+  </article>
 
-  <!-- 88 RRC -->
-  <div class="card">
-    <div class="bar" style="background:#3a4a3f"></div>
-    <div class="body">
-      <h2>1988 Range Rover Classic</h2>
-      <div class="sub">4-door SWB · coils (pre-EAS) · a separate truck from Lazarus</div>
-      <div class="pills">
-        <span class="pill info">~43k owner-stated</span>
-        <span class="pill draft">SALE PREP</span>
-      </div>
-      <div class="specs">
-        <div><span>Engine</span><span>3.5 V8 EFI (stock)</span></div>
-        <div><span>Suspension</span><span>Coil-sprung</span></div>
-        <div><span>Mileage</span><span>~43,000 (verify via records)</span></div>
-      </div>
-      <div class="flag amber">Prep before listing (after the SC): verify the 43k with records, confirm head-gasket status, treat the rust spot. Records are what convert 43k from owner-stated to verified — the entire value thesis.</div>
-      <div class="actions">
-        <a class="btn primary" href="manuals/rrc88.html">Open manual</a>
-      </div>
+  <article class="lot">
+    <div class="no">No. 05</div>
+    <div>
+      <div class="yr">1988 · Land Rover</div>
+      <h2><a href="manuals/rrc88.html">Range Rover Classic</a></h2>
+      <p class="desc">Four-door, coil-sprung, pre-EAS. Original 3.5 V8.</p>
+      <dl>
+        <div><dt>Engine</dt><dd>3.5 L V8 EFI</dd></div>
+        <div><dt>Suspension</dt><dd>Coil springs</dd></div>
+        <div><dt>Mileage</dt><dd>~43,000 stated</dd></div>
+        <div><dt>Status</dt><dd>Pre-listing</dd></div>
+      </dl>
     </div>
-  </div>
+    <aside>
+      <span class="st note">Sale preparation</span>
+      <p>To list after the 911. Verify the 43,000 miles against records, which is the whole value case. Confirm head-gasket status; treat the rust spot.</p>
+      <a class="open-link" href="manuals/rrc88.html">View record</a>
+    </aside>
+  </article>
 
 </div>
 </main>
 
-<footer>
-  Garage dashboard · static index over the per-car manuals. Vehicles &amp; routing defined in <code>registry.tsv</code>. Open a manual for full build / history / maintenance detail.
+<footer class="colophon">
+  <div class="wrap">
+    <div>
+      <div class="brand">Glovebox</div>
+      <p>Private vehicle records, maintained by the owner.</p>
+    </div>
+    <div>
+      <p>Each record collects specification, provenance, invoices and open matters for one vehicle. Vehicles and routing are defined in <span class="src">registry.tsv</span>.</p>
+    </div>
+  </div>
 </footer>
 </body>
 </html>

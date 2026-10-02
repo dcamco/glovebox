@@ -3,525 +3,688 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Ferrari 360 Modena F1 — Owner's Manual &amp; History</title>
-<style>
-  :root{
-    --rosso:#7c0a02;        /* Rosso Corsa */
-    --rosso-2:#9c1409;
-    --nero:#16161a;
-    --accent:#d4af37;        /* giallo / gold */
-    --ink:#1c1c1c;
-    --muted:#5c5c5c;
-    --paper:#f4f1ea;
-    --card:#ffffff;
-    --line:#ded8cb;
-    --red:#9c2b22;
-    --amber:#b5791f;
-    --green:#2c5239;
-    --code-bg:#16100f;
-  }
-  *{box-sizing:border-box}
-  html{scroll-behavior:smooth}
-  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--paper);line-height:1.55;font-size:16px}
-  a{color:var(--rosso-2)}
-  .wrap{display:grid;grid-template-columns:260px 1fr;max-width:1200px;margin:0 auto}
-  nav.toc{position:sticky;top:0;align-self:start;height:100vh;overflow:auto;background:var(--nero);color:#e9e6dc;padding:24px 18px}
-  nav.toc h2{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin:18px 0 8px}
-  nav.toc h2:first-child{margin-top:0}
-  nav.toc a{display:block;color:#cfcfcf;text-decoration:none;padding:4px 6px;border-radius:5px;font-size:14px}
-  nav.toc a:hover{background:rgba(255,255,255,.08);color:#fff}
-  nav.toc .badge{font-size:11px;color:var(--nero);background:var(--accent);border-radius:10px;padding:1px 7px;font-weight:700}
-  main{padding:0 36px 80px}
-  header.hero{background:linear-gradient(135deg,var(--rosso),var(--nero));color:#f3f1e8;padding:40px 36px;margin:0 -36px 28px;border-bottom:4px solid var(--accent)}
-  header.hero .kicker{letter-spacing:.2em;text-transform:uppercase;font-size:12px;color:var(--accent);font-weight:700}
-  header.hero h1{margin:6px 0 4px;font-size:38px;letter-spacing:.01em}
-  header.hero p{margin:0;color:#e7d9d7;max-width:62ch}
-  header.hero .vin-strip{margin-top:18px;display:flex;flex-wrap:wrap;gap:10px}
-  header.hero .vin-strip span{background:rgba(0,0,0,.28);border:1px solid rgba(212,175,55,.45);padding:5px 12px;border-radius:6px;font-size:13px}
-  section{margin:0 0 38px;scroll-margin-top:14px}
-  h2.sec{font-size:24px;border-bottom:2px solid var(--line);padding-bottom:8px;margin:34px 0 16px;color:var(--rosso)}
-  h3{font-size:18px;margin:22px 0 8px;color:var(--nero)}
-  p{margin:10px 0}
-  .lead{font-size:17px;color:var(--muted)}
-  table{border-collapse:collapse;width:100%;margin:14px 0;background:var(--card);border:1px solid var(--line);font-size:14.5px}
-  th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}
-  th{background:#efe9dd;font-size:12px;letter-spacing:.05em;text-transform:uppercase;color:#4a4a4a}
-  tr:last-child td{border-bottom:none}
-  .card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px 20px;margin:14px 0;box-shadow:0 1px 2px rgba(0,0,0,.04)}
-  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-  ul,ol{margin:8px 0;padding-left:22px}
-  li{margin:4px 0}
-  code{background:#e9e3d5;padding:1px 6px;border-radius:4px;font-family:"SF Mono",Menlo,Consolas,monospace;font-size:.9em}
-  pre{background:var(--code-bg);color:#f0d9b5;padding:16px 18px;border-radius:10px;overflow:auto;font-family:"SF Mono",Menlo,Consolas,monospace;font-size:13px;line-height:1.5}
-  pre .c{color:#caa46a}
-  .callout{border-left:5px solid var(--accent);background:#fbf7ea;padding:12px 16px;border-radius:0 8px 8px 0;margin:14px 0}
-  .callout.red{border-color:var(--red);background:#fbefed}
-  .callout.amber{border-color:var(--amber);background:#fbf5e8}
-  .callout.green{border-color:var(--green);background:#eef4ee}
-  .callout .tag{font-weight:700;text-transform:uppercase;font-size:11px;letter-spacing:.08em;display:block;margin-bottom:3px}
-  .callout.red .tag{color:var(--red)} .callout.amber .tag{color:var(--amber)} .callout.green .tag{color:var(--green)}
-  .sev{display:inline-block;width:11px;height:11px;border-radius:50%;margin-right:7px;vertical-align:middle}
-  .sev.r{background:var(--red)} .sev.a{background:var(--amber)} .sev.y{background:#d4b43a} .sev.g{background:#3c8a52}
-  .pill{display:inline-block;font-size:11px;font-weight:700;padding:2px 9px;border-radius:20px;letter-spacing:.04em}
-  .pill.verify{background:#fbe9c8;color:#7a5a10;border:1px solid #e3c478}
-  .pill.done{background:#dcefe0;color:#2c5239;border:1px solid #a9cdb2}
-  .pill.open{background:#fbe0dc;color:#8a241c;border:1px solid #e0a39c}
-  .src{font-size:13px;color:var(--muted)}
-  footer{border-top:1px solid var(--line);margin-top:40px;padding-top:18px;font-size:13px;color:var(--muted)}
-  .who{display:inline-block;font-size:12px;font-weight:700;padding:1px 7px;border-radius:5px;margin-right:4px}
-  .who.cf{background:#e6ecf7;color:#2f4170}        /* Carfax */
-  .who.sf{background:#f7e6e4;color:#7c0a02}        /* Service file */
-  .who.ph{background:#eef4ee;color:#2c5239}        /* Photo */
-  .moneyrow td:last-child{font-variant-numeric:tabular-nums;font-weight:600}
-  @media (max-width:860px){
-    .wrap{grid-template-columns:1fr}
-    nav.toc{position:static;height:auto}
-    .grid2{grid-template-columns:1fr}
-    main{padding:0 18px 60px}
-    header.hero{margin:0 -18px 24px;padding:30px 22px}
-  }
-  @media print{
-    nav.toc{display:none} .wrap{display:block} header.hero{background:var(--rosso)!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
-    a{color:var(--ink);text-decoration:none}
-  }
-</style>
+<title>Ferrari 360 Modena F1 · Chassis 121655</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/glovebox.css">
+<style>.hero::after{content:"360"}</style>
 </head>
 <body>
-<nav style="background:#15281c;padding:9px 28px;border-bottom:2px solid #c9a14a"><a href="../index.html" style="color:#c9a14a;text-decoration:none;font-weight:700;font-size:13px;letter-spacing:.08em">&larr; THE GARAGE</a></nav>
-<div class="wrap">
 
-<nav class="toc">
-  <h2>360 Modena Manual</h2>
-  <a href="#overview">1 · Vehicle Overview</a>
-  <a href="#provenance">2 · Provenance &amp; Timeline</a>
-  <a href="#euro">3 · The Euro-Spec Question <span class="badge">!</span></a>
-  <a href="#mileage">4 · Mileage &amp; Title</a>
-  <a href="#belts">5 · Major-Service History <span class="badge">★</span></a>
-  <a href="#recurring">6 · Recurring Systems Log</a>
-  <a href="#known360">7 · 360 Known Issues</a>
-  <a href="#status">8 · Current Status / What's Due</a>
-  <a href="#deal">8A · Seller &amp; Valuation <span class="badge">$</span></a>
-  <h2>Buying / Service</h2>
-  <a href="#ppi">9 · PPI &amp; Verify Checklist</a>
-  <a href="#cost">10 · Documented Cost History</a>
-  <a href="#parts">11 · Parts &amp; Specs Reference</a>
-  <a href="#sources">12 · Sources</a>
-</nav>
+<div class="mast"><div class="wrap">
+  <a class="brand" href="../index.html">Glovebox</a>
+  <nav><a href="../index.html">The Garage</a><a href="#history">Service History</a></nav>
+</div></div>
 
-<main>
 <header class="hero">
-  <div class="kicker">Owner's Reference &amp; History Dossier</div>
-  <h1>Ferrari 360 Modena F1</h1>
-  <p>Rosso Corsa over Nero · 3.6 V8 · F1 paddle-shift · <strong>Euro-spec, US-federalized</strong>. A genuinely low-mileage (~23.5k mi) car with an unusually deep paper trail: a <strong>verified single long-term owner</strong> and over $104,000 in documented Ferrari service across 2005&ndash;2020.</p>
-  <div class="vin-strip">
-    <span>🔴 Rosso Corsa / Nero</span>
-    <span>🏎 3.6L V8 · ~395 hp</span>
-    <span>⚙ F1 automated manual</span>
-    <span>🇪🇺 Euro-spec (federalized)</span>
-    <span>🧾 VIN ZFFYR51B000121655</span>
-    <span>📍 Clean TX title</span>
+  <div class="wrap">
+    <div class="label">Vehicle Record · Chassis 121655</div>
+    <h1>2000 Ferrari <em>360 Modena F1</em></h1>
+    <p class="sub">Rosso Corsa over Nero. A European-market car, federalised for the United States in 2001, with one long-term owner.</p>
+    <dl class="plate">
+      <div><dt>VIN</dt><dd class="vin">ZFFYR51B000121655</dd></div>
+      <div><dt>Engine</dt><dd>3.6 L V8</dd></div>
+      <div><dt>Gearbox</dt><dd>F1, six-speed</dd></div>
+      <div><dt>Odometer</dt><dd class="num">23,529 mi</dd></div>
+      <div><dt>Acquired</dt><dd class="num">Jul 2026</dd></div>
+      <div><dt>Title</dt><dd>Texas, clean</dd></div>
+    </dl>
   </div>
 </header>
 
-<div class="callout green">
-  <span class="tag" style="color:var(--green)">✅ OWNED &mdash; purchased 1 Jul 2026 for $100,000 (wired)</span>
-  Drew <strong>bought this car</strong> (via Mario / &ldquo;the doctor,&rdquo; Houston) at <strong>$100k</strong> &mdash; his keeper. The buy-side analysis further down (&sect; &ldquo;Adjusted valuation,&rdquo; the $85k offer framework, PPI-contingencies) is now <strong>HISTORICAL</strong> &mdash; kept for reference but <em>superseded by the actual $100k purchase</em>. Live focus now: the overdue belt service + sorting (&sect;5), priced against <strong>real local shop numbers</strong> (The Garagisti, Houston, Sep 2025 &mdash; see the price-reference table in &sect;5).
-</div>
+<nav class="rail" aria-label="Sections"><div class="wrap">
+  <a href="#condition"><span class="r">i</span>Condition</a>
+  <a href="#specification"><span class="r">ii</span>Specification</a>
+  <a href="#provenance"><span class="r">iii</span>Provenance</a>
+  <a href="#history"><span class="r">iv</span>Service History</a>
+  <a href="#model-notes"><span class="r">v</span>Model Notes</a>
+  <a href="#works"><span class="r">vi</span>Works</a>
+  <a href="#conversion"><span class="r">vii</span>Conversion</a>
+  <a href="#acquisition"><span class="r">viii</span>Acquisition</a>
+  <a href="#reference"><span class="r">ix</span>Reference</a>
+  <a href="#agenda"><span class="r">x</span>Agenda</a>
+</div></nav>
 
-<div class="callout">
-  <span class="tag">How to read this manual</span>
-  Every fact is tagged to its source &mdash; <span class="who cf">CARFAX</span> = the 6/12/26 CARFAX report, <span class="who sf">SERVICE FILE</span> = the stack of itemized Ferrari repair orders (a Harlingen, TX independent, phone 956-423-4233, 2005&ndash;2020), <span class="who ph">PHOTO</span> = the odometer / dealer-invoice photos. Items marked <span class="pill verify">VERIFY</span> are inferred or unconfirmed and should be checked on the car or against the title. This is a field/history reference compiled from documents, <em>not</em> factory documentation or a substitute for a hands-on PPI.
-</div>
+<main class="wrap">
 
-<!-- 1 -->
-<section id="overview">
-<h2 class="sec">1 · Vehicle Overview</h2>
-<table>
-  <tr><th>Item</th><th>Detail</th><th>Source</th></tr>
-  <tr><td>Model</td><td>Ferrari <strong>360 Modena</strong> (Berlinetta / coupe), <strong>F1</strong> automated-manual gearbox</td><td><span class="who sf">SF</span> (&ldquo;360 MOD F1&rdquo;)</td></tr>
-  <tr><td>VIN</td><td><code>ZFFYR51B000121655</code> &mdash; ZFF Ferrari · YR51 = 360 Modena · serial 121655</td><td>Both</td></tr>
-  <tr><td>Color</td><td><strong>Rosso Corsa</strong> red exterior / <strong>Nero</strong> black leather (&ldquo;RED/BLACK&rdquo; on every RO)</td><td>Both</td></tr>
-  <tr><td>Engine</td><td>3.6 L <strong>F131</strong> 40-valve V8, ~395&ndash;400 hp @ 8,500 rpm (factory)</td><td>Spec</td></tr>
-  <tr><td>Transmission</td><td>6-speed <strong>F1</strong> electro-hydraulic paddle shift (not the gated manual)</td><td><span class="who sf">SF</span></td></tr>
-  <tr><td>Model year</td><td>TX DMV / shop records tag it <strong>2000</strong>; Ferrari records show a prod/in-service date of <strong>19 Oct 2001</strong>. Treat as a <strong>2000&ndash;2001 MY</strong> car &mdash; <span class="pill verify">VERIFY on title</span></td><td>Both</td></tr>
-  <tr><td>Market spec</td><td><strong>European-market car, federalized for US</strong> (see §3). Stated outright on the ROs: &ldquo;THIS IS A EURO SPECS CAR.&rdquo;</td><td><span class="who sf">SF</span></td></tr>
-  <tr><td>Odometer (current)</td><td><strong>23,529 mi</strong> (dash photo + 5 Jun 2026 Ferrari of San Antonio invoice)</td><td><span class="who ph">PHOTO</span></td></tr>
-  <tr><td>Title</td><td>Clean Texas title; <strong>no</strong> salvage/junk/rebuilt/flood/lemon brands, no total loss, no odometer rollback</td><td><span class="who cf">CARFAX</span></td></tr>
-</table>
+<section id="condition" class="summary">
+  <div>
+    <span class="st open">Open</span>
+    <div class="v">Title and tax unfiled</div>
+    <p>Thirty-day window lapsed 30 July 2026. Approximately $6,250 tax plus late penalties.</p>
+  </div>
+  <div>
+    <span class="st due">Due</span>
+    <div class="v">Tyres, age-expired</div>
+    <p>To be replaced, with alignment, at the H&amp;S conversion visit. Civil driving only until then.</p>
+  </div>
+  <div>
+    <span class="st note">Committed</span>
+    <div class="v">Gated conversion</div>
+    <p>Modena Lucerna kit, installed by H&amp;S. $17k all-in. Committed 13 August 2026.</p>
+  </div>
+  <div>
+    <span class="st ok">Paid</span>
+    <div class="v">Major service, H&amp;S</div>
+    <p>$13,500 all-in, paid by Zelle 17 July 2026. Itemised invoice to follow.</p>
+  </div>
 </section>
 
-<!-- 2 -->
-<section id="provenance">
-<h2 class="sec">2 · Provenance &amp; Ownership Timeline</h2>
-<p class="lead">A clean, geographically-stable history: imported new-ish to Florida, then a 20-year life in deep South Texas with what reads as one devoted long-term owner, before entering the dealer market in 2026.</p>
-<table>
-  <tr><th>Date</th><th>Mi</th><th>Event</th></tr>
-  <tr><td>13 Jun 2001</td><td>&mdash;</td><td>Vehicle <strong>imported to the United States</strong> via Miami, FL (US DOT)</td></tr>
-  <tr><td>11 Oct 2001</td><td>&mdash;</td><td>Declared to meet US safety specs; <strong>DOT bond released</strong> &mdash; i.e. federalization completed</td></tr>
-  <tr><td>Oct&ndash;Nov 2001</td><td>~1,537</td><td>First <strong>Florida</strong> title &amp; registration (Fort Lauderdale → Miami); noted as a <strong>personal lease</strong> vehicle, color Red</td></tr>
-  <tr><td>Aug&ndash;Dec 2002</td><td>~2,900&ndash;3,900</td><td>Moves to <strong>Texas</strong> (Dallas / Hurst) &mdash; emissions/safety inspections</td></tr>
-  <tr><td>Jan 2003</td><td>~3,900</td><td><strong>New owner</strong>, Fort Worth, TX (title #057514&hellip;)</td></tr>
-  <tr><td>Aug 2004</td><td>5,152</td><td>Title moves to <strong>Harlingen, TX</strong> (Rio Grande Valley) &mdash; title #05720938&hellip;<strong>145</strong></td></tr>
-  <tr><td>2004 → 2022</td><td>5,152 → 21,871</td><td><strong>~18 years on one continuous Harlingen title</strong> (#&hellip;145), annual TX safety/emissions inspections every year. Reads as a single long-term owner.</td></tr>
-  <tr><td>2026</td><td>23,529</td><td>Surfaces in the dealer market: <strong>CARFAX pulled by Audi Dominion (San Antonio)</strong> 6/12/26; <strong>Ferrari of San Antonio</strong> RO 17055 on 5 Jun 26 (mileage correction); a Houston party (&ldquo;EDP&rdquo;) appears on that invoice.</td></tr>
-</table>
-<div class="callout green">
-  <span class="tag">Read on provenance</span>
-  Two decades on one Texas title in one town, inspected every single year, serviced at one Ferrari specialist with itemized receipts &mdash; this is about as traceable as a 25-year-old gray-market Ferrari gets. <strong>VERIFIED one-owner</strong> (confirmed Jun 2026): the multiple early titles were the <strong>federalization paper trail</strong>, not ownership changes &mdash; a Florida company issued a placeholder &ldquo;lease&rdquo; title while DOT/EPA federalization was sorted, then it re-titled on the move to Texas. The 2026 &ldquo;EDP Houston&rdquo; / Mario activity is a <strong>broker/consignment</strong> for that one owner, <em>not</em> a flip (my earlier read). Still: collect the <em>original</em> Harlingen RO stack (you hold 13 scans) + the federalization docs + the title chain to confirm one name throughout.
-</div>
+<section id="specification" class="chapter">
+  <header>
+    <div class="roman">ii.</div>
+    <h2>Specification</h2>
+    <p>From the service file, the CARFAX report and photographs. The source is noted against each line.</p>
+  </header>
+  <div>
+    <p class="lead">Acquired by the owner on 1 July 2026 for $100,000, wired, through Mario A. Ortiz III of Houston, acting for “the doctor”. Held as a keeper.</p>
+    <div class="t"><table class="spec">
+      <tr><td>Model</td><td>Ferrari 360 Modena Berlinetta (coupé), F1 automated-manual gearbox <span class="src">Service file, “360 MOD F1”</span></td></tr>
+      <tr><td>VIN</td><td class="num">ZFFYR51B000121655 <span class="src">CARFAX · Service file</span><small>ZFF, Ferrari · YR51, 360 Modena · serial 121655. The eighth character, B, denotes European specification.</small></td></tr>
+      <tr><td>Model year</td><td>2000, confirmed by the owner on 20 August 2026 against Texas DMV and shop records <span class="src">Owner · CARFAX · Service file</span><small>Ferrari’s production / in-service date of 19 October 2001 is not a contradiction: it is the warranty in-service clock, started on completion of federalisation (DOT bond released 11 October 2001; in-service 19 October 2001). Final step: sight “2000” on the title when in hand.</small></td></tr>
+      <tr><td>Market</td><td>European-market car, federalised for the United States. Stated on the repair orders: “THIS IS A EURO SPECS CAR.” <span class="src">Service file</span></td></tr>
+      <tr><td>Engine</td><td>3.6 L F131 40-valve V8, approx. 395–400 hp at 8,500 rpm (factory) <span class="src">Specification</span></td></tr>
+      <tr><td>Transmission</td><td>Six-speed F1 electro-hydraulic paddle shift, as delivered. Gated six-speed conversion committed 13 August 2026: Modena Lucerna kit, H&amp;S install (chapter vii). F1 components to be boxed and retained for reversibility. <span class="src">Service file · Owner</span><small>To be updated when the conversion is verified complete on the car.</small></td></tr>
+      <tr><td>Exterior</td><td>Rosso Corsa <span class="src">CARFAX · Service file</span></td></tr>
+      <tr><td>Interior</td><td>Nero leather. “RED/BLACK” on every repair order.</td></tr>
+      <tr><td>Instruments</td><td>mph primary, km/h secondary; not a km-only car <span class="src">Photograph</span></td></tr>
+      <tr><td>Odometer</td><td class="num">23,529 mi <span class="src">Photograph</span><small>Dash photograph, and the Ferrari of San Antonio invoice of 5 June 2026.</small></td></tr>
+      <tr><td>Tyres</td><td>215/45ZR18 front · 275/40ZR18 rear. Pirelli, fitted 2020 per the repair order.</td></tr>
+      <tr><td>Title</td><td>Clean Texas title. No salvage, junk, rebuilt, flood or lemon brand; no total loss; no odometer rollback. <span class="src">CARFAX</span></td></tr>
+    </table></div>
+
+    <h3>Reading this record</h3>
+    <dl class="inv">
+      <dt>CARFAX</dt><dd>The CARFAX report of 6/12/26.</dd>
+      <dt>Service file</dt><dd>The itemised Ferrari repair orders from a Harlingen, Texas independent, 2005–2020. Shop name unknown: the 13 repair orders are letterhead-less CDK/ADP dealer-management printouts carrying no business name, logo or address. The number 956-423-4233, previously logged as the shop’s, is the customer’s home phone on the repair orders (prior owner M. G. Bassett) and is not to be treated as the shop’s.</dd>
+      <dt>Photograph</dt><dd>The odometer and dealer-invoice photographs.</dd>
+      <dt>Verify</dt><dd>Inferred or unconfirmed; to be checked on the car or against the title.</dd>
+    </dl>
+    <p class="aside">A field and history reference compiled from documents. Not factory documentation, and not a substitute for a hands-on inspection.</p>
+  </div>
 </section>
 
-<!-- 3 -->
-<section id="euro">
-<h2 class="sec">3 · The Euro-Spec Question <span class="pill open">VALUATION FLAG</span></h2>
-<p class="lead">This is the single most important thing to understand about this specific car. It is a <strong>European-market 360 that was federalized and imported into the US in 2001</strong> &mdash; not a US-delivery car.</p>
-<table>
-  <tr><th>Evidence</th><th>Detail</th></tr>
-  <tr><td><strong>VIN tells you</strong></td><td>Position 8 of the VIN is the spec marker: <strong>A = US, B = Euro</strong>. This car is <code>ZFFYR51<strong>B</strong></code> &mdash; <strong>definitively Euro-spec</strong>. (A US-delivery 360 would read <code>ZFFYR51A</code>.)</td></tr>
-  <tr><td>Stated on the ROs</td><td>Multiple invoices say verbatim <strong>&ldquo;THIS IS A EURO SPECS CAR&rdquo;</strong> / &ldquo;THIS CAR HAS EURO SPECS&rdquo; (2008, 2014).</td></tr>
-  <tr><td>Import trail</td><td>CARFAX: <em>imported via Miami 6/2001</em> + <em>&ldquo;declared to meet US highway safety specifications, Bond released&rdquo;</em> 10/2001 &mdash; the classic registered-importer / DOT-bond federalization sequence.</td></tr>
-  <tr><td>Alarm behavior</td><td>RO note: <strong>&ldquo;vehicle is European which does not allow for beeping of the siren&rdquo;</strong> when arming/disarming (2020).</td></tr>
-  <tr><td>Inspection quirks</td><td>Shop had to &ldquo;drive car to get readiness codes for state inspection&rdquo; (2008) &mdash; typical of a federalized ECU/emissions setup.</td></tr>
-</table>
-<div class="callout amber">
-  <span class="tag">What it means for you</span>
-  <ul style="margin:6px 0">
-    <li><strong>Value:</strong> the market discount for a Euro-spec 360 is well-documented at roughly <strong>~$15k under a comparable US car</strong> (FerrariChat consensus) &mdash; partly regulatory, partly because some dealers won't service Euro cars (different software/parts from Europe), which narrows resale. Price it accordingly &mdash; this is leverage in negotiation, not a dealbreaker.</li>
-    <li><strong>It IS properly federalized &amp; registerable</strong> &mdash; it has passed TX safety/emissions inspection annually for ~20 years, so the import paperwork worked. Still, <strong>get the federalization / DOT-RI documents</strong> and confirm they transfer cleanly with the title.</li>
-    <li><strong>Practical differences:</strong> alarm doesn't chirp; lighting and some emissions hardware are Euro-pattern; instrument cluster reads <strong>mph primary with km/h secondary</strong> (confirmed in the odometer photo &mdash; good, it's not a km-only car).</li>
-    <li><strong>Parts:</strong> mechanicals are identical to a US 360; only a handful of emissions/lighting/alarm bits differ.</li>
-  </ul>
-</div>
+<section id="provenance" class="chapter">
+  <header>
+    <div class="roman">iii.</div>
+    <h2>Provenance</h2>
+    <p>Ownership, import and title. The completeness of the records is qualified first.</p>
+  </header>
+  <div>
+    <div class="note open">
+      <span class="label">Records provenance · disclosed by the owner, 24 July 2026</span>
+      <p>The original paper trail was destroyed. Per Mario: “the doctor’s wife threw out ALL records on this car.” The service history in this record is therefore not a complete history. It is a partial reconstruction rebuilt from a single source: what Mario could pull from Ferrari of Houston’s service database after the fact.</p>
+      <ul class="prose">
+        <li><strong>The record is single-shop-blind.</strong> Work at any other dealer, at an independent, or by the owner is invisible. The Harlingen repair orders held may themselves be an incomplete slice of the car’s life.</li>
+        <li><strong>“No record of” is weak evidence, by construction.</strong> Absence of a record does not imply the work was not done. This downgrades every “never done” inference here, most importantly the conclusion that the F1 TCU map was never updated (chapters iv, v): it is unknown, not established.</li>
+        <li><strong>The SD3/Leonardo read at the H&amp;S service is the definitive source</strong> for current state: clutch wear %, TCU software revision, stored faults. Trust the scan, not the file. Photograph every SD3 page.</li>
+      </ul>
+      <p>The hard facts are unaffected: the VIN and European specification, the CARFAX title and mileage chain, and the repair orders physically held record events that did happen. What is undermined is completeness, and any reasoning from silence.</p>
+    </div>
+
+    <h3>Ownership Timeline</h3>
+    <p class="lead">Imported through Florida, then some twenty years in South Texas with one long-term owner, before entering the dealer market in 2026.</p>
+    <div class="t"><table>
+      <tr><th>Date</th><th class="r">Miles</th><th>Event</th></tr>
+      <tr><td>13 Jun 2001</td><td class="r">—</td><td>Imported to the United States through Miami, Florida (US DOT)</td></tr>
+      <tr><td>11 Oct 2001</td><td class="r">—</td><td>Declared to meet US safety specifications; DOT bond released, completing federalisation. Ferrari’s in-service date follows eight days later, 19 Oct 2001: the warranty clock starting after federalisation on this 2000 model-year car, which resolves the apparent import-before-production paradox.</td></tr>
+      <tr><td>Oct–Nov 2001</td><td class="r">~1,537</td><td>First Florida title and registration, Fort Lauderdale then Miami. Noted as a personal lease vehicle, colour Red.</td></tr>
+      <tr><td>Aug–Dec 2002</td><td class="r">~2,900–3,900</td><td>To Texas (Dallas, Hurst). Emissions and safety inspections.</td></tr>
+      <tr><td>Jan 2003</td><td class="r">~3,900</td><td>New title, Fort Worth, Texas (title no. 057514…)</td></tr>
+      <tr><td>Aug 2004</td><td class="r">5,152</td><td>Title to Harlingen, Texas, in the Rio Grande Valley (title no. 05720938…145)</td></tr>
+      <tr><td>2004 → 2022</td><td class="r">5,152 → 21,871</td><td>Some 18 years on one continuous Harlingen title (no. …145), with Texas safety and emissions inspection every year. A single long-term owner.</td></tr>
+      <tr><td>2026</td><td class="r">23,529</td><td>Enters the dealer market. CARFAX pulled by Audi Dominion, San Antonio, 6/12/26. Ferrari of San Antonio RO 17055, 5 Jun 26 (mileage correction). A Houston party, “EDP”, appears on that invoice.</td></tr>
+    </table></div>
+
+    <div class="note ok">
+      <span class="label">One owner · verified June 2026</span>
+      <p>Two decades on one Texas title in one town, inspected every year, and serviced at one Ferrari specialist with itemised receipts: about as traceable as a 25-year-old grey-market Ferrari can be. The multiple early titles are the federalisation paper trail, not changes of ownership. A Florida company issued a placeholder “lease” title while DOT/EPA federalisation was completed, and the car was re-titled on its move to Texas. The 2026 “EDP Houston” activity through Mario was a broker consignment for that one owner, not a dealer flip, as first read.</p>
+      <p>Outstanding: collect the original Harlingen repair-order stack (13 scans held), the federalisation documents and the title chain, to confirm one name throughout.</p>
+    </div>
+
+    <h3>European Specification</h3>
+    <p><span class="st due">Valuation flag</span></p>
+    <p class="lead">The most consequential fact about this car: a European-market 360, federalised and imported into the United States in 2001, not a US-delivery car.</p>
+    <div class="t"><table>
+      <tr><th>Evidence</th><th>Detail</th></tr>
+      <tr><td>VIN</td><td>Position 8 is the specification marker: A for US, B for Europe. This car reads <code>ZFFYR51B</code>, definitively European. A US-delivery 360 would read <code>ZFFYR51A</code>.</td></tr>
+      <tr><td>Repair orders</td><td>Several invoices state verbatim “THIS IS A EURO SPECS CAR” and “THIS CAR HAS EURO SPECS” (2008, 2014).</td></tr>
+      <tr><td>Import trail</td><td>CARFAX: imported through Miami 6/2001; “declared to meet US highway safety specifications, Bond released” 10/2001. The standard registered-importer and DOT-bond federalisation sequence.</td></tr>
+      <tr><td>Alarm</td><td>Repair-order note, 2020: “vehicle is European which does not allow for beeping of the siren” when arming or disarming.</td></tr>
+      <tr><td>Inspection</td><td>The shop had to “drive car to get readiness codes for state inspection” (2008), typical of a federalised ECU and emissions arrangement.</td></tr>
+    </table></div>
+    <h4>Implications</h4>
+    <ul class="prose">
+      <li><strong>Value.</strong> The commonly cited discount is approximately $15k under a comparable US car (FerrariChat consensus), partly regulatory and partly because some dealers will not service European cars (different software and parts from Europe), which narrows resale. The measured discount is smaller, −$3,000–5,000 (chapter viii). A point of leverage, not a reason to decline.</li>
+      <li><strong>Properly federalised and registrable.</strong> The car has passed Texas safety and emissions inspection annually for some 20 years. The federalisation and DOT-RI documents are to be obtained and confirmed to transfer cleanly with the title.</li>
+      <li><strong>Practical differences.</strong> The alarm does not chirp; lighting and some emissions hardware are European pattern; the instrument cluster reads mph primary with km/h secondary, confirmed in the odometer photograph.</li>
+      <li><strong>Parts.</strong> Mechanically identical to a US 360. A handful of emissions, lighting and alarm parts differ.</li>
+    </ul>
+
+    <div class="note">
+      <span class="label">Provenance geography · noted 20 August 2026</span>
+      <p>Not a typical multi-country auction European 360. Imported to the United States at ≤ ~1,537 mi in its first year (Miami 6/2001; DOT bond released 10/2001), so effectively its entire driven life is single-country (US), single-state-dominant (Texas from 2002), single-climate (dry South Texas, garaged), single-owner (verified) and mph-primary, with an unbroken 20-year annual-inspection odometer record. Against auction European cars carrying multi-country title chains, km instruments and late-life import, this history neutralises most of the standard European-discount narrative, and is to be used in any listing or valuation argument.</p>
+      <p>Caveat: service-file completeness is a partial reconstruction (above). The geography, title and mileage chain is anchored in CARFAX and stands on its own.</p>
+    </div>
+
+    <h3>Mileage and Title</h3>
+    <div class="t"><table>
+      <tr><th>Inspection</th><th class="r">Odometer</th></tr>
+      <tr><td>2001</td><td class="r">1,537</td></tr>
+      <tr><td>2004</td><td class="r">5,152</td></tr>
+      <tr><td>2008</td><td class="r">13,530</td></tr>
+      <tr><td>2013</td><td class="r">18,448</td></tr>
+      <tr><td>2017</td><td class="r">20,247</td></tr>
+      <tr><td>2022 <small>CARFAX last-reported figure</small></td><td class="r">21,871</td></tr>
+      <tr class="sum"><td>2026 <small>Dash photograph and Ferrari of San Antonio invoice, 6/2026</small></td><td class="r">23,529</td></tr>
+    </table></div>
+    <ul class="prose">
+      <li>The mileage is genuine and low: a lifetime average of approximately 940 mi a year over 25 years, consistent with a garaged, lightly driven car.</li>
+      <li>The inspection record rises monotonically. No rollback indicated. CARFAX states: “No indication of an odometer rollback.”</li>
+      <li>The CARFAX last-reported figure, 21,871 from the 2022 inspection, is stale. The true reading is 23,529; the car has not been re-inspected or reported since.</li>
+      <li>Ferrari of San Antonio RO 17055 (6/5/26) was opened specifically to “fix the mileage discrepancy done by a different dealer”: a clerical correction, billed $0. <span class="src">Verify</span> Read the actual note and confirm the title reflects 23,529, not a mistaken higher or lower figure.</li>
+    </ul>
+    <p>CARFAX summary: no accidents or damage reported; no total loss; no structural damage; no airbag deployment; no salvage, junk, rebuilt, flood or lemon brands. 41 records, clean throughout. A clean CARFAX is not all-original paint; the documented cosmetic and paint work is in chapter iv.</p>
+  </div>
 </section>
 
-<!-- 4 -->
-<section id="mileage">
-<h2 class="sec">4 · Mileage &amp; Title Integrity</h2>
-<div class="grid2">
-  <div class="card">
-    <h3>Mileage is genuine and low</h3>
-    <ul>
-      <li>Current odometer: <strong>23,529 mi</strong> <span class="src">(dash photo + Ferrari SA invoice, 6/2026)</span>.</li>
-      <li>Lifetime average ≈ <strong>~940 mi/year</strong> over 25 years &mdash; a garaged, lightly-driven car.</li>
-      <li>Inspection odometer trail rises monotonically: 1,537 (’01) → 5,152 (’04) → 13,530 (’08) → 18,448 (’13) → 20,247 (’17) → 21,871 (’22). <strong>No rollback indicated.</strong></li>
-      <li>CARFAX explicitly: <em>&ldquo;No indication of an odometer rollback.&rdquo;</em></li>
+<section id="history" class="chapter">
+  <header>
+    <div class="roman">iv.</div>
+    <h2>Service History</h2>
+    <p>The major services, most recent first, followed by every documented invoice and the systems that recur across them.</p>
+  </header>
+  <div>
+    <div class="note due">
+      <span class="label">A partial reconstruction, not a complete record</span>
+      <p>The original records were destroyed (“the doctor’s wife threw them out”). What follows was rebuilt from one source, Ferrari of Houston’s database (chapter iii). It is a known lower bound on the work done, never a full account. Any “no record of”, “declined” or “never done” statement is weak evidence: there is no paper, not proof that the work was not done. The belt clock (last documented 2013) still governs, because undocumented belts cannot be relied upon; but the F1 TCU map and clutch state are to be resolved by the SD3/Leonardo read at H&amp;S, not by the file.</p>
+    </div>
+
+    <p class="lead">Most of the expensive 360 work, the clutch, the F1 hydraulics, the heat exchanger and the fuel pumps, was done with receipts. The exception was the cam-belt service: last done in 2013 and declined in 2020, leaving belts some 13 years old at acquisition. The H&amp;S major of July 2026 addresses it (chapter vi).</p>
+    <p>On the 360 the belts do not require the engine to be removed. Unlike the 355, they are done in-car, engine in, with the seats out and access from below and through the cabin bulkhead: the cost-effective route at a Houston Ferrari independent, approximately $7.1k for the belt service (The Garagisti, Houston, September 2025; chapter ix). This car’s two earlier belt services were performed engine-out by the Harlingen independent, bundled with clutch, flywheel, respray, dash re-leather and tyres, which is why they ran $26–34k. That is not the belt-only cost.</p>
+
+    <article class="entry">
+      <div class="entry-h">
+        <div class="date">October 2020</div>
+        <div class="total">$11,680</div>
+      </div>
+      <p class="title">Biannual fluids and filters; belt service declined</p>
+      <dl class="facts">
+        <div><dt>Odometer</dt><dd class="num">21,391 mi</dd></div>
+        <div><dt>Repair Order</dt><dd class="num">No. 50587</dd></div>
+        <div><dt>Workshop</dt><dd>Harlingen independent</dd></div>
+        <div><dt>Belts</dt><dd>Declined</dd></div>
+      </dl>
+      <p>The repair order records verbatim: “customer declined full major service with timing belts, but was authorized to replace all fluids/filters.” Carried out: the “bi-annual” fluids and filters only. Oil, pollen and air filters, air-conditioning and alternator drive belts, gearbox fluid, F1 fluid, coolant, brake bleed. No timing belts, variators or tensioners. Also: left-hand fuel pump, air-conditioning and power-steering lines, Pirelli tyres, seat re-trim.</p>
+    </article>
+
+    <article class="entry">
+      <div class="entry-h">
+        <div class="date">July 2013</div>
+        <div class="total">$34,124</div>
+      </div>
+      <p class="title">Second belt service, engine and transmission out</p>
+      <dl class="facts">
+        <div><dt>Odometer</dt><dd class="num">18,448 mi</dd></div>
+        <div><dt>Repair Order</dt><dd class="num">No. 38422</dd></div>
+        <div><dt>Workshop</dt><dd>Harlingen independent</dd></div>
+        <div><dt>Method</dt><dd>Engine-out</dd></div>
+      </dl>
+      <p>Engine and transmission removed and refitted. Cam-cover gaskets and seals, belts, hydraulic tensioners, two timing variators, intake-manifold gaskets, bearings, fuel pumps. Water pump rebuilt; thermostat. Full brake overhaul, pads and master cylinder. Headlamp lenses restored. Dash re-leathered. Four tyres. Wheels refinished.</p>
+    </article>
+
+    <article class="entry">
+      <div class="entry-h">
+        <div class="date">January 2006</div>
+        <div class="total">$26,793</div>
+      </div>
+      <p class="title">First belt service, with clutch and F1 pump</p>
+      <dl class="facts">
+        <div><dt>Odometer</dt><dd class="num">8,544 mi</dd></div>
+        <div><dt>Repair Order</dt><dd class="num">No. 26039</dd></div>
+        <div><dt>Workshop</dt><dd>Harlingen independent</dd></div>
+        <div><dt>Method</dt><dd>Engine-out</dd></div>
+      </dl>
+      <p>Engine and gearbox removed and refitted; timing cover, front crank and oil pan resealed. New timing belts, tensioners, bearings, rollers, cam seals, two timing variators, eight plugs, water pump, all accessory belts, thermostat, coolant.</p>
+      <p>Clutch, flywheel, ring gear and throwout bearing were renewed because a faulty throwout bearing was found (RO line 08) while the gearbox was already out for the belts. The 58% figure is wear, read on an SD2-era tool, and was not the trigger. F1 pump replaced for slow shifting and no-shift (RO line 01). <span class="src">RO 26039 pp. 1 &amp; 4, IMG_9558/9561</span></p>
+    </article>
+
+    <h3>Documented Expenditure</h3>
+    <p>Itemised invoices in the file; the Harlingen independent unless noted. Documented spend, not a complete service record.</p>
+    <div class="t"><table>
+      <tr><th>Date</th><th>RO</th><th class="r">Miles</th><th>Principal work</th><th class="r">Total</th></tr>
+      <tr><td>Jan 2005</td><td class="num">24999</td><td class="r">6,148</td><td>F1 reseal, battery, siren, door shut, drip rails</td><td class="r fig">$3,138.54</td></tr>
+      <tr><td>Jan 2006</td><td class="num">26039</td><td class="r">8,544</td><td>Belt service, clutch and flywheel, F1 pump; dash re-leather; four Michelins</td><td class="r fig">$26,793.39</td></tr>
+      <tr><td>Nov 2006</td><td class="num">26977</td><td class="r">9,000</td><td>No-start (weak battery), ASR, radio, touch-ups</td><td class="r fig">$363.67</td></tr>
+      <tr><td>Jun 2008</td><td class="num">28981</td><td class="r">13,530</td><td>Heat-exchanger leak, tune-up, HVAC knobs, tyres, inspection</td><td class="r fig">$3,595.29</td></tr>
+      <tr><td>Apr 2009</td><td class="num">30079</td><td class="r">13,532</td><td>Died while driving (no fault found), service, window vent</td><td class="r fig">$2,226.08</td></tr>
+      <tr><td>Jul 2009</td><td class="num">30440</td><td class="r">15,697</td><td>F1 hydraulic pump and relay (would not engage gear), air conditioning</td><td class="r fig">$4,078.48</td></tr>
+      <tr><td>Jan 2010</td><td class="num">31305</td><td class="r">16,356</td><td>Heat-exchanger failure: radiators, water pump, thermostat, oil in coolant</td><td class="r fig">$6,632.35</td></tr>
+      <tr><td>Jul 2013</td><td class="num">38422</td><td class="r">18,448</td><td>Second belt service, water pump, brakes, headlamps, dash, tyres, wheels</td><td class="r fig">$34,124.47</td></tr>
+      <tr><td>Jan 2014</td><td class="num">39789</td><td class="r">18,455</td><td>ABS pump, fuel pump, battery, F1 connector, air-conditioning belt</td><td class="r fig">$1,661.02</td></tr>
+      <tr><td>Feb 2014</td><td class="num">39849</td><td class="r">18,458</td><td>European headlamp gasket, passenger window and door corrosion, seats, Scuderia shields</td><td class="r fig">$1,182.20</td></tr>
+      <tr><td>Feb 2017</td><td class="num">45093</td><td class="r">20,231</td><td>Major service, both fuel pumps, charcoal canister, rollover valves, door handles</td><td class="r fig">$8,777.76</td></tr>
+      <tr><td>Mar 2017</td><td class="num">45338</td><td class="r">20,243</td><td>Complete detail</td><td class="r fig">$250.00</td></tr>
+      <tr><td>Oct 2020</td><td class="num">50587</td><td class="r">21,391</td><td>Biannual fluids and filters (belts declined), fuel pump, air-conditioning and power-steering lines, Pirellis, seat</td><td class="r fig">$11,679.66</td></tr>
+      <tr><td>Jun 2026</td><td class="num">17055</td><td class="r">23,529</td><td>Ferrari of San Antonio, an official dealer: mileage-discrepancy correction</td><td class="r fig">$0.00</td></tr>
+      <tr class="grand"><td>Total documented</td><td></td><td></td><td>Over $104,000 across 13 itemised invoices, 2005–2020, over only some 17,000 miles. Maintenance has cost multiples of the typical drive.</td><td class="r fig">≈ $104,500</td></tr>
+    </table></div>
+
+    <h3>Recurring Systems</h3>
+    <p>The systems that have demanded attention across the receipts. Mostly the symptoms of a low-use exotic: deterioration from standing, not from driving.</p>
+    <div class="t"><table>
+      <tr><th>System</th><th>History on this car</th><th>Status</th></tr>
+      <tr><td>Cooling and heat exchanger</td><td>The known 360 oil/coolant heat-exchanger failure occurred here: leaking 2008 (temporary clamp repair), full failure 2010 with oil in coolant. Radiators flushed and repaired, water pump and thermostat renewed ($6,632). Water pump rebuilt again 2013.</td><td><span class="st ok">Repaired</span><small>Confirm no recurrence of oil/coolant mixing.</small></td></tr>
+      <tr><td>Fuel pumps, in-tank</td><td>Replaced 2014; both sides 2017 (right-hand pump leaking, described as “extremely dangerous”) with new charcoal canister and four rollover valves; left-hand pump and assembly again 2020. Typical ethanol and standing degradation.</td><td><span class="st ok">Done ×3</span><small>Recent; should be healthy.</small></td></tr>
+      <tr><td>F1 hydraulics and clutch</td><td>F1 pump and accumulator serviced 2005; replaced 2006 and 2009 (would not engage gear; low pressure, 26 bar). “Geartronic” warning from a faulty input-speed-sensor connector, 2014. Clutch replaced 2006.</td><td><span class="st due">Verify</span><small>Read clutch % and F1 pressures.</small></td></tr>
+      <tr><td>Window regulators</td><td>Driver’s regulator 2006; passenger’s 2014, when corrosion was found in the passenger door’s metal sheet, repaired with used parts as a new regulator was unavailable.</td><td><span class="st ok">Repaired</span><small>Check door-bottom corrosion.</small></td></tr>
+      <tr><td>Door handles and locks</td><td>Driver’s door lock 2006. Both inner handle mechanisms broke in 2017 (rattling; would not open from inside); replaced and repainted.</td><td><span class="st ok">Repaired</span></td></tr>
+      <tr><td>HVAC controls</td><td>Brittle air-conditioning control knobs temporarily repaired with used parts, 2008. Air conditioning recharged and lines repaired 2009 and 2020; blowing cold afterwards.</td><td><span class="st due">Verify</span><small>Air conditioning cold; knobs intact.</small></td></tr>
+      <tr><td>Battery and electrical</td><td>Repeatedly flat or weak batteries (2005, 2010, 2014, 2017); battery tender installed 2005. ECU reset after a flat battery.</td><td><span class="st note">Normal</span><small>For a low-use car.</small></td></tr>
+      <tr><td>Paint and cosmetics</td><td>Numerous touch-ups for stone chips and parking scrapes; bumper and dent repair 2006; front bumper and both sills repainted 2013; drip rails refinished; Scuderia fender shields replaced.</td><td><span class="st due">Not original</span><small>Paint not all original.</small></td></tr>
+    </table></div>
+    <p class="aside">None of this is a warning sign on a 360; it is the expected curve of a low-mileage car that stood between drives. The fuel system, cooling, F1 pump and clutch have all been addressed, precisely the list a buyer usually fears is pending. The one cosmetic qualification is paint: the front has been resprayed and touched up over the years, and warrants a paint-depth gauge.</p>
+
+    <h3>Attended Before Acquisition</h3>
+    <ul class="list">
+      <li>Biannual fluids and filters, with F1 fluid (2020). Belts not included.</li>
+      <li>Fuel pumps, charcoal canister, rollover valves (2017, 2020)</li>
+      <li>Air-conditioning lines and recharge; power-steering lines (2020)</li>
+      <li>Pirelli tyres (2020)</li>
+      <li>Heat exchanger and cooling overhaul (2010); water pump (2013)</li>
+      <li>ABS pump and brake master cylinder (2013, 2014)</li>
     </ul>
   </div>
-  <div class="card">
-    <h3>Two mileage details to reconcile</h3>
-    <ul>
-      <li>The CARFAX last-reported figure (<strong>21,871</strong>, from the 2022 inspection) is <em>stale</em>. The true reading today is <strong>23,529</strong> &mdash; the car simply hasn't been re-inspected/reported since.</li>
-      <li>Ferrari of San Antonio RO 17055 (6/5/26) was opened specifically to <strong>&ldquo;fix the mileage discrepancy done by a different dealer&rdquo;</strong> &mdash; a clerical correction, billed $0. <span class="pill verify">VERIFY</span> read the actual note and confirm the title reflects 23,529, not a mistaken higher/lower number.</li>
+</section>
+
+<section id="model-notes" class="chapter">
+  <header>
+    <div class="roman">v.</div>
+    <h2>Model Notes</h2>
+    <p>Known characteristics of the 360 Modena, ranked by severity, and where this car stands against each.</p>
+  </header>
+  <div class="t"><table>
+    <tr><th>System</th><th>Severity</th><th>This car</th></tr>
+    <tr><td>Cam-belt variators and tensioner bearings</td><td><span class="st open">High</span></td><td>Belts and variators done 2006 and 2013; belt service declined 2020. Some 13 years overdue at acquisition. In-car: approximately $7.1k for belts, $11–13k for the full front-end sort (The Garagisti, September 2025). Not engine-out. Addressed by the H&amp;S major (chapter vi).</td></tr>
+    <tr><td>F1 pump and clutch wear<small>Actuator and accumulator failures. Early F1 software is hard on clutches; early cars can wear one out in well under 15k mi. Later TCU maps and the CS map are gentler.</small></td><td><span class="st due">Moderate</span></td><td>F1 pump done twice (2006, 2009). Clutch done once (2006), already 58% worn at 8,544 mi: early wear consistent with the early-F1 pattern, though the actual trigger for replacement was a faulty throwout bearing with the gearbox out for belts. The current clutch has some 15k mi and 20 years on it. A Leonardo/SD3 wear read is required; the CS TCU on the modification plan will be kinder to the next clutch.<small>The “early map, never updated” reading rests only on the absence of a record of a TCU flash, and the record is a partial reconstruction. The SD3 read of the TCU software revision settles it. See the clutch-wear reconciliation, chapter vii.</small></td></tr>
+    <tr><td>Sticky or shrinking dashboard and trim<small>Soft-touch coating degrades.</small></td><td><span class="st due">Moderate</span></td><td>Already occurred and corrected in 2013: dash leather shrank and separated, fibreglass structure repaired, re-covered in French-stitched leather, airbag cover re-glued. A positive.</td></tr>
+    <tr><td>Heat exchanger, coolant in oil</td><td><span class="st due">Moderate</span></td><td>Failed and replaced 2010. Confirm it has remained clean.</td></tr>
+    <tr><td>Headlamp lens clouding</td><td><span class="st note">Low</span></td><td>Restored 2013.</td></tr>
+    <tr><td>Brittle interior parts<small>HVAC knobs, door handles, switchgear.</small></td><td><span class="st note">Low</span></td><td>HVAC knobs, door handles and steering-column switch panel all addressed (2008, 2014, 2017).</td></tr>
+    <tr><td>Manifold, catalyst and secondary-air faults</td><td><span class="st ok">Minor</span></td><td>Secondary-air harness and pipes refitted 2006; no catalyst failure recorded. <span class="src">Verify</span> no warning lamp.</td></tr>
+    <tr><td>Ageing tyres<small>Low-mileage cars run old rubber.</small></td><td><span class="st ok">Minor</span></td><td>Pirellis fitted 2020, approximately six years old; due on age rather than tread. See the agenda, chapter x.</td></tr>
+  </table></div>
+</section>
+
+<section id="works" class="chapter">
+  <header>
+    <div class="roman">vi.</div>
+    <h2>Works Programme</h2>
+    <p>Service and modification since acquisition: paid, committed and under decision.</p>
+  </header>
+  <div>
+
+    <article class="advisory">
+      <div class="entry-h">
+        <div class="date">Belt clock at acquisition</div>
+        <span class="st ok">Addressed</span>
+      </div>
+      <p>Last belt service: July 2013 at 18,448 mi, some 13 years earlier. The 2020 major with belts was declined; only fluids and filters were done. Ferrari’s interval is three to five years regardless of mileage (independents stretch to about seven). At 13 years the belts, variators and tensioners were well past any interval, an immediate and near-certain cost on either a 2013 or a 2020 reading.</p>
+      <p>Local reference pricing (The Garagisti, September 2025): belt service approximately $7.1k (belts, tensioner, accessory belts); approximately $3.6k more for cam seals, valve-cover gaskets and plugs (job 7, likely needed given this car’s leak pattern); plus the water pump, due since 2013 and absent from the reference invoice, budgeted at approximately $1.5–2.5k pending a quote. Full front-end major approximately $11–13k; variators extra if they rattle.</p>
+      <p>The clutch is not a while-you’re-in-there item on the in-car belt job: it sits at the opposite, transaxle, end and requires engine and transmission removal. This car’s clutch was considered good (2006, some 15k mi on it), so the plan was to reuse it and stay in-car, since a clutch change forces the costlier engine-out route. The gated conversion (chapter vii) has since superseded the clutch-reuse and in-car reasoning: the transmission comes out regardless.</p>
+    </article>
+
+    <article class="entry">
+      <div class="entry-h">
+        <div class="date">17 July 2026</div>
+        <div class="total">$13,500</div>
+      </div>
+      <p class="title">Full major service, H&amp;S, Houston. Paid by Zelle.</p>
+      <dl class="facts">
+        <div><dt>Workshop</dt><dd>H&amp;S, Houston</dd></div>
+        <div><dt>Terms</dt><dd>All-in, friend-of-owner rate</dd></div>
+        <div><dt>Payment</dt><dd>Zelle, 17 Jul 2026</dd></div>
+        <div><dt>Card Fee Avoided</dt><dd class="num">$471.69</dd></div>
+      </dl>
+      <p>H&amp;S, regarded as the best 360 workshop in Houston, quoted the full major at $13,500: belts, tensioners, variators, cam-cover gaskets, cam seals, valve and cam timing, plugs, coolant. The quote includes the variators, the costly contingency, at a friend-of-a-friend rate; full 360 majors with variators normally run $15–20k. It caps the largest immediate cost, and its worst contingency, below market. Reported by the owner as complete or in progress (“I paid 13500 for major”).</p>
+
+      <h3>Scope against the 2020 service</h3>
+      <p>The October 2020 repair order covered the inexpensive items at the front of the engine but left the entire timing job.</p>
+      <div class="t"><table>
+        <tr><th>Item (front of engine, in-car access)</th><th>2020</th><th>Now</th></tr>
+        <tr><td>Timing belts (×2)</td><td>Declined</td><td><span class="st due">Due</span></td></tr>
+        <tr><td>Variators (×2), tensioner bearings, hydraulic tensioners</td><td>Declined</td><td><span class="st due">Due</span><small>Inspect variators for rattle; Hill billet upgrade optional.</small></td></tr>
+        <tr><td>Water pump</td><td>Not touched (rebuilt 2013)</td><td>With belts</td></tr>
+        <tr><td>Cam seals and front crank seal</td><td>Not touched</td><td>With belts, directly behind them</td></tr>
+        <tr><td>Accessory belts (air conditioning, alternator, power steering)</td><td>Done 2020 (~6 yr)</td><td>Inexpensive; replace as a set</td></tr>
+        <tr><td>Coolant and thermostat</td><td>Coolant done 2020</td><td>Drained for the water pump; refresh, and renew the thermostat</td></tr>
+        <tr><td>Spark plugs, cam-cover (valve-cover) gaskets, filters, oil</td><td>Filters and oil 2020</td><td>Plugs and cam-cover gaskets with the major</td></tr>
+        <tr><td>Clutch and flywheel<small>Transaxle end; not this access.</small></td><td>Good since 2006</td><td>Reuse; do not bundle. A clutch change forces engine-out.</td></tr>
+      </table></div>
+      <p class="aside">Question put to the workshop: “360, in-car, reusing the clutch, water pump + cam/crank seals + variators inspected — out-the-door?”</p>
+
+      <h3>To confirm in writing before drop-off</h3>
+      <ol class="prose">
+        <li>That $13,500 is out-the-door: parts, labour and tax, nothing added.</li>
+        <li>That the water pump is included (2013; the one item not named in the quote).</li>
+        <li>Variators: OEM or Hill billet.</li>
+        <li>Reuse of the good clutch; in-car method.</li>
+        <li>Timeline, and how long the price holds.</li>
+        <li>Which scanner the clutch snapshot comes from, and whether its % reads wear or remaining. The two conventions are opposite and workshops confuse them (chapter vii).</li>
+      </ol>
+      <p>After payment: obtain the invoice marked “PAID — Zelle [date]” with full itemised scope, the first entry of the H&amp;S era in the service file, and confirm the water-pump and variator line items.</p>
+    </article>
+
+    <article class="advisory">
+      <div class="entry-h">
+        <div class="date">Heat exchanger · 10 August 2026</div>
+        <span class="st due">Decision</span>
+      </div>
+      <p class="title">Oil/coolant heat exchanger: replace during the H&amp;S major, or monitor</p>
+      <p>The present exchanger was fitted in January 2010 at 16,356 mi (RO 31305, $6,632), after the 2008 leak and the 2010 full failure with oil in coolant. It is now some 16 years old; its ~7.2k mi are irrelevant, corrosion being driven by age and chemistry. The brand and revision fitted by the Harlingen independent are unknown; the markings on the installed unit are the source of truth, and H&amp;S are to read and photograph them.</p>
+      <dl class="inv">
+        <dt>Location</dt><dd>On the 360 the exchanger (PN 180846, shared with the 355) is coolant to gearbox oil, and bolts between the water-pump housing and the water outlet manifold; not beneath the intake plenum, which is 430-era lore. Access is the belt-service access (seats and bulkhead, water pump off): approximately 80% labour overlap with the paid H&amp;S major.</dd>
+        <dt>Cost</dt><dd>Bundled with the major, approximately +$1.5–2k: part approximately $850–1,100, a few hours, and seals (sleeves 187173 ×2, O-ring 101044, crush washers 10263460 ×2). Standalone later, approximately $4k, the access being bought again. The next inexpensive window is the next belt service, about 2031.</dd>
+        <dt>Parts</dt><dd>OEM 180846, approximately $833 from Ferrari Parts Exchange; also Ricambi, Eurospares, Scuderia. Or the AW Italian upgraded full-copper kit 180846KIT: 70 tubes against 55, with couplers, clamps and gaskets; price on application, 800-631-5589. Hill Engineering does not make one; their range is bearings and flywheels.</dd>
+        <dt>Decision gate</dt><dd>If the H&amp;S major is still open: add it. A keeper car, a 16-year-old unit, a proven failure mode on this chassis, and the water pump off regardless. If the major is already closed up: defer and monitor. Expansion-tank sludge check each month the car is driven; gearbox oil inspected or sent for analysis (glycol markers) at each change; yellow-metal-safe gear oil only; coolant every two years. Do not pay $4k standalone on a system that tests clean.</dd>
+      </dl>
+    </article>
+
+    <article class="entry">
+      <div class="entry-h">
+        <div class="date">15 July 2026</div>
+        <div class="total">$1,000</div>
+      </div>
+      <p class="title">Tubi silencer, used, purchased</p>
+      <p>Well below the used market of $2–3k and more. H&amp;S to fit it during the belt major, the car already on the lift, at trivial labour. The standard silencer comes off and is bagged and tagged with date and mileage, and stays with the car. Its white insulation blanket degrades with heat cycles; removal stops that clock, and the Tubi has no blanket to shed. A post-catalyst change, with no warning-lamp or emissions implication on the European car.</p>
+      <h3>On arrival</h3>
+      <ol class="prose">
+        <li>Genuine Tubi: serial plate and provenance.</li>
+        <li>Valved or non-valved. Valved is livable; non-valved drones on the highway.</li>
+        <li>Shake test for broken baffles; cracks at weld seams and hangers; flange condition.</li>
+        <li>Gaskets, clamps and valve-actuator lines included.</li>
+      </ol>
+      <p>At the same lift visit: inspect the headers for cracks, shake the catalysts for rattle, and record the state of the standard silencer’s insulation.</p>
+    </article>
+
+    <h3>Modification Plan</h3>
+    <p>As of 18 July 2026; updated 20 August 2026. Reversible bolt-on parts only. Every part removed stays with the car.</p>
+    <div class="t"><table>
+      <tr><th>Modification</th><th class="r">Cost</th><th>Status and particulars</th></tr>
+      <tr><td>Tubi silencer<small>Used.</small></td><td class="r fig">$1,000</td><td><span class="st ok">Bought</span><small>Fit at the H&amp;S visit; arrival checks (serial, valved, cracks, hardware); standard unit bagged and tagged.</small></td></tr>
+      <tr><td>Challenge Stradale TCU<small>New, boxed.</small></td><td class="r fig">$2,500</td><td><span class="st note">Agreed</span><small>Shifts approximately 40% faster. Verify label 196986, and dead-on-arrival terms in writing; keep the original TCU. Redundant once converted: resell, or keep with the F1 parts.</small></td></tr>
+      <tr><td>CS-style airboxes (aftermarket) and F430 MAFs</td><td class="r fig">~$1,420</td><td>Airboxes $1,200; MAFs $110 each ×2. The established intake combination: CS induction sound and flow, larger 430 MAF bodies. Aftermarket airboxes chosen over $3–5k genuine CS carbon; openly replica, receipts kept. Fit before the tune, so the calibration matches this intake. Keep the standard airboxes and MAFs.</td></tr>
+      <tr><td>360Trev (Senica.ga) ECU calibration</td><td class="r fig">$2,500</td><td>Flash after the intake hardware. To ask Trev first: whether this calibration carries into his manual-conversion flash, or requires a re-flash, so as not to pay for the software twice.</td></tr>
+      <tr><td>Michelin PS4S</td><td class="r fig">~$2,000</td><td>The 2020 Pirellis go regardless of tread. Size constraint, verified 31 July 2026: PS4S was found not to be made in the standard rear 275/40ZR18, making “PS4S in OEM sizes” unfulfillable as written. Options: (a) another premier tyre in standard 18 in sizes (Pirelli PZ4, Potenza Sport; the car wears Pirellis now); or (b) the 19 in Scuderia wheels below, which allow exact-size PS4S (235/35ZR19 and 285/35ZR19, both in the range). Decide wheels before buying tyres; the wrong sequence wastes a set of approximately $2k. <small>Superseded in part by the August finding; see the agenda, chapter x.</small></td></tr>
+      <tr><td>430 Scuderia 19 in wheels<small>Used, genuine.</small></td><td class="r fig">~$3.5–6k</td><td><span class="st note">Candidate</span><small>Uncommitted. Fitment verified as a direct bolt-on, 31 July 2026. 360 OEM (PN 164173/164175): 18×7.5 ET31.5 front, 18×10 ET38.95 rear. Scuderia (PN 252065/226580): 19×7.5 ET31.5 front, 19×10 ET38 rear. Same widths, same 5×108 PCD, same 67.1mm bore, same M14×1.5 bolts (shared stud PN 181291); the rear sits ~1mm further out, negligible. The extra inch clears the standard iron brakes easily (the Scuderia ran 398mm CCM inside these). No spacers, rings or bolt changes. Rolling diameter on 235/35 and 285/35: front −0.6%, rear +0.7%; speedometer effect negligible. Sidewall ~15mm lower front, ~10mm rear: firmer ride, more pothole and rim risk. No TPMS on this European car; plain valve stems. Purchase checks: cast-in Ferrari part-number stamps (replicas are common), run-out and repair check, kerb damage. The standard BBS 18s are bagged, tagged and stay with the car.</small></td></tr>
+      <tr><td>Genuine Scuderia fender shields</td><td class="r fig">~$1–2k</td><td><span class="st note">Candidate</span><small>Uncommitted. The present shields are stickers.</small></td></tr>
+      <tr><td>Gated conversion (Modena Lucerna)</td><td class="r fig">$17k</td><td><span class="st note">Committed</span><small>All-in: kit $12k, H&amp;S labour $5k. Committed 13 August 2026, confirmed by the owner; the revival trigger was the kit price, $12k being under the kit’s usual $15–22k tier. Work-order conditions are set out in chapter vii.</small></td></tr>
+      <tr class="sum"><td>Committed bolt-ons, excluding conversion</td><td class="r fig">~$9.4k</td><td>Tubi $1k, TCU $2.5k, intake ~$1.42k, calibration $2.5k, tyres ~$2k</td></tr>
+    </table></div>
+    <p><strong>Sequence, updated 20 August 2026:</strong> H&amp;S major (paid); then the gated conversion at H&amp;S, with tyres and alignment at the same visit; then the intake hardware; then the Trev calibration, confirming the flash carries into or merges with the conversion ECU work.</p>
+
+    <h3>Converted Economics · 20 August 2026</h3>
+    <div class="t"><table>
+      <tr><th>Item</th><th class="r">Amount</th><th>Particulars</th></tr>
+      <tr><td>Car</td><td class="r fig">$100k</td><td>Purchase, 1 July 2026</td></tr>
+      <tr><td>Major service</td><td class="r fig">$13.5k</td><td>H&amp;S, paid</td></tr>
+      <tr><td>Gated conversion</td><td class="r fig">$17k</td><td>H&amp;S, committed</td></tr>
+      <tr class="grand"><td>Basis, converted</td><td class="r fig">≈ $130.5k</td><td>All-in; ex-tax, per the owner’s mark-to-market convention</td></tr>
+      <tr><td>Converted mark</td><td class="r fig">$145–150k</td><td>Evidence: 17 Aug, European gated car, $179k RNM (a stop-money read); 20 Aug, US gated car, $205.5k RNM</td></tr>
+    </table></div>
+    <p class="aside">Above water on paper at completion, with the appreciation of gated 360s on top.</p>
+  </div>
+</section>
+
+<section id="conversion" class="chapter">
+  <header>
+    <div class="roman">vii.</div>
+    <h2>Gated Conversion</h2>
+    <p>Committed 13 August 2026. Technical intelligence, work-order conditions, clutch sourcing and the clutch-wear question.</p>
+  </header>
+  <div>
+    <h3>Work-order conditions</h3>
+    <p>To be verified on the H&amp;S work order itself.</p>
+    <ol class="agenda">
+      <li><span><strong>Clutch wear readout before teardown,</strong> so the decision to replace while open rests on data, not assumption.</span><span class="st due">Condition</span></li>
+      <li><span><strong>All F1 components boxed and returned with the car.</strong> Reversibility is worth approximately $10k as an option.</span><span class="st due">Condition</span></li>
+      <li><span><strong>360Trev-class ECU solution.</strong> Acceptance condition: no warning lights.</span><span class="st due">Condition</span></li>
+      <li><span><strong>Photographic record of the installation,</strong> for provenance.</span><span class="st due">Condition</span></li>
+    </ol>
+    <p class="aside">The CS TCU becomes redundant after conversion: resell it, or keep it with the F1 parts. The conversion supersedes the clutch-reuse and in-car logic of the major service, as the transmission comes out regardless.</p>
+
+    <h3>Intelligence · Eric Goodkind, July 2026</h3>
+    <p>Ferrari master technician of 20 years, Leander, Texas; Modena Lucerna installer. Bring a Trailer handle <em>Converted_4re</em>; his public comments match his private quotes verbatim.</p>
+    <dl class="inv">
+      <dt>Kits</dt><dd>Modena Lucerna is the most OEM-complete: two pedals, clutch-position sensor and bracket, heat shielding, speed-sensor plug, hard lines for pedal feel. Dr. S / Cambio Manuale also excellent. Avoid EAG and MMX: crude machining tolerances, rough engagement, less complete, in his direct experience.</dd>
+      <dt>ECU</dt><dd>360Trev (Senica.ga tuning), which flashes the car to be genuinely manual. Avoid piggyback recalibration methods (“nothing but issues”).</dd>
+      <dt>Method</dt><dd>His workshop converts only with the gearbox out, by the hydraulic (brake-fluid) method, renewing the throwout bearing or its internal seals every time as a safety item. The F1-fluid, transmission-in-place shortcut is refused. The conversion is therefore the clutch job: the same transmission-out event. Never do a standalone clutch with a conversion in prospect.</dd>
+      <dt>Cost</dt><dd>Workshop conversion typically $25–30k all-in. A DIY conversion adds the kit (price to be confirmed), 360Trev calibration, clutch, throwout bearing, fluids, special tools, gaskets and hardware, and possibly the rear main seal and flywheel. Their installation guide, $500: 500 pages, written for the 430 but “almost identical”, with 30 days of telephone and FaceTime support.</dd>
+      <dt>European spec</dt><dd>No difference for the conversion.</dd>
+      <dt>Clutch %</dt><dd>A snapshot of “80%” can mean 80% remaining or 80% worn, depending on the scanner; clutches slip at 85–90% worn. The seller’s “~73%” is ambiguous in direction, to be resolved at the H&amp;S SD3/Leonardo read.</dd>
+      <dt>F1 parts</dt><dd>Keep them with the car. The market is flooded with used F1 pumps and actuators, and reversibility is worth more at resale than the parts would fetch. Nothing is permanently modified in the conversion.</dd>
+    </dl>
+
+    <h3>Clutch Sourcing · research 27 July 2026</h3>
+    <p class="lead">For this car (a street keeper, under 1,000 mi a year, standard power, not tracked): an OEM-specification single-plate replacement. Do not uprate. The clutch is replaced at the conversion, a transmission-out event, and the choice of kit, not of clutch, drives the decision.</p>
+    <ul class="prose">
+      <li><strong>The 360 clutch is a single plate, not twin,</strong> correcting a common assumption. Genuine Ferrari complete unit: PN 201680 (made by Valeo; ~215mm organic disc and pressure plate). The same disc serves F1 and gated cars; the difference lies in the release (throwout) bearing and hydraulics, not the friction disc. Converting to gated does not require a different disc.</li>
+      <li><strong>Uprated clutches (Kevlar or sintered, higher clamp load) are the wrong choice here:</strong> harsher engagement, grabbier take-up, faster flywheel wear, a cost paid for track or high-power use this car will not see. Standard power and light duty make OEM organic the smoother and cheaper choice. The original clutch’s rapid wear (58% in 8,544 mi, RO 26039) was caused by a failing throwout bearing, ailing F1 hydraulics and the hard early map, not by an under-specified clutch. The CS TCU on the modification plan already softens the map for the next clutch.</li>
+      <li><strong>Throwout-bearing quality does matter;</strong> it was the original failure mode (RO 26039 line 08). Use the Hill Engineering uprated release (slave) bearing, CRB-360/430-MS for gated cars or CRB-360/430-F1S for F1: billet, higher-tensile aluminium, the established remedy for the OEM bearing’s weakness. Approximately $570–640. The one place to spend more.</li>
+    </ul>
+    <div class="t"><table>
+      <tr><th>Vendor</th><th>Product</th><th class="r">Approx. Price</th><th>Particulars</th></tr>
+      <tr><td>Genuine Ferrari<small>Eurospares, Ricambi, Superformance, Scuderia Car Parts.</small></td><td>201680 complete OEM Valeo clutch, disc and pressure plate</td><td class="r fig">~£1,860 / ~$2,300</td><td>The direct OEM-specification replacement. Superformance also lists an aftermarket Italian disc only (201680SF, ~£1,245, manual cars only) and a bare Hill flywheel (~£640).</td></tr>
+      <tr><td>GTE Engineering<small>Orange, New Jersey. Not the UK “GTO Engineering”.</small></td><td>201680 clutch rebuild on the customer’s core: Stage 1 organic (OEM specification) or Stage 3 Kevlar; PEGA linings</td><td class="r fig">~$800 + core</td><td>Strong reputation for clutch rebuilds. For this car, Stage 1 organic, not Kevlar. The least costly route given a good core and a turnaround that suits the conversion timeline. Also sells an OTO twin-disc F430-based upgrade: not for a street keeper.</td></tr>
+      <tr><td>Hill Engineering<small>Through the specialists above.</small></td><td>Uprated release bearing (CRB-360/430-MS, -F1S); billet flywheel</td><td class="r fig">~$570–640</td><td>Source of the throwout bearing: it addresses the exact part that failed on this car.</td></tr>
+      <tr><td>EAG, MMWX</td><td>—</td><td class="r">—</td><td>Both flagged by Eric Goodkind as to be avoided for the conversion; no reason to source a clutch from either.</td></tr>
+    </table></div>
+    <p>GTO Engineering, the UK Ferrari restorer the owner enquired about, does not sell a 360 clutch. It is a classic-Ferrari (250 and GTO-era) restoration house with a vintage V12 catalogue. The GTO/GTE name collision is the trap: the workshop that rebuilds 360 clutches is GTE Engineering, New Jersey, unrelated.</p>
+    <div class="note due">
+      <span class="label">Coordinate with the conversion kit</span>
+      <p>The F1-to-gated kits do not include the clutch disc or pressure plate; they reuse the existing clutch, or a fresh 201680 is supplied. What they do specify is the throwout bearing and the hydraulic conversion (brake-fluid method). Cambio Manuale (Modena Lucerna family) sells a Hill throwout bearing with brake-fluid seals for ~$800 as a kit option, and treats its replacement as a safety item, matching Eric’s method. The EAG kit (~$21k) bundles “hydraulic clutch components” but no named clutch. GTE’s kit is the outlier, specifying a twin-disc F430-based clutch: a genuine hardware change, not for a standard-power street car.</p>
+      <p>Choose the kit first (Modena Lucerna or Cambio Manuale, per Eric), then buy the OEM 201680 and the kit’s specified Hill throwout bearing together at conversion. A clutch bought now is money on a shelf while the SD3 read may show years of life left in the present one. Do not buy in advance.</p>
+    </div>
+
+    <h3>Clutch-Wear Reconciliation · 24 July 2026</h3>
+    <p>Interpreting Mario’s “~73%”. The present clutch was fitted January 2006 at 8,544 mi (RO 26039); the car now shows 23,529 mi, so approximately 14,985 mi and some 20 years on this clutch.</p>
+    <div class="t"><table>
+      <tr><th>Reading</th><th>Wear over life</th><th>Implied rate</th></tr>
+      <tr><td>Original clutch, baseline</td><td>58% worn in 8,544 mi</td><td><span class="fig">~6.8% / 1,000 mi</span><small>Abnormally fast.</small></td></tr>
+      <tr><td>(A) “73%” remaining<small>27% worn in ~14,985 mi.</small></td><td>27% worn</td><td><span class="fig">~1.8% / 1,000 mi</span><small>~3.8× slower than the original.</small></td></tr>
+      <tr><td>(B) “73%” worn<small>27% remaining over ~14,985 mi.</small></td><td>73% worn</td><td><span class="fig">~4.9% / 1,000 mi</span><small>~0.72× the original rate.</small></td></tr>
+    </table></div>
+    <p><strong>(A), 73% remaining, is internally consistent.</strong> The original clutch’s 6.8% per 1k was not a clean signal of the map. It was co-caused by the failing throwout bearing and the slow, failing F1 pump (RO 26039 lines 01 and 08): ailing hydraulics mean long slip on every engagement, accelerating wear on top of the hard early map. The replacement clutch has run on healthy hydraulics since (F1 pump replaced 2006 and 2009), so a rate three to four times slower is what would be expected even on the same early map. The usage supports it: under 800 mi a year (~15k over ~20 years), a garaged car spared the stop-start, hill-start and traffic duty the early F1 map punishes most. Low-abuse miles and healthy hydraulics make ~1.8% per 1k credible.</p>
+    <p><strong>(B), 73% worn, implies ~4.9% per 1k:</strong> wear continuing at ~72% of the original, ailing-hydraulics rate despite healthy hydraulics. That would mean the hard map alone does most of the damage, and the clutch is near replacement (clutches slip at ~85–90% worn; 73% worn means planning the job, with roughly 2–3k mi of margin at this rate). Not impossible, but it requires the map to be nearly as damaging as a failing pump, which the low mileage and absence of any slip complaint argue against.</p>
+    <p><strong>Reading: (A), 73% remaining, is the more likely,</strong> and not on the physics alone. A seller quoting a figure as a selling point quotes it in the flattering direction; “73%” sells the car only if it means 73% of life left. Were the honest figure 73% worn, a seller would talk around it, not towards it. The physics and the seller’s incentive point the same way.</p>
+    <div class="note">
+      <span class="label">Threshold</span>
+      <p>A concern only if the SD3 read returns ≥ ~75–80% worn, near the 85–90% slip threshold. The clutch would then be an immediate item, and the conversion-or-clutch decision would trigger at once, a transmission-out clutch job being the conversion event. Direction and true % to be resolved at the H&amp;S SD3/Leonardo read; the paper cannot answer it.</p>
+    </div>
+  </div>
+</section>
+
+<section id="acquisition" class="chapter">
+  <header>
+    <div class="roman">viii.</div>
+    <h2>Acquisition</h2>
+    <p>The buy-side analysis of June 2026. Historical: superseded by the purchase at $100,000 and retained for reference.</p>
+  </header>
+  <div>
+    <div class="note ok">
+      <span class="label">Owned · purchased 1 July 2026 for $100,000, wired</span>
+      <p>Bought through Mario, acting for “the doctor”, Houston, at $100k, as a keeper. The adjusted valuation, the $85k offer framework and the inspection contingencies below are historical, superseded by the actual purchase. The live focus is the overdue belt service and sorting (chapter vi), priced against local workshop figures (The Garagisti, Houston, September 2025; chapter ix).</p>
+    </div>
+
+    <h3>Seller</h3>
+    <dl class="inv">
+      <dt>Seller</dt><dd>Mario A. Ortiz III · 713-408-3428 · Houston, Texas</dd>
+      <dt>Identity</dt><dd>The same party as “EDP Houston, 4107 Beggs St” on the Ferrari of San Antonio invoice (same telephone): a broker consignment for the verified single owner, not a dealer flip (corrected). The June 2026 Ferrari of San Antonio visit was pre-sale service and a mileage-paperwork correction.</dd>
+      <dt>Credibility</dt><dd>The one-owner claim held, which lends weight to his other claims (the 2020 “fresh service”, clutch ~73%). Still to be verified by inspection: the records show belts at 2013, not a recent full service.</dd>
+      <dt>Contact</dt><dd>Through Facebook Marketplace; the owner’s account there shows a different name, used for Marketplace only.</dd>
+    </dl>
+
+    <h3>Negotiation · June 2026</h3>
+    <p><span class="st note">In negotiation, June 2026</span></p>
+    <ul class="prose">
+      <li>Asking $110k. A failed buyer was at $100k and could not fund. The owner offered $85k cash on 26 June 2026.</li>
+      <li>Leverage: ready cash with no financing contingency, precisely where the $100k buyer failed, and standing as a credible Ferrari owner (the red-and-black 308). Worth real money for a quick close.</li>
+      <li>The $100k was soft, from a non-performing buyer, and not to be anchored to. The $110k was an ordinary aspirational ask, not a transaction.</li>
+    </ul>
+
+    <h3>Market Comparables · F1 coupé, realised, June 2026</h3>
+    <p>Two corrections to the first analysis: (1) the “~$77k F1 coupe average” was a blended median weighed down by high-mileage and older sales, and understates a low-mileage car in the present strong Ferrari market; (2) the European-specification penalty is far smaller than folklore holds.</p>
+    <div class="t"><table>
+      <tr><th>Reference</th><th class="r">Figure</th></tr>
+      <tr><td>Near-twin: <a href="https://bringatrailer.com/listing/2003-ferrari-360-modena-45/">22k-mi Rosso Corsa F1 coupé</a> <span class="src">BaT, May ’25</span></td><td class="r fig">$97,666</td></tr>
+      <tr><td><a href="https://bringatrailer.com/listing/2000-ferrari-360-modena-100/">18k-mi F1 coupé</a> <span class="src">BaT, Mar ’26</span></td><td class="r fig">$95,500</td></tr>
+      <tr><td>24–26k-mi F1 coupés: <a href="https://bringatrailer.com/listing/2004-ferrari-360-modena-29/">24k</a> · <a href="https://bringatrailer.com/listing/2003-ferrari-360-modena-48/">26k Rosso</a> · <a href="https://bringatrailer.com/listing/1999-ferrari-360-modena-56/">18k</a> <span class="src">BaT ’25</span></td><td class="r fig">$85,500–$87,000</td></tr>
+      <tr><td>Live test: <a href="https://bringatrailer.com/listing/2003-ferrari-360-modena-56/">black 16k-mi F1 coupé</a>, US-spec, belts ’21, clutch 78% <span class="src">BaT, closes 26 Jun</span></td><td class="r fig">bid $81k<small>Result pending.</small></td></tr>
+      <tr><td>Low-mileage (≤30k) F1 coupé band, realised</td><td class="r fig">~$85,000–$98,000</td></tr>
+      <tr><td>European-specification discount<small>Measured in the owner’s database: European cars sell roughly in line with US cars; not the $15k folklore.</small></td><td class="r fig">−$3,000–5,000</td></tr>
+      <tr><td>One-owner premium<small>Measured across 26 models. A reduction in risk, not in price.</small></td><td class="r fig">~0%</td></tr>
+      <tr><td>360 Modena manual average, for contrast<small>F1 is the value-baseline gearbox.</small></td><td class="r fig">~$126,000</td></tr>
+    </table></div>
+    <div class="note">
+      <span class="label">The negotiation in one line</span>
+      <p>A sorted, US-spec, low-mileage F1 coupé was a ~$90–95k car (the 22k Rosso made $97.7k; the owner’s model ran ~20% light on low-mileage Ferraris at the time, so the comparable spread was to be trusted, leaning high). This car discounts from that for belts ~13 years overdue (−$8–10k), European specification (−$3–5k) and repaint and tyres (−$4–5k), offset by the deep one-owner records (+$4–5k): a fair buy of ~$78–83k. One owner is confirmed but adds ~0% to price; it reduces risk.</p>
+    </div>
+
+    <h3>Adjusted Valuation</h3>
+    <div class="t"><table>
+      <tr><th>Factor</th><th>Direction</th><th class="r">Effect</th></tr>
+      <tr><td>US-spec sorted low-mileage baseline<small>Strong market; model runs light.</small></td><td>Start</td><td class="r fig">~$90,000–95,000</td></tr>
+      <tr><td>European specification<small>Measured, not folklore.</small></td><td>−</td><td class="r fig">−$3,000–5,000</td></tr>
+      <tr><td>Cam-belt service due<small>Last 2013; current-rate cost on either a 2013 or 2020 reading.</small></td><td>− −</td><td class="r fig">−$8,000–10,000</td></tr>
+      <tr><td>Front-end repaint; paint not all original</td><td>−</td><td class="r fig">−$2,000–3,000</td></tr>
+      <tr><td>Tyres ageing (2020 set)</td><td>−</td><td class="r fig">−$2,000</td></tr>
+      <tr><td>Deep one-owner documented history<small>Price premium ~0, but a real reduction in risk.</small></td><td>+</td><td class="r fig">+$4,000–5,000</td></tr>
+      <tr class="grand"><td>Fair buy</td><td></td><td class="r fig">~$78,000–83,000</td></tr>
+    </table></div>
+
+    <h3>Offer Framework · $85k cash offered 26 June 2026</h3>
+    <p>$85k sat at or just above the top of fair: defensible in a strong Ferrari market where the model runs light, and a firm anchor against the $110k ask. It was to be treated as the practical ceiling, not a midpoint. $85k plus ~$10–14k (belts done properly, tyres, and the sensible while-you’re-in-there clutch and water pump) gives ~$95–99k all-in, fair to full for a sorted European car. A counter of $90k or more was not to be chased, but answered with the documented belt liability ($8–10k, due now) and the European specification.</p>
+    <p><strong>Conditions:</strong> inspection-contingent <span class="src">Verify</span>: a fresh SD3/Leonardo clutch and F1 read, belt-date confirmation, compression and leak-down, a cooling-system pressure test given the heat-exchanger history, and a paint-depth gauge on the resprayed nose and sills. Not to be driven home: 13-year-old belts on an interference engine and six-year-old tyres. Trailer it (~$300–800), or service it before any highway miles.</p>
+
+    <h3>Pre-Purchase Checklist</h3>
+    <p>Where this car would break, and what was to be confirmed before money changed hands.</p>
+    <ol class="prose">
+      <li><strong>Belt-service clock.</strong> Price the next cam-belt job; use the time-based interval as leverage (~$5–12k).</li>
+      <li><strong>F1 and clutch health.</strong> Ferrari SD3/Leonardo read: clutch wear %, F1 pump pressures, no stored gearbox faults, a clean self-learn.</li>
+      <li><strong>Heat exchanger and cooling.</strong> Oil cap and coolant free of emulsion or mixing; the 2010 repair holding; fans cycling.</li>
+      <li><strong>Paint-depth gauge over the whole car,</strong> especially the front bumper, both sills and wings (documented respray and touch-ups). Confirm no concealed collision behind the clean CARFAX.</li>
+      <li><strong>Door-bottom and sill corrosion.</strong> The 2014 repair order found corrosion in the passenger door’s inner sheet; inspect both doors and sills.</li>
+      <li><strong>European-specification paperwork.</strong> DOT/EPA federalisation and import documents in hand; confirm a clean transfer with the Texas title.</li>
+      <li><strong>Title against odometer.</strong> Title reflects the corrected 23,529 mi; ownership chain matches the long Harlingen history.</li>
+      <li><strong>Cosmetic and interior.</strong> Inspect the re-leathered dash and seat work; air conditioning cold; all windows and door handles working; HVAC knobs intact.</li>
+      <li><strong>Collect the originals:</strong> the full Harlingen repair-order stack and any Ferrari of San Antonio records. They materially support the car’s value.</li>
+    </ol>
+  </div>
+</section>
+
+<section id="reference" class="chapter">
+  <header>
+    <div class="roman">ix.</div>
+    <h2>Reference</h2>
+    <p>Parts and fluids seen in the records, a local price book, and the sources from which this record was compiled.</p>
+  </header>
+  <div>
+    <div class="t"><table>
+      <tr><th>System</th><th>Specification or part in the records</th><th>Particulars</th></tr>
+      <tr><td>Engine</td><td>3.6 L F131 V8, ~395–400 hp. Pakelo, Shell 5W40 and Spirax oils used.</td><td>Eight plugs (NGK); air and pollen filters at each major service</td></tr>
+      <tr><td>Gearbox</td><td>F1 six-speed. 75W90 / Shell Spirax gear oil; dedicated F1 system fluid.</td><td>F1 pump and accumulator are the wear items</td></tr>
+      <tr><td>Coolant</td><td>G48 blue (recent), antifreeze; thermostat 183758</td><td>Heat exchanger and two radiators done 2010</td></tr>
+      <tr><td>Heat exchanger</td><td>PN 180846; sleeves 187173, O-ring 101044, crush washers 10263460</td><td>Fitted 2010; see chapter vi</td></tr>
+      <tr><td>Belts</td><td>Cam timing belts and two variators; Dayco accessory belts (alternator, water pump, power steering, air conditioning)</td><td>Done 2006 / 2013 / 2020</td></tr>
+      <tr><td>Clutch</td><td>360 clutch disc, flywheel, throwout bearing, ring gear. Complete unit PN 201680.</td><td>Replaced January 2006 at 8,544 mi, prompted by a faulty throwout bearing (RO 26039 line 08) with the gearbox already out for belts; the clutch read 58% worn (SD2 era), not end of life. ~15k mi and 20 years on it now; SD3/Leonardo read required.</td></tr>
+      <tr><td>Tyres</td><td>215/45ZR18 front · 275/40ZR18 rear</td><td>Michelin, then Bridgestone Potenza, then Pirelli (2020)</td></tr>
+      <tr><td>Wheels</td><td>OEM PN 164173/164175; 5×108, 67.1mm bore, M14×1.5, stud PN 181291</td><td>Standard BBS 18s</td></tr>
+      <tr><td>Brakes</td><td>Front and rear pads; ABS pump (used, 2014); master cylinder (2013)</td><td>Shell Donax brake fluid</td></tr>
+      <tr><td>Fuel</td><td>In-tank pumps (left and right), charcoal canister, rollover valves, fuel-level sensor</td><td>Pumps done 2014 / 2017 / 2020</td></tr>
+      <tr><td>Diagnostics</td><td>Ferrari SD2/SD3-era tooling (per “SD2 TEST OK” notes); Leonardo for clutch %</td><td>European ECU: confirm readiness for Texas inspection</td></tr>
+    </table></div>
+
+    <h3>Price Book · The Garagisti, Houston, RO 10821, September 2025</h3>
+    <p>Actual tax-inclusive line items from a comparable 2002 360 Modena at a Houston Ferrari independent (The Garagisti, 10608 Hempstead Rd, 832-737-8206). A price book for budgeting this car’s sorting, not an estimate for it. The same low-use 360 maintenance curve: fuel-line leaks, collapsed mounts, valve-cover gasket leaks, aged tyres, 35% clutch.</p>
+    <div class="t"><table>
+      <tr><th>Job</th><th class="r">Tax-inclusive</th><th>Relevance to this car</th></tr>
+      <tr><td>360 timing-belt service<small>Belts, tensioner, air-conditioning, alternator and power-steering belts.</small></td><td class="r fig">$7,124</td><td>Due. Excludes water pump and variators.</td></tr>
+      <tr><td>Valve-cover gaskets, cam seals (×4), plugs</td><td class="r fig">$3,640</td><td>With belts; likely needed given the leak pattern</td></tr>
+      <tr><td>Water pump</td><td class="r">Not on this RO</td><td>Due (2013). Quote required; budget ~$1.5–2.5k.</td></tr>
+      <tr><td>Engine mounts, pair</td><td class="r fig">$1,543</td><td>Likely; mounts collapse with age and heat</td></tr>
+      <tr><td>Fuel feed lines, both<small>A fire-risk item.</small></td><td class="r fig">$1,171</td><td>Watch. Left-hand pump done 2020; lines to be determined.</td></tr>
+      <tr><td>Power-steering line rebuild and fitting</td><td class="r fig">$1,781</td><td>Lines done 2020; likely sound</td></tr>
+      <tr><td>Fuel pump, one side<small>$2,843 for both.</small></td><td class="r fig">$1,293</td><td>Both done 2017, left-hand again 2020; likely sound</td></tr>
+      <tr><td>Steering tie-rod end boots</td><td class="r fig">$781</td><td>Inspect at service</td></tr>
+      <tr><td>Brake fluid exchange</td><td class="r fig">$201</td><td>Inexpensive; do it</td></tr>
+      <tr><td>Four-wheel alignment</td><td class="r fig">$249</td><td>With new tyres</td></tr>
+      <tr><td>Oil change and coolant flush</td><td class="r fig">$0<small>Bundled with other work.</small></td><td>Included in the major</td></tr>
+      <tr><td>Tyres, Michelin PS A/S 4, set, mounted and balanced</td><td class="r fig">$1,558</td><td>Reference only. The owner’s plan was PS5 summer tyres, OEM 215/45 and 275/40.</td></tr>
+      <tr><td>Alternator<small>Declined on that car.</small></td><td class="r fig">$2,395</td><td>Inspect; accessory drive, in the belt zone</td></tr>
+      <tr class="sum"><td>Front-end sort, this car</td><td class="r fig">≈ $11–13k</td><td>Belt service, valve-cover gaskets, cam seals, plugs and water pump. Add mounts (~$1.5k) and tyres if needed. The working budget until an out-the-door quote is obtained.</td></tr>
+    </table></div>
+
+    <h3>Sources</h3>
+    <p>Compiled from documents in <code>~/Documents/Garage/360modena/</code> (originals in <code>~/Downloads/360/</code>), read by computer vision.</p>
+    <ul class="list">
+      <li><strong>CARFAX Vehicle History Report</strong> for VIN ZFFYR51B000121655, pulled 6/12/26 by Audi Dominion, San Antonio, Texas; 41 records. <code>360 Modena Carfax Updated.pdf</code></li>
+      <li><strong>Service file.</strong> 13 itemised repair orders from a Harlingen, Texas Ferrari independent, 2005–2020; <code>IMG_9529</code>…<code>IMG_9567.jpeg</code>. Shop name unknown and not recoverable from these scans. The repair orders are generic CDK Global / ADP dealer-management printouts with no letterhead, logo, business name or shop address on any page (verified 24 July 2026 across all distinct repair orders: 24999, 26039, 28981, 38422, 39789, 39849, 45093, 45338, 50587). The telephone numbers on them (956-423-4233 home, 956-421-2663 business) belong to the customer, prior owner M. G. Bassett, not the shop. To identify the shop: ask Mario or Ferrari of Houston, or search the Harlingen and Rio Grande Valley area for the Ferrari independent running a CDK/ADP system in 2005–2020.</li>
+      <li><strong>Odometer photograph,</strong> 23,529 mi, dual mph/km/h European cluster. <code>80220807374__….jpeg</code></li>
+      <li><strong>Ferrari of San Antonio</strong> invoice RO 17055, 5 June 2026: mileage correction; customer “EDP Houston”, that is, the seller Mario Ortiz III. <code>80239009108__….jpeg</code></li>
+      <li><strong>Seller:</strong> Mario A. Ortiz III, 713-408-3428, Houston. Facebook Marketplace correspondence, June 2026.</li>
+      <li><strong>Market comparables:</strong> <a href="https://www.classic.com/m/ferrari/360/modena-f1/">classic.com, 360 Modena F1 market</a>; F1 and manual averages and the European-specification discount from FerrariChat and classic.com aggregation, June 2026.</li>
     </ul>
   </div>
-</div>
-<div class="callout green">
-  <span class="tag">Title status</span>
-  CARFAX summary: <strong>No accidents or damage reported · No total loss · No structural damage · No airbag deployment · No salvage/junk/rebuilt/flood/lemon brands.</strong> 41 records, clean throughout. (Note: a clean CARFAX ≠ all-original paint &mdash; see §6 for the documented cosmetic/paint work.)
-</div>
 </section>
 
-<!-- 5 -->
-<section id="belts">
-<h2 class="sec">5 · Major-Service History <span class="pill done">MOSTLY GOOD · ONE CATCH</span></h2>
-<p class="lead">Most of the expensive 360 jobs &mdash; the clutch, the F1 hydraulics, the heat exchanger, the fuel pumps &mdash; have been done here with receipts. <strong>The one big exception is the cam-belt service: it was last done in 2013 and was explicitly DECLINED in 2020.</strong> The belts are now ~13 years old.</p>
-
-<h3>Cam-belt / major service &mdash; done TWICE (2006, 2013, both engine-out)</h3>
-<p>The belt service is the headline maintenance event. <strong>Correction:</strong> on the 360 it does <strong>NOT</strong> require pulling the engine &mdash; unlike the 355, the belts can be done <strong>in-car</strong> (engine in; seats out + accessed from below and the cabin bulkhead), the cost-effective route at a Houston Ferrari indie &mdash; <strong>~$7.1k for the belt service</strong> (real number: The Garagisti, Houston, Sep 2025; see price-reference table below). This car's two prior services happened to be done <strong>engine-out</strong> by the Harlingen indie &mdash; but those ROs bundled clutch, flywheel, respray, dash re-leather and tires, which is why they ran $26&ndash;34k; that is <em>not</em> the belt-only cost. Two documented services, then a deferral:</p>
-<table>
-  <tr><th>Date</th><th>Mi</th><th>What was done</th><th>RO / cost</th></tr>
-  <tr class="moneyrow"><td><strong>Jan 2006</strong></td><td>8,544</td><td>Belt service <strong>+ clutch</strong>: R&amp;R engine &amp; gearbox; reseal timing cover, front crank, oil pan; new <strong>timing belts, tensioners, bearings, rollers, cam seals, 2 timing variators</strong>, 8 plugs, water pump, all accessory belts, thermostat, coolant. <strong>Clutch found at 58%</strong> → new clutch disc, <strong>flywheel</strong>, throwout bearing, ring gear. F1 pump replaced.</td><td>RO 26039 · <strong>$26,793</strong></td></tr>
-  <tr class="moneyrow"><td><strong>Jul 2013</strong></td><td>18,448</td><td>Belt service again: R&amp;R engine &amp; trans; cam-cover gaskets/seals, <strong>belts, hydraulic tensioners, 2 timing variators</strong>, intake-manifold gaskets, bearings, fuel pumps; <strong>water-pump rebuild + thermostat</strong>; full brake overhaul (pads + master cylinder); headlight-lens restoration; dash re-leather; 4 tires; wheels refinished.</td><td>RO 38422 · <strong>$34,124</strong></td></tr>
-  <tr class="moneyrow"><td><strong>Oct 2020</strong></td><td>21,391</td><td><strong>Belt service DECLINED.</strong> RO verbatim: &ldquo;customer <strong>declined</strong> full major service with timing belts, but was authorized to replace all fluids/filters.&rdquo; Done: &ldquo;bi-annual&rdquo; fluids/filters only &mdash; oil, pollen/air filters, A/C + alternator drive belts, gearbox fluid, F1 fluid, coolant, brake bleed (<strong>no timing belts/variators/tensioners</strong>). Plus LH fuel pump, A/C + P/S lines, Pirelli tires, seat re-trim.</td><td>RO 50587 · $11,680</td></tr>
-</table>
-
-<div class="callout red">
-  <span class="tag">Where the clock stands now &mdash; belts are OVERDUE</span>
-  Last actual belt service: <strong>Jul 2013 @ 18,448 mi &mdash; ~13 years ago.</strong> The 2020 major-with-belts was <strong>declined</strong>; only fluids/filters were done. Ferrari's interval is <strong>3&ndash;5 years</strong> regardless of mileage (independents stretch to ~7). At 13 years the belts/variators/tensioners are <strong>well past any interval</strong> &mdash; near-certain immediate cost. <strong>Real local pricing (The Garagisti, Sep 2025): belt service ~$7.1k</strong> (belts + tensioner + accessory belts), <strong>+ ~$3.6k</strong> for cam seals + valve-cover gaskets + plugs (job 7 &mdash; likely needed; this car's leak pattern), <strong>+ water pump</strong> (due since 2013; not on the reference invoice &mdash; budget ~$1.5&ndash;2.5k, get quote). <strong>Full front-end major ≈ $11&ndash;13k</strong>; variators extra if they rattle. <strong>Important:</strong> the <strong>clutch is NOT a while-you're-in-there item for the in-car belt job</strong> &mdash; it lives at the opposite (transaxle) end and needs engine/trans-out to reach. This car's clutch is good (2006, ~15k mi on it) &rarr; <strong>reuse it and stay in-car</strong> (changing it would force the pricier engine-out route). Due now regardless of a 2013-vs-2020 reading &mdash; both are past interval.
-</div>
-
-<div class="callout">
-  <span class="tag">Belt-service scope for THIS car &mdash; what 2020 covered vs. what's still due</span>
-  The Oct-2020 RO did the cheap items in the front-of-engine zone but left the entire timing job. What the in-car belt service should cover now:
-  <table>
-    <tr><th>Item (front-of-engine / in-car access)</th><th>2020</th><th>Now</th></tr>
-    <tr><td>Timing belts (&times;2)</td><td>declined</td><td><strong>DUE</strong></td></tr>
-    <tr><td>Variators (&times;2) + tensioner bearings + hydraulic tensioners</td><td>declined</td><td><strong>DUE</strong> &mdash; inspect variators for rattle (Hill billet upgrade optional)</td></tr>
-    <tr><td>Water pump</td><td>not touched (rebuilt 2013)</td><td><strong>DO with belts</strong></td></tr>
-    <tr><td>Cam seals + front crank seal</td><td>not touched</td><td><strong>DO with belts</strong> (directly behind them)</td></tr>
-    <tr><td>Accessory belts (A/C, alt, P/S)</td><td>done 2020 (~6 yr)</td><td>cheap &mdash; replace as a set anyway</td></tr>
-    <tr><td>Coolant + thermostat</td><td>coolant done 2020</td><td>drained for the water pump &mdash; refresh + do thermostat</td></tr>
-    <tr><td>Spark plugs, cam-cover (= valve-cover) gaskets, filters, oil</td><td>filters/oil 2020</td><td>plugs + cam-cover gaskets with the major</td></tr>
-    <tr><td><strong>Clutch / flywheel</strong> (transaxle end &mdash; NOT this access)</td><td>good since 2006</td><td><strong>reuse</strong> &mdash; do NOT bundle; a swap forces engine-out</td></tr>
-  </table>
-  Shop question to price it: <em>&ldquo;360, in-car, reusing the clutch, water pump + cam/crank seals + variators inspected &mdash; out-the-door?&rdquo;</em>
-</div>
-
-<div class="callout">
-  <span class="tag">💲 Real Houston price reference &mdash; The Garagisti (RO #10821, Sep 2025)</span>
-  <strong>Actual tax-in line-item costs from a comparable 2002 360 Modena at a local Houston Ferrari indie</strong> (The Garagisti, 10608 Hempstead Rd, 832-737-8206). <em>A price book for budgeting THIS car's sorting &mdash; NOT an estimate for it.</em> Same &ldquo;low-use 360 that sat&rdquo; maintenance curve (fuel-line leaks, collapsed mounts, VC-gasket leaks, aged tires, 35% clutch).
-  <table>
-    <tr><th>Job</th><th>Garagisti (tax-in)</th><th>Relevance to this car</th></tr>
-    <tr><td><strong>360 timing belt service</strong> (belts + tensioner + A/C/alt/PS belts)</td><td><strong>$7,124</strong></td><td>DUE now &mdash; does NOT include water pump or variators</td></tr>
-    <tr><td>Valve-cover gaskets + cam seals (&times;4) + plugs</td><td><strong>$3,640</strong></td><td>do with belts; likely needed (leak pattern)</td></tr>
-    <tr><td>Water pump</td><td><em>not on this RO</em></td><td>DUE (2013) &mdash; get quote, budget ~$1.5&ndash;2.5k</td></tr>
-    <tr><td>Engine mounts (pair)</td><td><strong>$1,543</strong></td><td>likely (mounts collapse with age/heat)</td></tr>
-    <tr><td>Fuel feed lines (both &mdash; fire-risk item)</td><td><strong>$1,171</strong></td><td>watch; LH pump done 2020, lines TBD</td></tr>
-    <tr><td>Power-steering line rebuild + install</td><td><strong>$1,781</strong></td><td>PS lines done 2020 &mdash; likely OK</td></tr>
-    <tr><td>Fuel pump &mdash; one side ($2,843 both)</td><td><strong>$1,293</strong></td><td>both done 2017, LH again 2020 &mdash; likely OK</td></tr>
-    <tr><td>Steering tie-rod end boots</td><td><strong>$781</strong></td><td>inspect at service</td></tr>
-    <tr><td>Brake fluid exchange</td><td><strong>$201</strong></td><td>cheap; do it</td></tr>
-    <tr><td>4-wheel alignment</td><td><strong>$249</strong></td><td>do with new tires</td></tr>
-    <tr><td>Oil change + coolant flush</td><td><strong>$0 bundled</strong> when done with other work</td><td>included in the major</td></tr>
-    <tr><td>Tires (Michelin PS A/S 4, set) + mount/balance</td><td><strong>$1,558</strong></td><td>ref only &mdash; Drew's plan is PS5 summer, OEM 215/45 + 275/40</td></tr>
-    <tr><td>Alternator (was declined)</td><td><strong>$2,395</strong></td><td>inspect (accessory drive, in the belt zone)</td></tr>
-  </table>
-  <strong>Bottom line for this car:</strong> belt service + VC/cam-seals/plugs + water pump ≈ <strong>$11&ndash;13k</strong> for the full front-end sort; add mounts (~$1.5k) and tires if needed. Use these figures as the working budget until Drew gets his own out-the-door quote.
-</div>
-
-<div class="callout green">
-  <span class="tag" style="color:var(--green)">✅ CHOSEN SERVICE PLAN &mdash; H&amp;S (Houston), $13,500 all-in (friend-of-owner rate) &mdash; <strong>PAID via Zelle 17 Jul 2026</strong> (card-fee line $471.69 avoided)</span>
-  <strong>Post-payment paperwork:</strong> get the invoice back marked &ldquo;PAID &mdash; Zelle [date]&rdquo; with full itemized scope &mdash; first entry in the H&amp;S era of the service file.
-  <strong>H&amp;S (regarded as the best 360 shop in town) quoted the FULL major at $13,500 &mdash; EVERYTHING: belts, tensioners, variators, cam-cover gaskets, cam seals, valve/cam timing, plugs, coolant.</strong> Critically this <strong>includes the variators</strong> (the expensive contingency) via a friend-of-a-friend rate &mdash; a top-tier shop at a great number (full 360 majors WITH variators normally run $15&ndash;20k). Locking this caps the single biggest immediate cost + its scariest contingency below market.
-  <br><br><strong>Confirm in writing before drop-off:</strong> (1) $13,500 is truly <strong>OUT-THE-DOOR</strong> (parts + labor + tax, nothing added); (2) <strong>water pump included</strong> (2013 &mdash; the one item not named in the quote); (3) variators <strong>OEM vs Hill billet</strong>; (4) reusing the good clutch / in-car method; (5) timeline + how long the price holds; (6) <strong>which scanner the clutch snapshot comes from and whether the % reads WEAR or REMAINING</strong> (see manual-conversion notes below &mdash; the two conventions are opposite and shops confuse them).
-</div>
-
-<div class="callout green">
-  <span class="tag" style="color:var(--green)">EXHAUST &mdash; used Tubi silencer BOUGHT $1,000 (15 Jul 2026)</span>
-  Well under the $2&ndash;3k+ used market. Plan: <strong>H&amp;S bolts it on during the belt major</strong> (trivial labor, car already on the lift); stock silencer comes off, gets bagged/tagged with date+mileage and <strong>stays with the car</strong> (its white insulation blanket degrades with heat cycles &mdash; removal stops the clock; Tubi has no blanket to shed). <strong>On-arrival checks:</strong> ① real Tubi (serial plate + provenance) ② valved vs non-valved (valved = livable; non-valved drones on highway) ③ shake test for broken baffles, cracks at weld seams/hangers, flange condition ④ gaskets/clamps/valve-actuator lines included. <strong>Same lift visit:</strong> eyeball headers for cracks, shake cats for rattle, note stock silencer insulation state. Post-cat swap &mdash; no CEL/emissions implication on the Euro car.
-</div>
-
-<div class="callout">
-  <span class="tag">MOD PLAN (as of 18 Jul 2026) &mdash; reversible bolt-ons; keep every takeoff with the car</span>
-  <table>
-    <tr><th>Mod</th><th>Cost</th><th>Status / notes</th></tr>
-    <tr><td><strong>Tubi silencer</strong> (used)</td><td>$1,000 <span class="pill done">BOUGHT</span></td><td>Install at H&amp;S visit; arrival checks (serial, valved?, cracks, hardware); stock unit bagged/tagged.</td></tr>
-    <tr><td><strong>CS (Challenge Stradale) TCU</strong> BNIB</td><td>$2,500 agreed</td><td>~40% faster F1 shifts. Verify label 196986 + DOA terms in writing; keep original TCU. Redundant if/when converted &mdash; resell or keep with F1 takeoffs.</td></tr>
-    <tr><td><strong>CS-style airboxes (aftermarket) + F430 MAFs</strong></td><td><strong>~$1,420</strong> (boxes $1,200 + MAFs $110 ea &times;2)</td><td>The classic intake combo &mdash; CS induction sound + flow, larger 430 MAF bodies. Aftermarket boxes chosen over $3&ndash;5k real CS carbon (right call &mdash; openly replica, keep receipts). <strong>Fit BEFORE the tune</strong> so the flash is calibrated to this intake. Keep stock airboxes/MAFs.</td></tr>
-    <tr><td><strong>360Trev (Senica.ga) ECU tune</strong></td><td>$2,500</td><td>Flash AFTER intake hardware. <strong>Ask Trev first:</strong> does this tune carry into his manual-conversion flash later, or is that a re-flash (avoid paying for the software twice if the conversion is a &ldquo;when&rdquo;)?</td></tr>
-    <tr><td><strong>Michelin PS4S</strong></td><td>~$2,000</td><td>OEM sizes; 2018-dated tires go regardless of tread. At pickup or right after.</td></tr>
-    <tr><td>Real Scuderia fender shields</td><td>~$1&ndash;2k</td><td>Candidate, uncommitted &mdash; current shields are stickers.</td></tr>
-    <tr><td>Gated conversion (Modena Lucerna)</td><td>~$25&ndash;30k shop / less DIY</td><td><strong>SHELVED 18 Jul 2026</strong> (Drew's call) &mdash; intel below stays current for whenever it revives. Consequences: CS TCU is a keeper (no redundancy), conversion re-triggers naturally at clutch-due time (SD3 read sets that clock).</td></tr>
-  </table>
-  Committed bolt-on total ex-conversion: <strong>~$9.4k</strong> (Tubi $1k + TCU $2.5k + intake ~$1.42k + tune $2.5k + tires ~$2k). Order of operations: H&amp;S major (belts/TCU/Tubi) &rarr; tires &rarr; intake hardware &rarr; Trev tune &rarr; conversion decision on Eric's kit-price answer + SD3 clutch read.
-</div>
-
-<div class="callout">
-  <span class="tag">MANUAL (GATED) CONVERSION &mdash; intel from Eric Goodkind (Ferrari master tech, 20 yrs, Leander TX shop; Modena Lucerna installer; BaT handle <strong>Converted_4re</strong> &mdash; his public comments match his private quotes verbatim), Jul 2026</span>
-  <strong>Kits:</strong> Modena Lucerna = most OEM-complete (2 pedals, clutch-position sensor + bracket, heat shielding, speed-sensor plug, hard lines for pedal feel); Dr.&nbsp;S/Cambio Manuale also excellent; <strong>avoid EAG &amp; MMX</strong> (crude machining tolerances, rough engagement, less complete &mdash; his direct experience).
-  <br><strong>ECU:</strong> use <strong>360Trev (Senica.ga tuning)</strong> &mdash; flashes the car to genuinely BE manual; avoid &ldquo;piggyback&rdquo; recalibration methods (&ldquo;nothing but issues&rdquo;).
-  <br><strong>Method:</strong> his shop will ONLY convert with the <strong>gearbox OUT</strong> &mdash; hydraulic (brake-fluid) method, throwout bearing or its internal seals replaced every time, treated as a <em>safety item</em>. The F1-fluid/trans-in-place shortcut: refused. ⇒ <strong>The conversion IS the clutch job</strong> &mdash; same trans-out event; never do a standalone clutch if converting is on the horizon.
-  <br><strong>Cost:</strong> shop conversion <strong>$25&ndash;30k all-in</strong> typical. DIY adds: kit (price TBD), 360Trev tune, clutch, TOB, fluids, specialty tools, gaskets/hardware, possible RMS/flywheel. Their <strong>install guide: $500</strong> (500 pages, written for the 430 but &ldquo;almost identical&rdquo;), includes 30-day phone/FaceTime support.
-  <br><strong>Euro-spec:</strong> no difference for conversion.
-  <br><strong>Clutch-% trap:</strong> a snapshot &ldquo;80%&rdquo; can mean 80% <em>left</em> or 80% <em>worn</em> depending on scanner; clutches slip at 85&ndash;90% WORN. The seller's &ldquo;~73%&rdquo; claim is direction-ambiguous &mdash; resolve at the H&amp;S SD3/Leonardo read.
-  <br><strong>F1 takeoff parts:</strong> keep them WITH the car (market flooded with used F1 pumps/actuators; reversibility is worth more at resale than the parts fetch). Nothing is hard-modified in the conversion.
-</div>
-</section>
-
-<!-- 6 -->
-<section id="recurring">
-<h2 class="sec">6 · Recurring Systems Log (what this car has actually needed)</h2>
-<p class="lead">Patterns across the receipts &mdash; these are the systems that have demanded attention, mostly the classic symptoms of a <strong>low-use exotic</strong> (things rot from sitting, not from driving).</p>
-<table>
-  <tr><th>System</th><th>History on THIS car</th><th>Status</th></tr>
-  <tr><td><strong>Cooling / heat exchanger</strong></td><td>The known 360 oil/coolant heat-exchanger failure happened here: leaking 2008 (temp clamp fix) → <strong>full failure 2010</strong> with oil-in-coolant; radiators flushed/repaired, water pump &amp; thermostat done ($6,632). Water pump rebuilt again 2013.</td><td><span class="pill done">REPAIRED</span> — confirm no recurring oil/coolant mixing</td></tr>
-  <tr><td><strong>Fuel pumps (in-tank)</strong></td><td>Replaced 2014; <strong>both sides 2017</strong> (RH pump leaking, called &ldquo;extremely dangerous&rdquo;) with new charcoal canister + 4 rollover valves; LH pump + assembly again 2020. Classic ethanol/sitting degradation.</td><td><span class="pill done">DONE ×3</span> — recent, should be healthy</td></tr>
-  <tr><td><strong>F1 hydraulics / clutch</strong></td><td>F1 pump/accumulator serviced 2005, replaced 2006 &amp; 2009 (won't engage gear, low pressure 26 bar); &ldquo;Geartronic&rdquo; light from a bad input-speed-sensor connector 2014. Clutch replaced 2006.</td><td><span class="pill verify">VERIFY</span> — read clutch % + F1 pressures</td></tr>
-  <tr><td><strong>Window regulators</strong></td><td>Driver regulator 2006; passenger 2014 (+ <strong>corrosion found in the passenger door's metal sheet</strong>, fixed with used parts as new regulator unavailable).</td><td><span class="pill done">REPAIRED</span> — check door-bottom corrosion</td></tr>
-  <tr><td><strong>Door handles / locks</strong></td><td>Driver door lock 2006; <strong>both inner handle mechanisms broke 2017</strong> (rattles, won't open from inside) — replaced/repainted.</td><td><span class="pill done">REPAIRED</span></td></tr>
-  <tr><td><strong>HVAC controls</strong></td><td>Brittle A/C control knobs temp-repaired with used parts 2008; A/C recharged/lines repaired 2009, 2020 (blowing cold after).</td><td><span class="pill verify">VERIFY</span> A/C cold + knobs intact</td></tr>
-  <tr><td><strong>Battery / electrical</strong></td><td>Dead/weak batteries repeatedly (2005, 2010, 2014, 2017) and a <strong>battery tender installed 2005</strong> — normal for a car that sits. Reset ECU after flat battery.</td><td>Normal for low-use</td></tr>
-  <tr><td><strong>Paint &amp; cosmetics</strong></td><td>Many touch-ups for rock chips &amp; parking scrapes; bumper/dent repair 2006; <strong>front bumper + both rocker panels repainted 2013</strong>; drip rails refinished; Scuderia fender shields replaced.</td><td><span class="pill verify">NOT all-original paint</span></td></tr>
-</table>
-<div class="callout">
-  <span class="tag">Reading the pattern</span>
-  Nothing here is a red flag for a 360 &mdash; it's the expected maintenance curve of a low-mileage car that sat between drives. The meaningful takeaway: the <strong>fuel system, cooling, F1 pump and clutch have all been addressed</strong>, which is exactly the list a buyer normally fears is <em>pending</em>. The one cosmetic caveat is <strong>paint</strong>: the front end has been resprayed/touched-up over the years, so put a paint-depth gauge on it.
-</div>
-</section>
-
-<!-- 7 -->
-<section id="known360">
-<h2 class="sec">7 · 360 Modena Known Issues &mdash; cross-referenced to this car</h2>
-<table>
-  <tr><th>Sev.</th><th>Known 360 weak point</th><th>On this car?</th></tr>
-  <tr><td><span class="sev a"></span></td><td><strong>Sticky / shrinking dashboard &amp; trim</strong> (soft-touch coating degrades)</td><td>Already happened &amp; <strong>fixed</strong>: dash leather shrank/separated, fiberglass structure repaired, re-covered with French-stitched leather, airbag cover re-glued (2013). A <span class="pill done">PLUS</span>.</td></tr>
-  <tr><td><span class="sev a"></span></td><td><strong>F1 pump &amp; clutch wear</strong> (actuator/accumulator failures, clutch life 15&ndash;30k)</td><td>F1 pump done 2×; clutch done once (2006). Get a <strong>Leonardo/SD3 clutch-wear read</strong> at PPI.</td></tr>
-  <tr><td><span class="sev r"></span></td><td><strong>Cam-belt variators &amp; tensioner bearings</strong></td><td>Belts + variators done 2006 &amp; 2013; belt service <strong>declined in 2020</strong>. <strong>~13 years overdue</strong> — <strong>in-car</strong> ~$7.1k belts / ~$11&ndash;13k full front-end sort (real: Garagisti Sep-2025, &sect;5). NOT engine-out.</td></tr>
-  <tr><td><span class="sev a"></span></td><td><strong>Heat-exchanger / coolant-in-oil</strong></td><td>Failed &amp; <strong>replaced 2010</strong>. Confirm it's stayed clean.</td></tr>
-  <tr><td><span class="sev y"></span></td><td><strong>Headlight lens clouding</strong></td><td>Restored 2013.</td></tr>
-  <tr><td><span class="sev y"></span></td><td><strong>Brittle interior bits</strong> (HVAC knobs, door handles, switchgear)</td><td>HVAC knobs, door handles, steering-column switch panel all addressed (2008/2014/2017).</td></tr>
-  <tr><td><span class="sev g"></span></td><td><strong>Manifold / cat &amp; secondary-air faults</strong></td><td>Secondary-air harness &amp; pipes reinstalled 2006; no cat failure recorded. <span class="pill verify">VERIFY</span> no CEL.</td></tr>
-  <tr><td><span class="sev g"></span></td><td><strong>Tires aging out</strong> (low-mileage cars run old rubber)</td><td>Current <strong>Pirellis fitted 2020</strong> — ~6 yrs old now; likely due for replacement on <strong>age</strong> (not tread). Budget a set.</td></tr>
-</table>
-</section>
-
-<!-- 8 -->
-<section id="status">
-<h2 class="sec">8 · Current Status &amp; What's Due</h2>
-<div class="grid2">
-  <div class="card">
-    <h3><span class="pill done">Recently sorted</span></h3>
-    <ul>
-      <li>Bi-annual fluids/filters + F1 fluid (2020) — <em>belts not included</em></li>
-      <li>Fuel pumps, charcoal canister, rollover valves (2017/2020)</li>
-      <li>A/C lines + recharge, P/S lines (2020)</li>
-      <li>New Pirelli tires (2020)</li>
-      <li>Heat exchanger / cooling overhaul (2010, water pump 2013)</li>
-      <li>ABS pump + brake master cylinder (2013/2014)</li>
-    </ul>
-  </div>
-  <div class="card">
-    <h3><span class="pill open">Coming due / to confirm</span></h3>
-    <ul>
-      <li><strong>Cam-belt service — OVERDUE</strong> (last done 2013, ~13 yrs; declined 2020). <strong>~$7.1k belts</strong> in-car (real: Garagisti Sep-2025); <strong>~$11&ndash;13k</strong> full front-end sort (+ water pump + cam seals + VC gaskets + plugs). Clutch is good &rarr; reuse and stay in-car (a clutch swap would force the pricier engine-out). Due now regardless of a 2013-vs-2020 reading.</li>
-      <li><strong>Tires</strong> — 2020 set aging out; plan a replacement.</li>
-      <li><strong>Clutch wear %</strong> — 20-yr-old clutch, get a reading.</li>
-      <li><strong>Mileage-correction note</strong> — confirm title shows 23,529 (Ferrari SA RO 17055).</li>
-      <li><strong>Euro-spec / federalization docs</strong> — obtain &amp; confirm they transfer.</li>
-      <li><strong>Battery</strong> — keep on a tender; cars that sit kill batteries.</li>
-    </ul>
-  </div>
-</div>
-</section>
-
-<!-- 8A -->
-<section id="deal">
-<h2 class="sec">8A · Seller &amp; Valuation <span class="pill open">IN NEGOTIATION · JUN 2026</span></h2>
-<div class="grid2">
-  <div class="card">
-    <h3>Who's selling it</h3>
-    <ul>
-      <li><strong>Mario A. Ortiz III</strong> — <strong>713-408-3428</strong>, Houston, TX.</li>
-      <li>Same party as &ldquo;EDP Houston, 4107 Beggs St&rdquo; on the Ferrari of San Antonio invoice (same phone) — but this is a <strong>broker/consignment for the verified one owner</strong>, not a dealer flip (corrected). The June 2026 Ferrari SA visit was pre-sale service + a mileage-paperwork correction.</li>
-      <li><strong>Credibility:</strong> the one-owner claim checked out, which makes his other claims (the 2020 &ldquo;fresh service,&rdquo; clutch ~73%) more believable &mdash; but still PPI-verify; the records show belts at 2013, not a recent full service.</li>
-      <li>Contact via FB Marketplace (Drew's account shows a different name — marketplace-only).</li>
-    </ul>
-  </div>
-  <div class="card">
-    <h3>Negotiation read</h3>
-    <ul>
-      <li><strong>Asking: $110k. Failed buyer was at $100k</strong> (couldn't fund). <strong>Drew offered $85k cash on 26 Jun 2026.</strong></li>
-      <li>Leverage to Drew: <strong>ready cash / no financing contingency</strong> (the exact thing the $100k buyer failed at) + credible Ferrari owner (red/black 308). Worth real money to close fast.</li>
-      <li>The <strong>$100k is soft</strong> (non-performing buyer); don't anchor to it. $110k is a normal aspirational ask, not a transaction.</li>
-    </ul>
-  </div>
-</div>
-
-<h3>Market comps (F1 coupe, REALIZED, as of Jun 2026)</h3>
-<p>Two corrections to my first pass: (1) the &ldquo;~$77k F1 coupe average&rdquo; was a blended median dragged by high-mile/old sales &mdash; it <strong>understates a low-mile car in today's hot Ferrari market</strong>; (2) the Euro penalty is far smaller than folklore (data below).</p>
-<table>
-  <tr><th>Reference (source)</th><th>Figure</th></tr>
-  <tr><td><strong>Near-twin</strong> — <a href="https://bringatrailer.com/listing/2003-ferrari-360-modena-45/">22k-mi <strong>Rosso Corsa</strong> F1 coupe</a> (BaT, May ’25)</td><td><strong>$97,666</strong></td></tr>
-  <tr><td><a href="https://bringatrailer.com/listing/2000-ferrari-360-modena-100/">18k-mi F1 coupe</a> (BaT, Mar ’26)</td><td>$95,500</td></tr>
-  <tr><td>24–26k-mi F1 coupes (BaT ’25): <a href="https://bringatrailer.com/listing/2004-ferrari-360-modena-29/">24k</a> · <a href="https://bringatrailer.com/listing/2003-ferrari-360-modena-48/">26k Rosso</a> · <a href="https://bringatrailer.com/listing/1999-ferrari-360-modena-56/">18k</a></td><td>$85,500–$87,000</td></tr>
-  <tr><td><strong>LIVE test</strong> — <a href="https://bringatrailer.com/listing/2003-ferrari-360-modena-56/">black 16k-mi F1 coupe</a>, US-spec, belts ’21, clutch 78% (BaT, closes 26 Jun)</td><td>bid $81k → <span class="pill verify">pending</span></td></tr>
-  <tr><td><strong>Low-mile (≤30k) F1 coupe band</strong> — realized</td><td><strong>~$85,000–$98,000</strong></td></tr>
-  <tr><td><strong>Euro-spec discount</strong> (measured, our DB — Euro cars sell ~in line w/ US)</td><td><strong>&minus;$3,000–5,000</strong> <span class="src">(not the $15k folklore)</span></td></tr>
-  <tr><td><strong>One-owner premium</strong> (measured across 26 models)</td><td><strong>~0%</strong> <span class="src">(risk-reduction, not price)</span></td></tr>
-  <tr><td>360 Modena <strong>manual</strong> average (contrast)</td><td>~$126,000 — F1 is the value-baseline gearbox</td></tr>
-</table>
-<div class="callout amber">
-  <span class="tag">The whole negotiation in one line</span>
-  A <strong>sorted, US-spec, low-mile F1 coupe is a ~$90–95k car today</strong> (the 22k Rosso did $97.7k; our model runs ~20% <em>light</em> on low-mile Ferraris right now, so trust the comp cloud, lean high). This car discounts off that for <strong>belts ~13 yrs overdue</strong> (&minus;$8&ndash;10k), <strong>Euro-spec</strong> (&minus;$3&ndash;5k), repaint/tires (&minus;$4&ndash;5k), <em>plus</em> the deep one-owner records (+$4&ndash;5k) &mdash; netting a <strong>fair buy ~$78&ndash;83k</strong>. One-owner is confirmed but adds ~0% to price (it's a risk-reducer).
-</div>
-
-<h3>Adjusted valuation for THIS car</h3>
-<table>
-  <tr><th>Factor</th><th>Direction</th><th>$ effect</th></tr>
-  <tr><td>US-spec sorted low-mile baseline (hot market, model runs light)</td><td>start</td><td>~$90,000&ndash;95,000</td></tr>
-  <tr><td>Euro-spec (measured, not folklore)</td><td>&minus;</td><td>&minus;$3,000&ndash;5,000</td></tr>
-  <tr><td><strong>Cam-belt service due now</strong> (2013; current-rate $ regardless of 2013-vs-2020)</td><td>&minus;&minus;</td><td>&minus;$8,000&ndash;10,000</td></tr>
-  <tr><td>Front-end repaint / not all-original paint</td><td>&minus;</td><td>&minus;$2,000&ndash;3,000</td></tr>
-  <tr><td>Tires aging (2020 set)</td><td>&minus;</td><td>&minus;$2,000</td></tr>
-  <tr><td>Deep one-owner documented history (price premium ~0, but real risk-reducer)</td><td>+</td><td>+$4,000&ndash;5,000</td></tr>
-  <tr><td><strong>= Fair buy</strong></td><td></td><td><strong>~$78,000&ndash;83,000</strong></td></tr>
-</table>
-<div class="callout green">
-  <span class="tag">Offer framework — Drew offered $85k cash (26 Jun 2026)</span>
-  <strong>$85k is at/just above the top of fair</strong> — defensible in a hot Ferrari market where the model runs light, and a strong anchor vs the $110k ask. Treat <strong>$85k as the practical ceiling, not a midpoint:</strong> $85k + ~$10&ndash;14k (belts done right + tires + the smart &ldquo;while-you're-in-there&rdquo; clutch/water pump) = <strong>~$95&ndash;99k all-in</strong>, which is fair-to-full for a sorted Euro car. If Mario counters $90k+, <strong>don't chase</strong> — anchor back on the documented belt liability ($8&ndash;10k, due now) and Euro-spec.
-  <br><br><strong>Conditions:</strong> make it <span class="pill verify">PPI-contingent</span> (fresh SD3/Leonardo clutch + F1 read, belt-date confirm, compression/leak-down + cooling pressure test given heat-exchanger history, paint-depth gauge on the resprayed nose/rockers). And <strong>DO NOT drive it home</strong> — 13-yr belts (interference engine) + 6-yr-old tires ⇒ trailer it (~$300&ndash;800) or service before any highway miles.
-</div>
-</section>
-
-<!-- 9 -->
-<section id="ppi">
-<h2 class="sec">9 · Pre-Purchase / Verify-on-Car Checklist</h2>
-<p class="lead">Drew-style stress test: where does this specific car break, and what would you confirm before money changes hands?</p>
-<ol>
-  <li><strong>Belt-service clock</strong> — get the next cam-belt job priced; use the by-time interval as negotiation leverage (~$5&ndash;12k).</li>
-  <li><strong>F1 + clutch health</strong> — Ferrari SD3 / Leonardo read: <strong>clutch wear %</strong>, F1 pump pressures, no stored gearbox faults, smooth self-learn.</li>
-  <li><strong>Heat-exchanger / cooling</strong> — pull oil cap &amp; coolant: no emulsion/mixing; confirm the 2010 repair held; fans cycle.</li>
-  <li><strong>Paint-depth gauge the whole car</strong> — especially front bumper, both rockers, fenders (documented respray/touch-ups). Confirm no hidden collision behind the clean CARFAX.</li>
-  <li><strong>Door-bottom &amp; sill corrosion</strong> — the 2014 RO found corrosion in the passenger door's inner sheet; inspect both doors &amp; sills.</li>
-  <li><strong>Euro-spec paperwork</strong> — DOT/EPA federalization &amp; import docs in hand; confirm clean transfer with the TX title.</li>
-  <li><strong>Title vs. odometer</strong> — title reflects the corrected <strong>23,529</strong> mi; chain of ownership matches the long Harlingen history.</li>
-  <li><strong>Cosmetic/interior</strong> — verify the re-leathered dash &amp; seat work, A/C blows cold, all windows &amp; door handles operate, HVAC knobs intact.</li>
-  <li><strong>Collect the originals</strong> — the full Harlingen RO stack + any Ferrari SA records; they materially support the car's value.</li>
-</ol>
-</section>
-
-<!-- 10 -->
-<section id="cost">
-<h2 class="sec">10 · Documented Cost History</h2>
-<p>Itemized invoices in the file (Harlingen independent unless noted). This is <strong>documented spend, not a complete service record</strong> — but it's a remarkable trail.</p>
-<table>
-  <tr><th>Date</th><th>RO</th><th>Mi</th><th>Headline work</th><th>Total</th></tr>
-  <tr class="moneyrow"><td>Jan 2005</td><td>24999</td><td>6,148</td><td>F1 reseal, battery, siren, door shut, drip rails</td><td>$3,138.54</td></tr>
-  <tr class="moneyrow"><td>Jan 2006</td><td>26039</td><td>8,544</td><td><strong>Belt service + clutch/flywheel + F1 pump</strong> + dash re-leather + 4 Michelins</td><td>$26,793.39</td></tr>
-  <tr class="moneyrow"><td>Nov 2006</td><td>26977</td><td>9,000</td><td>No-start (weak battery), ASR, radio, touch-ups</td><td>$363.67</td></tr>
-  <tr class="moneyrow"><td>Jun 2008</td><td>28981</td><td>13,530</td><td>Heat-exchanger leak, tune-up, HVAC knobs, tires, inspection</td><td>$3,595.29</td></tr>
-  <tr class="moneyrow"><td>Apr 2009</td><td>30079</td><td>13,532</td><td>Died-while-driving (no fault found), service, window vent</td><td>$2,226.08</td></tr>
-  <tr class="moneyrow"><td>Jul 2009</td><td>30440</td><td>15,697</td><td><strong>F1 hydraulic pump + relay</strong> (won't engage), A/C</td><td>$4,078.48</td></tr>
-  <tr class="moneyrow"><td>Jan 2010</td><td>31305</td><td>16,356</td><td><strong>Heat-exchanger failure</strong>: radiators, water pump, thermostat, oil-in-coolant</td><td>$6,632.35</td></tr>
-  <tr class="moneyrow"><td>Jul 2013</td><td>38422</td><td>18,448</td><td><strong>Belt service #2</strong> + water pump + brakes + headlights + dash + tires + wheels</td><td>$34,124.47</td></tr>
-  <tr class="moneyrow"><td>Jan 2014</td><td>39789</td><td>18,455</td><td><strong>ABS pump</strong>, fuel pump, battery, F1 connector, A/C belt</td><td>$1,661.02</td></tr>
-  <tr class="moneyrow"><td>Feb 2014</td><td>39849</td><td>18,458</td><td>Euro headlight gasket, pass. window/door corrosion, seats, Scuderia shields</td><td>$1,182.20</td></tr>
-  <tr class="moneyrow"><td>Feb 2017</td><td>45093</td><td>20,231</td><td><strong>Major service + both fuel pumps</strong> + charcoal canister + rollover valves + door handles</td><td>$8,777.76</td></tr>
-  <tr class="moneyrow"><td>Mar 2017</td><td>45338</td><td>20,243</td><td>Complete detail</td><td>$250.00</td></tr>
-  <tr class="moneyrow"><td>Oct 2020</td><td>50587</td><td>21,391</td><td>Bi-annual fluids/filters (<strong>belts declined</strong>) + fuel pump + A/C/PS lines + Pirellis + seat</td><td>$11,679.66</td></tr>
-  <tr class="moneyrow"><td>Jun 2026</td><td>17055*</td><td>23,529</td><td>Ferrari of San Antonio — mileage-discrepancy correction (*official dealer)</td><td>$0.00</td></tr>
-</table>
-<div class="callout green">
-  <span class="tag">Total documented</span>
-  <strong>≈ $104,500</strong> across 13 itemized invoices, 2005&ndash;2020 &mdash; on a car that has covered only ~17,000 miles in that span. The maintenance has cost multiples of the typical drive.
-</div>
-</section>
-
-<!-- 11 -->
-<section id="parts">
-<h2 class="sec">11 · Parts &amp; Specs Quick Reference</h2>
-<table>
-  <tr><th>System</th><th>Spec / part seen in records</th><th>Notes</th></tr>
-  <tr><td>Engine</td><td>3.6 L F131 V8, ~395&ndash;400 hp; Pakelo / Shell 5W40 &amp; Spirax oils used</td><td>8 plugs (NGK); air + pollen filters each major service</td></tr>
-  <tr><td>Gearbox</td><td>F1 6-speed; 75W90 / Shell Spirax gear oil; dedicated <strong>F1 system fluid</strong></td><td>F1 pump + accumulator are the wear items</td></tr>
-  <tr><td>Coolant</td><td><strong>G48 blue</strong> (recent), antifreeze; thermostat 183758</td><td>Heat exchanger + 2 radiators done 2010</td></tr>
-  <tr><td>Belts</td><td>Cam <strong>timing belts</strong> + 2 <strong>variators</strong>; Dayco accessory belts (alt/water/PS/AC)</td><td>Done 2006 / 2013 / 2020</td></tr>
-  <tr><td>Clutch</td><td>360 clutch disc + flywheel + throwout bearing + ring gear</td><td>Replaced 2006 @ 58% wear</td></tr>
-  <tr><td>Tires</td><td><strong>215/45ZR18 front · 275/40ZR18 rear</strong></td><td>Michelin → Bridgestone Potenza → <strong>Pirelli (2020)</strong></td></tr>
-  <tr><td>Brakes</td><td>Front + rear pads; ABS pump (used, 2014); master cylinder (2013)</td><td>Shell Donax brake fluid</td></tr>
-  <tr><td>Fuel</td><td>In-tank pumps (L&amp;R), charcoal canister, rollover valves, fuel-level sensor</td><td>Pumps done 2014/2017/2020</td></tr>
-  <tr><td>Diagnostics</td><td>Ferrari SD2/SD3 era tooling (per &ldquo;SD2 TEST OK&rdquo; notes); Leonardo for clutch %</td><td>Euro-spec ECU — confirm readiness for TX inspection</td></tr>
-</table>
-</section>
-
-<!-- 12 -->
-<section id="sources">
-<h2 class="sec">12 · Sources</h2>
-<p class="src">Compiled entirely from documents in <code>~/Documents/Garage/360modena/</code> (originals: <code>~/Downloads/360/</code>), reviewed by computer vision:</p>
-<ul class="src">
-  <li><strong>CARFAX Vehicle History Report</strong> for VIN ZFFYR51B000121655, pulled 6/12/26 by Audi Dominion, San Antonio TX (41 records) — <code>360 Modena Carfax Updated.pdf</code>.</li>
-  <li><strong>Service file</strong> — 13 itemized repair orders from a Harlingen, TX Ferrari independent (phone 956-423-4233), 2005&ndash;2020 — <code>IMG_9529</code>&hellip;<code>IMG_9567.jpeg</code>.</li>
-  <li><strong>Odometer photo</strong> (23,529 mi, dual mph/km-h Euro cluster) — <code>80220807374__&hellip;.jpeg</code>.</li>
-  <li><strong>Ferrari of San Antonio</strong> invoice RO 17055, 5 Jun 2026 (mileage correction; customer &ldquo;EDP Houston&rdquo; = seller Mario Ortiz III) — <code>80239009108__&hellip;.jpeg</code>.</li>
-  <li><strong>Seller:</strong> Mario A. Ortiz III, 713-408-3428 (Houston) — FB Marketplace discussion, Jun 2026.</li>
-  <li><strong>Market comps:</strong> <a href="https://www.classic.com/m/ferrari/360/modena-f1/">classic.com 360 Modena F1 market</a>; F1-vs-manual averages &amp; Euro-spec discount via FerrariChat / classic.com aggregation (Jun 2026).</li>
-</ul>
-<footer>
-  Compiled for Drew Campbell · Ferrari 360 Modena F1 · VIN ZFFYR51B000121655 · history dossier assembled from CARFAX + the service-file ROs + photos · field reference only, not factory documentation. Verify the <span class="pill verify">VERIFY</span> items (model year on title, belt-service clock, clutch %, federalization docs, paint) on the physical car before purchase or work.
-</footer>
+<section id="agenda" class="chapter">
+  <header>
+    <div class="roman">x.</div>
+    <h2>Agenda</h2>
+    <p>Outstanding items, in order of priority.</p>
+  </header>
+  <ol class="agenda">
+    <li><span><strong>Texas title and tax.</strong> Not yet filed, confirmed by the owner 17 August 2026, with filing planned that week. The TxDMV SPV lookup (tools.txdmv.gov/tools/SPV/spv_lookup.php; VIN ZFFYR51B000121655, 23,000 mi) returns “VIN not found”: no SPV exists for the European VIN, so the 6.25% motor-vehicle tax falls on the actual bill-of-sale consideration ($100k ≈ $6,250). At the counter: bill of sale and a screenshot of the empty SPV lookup. Purchased 30 June 2026; the 30-day window lapsed 30 July. Expected cost ~$6,250 tax, ~$625 late penalty (10%) and title late fee ($25 a month, capped at $250). Reminder set in the reserve system (<code>data/reminders.json</code>, 2026-08-21). To be closed only on the owner’s report of the filing receipt.</span><span class="st open">Open</span></li>
+    <li><span><strong>Tyres, age-expired.</strong> Replace at the H&amp;S visit (updated 20 August 2026). The owner reports the present set at about eight years old (DOT ~2018, which predates the 2020 fitting recorded on the repair order; the sidewall DOT stamps are the source of truth), a few thousand miles, climate-controlled storage, regularly exercised: cosmetically good but aged out. Specification: Michelin PS4S, 215/45ZR18 front and 275/40ZR18 rear, current-year DOT dates. If PS4S sizes are discontinued or stock is stale-dated, Pilot Sport 5 in the same sizes is the approved alternative; both sizes reported available August 2026. This supersedes the 31 July finding that PS4S was not made in 275/40ZR18 (chapter vi); re-confirm exact size and fresh DOT at order, and the Scuderia-wheel candidate is moot for tyre sizing unless bought first. For track use, if ever: Yokohama A052, the only full-OEM-fitment 200TW tyre. Fit and align at the same H&amp;S conversion visit.</span><span class="st due">Due</span></li>
+    <li><span><strong>Interim caution.</strong> On the aged tyres, civil driving only: no wet-weather aggression, no sustained hot-highway runs.</span><span class="st due">Observe</span></li>
+    <li><span><strong>H&amp;S major-service invoice.</strong> $13,500 paid by Zelle 17 July 2026. Obtain the itemised paid invoice for the service file and confirm the water-pump and variator line items.</span><span class="st note">Confirm</span></li>
+    <li><span><strong>Gated conversion.</strong> $17k all-in at H&amp;S, committed 13 August 2026. Work-order conditions per chapter vii.</span><span class="st note">Committed</span></li>
+    <li><span><strong>Clutch wear %.</strong> Now a work-order condition of the conversion: readout before teardown, and replacement while open decided on that data.</span><span class="st due">Pre-teardown</span></li>
+    <li><span><strong>Heat exchanger (180846).</strong> The 2010 unit, some 16 years old. Add to the H&amp;S major if still open (~+$1.5–2k, water-pump access overlap); otherwise monitor (expansion-tank sludge, gearbox-oil analysis) until the next front-of-engine event.</span><span class="st due">Decide</span></li>
+    <li><span><strong>Mileage correction.</strong> Confirm the title shows 23,529 (Ferrari of San Antonio RO 17055).</span><span class="st note">Verify</span></li>
+    <li><span><strong>Model year on title.</strong> Sight “2000” when the title is in hand.</span><span class="st note">Verify</span></li>
+    <li><span><strong>European-specification and federalisation documents.</strong> Obtain, and confirm they transfer.</span><span class="st note">Obtain</span></li>
+    <li><span><strong>Original records.</strong> Collect the Harlingen repair-order stack and title chain to confirm one name throughout; identify the Harlingen workshop.</span><span class="st note">Obtain</span></li>
+    <li><span><strong>Paint.</strong> Paint-depth gauge over the resprayed nose and sills.</span><span class="st note">Verify</span></li>
+    <li><span><strong>Battery.</strong> Keep on a tender; cars that stand kill batteries.</span><span class="st note">Monitor</span></li>
+  </ol>
 </section>
 
 </main>
-</div>
+
+<footer class="colophon">
+  <div class="wrap">
+    <div>
+      <div class="brand">Glovebox</div>
+      <p>Private vehicle records. Ferrari 360 Modena F1, chassis 121655, VIN ZFFYR51B000121655. Registry reference 360modena. Compiled for Drew Campbell.</p>
+    </div>
+    <div>
+      <p>Compiled from the CARFAX report, the service-file repair orders and photographs. A field reference only, not factory documentation. Entries marked <span class="src">Verify</span>, among them the model year on the title, the belt-service clock, clutch %, the federalisation documents and paint, are to be confirmed on the physical car before purchase or work.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (() => {
+    const links = [...document.querySelectorAll('.rail a')];
+    if (!('IntersectionObserver' in window)) return;
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (!e.isIntersecting) return;
+      links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + e.target.id));
+    }), { rootMargin: '-35% 0px -55% 0px' });
+    document.querySelectorAll('main section[id]').forEach(s => io.observe(s));
+  })();
+</script>
 </body>
 </html>

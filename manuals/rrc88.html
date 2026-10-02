@@ -3,118 +3,592 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>1988 Range Rover Classic — Owner's Manual (skeleton)</title>
-<style>
-  :root{--brc-green:#1f3d2b;--brc-green-2:#2c5239;--accent:#c9a14a;--ink:#1c1c1c;--muted:#5c5c5c;--paper:#f6f4ee;--card:#fff;--line:#d9d4c7;--red:#9c2b22;--amber:#b5791f;}
-  *{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--paper);line-height:1.55;}
-  main{max-width:900px;margin:0 auto;padding:0 28px 70px}
-  header.hero{background:linear-gradient(135deg,var(--brc-green),var(--brc-green-2));color:#f3f1e8;padding:38px 28px;border-bottom:4px solid var(--accent)}
-  header.hero .kicker{letter-spacing:.2em;text-transform:uppercase;font-size:12px;color:var(--accent);font-weight:700}
-  header.hero h1{margin:6px 0 4px;font-size:32px}
-  header.hero p{margin:0;color:#cdd6cd;max-width:60ch}
-  h2.sec{font-size:22px;border-bottom:2px solid var(--line);padding-bottom:8px;margin:30px 0 14px;color:var(--brc-green)}
-  table{border-collapse:collapse;width:100%;margin:12px 0;background:var(--card);border:1px solid var(--line);font-size:14.5px}
-  th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}
-  th{background:#eceade;font-size:12px;letter-spacing:.05em;text-transform:uppercase;color:#4a4a4a}
-  .callout{border-left:5px solid var(--accent);background:#fbf8ef;padding:12px 16px;border-radius:0 8px 8px 0;margin:14px 0}
-  .callout.amber{border-color:var(--amber);background:#fbf5e8}
-  .callout .tag{font-weight:700;text-transform:uppercase;font-size:11px;letter-spacing:.08em;display:block;margin-bottom:3px;color:var(--amber)}
-  .pill{display:inline-block;font-size:11px;font-weight:700;padding:2px 9px;border-radius:20px;background:#fbe9c8;color:#7a5a10;border:1px solid #e3c478}
-  ul{padding-left:20px}code{background:#e7e3d6;padding:1px 6px;border-radius:4px;font-family:Menlo,monospace;font-size:.9em}
-  footer{border-top:1px solid var(--line);margin-top:36px;padding-top:16px;font-size:13px;color:var(--muted)}
-</style>
+<title>Range Rover Classic · Chassis 313671</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/glovebox.css">
+<style>.hero::after{content:"88"}</style>
 </head>
 <body>
-<nav style="background:#15281c;padding:9px 28px;border-bottom:2px solid #c9a14a"><a href="../index.html" style="color:#c9a14a;text-decoration:none;font-weight:700;font-size:13px;letter-spacing:.08em">&larr; THE GARAGE</a></nav>
+
+<div class="mast"><div class="wrap">
+  <a class="brand" href="../index.html">Glovebox</a>
+  <nav><a href="../index.html">The Garage</a><a href="#diagnosis">Diagnosis</a></nav>
+</div></div>
+
 <header class="hero">
-  <div class="kicker">Owner's Reference Manual</div>
-  <h1>1988 Range Rover Classic</h1>
-  <p>Drew's second Range Rover — a separate vehicle from the '95 LWB "Lazarus." Clean, low-original-mile 4-door SWB on coils (pre-EAS). The KEEPER of the fleet.</p>
+  <div class="wrap">
+    <div class="label">Vehicle Record · Chassis 313671</div>
+    <h1>1988 Range Rover <em>Classic</em></h1>
+    <p class="sub">Four-door, short wheelbase, on coil springs ahead of air suspension. Low original mileage. A separate vehicle from the 1995 LWB “Lazarus”.</p>
+    <dl class="plate">
+      <div><dt>VIN</dt><dd class="vin">SALHV114XJA313671</dd></div>
+      <div><dt>Engine</dt><dd>3.5 L EFI V8</dd></div>
+      <div><dt>Gearbox</dt><dd>Automatic</dd></div>
+      <div><dt>Suspension</dt><dd>Coil, pre-EAS</dd></div>
+      <div><dt>Odometer</dt><dd class="num">c. 43,000 mi</dd></div>
+      <div><dt>Disposition</dt><dd>For sale</dd></div>
+    </dl>
+  </div>
 </header>
-<main>
 
-<div class="callout amber">
-  <span class="tag">Verification status <span class="pill">DRAFT</span></span>
-  Populated from Drew's first-hand inspection (2026-06). Facts are marked <strong>owner-stated</strong> (Drew has eyes-on but not document-verified) or <strong>confirm via VIN/records</strong>. This is a separate truck from Lazarus — it shares <em>none</em> of Lazarus's mods (no engine swap, no Megajolt/EDIS, no EAS, no lockers). Stock unless stated.
-</div>
+<nav class="rail" aria-label="Sections"><div class="wrap">
+  <a href="#condition"><span class="r">i</span>Condition</a>
+  <a href="#specification"><span class="r">ii</span>Specification</a>
+  <a href="#provenance"><span class="r">iii</span>Provenance</a>
+  <a href="#issues"><span class="r">iv</span>Known Issues</a>
+  <a href="#history"><span class="r">v</span>Service History</a>
+  <a href="#diagnosis"><span class="r">vi</span>Diagnosis</a>
+  <a href="#electrical"><span class="r">vii</span>Electrical</a>
+  <a href="#parts"><span class="r">viii</span>Parts</a>
+  <a href="#market"><span class="r">ix</span>Market &amp; Sale</a>
+  <a href="#agenda"><span class="r">x</span>Agenda</a>
+</div></nav>
 
-<h2 class="sec">1 · Vehicle Overview</h2>
-<table>
-  <tr><th>Item</th><th>Detail</th></tr>
-  <tr><td>Model / trim</td><td>1988 Range Rover Classic, <strong>4-door, SWB (100" wheelbase)</strong> <span class="pill">OWNER-STATED</span>. All '88 Classics are SWB. Trim level (base vs County) <em>not yet confirmed</em> — confirm via VIN/badging.</td></tr>
-  <tr><td>VIN</td><td><em>NEEDS INFO</em> — decodes market, exact build year, and early-Classic status. Get this first.</td></tr>
-  <tr><td>Engine</td><td><strong>3.5L EFI Rover V8</strong> <span class="pill">CONFIRM VIA VIN</span> — period-correct for '88 US-spec. Owner-stated stock; not yet verified on the block.</td></tr>
-  <tr><td>Ignition</td><td><strong>Distributor</strong> <span class="pill">CONFIRM VIA VIN</span> — factory '88 = distributor (NOT the Megajolt/EDIS setup on Lazarus).</td></tr>
-  <tr><td>Transmission</td><td><em>NEEDS INFO</em> — confirm auto vs manual on the truck.</td></tr>
-  <tr><td>Suspension</td><td><strong>Coil springs (pre-EAS)</strong> <span class="pill">OWNER-STATED</span> — period-correct; EAS did not arrive until ~1993. A value driver (see §7).</td></tr>
-  <tr><td>Mileage</td><td><strong>~43,000 miles</strong> <span class="pill">OWNER-STATED ORIGINAL</span> — claimed original; <em>not yet VIN/records-verified.</em> Major value driver if it holds up under records.</td></tr>
-  <tr><td>Spec / market</td><td><strong>US-spec</strong> <span class="pill">CONFIRM VIA VIN</span></td></tr>
-  <tr><td>Title / location</td><td><em>NEEDS INFO</em></td></tr>
-  <tr><td>Color / trim</td><td><em>NEEDS INFO</em> — color, interior trim, County? Confirm.</td></tr>
-  <tr><td>Condition</td><td>Clean but not perfect — <strong>driver-plus</strong> <span class="pill">OWNER-STATED</span>. Structure solid; one minor surface-rust spot (see §4).</td></tr>
-</table>
+<main class="wrap">
 
-<h2 class="sec">2 · History &amp; Ownership</h2>
-<ul>
-  <li><strong>Purchase price &amp; acquisition date</strong> — <em>NEEDS INFO</em>.</li>
-  <li><strong>Full service history / records</strong> — <em>NEEDS INFO</em>. Critical: records are what convert the 43k mileage from owner-stated to verified, which is the entire value thesis.</li>
-  <li><strong>Head-gasket / cylinder-liner status</strong> — <em>NEEDS INFO</em>. The Rover V8's known weak point (see §4); establish whether ever addressed.</li>
-  <li>No accident history reported. No structural rot reported (see §4 for the one surface spot).</li>
-</ul>
+<section id="condition" class="summary">
+  <div>
+    <span class="st open">Open</span>
+    <div class="v">No-start, August 2026</div>
+    <p>Fuel delivery proven. Leading suspect ignition timing and phasing; sustained-ether discriminator next.</p>
+  </div>
+  <div>
+    <span class="st open">Open</span>
+    <div class="v">Water intrusion, passenger side</div>
+    <p>Ingress point not identified. Wetted the ECU; same path as the floor surface rust. Find and fix before the next rain.</p>
+  </div>
+  <div>
+    <span class="st due">Pending</span>
+    <div class="v">Sale, Bring a Trailer</div>
+    <p>Decided 1 July 2026. After the 911 SC. Modest reserve, now leaning $25k.</p>
+  </div>
+  <div>
+    <span class="st ok">On file</span>
+    <div class="v num">Five receipts, 2017–2025</div>
+    <p>42,529 mi documented 11 January 2023. Scans verified on disk 24 August 2026.</p>
+  </div>
+</section>
 
-<h2 class="sec">3 · Modifications</h2>
-<ul><li><strong>None reported — believed stock.</strong> Do not cross-apply any of Lazarus's mods. Confirm on inspection; default assumption is factory.</li></ul>
+<section id="specification" class="chapter">
+  <header>
+    <div class="roman">ii.</div>
+    <h2>Specification</h2>
+    <p>Populated June 2026 from the owner's first-hand inspection; draft. Each entry carries its basis.</p>
+  </header>
+  <div>
+    <p class="lead">A separate vehicle from <a href="lazarus.html">Lazarus</a>, sharing none of its modifications: no engine swap, no Megajolt/EDIS, no EAS, no lockers. Stock unless stated.</p>
+    <p class="aside" style="margin:0 0 28px">Bases: <span class="src">Owner-stated</span> seen by the owner, not document-verified · <span class="src">Records</span> supported or confirmed by receipts · <span class="src">Confirm via VIN</span> to be established from the VIN or records.</p>
+    <div class="t"><table class="spec">
+      <tr><td>Model</td><td>1988 Range Rover Classic, four-door, SWB (100" wheelbase). All 1988 Classics are SWB. Trim level, base or County, not yet confirmed; confirm by VIN or badging. <span class="src">Owner-stated</span></td></tr>
+      <tr><td>VIN</td><td><span class="num">SALHV114XJA313671</span> <span class="src">Confirmed, records</span><small>Taken from the service receipts (chapter v). SAL = Land Rover · H = Range Rover · position 10, J = 1988 model year, confirming the year · position 11, A = Solihull plant · serial 313671. Body, engine and trim digits, and NAS versus Euro specification, still warrant a full VIN decode; year and origin are settled.</small></td></tr>
+      <tr><td>Engine</td><td>3.5 L EFI Rover V8 <span class="src">Records-supported</span><small>Ken's Texaco RO 3077608 vehicle block reads “V8-3528 3.5L” (scan verified 24 August 2026). Not yet verified on the block itself; block and head markings remain the source of truth before ordering engine parts.</small></td></tr>
+      <tr><td>Ignition</td><td>Distributor <span class="src">Confirm via VIN</span><small>Factory for 1988; not the Megajolt/EDIS installation on Lazarus.</small></td></tr>
+      <tr><td>Transmission</td><td>Automatic <span class="src">Records-confirmed</span><small>RO 3077608 vehicle block reads “Trans: AUTO” (scan verified 24 August 2026). Period-correct unit is the ZF 4HP22; verify on the unit before ordering transmission parts.</small></td></tr>
+      <tr><td>Suspension</td><td>Coil springs, pre-EAS <span class="src">Owner-stated</span><small>Period-correct; EAS did not arrive until c. 1993. A value driver (chapter ix).</small></td></tr>
+      <tr><td>Mileage</td><td class="num">c. 43,000 mi <span class="src">Records-supported</span><small>42,529 mi documented 11 January 2023 (RO 3077608, chapter v), the first hard odometer datapoint. Approximately 43,000 now is consistent with that reading after c. 2.5 years of light use. The low-mileage thesis has moved from owner-stated to documented; one further early reading would bracket the ladder.</small></td></tr>
+      <tr><td>Market</td><td>US specification <span class="src">Confirm via VIN</span></td></tr>
+      <tr><td>Title, location</td><td><em>Information required</em></td></tr>
+      <tr><td>Colour, trim</td><td><em>Information required</em><small>Exterior colour, interior trim, and whether County.</small></td></tr>
+      <tr><td>Condition</td><td>Driver-plus; clean but not perfect <span class="src">Owner-stated</span><small>Structure solid. One minor surface-rust spot (chapter iv).</small></td></tr>
+      <tr><td>Modifications</td><td>None reported; believed stock<small>Do not cross-apply any Lazarus modification. Confirm on inspection; the default assumption is factory.</small></td></tr>
+    </table></div>
+  </div>
+</section>
 
-<h2 class="sec">4 · Known Issues</h2>
-<table>
-  <tr><th>Sev.</th><th>Issue</th><th>Detail</th><th>Status</th></tr>
-  <tr><td>Low</td><td>Passenger-floor surface rust</td><td><span class="pill">OWNER-STATED</span> Single ~10"×4" spot of <strong>surface rust only</strong> in the passenger floor. Structure otherwise reported solid — no rot in sills, tailgate frame, inner wings, or rear floor. Planned treatment: wire-brush + Eastwood rust encapsulator (recommend adding seam sealer + topcoat over the encapsulator).</td><td>OPEN — treatment planned, not yet performed</td></tr>
-  <tr><td>Watch</td><td>Rover V8 head gasket / cylinder liner</td><td>Inherent to ALL Rover V8s — head-gasket failure and cylinder-liner slip/cracking are the classic failure modes. Low original miles reduces but does not eliminate risk. Status of any prior repair unknown (§2). Monitor coolant, oil, overheating.</td><td>OPEN — monitor</td></tr>
-</table>
+<section id="provenance" class="chapter">
+  <header>
+    <div class="roman">iii.</div>
+    <h2>Provenance</h2>
+    <p>Ownership chain and odometer, as established from the receipts in chapter v.</p>
+  </header>
+  <div>
+    <h3 style="margin-top:0">Ownership</h3>
+    <div class="t"><table>
+      <tr><th>Owner</th><th>Locality</th><th>On record</th></tr>
+      <tr><td>N.V. Pure Bred Inc</td><td>Canyon Lake, Texas</td><td>2017 and 2023 records</td></tr>
+      <tr><td>Delfino Tarin</td><td>San Antonio area</td><td>Bexar Automotive customer, 2024–2025</td></tr>
+      <tr><td>The owner</td><td>—</td><td>Purchase price and acquisition date: <em>information required</em></td></tr>
+    </table></div>
+    <p style="margin-top:20px">All documented owners are Texan, supporting a US-market, Texas-resident history and an annual-inspection paper trail behind the mileage. The 2023 Pure Bred invoice lists a phone contact “DELFIN”: Delfino Tarin appears while Pure Bred still owned the vehicle, tying the two documented owners together.</p>
+    <div class="note">
+      <span class="label">Registration plate</span>
+      <p>The plate changed between registrations: DC7R642 on the 2023 Ken's RO (Pure Bred) and VDB3789 on the 2024–25 Bexar invoices (Tarin). An owner-change artefact; the VIN matches on both. It does not indicate a different vehicle.</p>
+    </div>
 
-<h2 class="sec">5 · Maintenance Log</h2>
-<ul>
-  <li><strong>2026-06 — PLANNED (not yet done):</strong> Passenger-floor surface-rust treatment. Wire-brush the ~10"×4" spot to bare metal, treat with <strong>Eastwood rust encapsulator</strong>. Recommended additions: seam sealer over any seams + a topcoat over the encapsulator for UV/abrasion protection. Photograph before/after and log result + date when complete. Move §4 item to RESOLVED only after treatment is verified done on the vehicle.</li>
-</ul>
+    <h3>Odometer ladder</h3>
+    <div class="t"><table>
+      <tr><th>Date</th><th class="r">Odometer</th><th>Source</th></tr>
+      <tr><td>11 January 2023</td><td class="r fig">42,529 mi</td><td>Ken's Texaco RO 3077608, oil change <span class="src">Receipt</span></td></tr>
+      <tr><td>August 2026</td><td class="r fig">c. 43,000 mi</td><td>Owner-stated. Implies c. 470 mi per year since 2023. A current photograph would close the ladder.</td></tr>
+    </table></div>
 
-<h2 class="sec">6 · Parts Reference</h2>
-<table>
-  <tr><th>System</th><th>Part / spec</th><th>Notes</th></tr>
-  <tr><td>Rust treatment</td><td>Eastwood rust encapsulator</td><td>For passenger-floor spot (§4/§5). Add seam sealer + topcoat.</td></tr>
-  <tr><td>Engine</td><td>3.5L EFI Rover V8 (confirm)</td><td>Verify block/heads markings before ordering any engine parts — markings on the installed component are the source of truth.</td></tr>
-</table>
+    <h3>Records and open questions</h3>
+    <ul class="prose">
+      <li><strong>Records, partially in hand.</strong> Five receipts filed, 2017–2025, from two shops: Ken's Texaco (Canyon Lake era) and Bexar Automotive (San Antonio era). This is the records lever the sale plan values at c. $5–8k; it corroborates 42,529 to 43,000 mi and the Texas chain. Still to pursue: pre-2017 records to bracket the low end, and a title chain to name-match the owners.</li>
+      <li><strong>Head gasket and cylinder liners.</strong> <em>Information required.</em> The known weak point of the Rover V8 (chapter iv); no receipt addresses it. A 2021 note records a noisy water pump at the front of the engine; whether it was ever done is to be confirmed.</li>
+      <li>No accident history reported. No structural rot reported; one surface spot (chapter iv).</li>
+    </ul>
+  </div>
+</section>
 
-<h2 class="sec">7 · Market Position &amp; Value (updated 2026-07-14)</h2>
-<div class="callout">
-  <span class="tag">Verdict: FOR SALE (decided 1 Jul 2026 — supersedes the June KEEPER call)</span>
-  Drew's call: neat but not exciting; ~$14k in on a ~$24–30k truck = ~2× harvest in an inefficient market. Sequence <strong>after the 911SC sale</strong>. The June "keeper" verdict below reflected value-resilience, not attachment — the value logic still holds, it just now argues for a well-floored exit instead of a hold.
-</div>
-<div class="callout">
-  <span class="tag">KEY COMP — 14 Jul 2026 (the ceiling-marker for story trucks)</span>
-  <strong>1987 NAS 4-door SWB, one-owner, first-year, &ldquo;exceptional,&rdquo; 97k mi — sold $26,750 on BaT</strong> (live-verified). The closest structural comp this truck has: same body/config, better story, 2.3&times; the miles. It marks what provenance narrative <em>alone</em> clears in the current froth-off market (buyers refusing premiums; reserve-gap gauge 62.5% vs ~27% baseline). Also notable: <strong>no sub-50k-mile RRC has been offered in 12+ months</strong> — verified 43k would be the lowest-mile example on the market in over a year.
-</div>
-<table>
-  <tr><th>Factor</th><th>Detail</th></tr>
-  <tr><td>Segment trend</td><td>RRC segment is <strong>correcting</strong> — down ~26% off the 2022–23 peak (median ~$28k → ~$20.7k over last 12mo). 12-mo tape: mostly $10–28k for 100–200k-mi drivers; strong prints $37k (123k '93 LWB, 7 Jul) and $34k (4.6-swap '94). Thin + high-variance: $6.6k–$37k spread.</td></tr>
-  <tr><td>Scarcity tier</td><td>Low-original-mile, rust-free, <strong>coil-sprung (no EAS)</strong> early examples are in the <strong>resilient/scarcity tier</strong> — they hold value through the correction while EAS/high-mile trucks lead it down.</td></tr>
-  <tr><td>This truck's placement</td><td><strong>43k UNVERIFIED (story truck): $24–28k</strong> — the '87 comp caps story value at ~$26.75k. <strong>43k VERIFIED by records: $30–35k defensible</strong> as a genuine scarcity outlier with no comp on the tape. Old $28–38k range: top end now looks optimistic in this regime either way.</td></tr>
-  <tr><td>Carry cost</td><td><strong>Low, ~4–5%</strong> (vs ~10.8% segment avg) — coil/no-EAS removes the biggest maintenance money-pit, low miles helps, and Drew DIYs.</td></tr>
-  <tr><td>Key value drivers</td><td>43k original miles, no EAS, no rust (one minor surface spot), 4-door SWB. <em>All hinge on VIN + records verification (§2) — <strong>the records hunt is worth ~$5–8k</strong>, the story-vs-scarcity difference.</em></td></tr>
-  <tr><td>Watch item</td><td>Rover V8 head gasket / liner (§4) — the one thing that can dent the value thesis. Low miles helps; monitor.</td></tr>
-</table>
+<section id="issues" class="chapter">
+  <header>
+    <div class="roman">iv.</div>
+    <h2>Known Issues</h2>
+    <p>Open items by severity. The no-start is detailed in chapter vi.</p>
+  </header>
+  <div>
+    <article class="advisory">
+      <div class="entry-h">
+        <div class="date">No-start, August 2026</div>
+        <span class="st open">High · Open</span>
+      </div>
+      <p class="title" style="margin:6px 0 22px">Leading suspect ignition timing and phasing, 24 August 2026. Sustained-ether discriminator next.</p>
+      <p>The vehicle would not start; the owner suspected timing and attempted a rotor replacement. The rotor was seized on the shaft, and pulling it lifted the distributor shaft and dislodged the advance springs. The distributor was dismantled and reassembled in the vehicle, the body never unclamped. The no-start predates this disturbance; the original cause may be the old rotor itself (the classic Lucas rotor punch-through short) or elsewhere in the spark path.</p>
+      <p><strong>24 August 2026.</strong> Fuel supply, pump and relays, spark, and compression and timing were eliminated (ether sputter; 34 psi at the rail). Plugs dry, narrowing the fault to the injector circuit. Fuse 18 was found pulled (self-inflicted, while depressurising) and reinstalled the same day; a fresh-crank plug re-test at full power was still dry. Injectors freshly cleaned and flow-tested, rail cleaned: the stuck-injector branch was closed and the fault judged near-certainly electrical. The back-story then surfaced that the ECU had been wetted by passenger-side water intrusion before the rough running that prompted the teardown.</p>
+      <p><strong>Later the same day.</strong> Noid light showed good pulse and the ECU inspected clean: injector electrical eliminated, the ECU theory downgraded, and the dry-plug reading reclassified as likely misleading. New leading suspect: ignition timing and phasing. An ether sputter that never catches is the wrong-firing-order signature, and the teardown fitted a new rotor, plugs and wires.</p>
+    </article>
 
-<h2 class="sec">8 · Sale Plan (BaT, after the 911SC)</h2>
-<table>
-  <tr><th>Decision</th><th>Call</th><th>Why</th></tr>
-  <tr><td><strong>Reserve</strong></td><td><strong>YES — modest reserve, NOT no-reserve</strong></td><td>Opposite market structure from the SC. The SC's market is deep/efficient (80+ comps/12mo) → no-reserve finds fair value + earns the engagement premium. The RRC market is <strong>thin and wild</strong> ($6.6k–$37k in 12mo, story-driven, outcome depends on who shows up that week) → no-reserve exposes the left tail ('95 LWB went $6,600 three weeks before the '87 went $26,750). A reserve here floors variance, not props price.</td></tr>
-  <tr><td><strong>Reserve level</strong></td><td><strong>Records verify 43k → $25k. No records → $22–23k.</strong></td><td>$24–25k sits at/under the just-proven clearing price for a caliber truck ('87 @ $26,750) — a floor the market has demonstrated it will meet, not reserve-propping (the 62.5% reserve-gap pathology is sellers demanding ABOVE-market money; this is below it). Unverified, stay under the story-truck ceiling, not at it.</td></tr>
-  <tr><td><strong>If RNM</strong></td><td>Negotiate post-auction via BaT</td><td>Standard; costs nothing to hold the floor.</td></tr>
-  <tr><td><strong>Pre-listing prep</strong></td><td>① Records hunt to verify 43k (worth ~$5–8k — documentation IS the product, same lever as the SC); ② head-gasket status; ③ Eastwood treatment on the floor spot; ④ VIN-confirm spec.</td><td>§2/§5 items, now with dollar values attached.</td></tr>
-</table>
+    <div class="t"><table>
+      <tr><th>Severity</th><th>Issue</th><th>Status</th></tr>
+      <tr><td>High</td><td><strong>Water intrusion, passenger side; ingress point unknown.</strong> Recorded 24 August 2026 from the back-story (chapter vi). Water entered on the passenger side and wetted the ECU under the passenger seat, at first the leading root-cause candidate for the no-start. Same water path as the floor rust below. Candidates: windscreen seal, door seal, sunroof drains. To be found and fixed before the next rain; until then any repaired or replaced ECU is exposed to a repeat failure.</td><td><span class="st open">Open</span><small>Ingress hunt pending.</small></td></tr>
+      <tr><td>Low</td><td><strong>Passenger-floor surface rust.</strong> A single spot of c. 10" × 4", surface rust only. Linked 24 August 2026 to the water-intrusion path above: treat after the ingress is fixed, or it will re-rust. Structure otherwise reported solid, with no rot in the sills, tailgate frame, inner wings or rear floor. Planned treatment: wire-brush and Eastwood rust encapsulator, with seam sealer and a topcoat recommended over it. <span class="src">Owner-stated</span></td><td><span class="st due">Open</span><small>Treatment planned, not performed.</small></td></tr>
+      <tr><td>Watch</td><td><strong>Rover V8 head gasket and cylinder liner.</strong> Inherent to all Rover V8s: head-gasket failure and liner slip or cracking are the classic failure modes. Low original mileage reduces but does not eliminate the risk. Status of any prior repair unknown (chapter iii). Monitor coolant, oil and overheating.</td><td><span class="st note">Monitor</span></td></tr>
+      <tr><td>Watch</td><td><strong>2021 shop condition notes, prior-owner era.</strong> Bexar invoice 1090 (20 August 2021) recorded valve covers leaking, power steering leaking, other seals leaking, water pump making noise, tyres dry-rotted. These are c. five-year-old observations from the Pure Bred era; present status unknown. Re-inspect each: valve-cover gaskets, power-steering pump and lines, front cover and water pump (relevant also to the head-gasket watch), tyre DOT dates. Inexpensive items that accumulate on a sale-preparation list (chapter ix).<small>24 August 2026: valve-cover gaskets replaced in the recent top-end teardown; that item is closed. Remaining: power-steering leak, other seals, water-pump noise, tyre dates.</small></td><td><span class="st note">Re-verify</span><small>Valve-cover gaskets done.</small></td></tr>
+    </table></div>
+  </div>
+</section>
 
-<footer>
-  Compiled for Drew Campbell · 1988 Range Rover Classic · Populated 2026-06 from owner inspection — facts marked owner-stated vs confirm-via-VIN. Registry id: <code>rrc88</code>.
-</footer>
+<section id="history" class="chapter">
+  <header>
+    <div class="roman">v.</div>
+    <h2>Service History</h2>
+    <p>Five receipts, 2017–2025, followed by the owner's 2026 work. Each receipt links to its scan.</p>
+  </header>
+  <div>
+    <div class="t"><table>
+      <tr><th>Date</th><th>Work</th><th class="r">Odometer</th><th class="r">Total</th></tr>
+      <tr><td>13 September 2017<small>Ken's Texaco, estimate 3013956 · N.V. Pure Bred Inc</small></td><td>A/C compressor removed and replaced ($703.74), complete R134a recharge; rear muffler replaced. State inspection passed. <small><a href="file:///Users/drewcampbell/Documents/Garage/rrc88/receipt_2017-09-13_kens-texaco_est3013956_ac-compressor.jpg">Scan</a></small></td><td class="r">—</td><td class="r fig">$1,308.65<small>Estimate</small></td></tr>
+      <tr><td>20 August 2021<small>Bexar Automotive, invoice 1090 · paid</small></td><td>A/C vacuum, recharge and clean; A/C hose, compressor to condenser, removed and replaced; high-pressure line repaired; coolant flushed; thermostat and gasket removed and replaced. Condition notes in chapter iv: valve-cover, power-steering and seal leaks, water-pump noise, dry-rotted tyres. <small><a href="file:///Users/drewcampbell/Documents/Garage/rrc88/receipt_2021-08-20_bexar_inv1090_ac-service.jpg">Scan</a></small></td><td class="r">—</td><td class="r fig">$851.61</td></tr>
+      <tr><td>11 January 2023<small>Ken's Texaco, RO 3077608 · N.V. Pure Bred Inc</small></td><td>Oil change, filter 51068, lubrication; high-mileage oil. The odometer datapoint for chapters ii and iii. Scan-verified 24 August 2026: date, RO number, circled mileage, VIN, plate DC7R642, V8-3528 3.5L, Trans AUTO. <small><a href="file:///Users/drewcampbell/Documents/Garage/rrc88/receipt_2023-01-11_kens-texaco_ro3077608_oil-change_42529mi.jpg">Scan</a></small></td><td class="r fig">42,529</td><td class="r fig">$85.10</td></tr>
+      <tr><td>3 December 2024<small>Bexar Automotive, invoice 2836 · Delfino Tarin</small></td><td>Fuel pump and fuel pump module removed and replaced: labour $600; fuel pump E160030, $281.70; module 15131, $180.00. Both part numbers scan-verified 24 August 2026; an earlier “153131” was a transcription error. Handwritten “Catalítico Nuevo”, a new catalytic converter, also noted; possibly an additional undocumented item, to be queried with Bexar. Plate on invoice VDB3789 (chapter iii). <small><a href="file:///Users/drewcampbell/Documents/Garage/rrc88/receipt_2024-12-03_bexar_inv2836_fuel-pump-module.jpg">Scan</a></small></td><td class="r">—</td><td class="r fig">$1,099.80</td></tr>
+      <tr><td>13 March 2025<small>Bexar Automotive, invoice 2963 · Delfino Tarin</small></td><td>Rear fuel line removed and replaced: labour $175; part 4311, $92. <small><a href="file:///Users/drewcampbell/Documents/Garage/rrc88/receipt_2025-03-13_bexar_inv2963_rear-fuel-line.jpg">Scan</a></small></td><td class="r">—</td><td class="r fig">$274.59</td></tr>
+    </table></div>
+    <p class="src" style="white-space:normal;display:block;margin:14px 0 40px">Source scans from the Photos album “1988 Range Rover Classic” (added 15 August 2026), exported from iCloud, renamed and verified on disk 24 August 2026 at <code style="word-break:break-all">/Users/drewcampbell/Documents/Garage/rrc88/</code>. VIN on file SALHV114XJA313671. The records-verification case in chapter ix now has producible source images.</p>
+
+    <div class="note ok">
+      <span class="label">Transcription checks, resolved 24 August 2026 from full-resolution scans</span>
+      <ol class="prose" style="padding-left:20px">
+        <li>Fuel pump part number E160030 confirmed ($281.70 line, read directly from the Bexar 2836 scan); the low-resolution OCR “E16030” was the error. The module number had itself been mis-transcribed: the scan reads 15131 FUEL PUMP MODULE ($180.00), not 153131. The ledger is corrected.</li>
+        <li>Ken's odometer receipt verified in full: RO 3077608, dated 1/11/2023, mileage 42,529 circled on the invoice, paid $85.10 by Visa 01/11/23; vehicle block VIN SALHV114XJA313671, plate DC7R642, V8-3528 3.5L, Trans: AUTO. The odometer datapoint is backed by a producible source image.</li>
+      </ol>
+    </div>
+
+    <div class="note">
+      <span class="label">The fuel-system work, as it bears on the no-start</span>
+      <p>Three of the five receipts concern fuel or emissions: pump and module (12/2024), rear fuel line (03/2025), new catalytic converter (12/2024). The fuel delivery system was substantially renewed c. 20 months before the no-start. A pump c. one year old almost certainly runs and delivers fuel to the rail, which made a wrong-specification or low-pressure replacement pump, or a fault in that recent work, a live suspect for a fuel-present, low-pressure condition. Pursued and closed in chapter vi.</p>
+    </div>
+
+    <h3>2026 · The owner's work</h3>
+
+    <article class="entry">
+      <div class="entry-h">
+        <div class="date">2026, date unknown</div>
+        <span class="st ok">Done</span>
+      </div>
+      <p class="title">Top-end service following rough running</p>
+      <p style="margin-top:20px">Recorded 24 August 2026 from the back-story (chapter vi). Valve covers and intake removed after rough running, at first attributed to valve-cover-gasket oil fouling and since reweighted to the wet ECU. Injectors professionally cleaned and flow-tested; fuel rail cleaned; all new gaskets (valve cover and intake); new rotor, plugs, wires, vacuum lines, coolant lines and PCV. No invoice on file; the shop and receipt for the injector service should be logged if one exists (records value, chapter ix). The vehicle has not run since reassembly.</p>
+    </article>
+
+    <article class="entry">
+      <div class="entry-h">
+        <div class="date">8 August 2026</div>
+        <span class="st due">In progress</span>
+      </div>
+      <p class="title">Rotor arm replacement during no-start diagnosis</p>
+      <p style="margin-top:20px">Old rotor seized on the shaft; extraction lifted the distributor shaft and dislodged the centrifugal-advance springs. Distributor internals reassembled in the vehicle; new rotor fitted during the top-end reassembly. Rotor phasing functionally adequate for spark (ether sputter, chapter vi), but base timing requires strobe verification once running. Not to be closed until then.</p>
+    </article>
+
+    <article class="entry">
+      <div class="entry-h">
+        <div class="date">June 2026</div>
+        <span class="st note">Planned</span>
+      </div>
+      <p class="title">Passenger-floor surface-rust treatment</p>
+      <p style="margin-top:20px">Wire-brush the c. 10" × 4" spot to bare metal and treat with Eastwood rust encapsulator. Recommended additions: seam sealer over any seams and a topcoat over the encapsulator for UV and abrasion protection. Photograph before and after; log result and date on completion. The chapter iv item moves to resolved only once treatment is verified on the vehicle.</p>
+    </article>
+  </div>
+</section>
+
+<section id="diagnosis" class="chapter">
+  <header>
+    <div class="roman">vi.</div>
+    <h2>Diagnosis</h2>
+    <p>The no-start, open since 8 August 2026. Current position first; reference and log follow.</p>
+  </header>
+  <div>
+    <div class="note">
+      <span class="label">State when logged, 8 August 2026</span>
+      <p>The no-start existed before the distributor was touched. Then: rotor seized, shaft lifted during extraction, advance springs dislodged, reassembly in the vehicle. Two questions stacked: whether the disturbance moved rotor phasing, and what caused the original no-start.</p>
+    </div>
+
+    <article class="advisory">
+      <div class="entry-h">
+        <div class="date">24 August 2026, later</div>
+        <span class="st open">Current</span>
+      </div>
+      <p class="title" style="margin:6px 0 22px">Noid result and model rewrite. Supersedes the diagnostic-state and back-story entries below.</p>
+      <p><strong>Results.</strong> Noid light shows good pulse on both banks (second bank verified after initial logging; sub-check 4 closed). ECU inspection clean, connector and board visual. Still crank, no start.</p>
+      <ul class="prose">
+        <li><strong>Injector electrical branch eliminated</strong>, alongside mechanical. All three legs of fuel delivery are proven: pressure (34 psi), flow-tested injectors, confirmed pulse.</li>
+        <li><strong>Dry-plug observation reclassified as likely misleading.</strong> Short cranking pulse widths and evaporation can read dry. The smell check remains the tiebreaker.</li>
+        <li><strong>Water-damaged-ECU theory downgraded.</strong> Drivers demonstrably pulsing; connector and board clean. The water-ingress item in chapter iv stays open regardless; it is a body leak, not the engine fault.</li>
+        <li><strong>New leading suspect: ignition timing and phasing.</strong> The ether sputter proved spark exists, not that it is phased or ordered correctly; sputter without catching on ether is the classic wrong-firing-order signature. The teardown installed a new rotor, plugs and wires (the 8 August 2026 rotor episode, chapter v), and a fresh wire set is a fresh opportunity for a mis-ordered cap. The drive-gear, advance-mechanism and decision-tree references below are live again.</li>
+      </ul>
+      <h3 style="margin-top:32px">Resume checklist</h3>
+      <ol class="prose">
+        <li><strong>Discriminator, sustained ether test.</strong> Small continuous shots into the intake while cranking. Runs while fed: ignition and timing proven, proceed to item 3. Only coughs: ignition phasing convicted, proceed to item 2.</li>
+        <li><strong>If ignition is convicted.</strong> Verify plug-wire order against the Rover V8 firing order 1-8-4-3-6-5-7-2, rotor rotation (clockwise from above) and cylinder numbering from the verified ignition reference below, not from the old wires' routing. Then check rotor and cap phasing against the decision tree (tooth jump versus 180° mis-clock). Procedure: set No. 1 to TDC on compression (thumb over the hole while cranking); pull the cap; the rotor must point at the No. 1 tower, which also catches distributor phasing that wire order alone does not; from that tower lay the leads clockwise 1-8-4-3-6-5-7-2. Verify the 5/7 cross-fire lead routing at the same time: separated, never parallel and touching.</li>
+        <li><strong>If ignition is proven, fuel quantity.</strong> (a) CTS connector and circuit: coolant lines were replaced in the teardown, and an unplugged coolant-temperature sensor skews cranking enrichment (the noid still flashes but pulse width collapses); procedure in Test 1 below, pins 7 to 25. (b) FTS, pins 32 to 25: rail-cleaning casualty check; trim only, cannot alone cause a no-start. (c) Injector bank continuity, pins 13 (left) and 11 (right); see the same procedure and its traps. (d) Fuel pressure during cranking, not static. (e) Rail feed and return not swapped at reassembly. (f) Injector audible click, by stethoscope.</li>
+        <li><strong>Sub-check closed.</strong> Noid on the second bank: done, good pulse on both banks.</li>
+      </ol>
+    </article>
+
+    <article class="entry">
+      <div class="entry-h">
+        <div class="date">ECU-plug resistance tests</div>
+        <span class="st due">Readings pending</span>
+      </div>
+      <p class="title">Procedure logged 24 August 2026, ahead of readings · <span class="src">WSM p.177–179, tests 9, 10, 11, 12 · diagrams RR1825E, RR1826E, RR1827E</span></p>
+      <p style="margin-top:20px"><strong>Common setup.</strong> Ignition off. ECU multi-plug disconnected (under the passenger seat). Multimeter on ohms. Probe the harness side; sensors stay connected at the engine end. Wiggle the loom during every reading: a value that jumps indicates an intermittent fault. Directly relevant, as the water event was on that side of the vehicle.</p>
+      <div class="t"><table class="spec">
+        <tr><td>Test 1 · Coolant temperature</td><td>Thermistor, pins 7 to 25 (p.179, test 12). 5700–5900 Ω at 0 °C · 2400–2600 at 20 °C · 1100–1300 at 40 °C · 500–700 at 60 °C · 300–400 at 80 °C. Expect c. 1500–2200 Ω at Houston garage temperature. Tests sensor and harness together.<small>Shorted or low: the ECU reads warm, giving a lean cranking mixture, which can plausibly cause the no-start. Open: reads very cold, toward enrichment and flooding; does not fit the present symptoms.</small></td></tr>
+        <tr><td>Test 2 · Fuel temperature</td><td>Thermistor, pins 32 to 25 (p.178, test 11). Same resistance table. The sensor sits in the fuel rail and is a possible casualty of the professional rail cleaning if not removed first.<small>Trim authority only: a failed FTS cannot alone cause a no-start. Log a bad reading; do not treat it as the answer.</small></td></tr>
+        <tr><td>Test 3 · Injector banks</td><td>Pin 13 = left bank (1, 3, 5, 7), p.177, test 9 · pin 11 = right bank (2, 4, 6, 8), p.178, test 10. Measure from the bank pin to the shared injector +12V supply node, not pin to pin. Per bank: 4–5 Ω good · 5–6 Ω one injector or wire open · 8–9 Ω two open · 16–17 Ω three open · ∞ bank dead.<small>Complements the noid: the noid proved the pulse is commanded; this proves the current path through every coil.</small></td></tr>
+      </table></div>
+      <h3>Traps, before probing</h3>
+      <ul class="prose">
+        <li>Do not meter pin 11 to pin 13. That reads both banks in series through the supply node (c. 8 Ω) and mimics the “two injectors open” value, a false diagnosis.</li>
+        <li>Supply-node access with ignition off (main relay open, so battery positive does not reach it): either (a) pull the main relay and probe its socket terminal 87, or (b) unplug one injector and probe the supply-side terminal of its harness plug. Unplug a right-bank injector when measuring the left bank, and the reverse: pulling one from the measured bank removes a parallel coil and reads c. 5.3 Ω, mimicking “one open”.</li>
+      </ul>
+      <p><strong>Sequencing.</strong> These three tests and the both-banks noid (done) clear the whole sensor and injector electrical picture from one seat. The rotor and wire-order check at No. 1 TDC (checklist item 2) remains the prime suspect and the final step.</p>
+    </article>
+
+    <div class="note ok">
+      <span class="label">Resolution criteria</span>
+      <p>The vehicle starts, base timing is strobe-verified at specification, and oil pressure is confirmed. Only then does the no-start move to resolved in chapter iv, with the root cause recorded here.</p>
+    </div>
+
+    <h3>Ignition reference · verified 24 August 2026</h3>
+    <p class="src" style="white-space:normal;display:block;margin:-6px 0 16px">WSM SRR652USWM-A p.35, “Engine Tuning Data 1987-88”; p.75, distributor</p>
+    <div class="t"><table class="spec">
+      <tr><td>Firing order</td><td>1-8-4-3-6-5-7-2. Leads run in that order clockwise around the cap; the rotor turns clockwise viewed from above.</td></tr>
+      <tr><td>Cylinder numbering</td><td>Rover convention, viewed from the driver's seat: left bank 1-3-5-7, right bank 2-4-6-8. On this LHD vehicle the driver side is 1-3-5-7; No. 1 is the pulley (front) end of the left, driver's bank.</td></tr>
+      <tr><td>Distributor</td><td>Lucas 35DLM8 (p.75). An earlier working note gave “35DM8”; 35DLM8 is the verified type. Read the body tag before ordering internals; 38 years is long enough for a replacement. Pickup air gap 0.20–0.35 mm (0.008–0.014").</td></tr>
+      <tr><td>Dynamic timing</td><td>6° BTDC ±1° at 800 rpm maximum; marks on the crankshaft vibration damper. The underhood emissions decal overrides on a US vehicle; check it.</td></tr>
+      <tr><td>Plugs, coil</td><td>Champion RN12YC, gap 0.84–0.96 mm (0.033–0.038"). Coil Lucas 32C5 or Bosch 0-221-122-392. Compression ratio 8.13:1. Idle 665–735 rpm.</td></tr>
+      <tr><td>Cross-fire</td><td>Flagged because an all-new wire set was just installed (p.75). Adjacent leads consecutive in the firing order can induce cross-firing; on this engine, the 5/7 pair on the driver side. Route them separated, never parallel and touching. Check during the wire verification (checklist item 2).</td></tr>
+    </table></div>
+
+    <h3>Distributor mechanics</h3>
+    <div class="t"><table class="spec">
+      <tr><td>Drive gear</td><td>Driven by a skew (helical) gear off the camshaft, so the shaft rotates (c. 30°, clockwise going in) as it drops into mesh. Lifted far enough to clear mesh, it can re-engage one tooth off: c. 26–28° at the distributor, c. 52–55° at the crank. Not a multiple of the 45° cap-terminal spacing, so a tooth jump is a half-position error that moving plug wires can never correct. The shaft's lower end drives the oil pump (post-1976 female drive); after any shaft lift, confirm full seating and oil pressure on restart.</td></tr>
+      <tr><td>Advance</td><td>Centrifugal: weights and two different springs (primary tight; secondary with the slack, elongated loop; not interchangeable) under the pickup plate. The upper shaft (rotor carrier and reluctor) rides on the advance posts and on most units can be reassembled 180° out, exactly four cap positions. A missing or unseated spring lets the mechanism fall to full advance at cranking speed, giving starter kickback and spitting.</td></tr>
+      <tr><td>Factory refit</td><td>Set No. 1 to 6° BTDC on compression; hold the rotor c. 30° counter-clockwise of the No. 1 cap terminal; drop the distributor in, and gear mesh rotates it clockwise onto the terminal. Verify the rotor points at No. 1, clamp, then strobe-time.</td></tr>
+      <tr><td>Decision tree</td><td>TDC No. 1 on compression, pull the cap, read the rotor. (a) At the No. 1 terminal: phasing correct, timing not the fault; test the spark path (prime suspect the old shorted rotor as the original no-start; fit the new one and re-test). (b) Between two terminals: gear tooth jump; pull the distributor and re-seat per the factory procedure. (c) c. 180° away, four terminals: advance or upper-shaft mis-clock; re-clock the internals, or move all 8 wires four positions as a get-home measure only. (d) Exactly one terminal off: moving the wires one position works, though no plausible failure mode here produces it.<small>All specifications for this procedure (firing order, numbering, rotation, timing, air gap, 5/7 cross-fire routing) are in the verified ignition reference above.</small></td></tr>
+    </table></div>
+
+    <h3>Diagnostic log</h3>
+
+    <article class="entry">
+      <div class="entry-h">
+        <div class="date">24 August 2026</div>
+        <span class="st note">Superseded</span>
+      </div>
+      <p class="title">Diagnostic state: fuel supply and spark cleared, narrowed to the injector circuit</p>
+      <h3 style="margin-top:28px">Eliminated, with evidence</h3>
+      <ul class="prose">
+        <li><strong>Fuel supply.</strong> 34 psi at the rail, measured after the filter (bottom of the 34–38 psi specification, p.219), then falls to and holds c. 30 psi. The slow bleed-down is within the factory 10 psi per minute leak-down limit (Test 18, p.183): a minor watch item (pump check valve, FPR seat or injector seep), not the no-start cause.</li>
+        <li><strong>Fuel pump.</strong> Runs when jumped; the ECU sees RPM on crank (pump relay commanded). The 22 August 2026 wrong-specification pump suspect is eliminated: E160030 makes specification pressure.</li>
+        <li><strong>Filter and tank.</strong> Fuel reaches the rail; the tank feeds without pressurisation.</li>
+        <li><strong>Main and pump relays.</strong> Good. There was no pressure until the relay was reseated in the black harness block (main-relay block per WSM p.169/p.192); reseating cured it, and the relays test fine.</li>
+        <li><strong>Spark.</strong> Ether gives a sputter, so ignition produces usable spark, clearing the rotor-phasing and spark-path branch as the no-start cause. <em>Revoked later the same day: the sputter proved spark exists, not that it is phased or ordered correctly. The decision-tree and drive-gear references are live again.</em></li>
+        <li><strong>Compression and timing.</strong> Not the fault; the ether sputter requires compression and adequately timed spark.</li>
+      </ul>
+      <p><strong>Narrowed to the injector circuit.</strong> Plugs pulled dry, confirmed on re-check; the vehicle has never run on the current plugs, so dryness is not evaporation. Fuel at the rail, spark present and no fuel at the cylinders means the injectors are not delivering. Leading suspect: injector electrical, a weak or intermittent pulse, or an injector power-feed or ground fault.</p>
+      <div class="note ok">
+        <span class="label">Fuse 18, resolved the same day</span>
+        <p>The “pump won't run, no pressure” alarm was self-inflicted. Fuse 18 (10 A, fuel pump, under-dash panel, chapter vii) had been pulled to depressurise the system and never reinstalled. Reinstalled 24 August 2026.</p>
+      </div>
+      <p><strong>Fresh-crank re-test, completed with Fuse 18 restored.</strong> Cranked at full system power, then pulled a plug: dry. The planned wet/dry re-test, sealing the conclusion: no fuel delivery to the cylinders even with full power and 34 psi at the rail.</p>
+      <p><strong>Key fact.</strong> The injectors are fresh, professionally cleaned and flow-tested, and the rail was cleaned. The stuck or gummed injector branch is effectively eliminated. With known-good injectors, a clean rail, 34 psi and dry plugs, the fault was judged near-certainly electrical: no or weak injector pulse, or no +12V feed to the injectors. The fault sits at a common node. One unseated individual injector connector cannot cause a no-start; a V8 runs rough on seven, and even a dead bank of four would likely catch. All eight dry means a common node only: ECU driver stage, ECU main connector, injector sub-harness, or shared +12V feed.</p>
+      <h3>Resume checklist, reranked for the water-damaged-ECU model (since replaced)</h3>
+      <ol class="prose">
+        <li>ECU main connector: verify fully latched; inspect pins for green or white corrosion. No cost and the highest prior, having been wetted and personally handled during removal.</li>
+        <li>ECU internals: open the case and inspect the board for water staining or corrosion, especially around the injector driver outputs. Repairable (standard driver transistors) and used units exist; do not buy before the connector check; read the installed ECU's label first (13CU per WSM, to be verified).</li>
+        <li>Injector sub-harness connectors disturbed by the intake removal: seated?</li>
+        <li>Shared +12V injector feed: test light at any injector connector, key on.</li>
+        <li>Noid light as the conviction step (arriving that day): sample both banks, judge pulse quality. No pulse with good 12V and clean, seated connectors convicts the ECU. A clean pulse on both banks contradicts the model; re-examine, for example fuel not reaching the injector inlets despite rail pressure (blocked rail port).</li>
+        <li>On any marginal wet/dry call, use the smell check as tiebreaker: gasoline evaporates, the smell lingers.</li>
+      </ol>
+    </article>
+
+    <article class="entry">
+      <div class="entry-h">
+        <div class="date">24 August 2026</div>
+        <span class="st note">Superseded</span>
+      </div>
+      <p class="title">Back-story: the events preceding the no-start. Recent; exact dates unknown except where noted.</p>
+      <ol class="prose" style="margin-top:24px">
+        <li><strong>Water intrusion, passenger side.</strong> The ECU, under the passenger seat, was wetted. Same water path as the passenger-floor surface rust; ingress point not identified (windscreen seal, door seal or sunroof drains). Opened as a chapter iv item: find and fix before the next rain.</li>
+        <li>The engine ran rough while wet. The owner removed the passenger seat and ECU, dried everything and reinstalled. It then ran correctly for c. 10 miles without issue.</li>
+        <li>After parking, rough again. Working theory at the time: valve-cover gaskets leaking oil into the plug wells and fouling the plugs, which were oily on removal.</li>
+        <li>Top-end teardown: valve covers and intake removed; injectors professionally cleaned and flow-tested; rail cleaned. Reassembled with all new gaskets, a new rotor (the 8 August 2026 rotor episode, chapter v), plugs, wires, vacuum lines, coolant lines and PCV.</li>
+        <li>Since reassembly: cranks, no start, plugs dry.</li>
+      </ol>
+      <p><strong>Diagnostic reweighting: leading root-cause candidate a water-damaged ECU.</strong> <em>Downgraded later the same day: noid shows good pulse, ECU connector and board clean.</em></p>
+      <ul class="prose">
+        <li>The progression rough when wet, correct when dry, rough again after parking is classic progressive corrosion, not oil fouling. Gasket-seep fouling accumulates over thousands of miles and does not explain ten good miles followed by sudden rough running. The oily plugs are likely partly an effect (misfire fuel-washing) layered on a real but secondary gasket seep.</li>
+        <li>The ECU was only partly proven alive: it sees RPM and primes the pump, so the trigger input and pump-relay output work. The injector driver output stage inside the ECU could still be corroded or dead, consistent with all eight dry.</li>
+        <li>The owner removed and refitted the ECU during drying, making the ECU main connector a personally handled common node.</li>
+        <li>ECU sourcing: these Lucas ECUs are repairable (standard driver transistors) and used units exist. A coordinator note said “14CU”, whereas this vehicle is 13CU per the WSM. Read the installed ECU's own label before sourcing anything (markings are the source of truth), and do not buy before the connector check.</li>
+      </ul>
+    </article>
+
+    <article class="entry">
+      <div class="entry-h">
+        <div class="date">22 August 2026</div>
+        <span class="st ok">Eliminated</span>
+      </div>
+      <p class="title">Suspect: the replacement fuel pump, from the records</p>
+      <p style="margin-top:20px">The fuel pump and module were replaced 3 December 2024 (Bexar invoice 2836: pump E160030, module 15131, both scan-verified 24 August 2026), making the pump c. one year and a few hundred miles old. It almost certainly runs and delivers fuel to the rail, which moved the prime fuel-side suspect from a dead pump to a wrong-specification or low-pressure pump. A generic or mis-catalogued replacement that flows fuel but cannot hold the 13CU's 34–37 psi, or a fault in that recent work (a kinked or misrouted line, the 2025 rear-line work, a bad crimp), would give exactly the fuel-present, no-start signature. The pending feed-line gauge reading was to adjudicate: a stable 34–37 psi on cranking would exonerate the pump.</p>
+      <p><strong>Outcome, 24 August 2026.</strong> 34 psi at the rail after the filter. Pump exonerated; suspect closed.</p>
+    </article>
+
+    <article class="entry">
+      <div class="entry-h">
+        <div class="date">22 August 2026</div>
+        <span class="st note">Factory-verified</span>
+      </div>
+      <p class="title">Gauge-connection method</p>
+      <p style="margin-top:20px">The owner's kit had no fitting that mates the rail because there is nothing to mate. The 13CU fuel rail has no Schrader valve, test port or service valve; the whole WSM was searched, and “Schrader” appears only in the A/C section (p.632–670), never in the fuel section. The factory test breaks into the feed line: depressurise (pull the pump relay, crank to stall, ignition off), disconnect the feed line between the fuel rail and the filter, adjacent to the filter, and connect the gauge in line there (Test 18, p.183; revised Test 20/10, p.218–219).</p>
+      <ul class="prose">
+        <li>Special tool: Land Rover fuel-pressure gauge 18G 1500 (OCR reads “18C 1500”, p.219), a gauge and hose that splices into the same feed line; not a rail adapter.</li>
+        <li>The revised procedure widens the specification slightly to 2.39–2.67 kgf/cm², 34–38 psi (p.219).</li>
+        <li>Rail union is the “nut and ferrule” type (p.198), a compression or flare union with no threaded test boss. The manual publishes no rail-union thread size and no feed or return hose bore, in neither the §04 specification data nor §19; absent, and not to be invented.</li>
+        <li>Filter unions torque 20–25 lbf·ft, 27–34 Nm (p.243).</li>
+      </ul>
+      <p><strong>Conclusion.</strong> With no rail test port, the owner's barbed-T splice into the feed line is the correct, factory-equivalent method (18G 1500 does the same). Keep it in the feed line adjacent to the filter or at the rail end of the same run; SAE 30R9 hose and proper clamps; depressurise before every opening and closing.</p>
+    </article>
+
+    <article class="entry">
+      <div class="entry-h">
+        <div class="date">16 August 2026</div>
+        <span class="st ok">Cleared</span>
+      </div>
+      <p class="title">Fuel-side check, factory-verified. Cleared 24 August 2026 at 34 psi.</p>
+      <p class="src" style="white-space:normal;display:block;margin:14px 0 0">Source: <a href="file:///Users/drewcampbell/Documents/Garage/rrc88/SRR652USWM-A_workshop_manual_87-91.pdf">factory WSM SRR652USWM-A</a>, §19 Fuel Injection. 1987-header pages are the 13CU baseline; PDF page numbers cited.</p>
+      <dl class="inv" style="margin-top:24px">
+        <dt>Tee placement</dt><dd>Confirmed correct: FPR inlet, high-pressure feed; return untouched. The first 0 psi reading was not meaningful, pump-run state being unverified.</dd>
+        <dt>Specification</dt><dd>Pump delivery and system pressure 2.4–2.6 kgf/cm², 34–37 psi (§04 data, p.20; §19 p.198). Regulator holds a constant 2.5 bar above manifold pressure (p.168). Leak-down maximum 0.7 kgf/cm², 10 psi, in 1 minute (Test 18, p.183).</dd>
+        <dt>Gauge point</dt><dd>Factory: feed line immediately after the fuel filter, on the chassis beneath the RH rear wheel arch (p.183). The owner's rail-end tee is on the same feed line; acceptable.</dd>
+        <dt>Inertia switch</dt><dd>Factory-confirmed fitted: under the left front seat, on the seat base rear cross-member. Normally closed, in the ignition feed (Fuse 18, inertia switch, pump). Reset by pressing the button down (p.169; circuit p.165/p.176).</dd>
+        <dt>Relays</dt><dd>Both under the front right seat, adjacent to and forward of the ECU (ECU behind the rear opening of the seat base, seat slid forward). Fuel pump relay on the blue terminal block, main relay on the black, with the diagnostic plug (p.169, p.192, p.198). Main relay energises at ignition on; the pump relay is ECU-energised; factory Test 5 expects an audible relay click with ignition on (p.169, p.175).</dd>
+        <dt>Pump voltage</dt><dd>Test point: link lead behind the rear left wheel, between chassis and stowage-floor panel; pump terminals not directly accessible (Test 7, p.176).</dd>
+        <dt>Depressurise</dt><dd>Before opening any fitting: pull the pump relay, crank or run to stall, ignition off (p.182, p.198).</dd>
+      </dl>
+      <h3>Next steps, in order</h3>
+      <ol class="prose">
+        <li>Reset the inertia switch (LH seat base rear cross-member, button down).</li>
+        <li>Verify or force the pump: pull the blue-block relay (AFU2913 ISO cube, chapter viii), meter-verify the battery-hot socket pin, bridge 30 to 87, listen at the tank. Socket wire colours are in a diagram the scan's OCR cannot read; meter first.</li>
+        <li>Silent: trace Fuse 18, inertia switch, relay, link-lead connector (rear LH wheel), ground, pump.</li>
+        <li>Running but 0 psi: the gauge chuck must depress the Schrader core; crack the tee to confirm fuel; then filter, pickup, pump.</li>
+      </ol>
+      <p><strong>Standing flags.</strong> Splice hose must show SAE 30R9 before sustained pressure; watch the splice on first pressurisation. Healthy is 34–37 psi, holding within 10 psi per minute: fuel side cleared, return to the open TDC and rotor-phasing check.</p>
+    </article>
+
+    <article class="entry">
+      <div class="entry-h">
+        <div class="date">10 August 2026</div>
+        <span class="st note">Superseded</span>
+      </div>
+      <p class="title">Fuel-side test rig</p>
+      <p style="margin-top:20px">Brass Schrader tee spliced into the rail feed hose near the plenum with worm-drive clamps. The original open questions (feed versus return placement, pump prime behaviour, hose rating, ECU and specification identification) are carried into the 16 August entry. Log the pump relay location when found.</p>
+    </article>
+  </div>
+</section>
+
+<section id="electrical" class="chapter">
+  <header>
+    <div class="roman">vii.</div>
+    <h2>Electrical</h2>
+    <p>Fuse and relay layout. <span class="src">WSM SRR652USWM-A · 1987 pages, this 13CU vehicle</span></p>
+  </header>
+  <div>
+    <div class="note due">
+      <span class="label">The engine-bay box is a relay box</span>
+      <p>The underhood firewall box is a relay box, not a fuse box. The factory calls it the “closure panel viewed from the engine compartment, protective cover removed” (WSM Electrical §86, PDF p.743). All chassis fuses are under the dash (main and auxiliary panel A, PDF p.741), with auxiliary fuse box B under the LH seat (p.742); there is no fuse box in the engine bay. A few loads are inline-fused rather than boxed: radio 5A, amplifier 4A (p.741/p.843). Expect to label relays underhood when the photograph arrives, and cross-reference fuse numbers to the under-dash panel below.</p>
+    </div>
+
+    <h3>Engine-bay closure-panel relays · PDF p.743</h3>
+    <p class="aside" style="margin:-6px 0 16px">Seven positions, on the firewall, under the black cover.</p>
+    <div class="t"><table>
+      <tr><th>Pos.</th><th>Relay</th><th>Colour</th><th>Diagram item</th></tr>
+      <tr><td>1</td><td>Headlamp wash timer unit</td><td>Black</td><td>Main #17</td></tr>
+      <tr><td>2</td><td>Heated rear window</td><td>Natural</td><td>Main #65</td></tr>
+      <tr><td>3</td><td>Starter solenoid relay</td><td>Natural</td><td>Main #6</td></tr>
+      <tr><td>4</td><td>Compressor clutch <small>A/C, only if fitted</small></td><td>Natural</td><td>A/C #11</td></tr>
+      <tr><td>5</td><td>Condenser fan <small>A/C, only if fitted</small></td><td>Natural</td><td>A/C #9</td></tr>
+      <tr><td>6</td><td>Air conditioning, heater <small>A/C</small></td><td>Natural</td><td>A/C #5</td></tr>
+      <tr><td>7</td><td>Stowage position, not used</td><td>—</td><td>—</td></tr>
+    </table></div>
+
+    <div class="note" style="margin-top:28px">
+      <span class="label">Two traps in the factory relay table, p.743</span>
+      <ul class="prose" style="margin:0">
+        <li>The legend runs to 17, but positions 8–17 are not in the engine bay. They are the steering-column-bracket relays under the dash, shown in the second illustration on the same page: rear and front wiper delay, ignition load, flasher and hazard, voltage-sensitive switch, interior-lamp delay, auxiliary-lamp relay.</li>
+        <li>The EFI relays are not on the closure panel. Legend items 16 (main EFI, black block) and 17 (fuel pump, blue block) are under the right front seat, and seat-adjust #15 under the left seat, authoritative per the Fuel Injection section (PDF p.169/p.192) and p.744. Do not look for the fuel-pump relay underhood.</li>
+      </ul>
+    </div>
+
+    <h3>Under-dash main fuse panel, relevant fuses · PDF p.741</h3>
+    <div class="t"><table>
+      <tr><th>Fuse</th><th>Rating</th><th>Circuit</th><th>Key</th></tr>
+      <tr><td>18</td><td>10 A, red</td><td><strong>Fuel pump.</strong> In the no-start chain (Fuse 18, inertia switch, pump). Found pulled 24 August 2026, removed to depressurise and never reinstalled, causing a false “pump dead, no pressure” alarm. Reinstalled the same day; resolved.<small>Log any fuse pulled for depressurisation and verify it is back before crank tests.</small></td><td>IGN</td></tr>
+      <tr><td>13</td><td>15 A</td><td>Stop and reverse lamps, indicators, instruments, bulb check, low-oil and coolant monitors, speed transducer</td><td>IGN</td></tr>
+      <tr><td>11</td><td>15 A, blue</td><td>Audio warning, horns, hazard, clock, courtesy and flash lamps, key-in switch, emission reminder</td><td>—</td></tr>
+      <tr><td>1–4</td><td>7.5 A, brown</td><td>Headlamps: 1 RH low, 2 LH low, 3 RH high, 4 LH high</td><td>—</td></tr>
+      <tr><td>5–6</td><td>5 A, tan</td><td>Parking lights; instrument and radio illumination</td><td>—</td></tr>
+      <tr><td>7</td><td>15 A, blue</td><td>Front wash and wipe motors</td><td>AUX</td></tr>
+      <tr><td>19</td><td>10 A, red</td><td>Central locking</td><td>IGN</td></tr>
+      <tr><td>20</td><td>25 A, white</td><td>Window lifts</td><td>AUX</td></tr>
+    </table></div>
+    <p class="aside">Full 1–20 list and auxiliary panel A (A1–A6: A/C fan, compressor clutch, mirrors, cruise) on WSM PDF p.741; auxiliary fuse box B (seat circuits, 30 A) under the LH seat, p.742.</p>
+
+    <h3>Flags</h3>
+    <ul class="prose">
+      <li><strong>Printed lid legend.</strong> The WSM documents no printed legend on the engine-bay relay cover (“black protective cover”) or the fuse-box cover (“clip-on cover”); identification is from the WSM diagram only. Any legend on this vehicle's lid would be aftermarket or added by a previous owner; verify against this table rather than trust it.</li>
+      <li><strong>Model year.</strong> p.741–744 carry the 1987 header, matching this 13CU vehicle. A/C-dependent positions 4, 5 and 6 exist only if A/C is fitted. Later 3.9 and 1990-on layouts differ; do not cross-apply.</li>
+      <li><strong>When the photograph arrives.</strong> Match the underhood relay positions to the seven-position closure-panel diagram (p.743). More or different sockets than seven indicate modification; read each relay's own markings (the source of truth) before labelling.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="parts" class="chapter">
+  <header>
+    <div class="roman">viii.</div>
+    <h2>Parts</h2>
+    <p>Part numbers and locations. Markings on the installed component govern before any order.</p>
+  </header>
+  <div class="t"><table>
+    <tr><th>System</th><th>Part, specification</th><th>Notes</th></tr>
+    <tr><td>Rust treatment</td><td>Eastwood rust encapsulator</td><td>Passenger-floor spot (chapters iv and v). Add seam sealer and topcoat.</td></tr>
+    <tr><td>Ignition</td><td>Distributor Lucas 35DLM8, air gap 0.20–0.35 mm · plugs Champion RN12YC, gap 0.84–0.96 mm · coil Lucas 32C5 or Bosch 0-221-122-392 <span class="src">WSM p.35/p.75</span></td><td>Full tuning data, firing order and cross-fire caution in the ignition reference, chapter vi. Read the distributor tag especially: 35DLM8 per WSM, but a replacement in 38 years is plausible.</td></tr>
+    <tr><td>Engine</td><td>3.5 L EFI Rover V8, to be confirmed</td><td>Verify block and head markings before ordering any engine parts.</td></tr>
+    <tr><td>Fuel pump relay</td><td>AFU2913 (OE) = original Bosch 0332014112; current Bosch 0986AH0602. Standard ISO cube relay.</td><td>Part numbers externally verified 15 August 2026; confirm against the installed relay. Factory location (WSM §19, PDF p.192/p.198): under the front right seat, adjacent to the ECU, on the blue terminal block; main relay on the black block, diagnostic plug alongside. ECU-energised. No factory part number in the WSM text pages.</td></tr>
+    <tr><td>Inertia switch</td><td>Factory-fitted (13CU circuit)</td><td>Under the left front seat, on the seat base rear cross-member. Normally closed, in the Fuse 18 to pump ignition feed; reset by pressing the button down (WSM §19, PDF p.169).</td></tr>
+    <tr><td>Fuel-pressure gauge</td><td>Land Rover special tool 18G 1500 (WSM p.219 OCR “18C 1500”)</td><td>Splices into the feed line at the filter; not a rail adapter. No Schrader or test port on the 13CU rail (chapter vi). Any inline 0–60 psi gauge tee'd into the feed line with SAE 30R9 hose substitutes. Rail union is nut and ferrule; no published thread size or hose bore.</td></tr>
+    <tr><td>Fuel filter</td><td>In-line, chassis-mounted</td><td>Beneath the RH rear wheel arch, on the chassis (WSM Test 18, PDF p.183). The factory gauge point is the feed line immediately downstream.</td></tr>
+    <tr><td>Workshop manual</td><td><a href="file:///Users/drewcampbell/Documents/Garage/rrc88/SRR652USWM-A_workshop_manual_87-91.pdf">SRR652USWM-A</a>, 1987–91 NAS, 864 pp. Acquired 16 August 2026.</td><td>Scanned copy with OCR text layer; diagrams not machine-readable. Pages headed “1987” or “1987-91” apply to this 3.5/13CU vehicle; content flagged “1990” or “1991” is 3.9, not to be cross-applied. §19 Fuel Injection, PDF c. p.160–245; §04 specification data, PDF c. p.19 onward.</td></tr>
+  </table></div>
+</section>
+
+<section id="market" class="chapter">
+  <header>
+    <div class="roman">ix.</div>
+    <h2>Market &amp; Sale</h2>
+    <p>Position and value, updated 14 July 2026. To be offered on Bring a Trailer after the 911 SC.</p>
+  </header>
+  <div>
+    <div class="note due">
+      <span class="label">Disposition: for sale · decided 1 July 2026</span>
+      <p>Supersedes the June 2026 verdict, which held this vehicle as the keeper of the fleet. The owner's assessment: agreeable but not exciting; c. $14k invested in a c. $24–30k vehicle, roughly a 2× harvest in an inefficient market. Sequenced after the 911 SC sale. The June keeper verdict reflected value resilience rather than attachment; the value logic still holds and now argues for a well-floored exit rather than a hold.</p>
+    </div>
+
+    <article class="advisory">
+      <div class="entry-h">
+        <div class="date">Key comparable</div>
+        <div class="total" style="font-size:28px">$26,750</div>
+      </div>
+      <p class="title" style="margin:6px 0 22px">1987 NAS four-door SWB, one owner, first year, “exceptional”, 97k mi · <span class="src">BaT, live-verified 14 July 2026</span></p>
+      <p>The closest structural comparable: same body and configuration, a better story, 2.3× the mileage. It marks what provenance narrative alone clears in the present market, with the froth off (buyers refusing premiums; reserve-gap gauge 62.5% against a c. 27% baseline). The ceiling marker for story vehicles. No RRC under 50k miles has been offered in 12+ months; a verified 43k would be the lowest-mileage example on the market in over a year.</p>
+    </article>
+
+    <h3 style="margin-top:0">Position</h3>
+    <div class="t"><table class="spec">
+      <tr><td>Segment trend</td><td>Correcting: down c. 26% from the 2022–23 peak (median c. $28k to c. $20.7k over the last 12 months). Twelve-month tape mostly $10–28k for 100–200k-mile drivers; strong prints $37k (123k-mile 1993 LWB, 7 July) and $34k (4.6-litre swap, 1994). Thin and high-variance: a $6.6k–$37k spread.</td></tr>
+      <tr><td>Scarcity tier</td><td>Low-original-mileage, rust-free, coil-sprung (no EAS) early examples sit in the resilient scarcity tier, holding value through the correction while EAS and high-mileage vehicles lead it down.</td></tr>
+      <tr><td>Placement</td><td>43k unverified, as a story vehicle: $24–28k; the 1987 comparable caps story value at c. $26.75k. 43k verified by records: $30–35k defensible, as a genuine scarcity outlier with no comparable on the tape. The former $28–38k range looks optimistic at the top in this regime either way.<small>22 August 2026: verification partial; 42,529 mi documented at 11 January 2023 (chapters iii and v), with a Texas ownership chain and VIN. 24 August 2026: the source scan for that datapoint is filed and verified (date, RO number, circled mileage, VIN, plate), so the claim is producible to a buyer, not merely transcribed. A longer odometer ladder, with a pre-2017 record, would fully seat the $30–35k case.</small></td></tr>
+      <tr><td>Carry cost</td><td>Low, c. 4–5%, against a c. 10.8% segment average. Coil suspension removes the largest maintenance liability, low mileage helps, and the owner does the work.</td></tr>
+      <tr><td>Value drivers</td><td>43k original miles, no EAS, no rust (one minor surface spot), four-door SWB.<small>Records verification is the story-versus-scarcity lever, worth c. $5–8k; now partially captured (five receipts 2017–2025, 42,529 mi at 2023, Texas owner chain, VIN confirmed). Remaining upside: a pre-2017 odometer record and a title name-match.</small></td></tr>
+      <tr><td>Watch item</td><td>Rover V8 head gasket and liners (chapter iv), the one item that can dent the value thesis. Low mileage helps; monitor.</td></tr>
+    </table></div>
+
+    <h3>Sale plan · Bring a Trailer, after the 911 SC</h3>
+    <div class="t"><table>
+      <tr><th>Decision</th><th>Position</th><th>Reasoning</th></tr>
+      <tr><td>Reserve</td><td>Yes: a modest reserve, not no-reserve</td><td>The opposite market structure from the SC. The SC's market is deep and efficient (80+ comparables in 12 months), so no-reserve finds fair value and earns the engagement premium. The RRC market is thin and volatile ($6.6k–$37k in 12 months, story-driven, the outcome dependent on who appears that week), so no-reserve exposes the left tail: a 1995 LWB sold at $6,600 three weeks before the 1987 sold at $26,750. A reserve here floors variance rather than propping price.</td></tr>
+      <tr><td>Reserve level</td><td><span class="fig">$25k</span>, now favoured; formerly $22–23k unverified</td><td>The 42,529 mi at 2023 datapoint and the Texas owner chain move the vehicle toward the verified tier, supporting a $25k floor at or under the 1987's $26,750 clearing price, a level the market has shown it meets. One more early odometer record would fully seat it.</td></tr>
+      <tr><td>If reserve not met</td><td>Negotiate post-auction through BaT</td><td>Standard; holding the floor costs nothing.</td></tr>
+      <tr><td>Pre-listing preparation</td><td colspan="2">
+        <ol class="prose" style="margin:0">
+          <li>Records: partially done; five receipts filed (2017–2025), 42,529 mi at 2023, Texas owner chain, VIN confirmed. Remaining: a pre-2017 odometer record and title name-match.</li>
+          <li>Head-gasket status; the 2021 note records water-pump noise (chapter iv).</li>
+          <li>Eastwood treatment of the floor spot.</li>
+          <li>Full VIN decode; year and plant done, trim and specification pending.</li>
+          <li>Resolve the no-start first (chapter vi); the fuel-pump receipt is central to that.</li>
+          <li>Clear or re-verify the 2021 condition list (chapter iv) for the listing.</li>
+        </ol>
+        <small>Drawn from chapters iii, iv and v. The listing's mileage and records story is now materially stronger.</small>
+      </td></tr>
+    </table></div>
+  </div>
+</section>
+
+<section id="agenda" class="chapter">
+  <header>
+    <div class="roman">x.</div>
+    <h2>Agenda</h2>
+    <p>Outstanding items, in order of priority.</p>
+  </header>
+  <ol class="agenda">
+    <li><span><strong>No-start.</strong> Sustained ether test; then wire order and rotor phasing at No. 1 TDC, or the fuel-quantity list and ECU-plug resistance tests.</span><span class="st open">Open</span></li>
+    <li><span><strong>Water ingress, passenger side.</strong> Identify and seal before the next rain: windscreen seal, door seal, sunroof drains.</span><span class="st open">Open</span></li>
+    <li><span><strong>Base timing and oil pressure.</strong> Strobe-verify and confirm once running; closes the 8 August rotor entry and the no-start.</span><span class="st due">Due</span></li>
+    <li><span><strong>Floor rust.</strong> Eastwood encapsulator, seam sealer and topcoat, after the ingress is fixed.</span><span class="st due">Planned</span></li>
+    <li><span><strong>2021 condition list.</strong> Power-steering leak, other seals, water-pump noise, tyre dates.</span><span class="st note">Re-verify</span></li>
+    <li><span><strong>Records.</strong> Pre-2017 odometer record; title name-match; injector-service receipt; ask Bexar what “Catalítico Nuevo” covered.</span><span class="st note">Pursue</span></li>
+    <li><span><strong>Identity.</strong> Full VIN decode for trim and specification; colour, County status, title and location; purchase price and date; engine and distributor markings.</span><span class="st note">Confirm</span></li>
+    <li><span><strong>Sale.</strong> Bring a Trailer after the 911 SC, modest reserve near $25k.</span><span class="st note">Scheduled</span></li>
+  </ol>
+</section>
+
 </main>
+
+<footer class="colophon">
+  <div class="wrap">
+    <div>
+      <div class="brand">Glovebox</div>
+      <p>Private vehicle records. Range Rover Classic, 1988, chassis 313671. Registry reference rrc88.</p>
+    </div>
+    <div>
+      <p>Populated June 2026 from owner inspection; facts distinguished as owner-stated or to be confirmed by VIN and records. Compiled from five service receipts (2017–2025) and workshop manual SRR652USWM-A.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (() => {
+    const links = [...document.querySelectorAll('.rail a')];
+    if (!('IntersectionObserver' in window)) return;
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (!e.isIntersecting) return;
+      links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + e.target.id));
+    }), { rootMargin: '-35% 0px -55% 0px' });
+    document.querySelectorAll('main section[id]').forEach(s => io.observe(s));
+  })();
+</script>
 </body>
 </html>

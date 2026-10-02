@@ -3,161 +3,325 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>1980 Porsche 911 SC — Owner's Manual</title>
-<style>
-  :root{--pc:#0b0b0c;--pc2:#2a2a2e;--accent:#c8a24a;--ink:#1c1c1c;--muted:#5c5c5c;--paper:#f6f4ee;--card:#fff;--line:#dcd7ca;--red:#9c2b22;--amber:#b5791f;--green:#2c5239;}
-  *{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--paper);line-height:1.55;}
-  main{max-width:920px;margin:0 auto;padding:0 28px 70px}
-  header.hero{background:linear-gradient(135deg,var(--pc),var(--pc2));color:#f3f1e8;padding:38px 28px;border-bottom:4px solid var(--accent)}
-  header.hero .kicker{letter-spacing:.2em;text-transform:uppercase;font-size:12px;color:var(--accent);font-weight:700}
-  header.hero h1{margin:6px 0 4px;font-size:32px}
-  header.hero p{margin:0;color:#d4d4cf;max-width:64ch}
-  header.hero .vin-strip{margin-top:16px;display:flex;flex-wrap:wrap;gap:8px}
-  header.hero .vin-strip span{background:rgba(255,255,255,.08);border:1px solid rgba(200,162,74,.4);padding:4px 11px;border-radius:6px;font-size:13px}
-  h2.sec{font-size:22px;border-bottom:2px solid var(--line);padding-bottom:8px;margin:30px 0 14px;color:var(--pc2)}
-  table{border-collapse:collapse;width:100%;margin:12px 0;background:var(--card);border:1px solid var(--line);font-size:14.5px}
-  th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}
-  th{background:#eceade;font-size:12px;letter-spacing:.05em;text-transform:uppercase;color:#4a4a4a}
-  .callout{border-left:5px solid var(--accent);background:#fbf8ef;padding:12px 16px;border-radius:0 8px 8px 0;margin:14px 0}
-  .callout.amber{border-color:var(--amber);background:#fbf5e8}.callout.green{border-color:var(--green);background:#eef4ee}
-  .callout .tag{font-weight:700;text-transform:uppercase;font-size:11px;letter-spacing:.08em;display:block;margin-bottom:3px;color:var(--amber)}
-  .callout.green .tag{color:var(--green)}
-  .vf{font-size:11px;font-weight:700;color:#7a5a10;background:#fbe9c8;border:1px solid #e3c478;border-radius:10px;padding:1px 7px}
-  .ok{font-size:11px;font-weight:700;color:#2c5239;background:#dcefe0;border:1px solid #a9cdb2;border-radius:10px;padding:1px 7px}
-  .drew{font-size:11px;font-weight:700;color:#2f4170;background:#e6ecf7;border:1px solid #b9c6e0;border-radius:10px;padding:1px 7px}
-  ul{padding-left:20px}code{background:#e7e3d6;padding:1px 6px;border-radius:4px;font-family:Menlo,monospace;font-size:.9em}
-  footer{border-top:1px solid var(--line);margin-top:36px;padding-top:16px;font-size:13px;color:var(--muted)}
-</style>
+<title>Porsche 911 SC · Chassis 0115</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/glovebox.css">
+<style>.hero::after{content:"911"}</style>
 </head>
 <body>
-<nav style="background:#15281c;padding:9px 28px;border-bottom:2px solid #c9a14a"><a href="../index.html" style="color:#c9a14a;text-decoration:none;font-weight:700;font-size:13px;letter-spacing:.08em">&larr; THE GARAGE</a></nav>
+
+<div class="mast"><div class="wrap">
+  <a class="brand" href="../index.html">Glovebox</a>
+  <nav><a href="../index.html">The Garage</a><a href="#history">Service History</a></nav>
+</div></div>
+
 <header class="hero">
-  <div class="kicker">Owner's Reference Manual</div>
-  <h1>1980 Porsche 911 SC Coupe</h1>
-  <p>Air-cooled G-series (impact bumper). Black Metallic over Champagne leather. Data below is populated from the Bring a Trailer listing (sold Sep 2023) — confirmed facts marked <span class="ok">BaT</span>, items still to check marked <span class="vf">VERIFY</span>.</p>
-  <div class="vin-strip">
-    <span>VIN 91A0140115</span>
-    <span>3.0 flat-six · 172 hp</span>
-    <span>915 5-speed</span>
-    <span>16″ Fuchs</span>
-    <span>156k mi (TMU)</span>
-    <span>Top-end rebuilt 2022</span>
+  <div class="wrap">
+    <div class="label">Vehicle Record · Chassis 0115</div>
+    <h1>1980 Porsche <em>911 SC</em></h1>
+    <p class="sub">Black Metallic over Champagne leather. Air-cooled G-series coupe, impact bumper.</p>
+    <dl class="plate">
+      <div><dt>VIN</dt><dd class="vin">91A0140115</dd></div>
+      <div><dt>Engine</dt><dd>3.0 L flat-six</dd></div>
+      <div><dt>Gearbox</dt><dd>915 five-speed</dd></div>
+      <div><dt>Odometer</dt><dd class="num">156k mi, TMU</dd></div>
+      <div><dt>Top End</dt><dd class="num">Sep 2022</dd></div>
+      <div><dt>Acquired</dt><dd class="num">Sep 2023</dd></div>
+    </dl>
   </div>
 </header>
-<main>
 
-<div class="callout green">
-  <span class="tag">Source &amp; provenance <span class="ok">BaT</span></span>
-  Sold on <strong>Bring a Trailer for $51,500 on 09/11/2023</strong> (listing <code>1980-porsche-911sc-92</code>; seller "cngann," Santa Maria, CA). Prior owner acquired it in 2022 and had a top-end engine rebuild done shortly after. Came with owner's manual, service records, and manufacturer's literature; clean California title (a lien was paid off at sale). <em>Confirm what records/literature actually conveyed to Drew.</em>
-</div>
+<nav class="rail" aria-label="Sections"><div class="wrap">
+  <a href="#condition"><span class="r">i</span>Condition</a>
+  <a href="#specification"><span class="r">ii</span>Specification</a>
+  <a href="#provenance"><span class="r">iii</span>Provenance</a>
+  <a href="#history"><span class="r">iv</span>Service History</a>
+  <a href="#model-notes"><span class="r">v</span>Model Notes</a>
+  <a href="#reference"><span class="r">vi</span>Reference</a>
+  <a href="#agenda"><span class="r">vii</span>Agenda</a>
+</div></nav>
 
-<h2 class="sec">1 · Vehicle Overview <span class="ok">BaT</span></h2>
-<table>
-  <tr><th>Item</th><th>Detail</th></tr>
-  <tr><td>Model</td><td>1980 Porsche 911 SC Coupe (G-series, impact bumper)</td></tr>
-  <tr><td>Chassis / VIN</td><td><code>91A0140115</code></td></tr>
-  <tr><td>Engine</td><td>3.0L air-cooled flat-six, Bosch <strong>K-Jetronic CIS</strong> injection. Factory rated <strong>172 hp / 189 lb-ft</strong>.</td></tr>
-  <tr><td>Transmission</td><td><strong>Type 915</strong> five-speed manual transaxle</td></tr>
-  <tr><td>Mileage</td><td><strong>156k shown — TMU</strong> (true mileage unknown). ~3k added under the BaT seller's ownership. <span class="vf">Update current mi</span></td></tr>
-  <tr><td>Color</td><td>Black Metallic exterior / Champagne leather interior (color-coordinated dash, panels, carpets)</td></tr>
-  <tr><td>Wheels / tires</td><td>16″ Fuchs alloys — 205/55 front, 225/50 rear Hankook Ventus V2</td></tr>
-  <tr><td>Brakes</td><td>Power-assisted 4-wheel discs, ventilated rotors</td></tr>
-  <tr><td>Title</td><td>Clean California (per BaT). <span class="vf">Confirm Drew's title/registration</span></td></tr>
-</table>
+<main class="wrap">
 
-<h2 class="sec">2 · Equipment &amp; Modifications</h2>
-<p style="margin:8px 0;color:#5c5c5c;font-size:13px"><span class="ok">BaT</span> = as-sold spec · <span class="drew">DREW</span> = changed / done under Drew's ownership</p>
-<ul>
-  <li>Sunroof, fog lights, dual side mirrors, <strong>whale-tail rear spoiler</strong>, rear bumperettes <span class="ok">BaT</span></li>
-  <li>Power windows; <strong>CD stereo</strong> with Clarion door speakers <span class="ok">BaT</span></li>
-  <li>Central tach (6,300-rpm redline), 160-mph speedo, gauges for oil level/temp/pressure + fuel <span class="ok">BaT</span></li>
-  <li><strong>WEVO shifter</strong> installed — sharpens the 915's notoriously vague throw <span class="drew">DREW</span></li>
-  <li><strong>MOMO Prototipo steering wheel</strong> (replaces the stock 3-spoke) <span class="drew">DREW</span></li>
-  <li><strong>917-style wooden shift knob</strong> (replaces the OMP knob) <span class="drew">DREW</span></li>
-  <li><strong>Fabspeed cat-bypass pipe</strong> <span class="drew">DREW</span> — CONFIRM: installed vs spare, and locate the original catalytic converter. Ideal BaT line: &ldquo;Fabspeed bypass installed; original cat included&rdquo; — keeps CA-smog bidders (1976+ cars still tested there) in the pool. TX exempt (25+ yrs).</li>
-  <li><strong>A/C compressor remains removed</strong> — no working A/C, confirmed current state <span class="drew">DREW</span></li>
-</ul>
+<section id="condition" class="summary">
+  <div>
+    <span class="st open">Confirm</span>
+    <div class="v">Catalytic converter</div>
+    <p>Fabspeed bypass pipe: installed or spare to be confirmed, and the original converter located.</p>
+  </div>
+  <div>
+    <span class="st due">Due</span>
+    <div class="v">Pre-listing preparation</div>
+    <p>Current odometer photograph, leak-down test, Porsche production specifications, professional photography.</p>
+  </div>
+  <div>
+    <span class="st note">Decide</span>
+    <div class="v">Air conditioning</div>
+    <p>Compressor removed; no working A/C. Reinstate or leave deleted.</p>
+  </div>
+  <div>
+    <span class="st ok">Current</span>
+    <div class="v">Engine-out top end</div>
+    <p>German Auto of Santa Maria, 23 September 2022. Updated chain tensioner. Invoice 30125 on file.</p>
+  </div>
+</section>
 
-<h2 class="sec">3 · Known Condition Notes (at sale) <span class="ok">BaT</span></h2>
-<ul>
-  <li>Antenna broken off</li>
-  <li>Paint chips on the nose; additional blemishes shown in the BaT gallery <span class="drew">DREW</span> — <strong>full paint correction since performed</strong> (re-confirm any remaining nose chips)</li>
-  <li>Wear/tear on the driver's seat</li>
-</ul>
+<section id="specification" class="chapter">
+  <header>
+    <div class="roman">ii.</div>
+    <h2>Specification</h2>
+    <p>As described in the Bring a Trailer listing, September 2023, with subsequent changes noted.</p>
+  </header>
+  <div>
+    <p class="lead">Sold on Bring a Trailer for $51,500 on 11 September 2023, listing <code>1980-porsche-911sc-92</code>, by the seller “cngann” of Santa Maria, California.</p>
+    <div class="t"><table class="spec">
+      <tr><td>Model</td><td>1980 Porsche 911 SC Coupe, G-series, impact bumper</td></tr>
+      <tr><td>VIN</td><td class="num">91A0140115</td></tr>
+      <tr><td>Engine</td><td>3.0 L air-cooled flat-six, Bosch K-Jetronic CIS. Factory rating 172 hp, 189 lb-ft.</td></tr>
+      <tr><td>Transmission</td><td>Type 915 five-speed manual transaxle</td></tr>
+      <tr><td>Odometer</td><td class="num">156k shown at sale, designated TMU (true mileage unknown). Approximately 3k added under the selling owner. <small>Current reading to be recorded. See the odometer ladder in chapter iii.</small></td></tr>
+      <tr><td>Exterior</td><td>Black Metallic</td></tr>
+      <tr><td>Interior</td><td>Champagne leather; colour-coordinated dash, panels and carpets</td></tr>
+      <tr><td>Wheels</td><td>16″ Fuchs alloys on Hankook Ventus V2, 205/55 front, 225/50 rear</td></tr>
+      <tr><td>Brakes</td><td>Power-assisted discs on four wheels, ventilated rotors</td></tr>
+      <tr><td>Title</td><td>Clean California, per the listing; a lien was paid off at sale. <small>Title and registration in the owner's name, and California emissions status, to be confirmed.</small></td></tr>
+      <tr><td>Documents</td><td>Owner's manual, service records and manufacturer's literature, per the listing. <small>What actually conveyed to the owner is to be confirmed.</small></td></tr>
+    </table></div>
 
-<h2 class="sec">4 · Maintenance Log <span class="ok">RECEIPTS ON FILE</span></h2>
-<div class="callout green">
-  <span class="tag">Receipts vault — 27 documents digitized 12 Jul 2026</span>
-  The car's original paper file (1986→2024) photographed and archived at <code>glovebox/receipts/911sc/</code>
-  (IMG_4219–4245, HEIC originals + JPG working copies). Every entry below is receipt-backed.
-  <strong>Provenance: Walter Glenn Boyd (Los Angeles area, documented 1986–2003+) → Chris Gann
-  (Santa Maria, 2022–2023, the BaT seller "cngann") → Drew (Sep 2023–).</strong>
-</div>
+    <h3>Equipment &amp; Modifications</h3>
+    <div class="t"><table>
+      <tr><th>Item</th><th>Particulars</th><th>Source</th></tr>
+      <tr><td>Body</td><td>Sunroof, fog lamps, dual side mirrors, whale-tail rear spoiler, rear bumperettes</td><td><span class="src">BaT, as sold</span></td></tr>
+      <tr><td>Windows &amp; audio</td><td>Power windows; CD stereo with Clarion door speakers</td><td><span class="src">BaT, as sold</span></td></tr>
+      <tr><td>Instruments</td><td>Central tachometer, 6,300-rpm redline; 160-mph speedometer; oil level, temperature and pressure; fuel</td><td><span class="src">BaT, as sold</span></td></tr>
+      <tr><td>Shifter</td><td>WEVO shifter, fitted to sharpen the 915's vague throw</td><td><span class="src">Owner</span></td></tr>
+      <tr><td>Steering wheel</td><td>MOMO Prototipo, in place of the standard three-spoke</td><td><span class="src">Owner</span></td></tr>
+      <tr><td>Shift knob</td><td>917-style mahogany knob, in place of the OMP knob <small>Pelican Parts, 7 May 2024. Receipt on file.</small></td><td><span class="src">Owner</span></td></tr>
+      <tr><td>Exhaust</td><td>Fabspeed catalytic-converter bypass pipe <small>Installed or spare to be confirmed; original converter to be located.</small></td><td><span class="src">Owner</span></td></tr>
+      <tr><td>Air conditioning</td><td>Compressor remains removed; no working A/C. Current state confirmed. <small>The March 2022 German Auto estimate records “AC lines disconnected at compressor” before the present ownership.</small></td><td><span class="src">Owner</span></td></tr>
+    </table></div>
 
-<h3>Odometer ladder — the TMU answer</h3>
-<table>
-  <tr><th>Date</th><th>Reading</th><th>Source (receipt)</th></tr>
-  <tr><td>Nov 1995</td><td><strong>98,046</strong></td><td>Prestige Auto RO 8024, Calabasas</td></tr>
-  <tr><td>May 2003</td><td><strong>143,934</strong></td><td>Calabasas smog/O2 RO</td></tr>
-  <tr><td>Mar 7 2022</td><td><strong>152,960</strong></td><td>German Auto inv. 29883</td></tr>
-  <tr><td>Mar 21 2022</td><td><strong>153,136</strong></td><td>German Weeks RO 0027</td></tr>
-  <tr><td>Sep 23 2022</td><td><strong>153,660 → 153,668</strong></td><td>German Auto inv. 30125 (top-end)</td></tr>
-  <tr><td>Sep 2023</td><td>~156,000 indicated</td><td>BaT listing</td></tr>
-</table>
-<p>Monotonic and consistent across five independent shops and 27 years — <strong>~12k miles in the last
-23 years</strong>. The TMU designation traces to the <strong>"SPEEDOMETER INOP"</strong> note on the Sep-2022
-invoice (repaired during Gann's sorting; he added ~2–3k by the 2023 sale). The one outlier — ECO-T's
-"156,478" on 4/13/22 — is bracketed by 153,136 (3/21) and 153,660 (9/23) and is a keystroke error
-(≈153,4xx transposed). <strong>Net: the mileage story is documented, not unknown.</strong></p>
+    <div class="note open">
+      <span class="label">Catalytic converter</span>
+      <p>The preferred listing line is “Fabspeed bypass installed; original cat included.” California still tests 1976 and later cars, so including the original keeps California bidders in the pool. Texas exempts vehicles of 25 years and older.</p>
+    </div>
 
-<h3>Chronological log (receipt-backed)</h3>
-<table>
-  <tr><th>Date</th><th>Shop</th><th>Work</th><th>$</th></tr>
-  <tr><td>1/5/86</td><td>RS Enterprises, Agoura Hills</td><td>Flat-spot check; noted needs valve adj + major tune</td><td>50</td></tr>
-  <tr><td>3/2/9x</td><td>AS Enterprises, Agoura Hills</td><td>Driver's seat belt + steering wheel R&amp;R</td><td>335</td></tr>
-  <tr><td>11/17/95</td><td>Prestige Auto, Calabasas</td><td>Balance front wheels <em>(98,046 mi)</em></td><td>35</td></tr>
-  <tr><td>4/23/96</td><td>RS Enterprises</td><td>Front pads, wheel-bearing adjust, tire repair</td><td>84</td></tr>
-  <tr><td>1/3/97</td><td>Good Guys, Marina del Rey</td><td>Clarion CD + speakers + antenna-era stereo work (owner Boyd)</td><td>256</td></tr>
-  <tr><td>2/27/98</td><td>RS Enterprises</td><td>Clutch pedal shaft, clevis, <strong>pedal bushings → brass</strong></td><td>65</td></tr>
-  <tr><td>7/23/98</td><td>RS Enterprises</td><td>Clutch cable (930.423.401.05)</td><td>64</td></tr>
-  <tr><td>5/21/03</td><td>Calabasas shop</td><td>O2 sensor wire repair, smog reset <em>(143,934 mi)</em></td><td>70</td></tr>
-  <tr><td>3/7/22</td><td><strong>German Auto of Santa Maria</strong></td><td><strong>High-idle FIXED</strong> — found distributor vacuum-retard hose removed/plugged; reconnected, idle/mixture set, timing verified → 925–950 rpm <em>(152,960 mi)</em>. Same-day estimate documents pre-rebuild condition (oil leaks, original shocks, CV boot, tie-rod boots, AC disconnected, brakes 7/6mm)</td><td>200</td></tr>
-  <tr><td>3/7–4/13/22</td><td>Pelican / PartsKlassik / German Weeks / ECO-T</td><td>Front-end refresh: tie rods + outer ends installed <em>(153,136 mi)</em>, WUR fuel line, fuel-pump check valve, fuel accumulator, lock knobs, antenna, 4-wheel alignment (spec sheet on file)</td><td>~1,200</td></tr>
-  <tr class="moneyrow"><td><strong>9/23/22</strong></td><td><strong>German Auto of Santa Maria — inv. 30125</strong></td><td><strong>ENGINE-OUT TOP-END, $9,580.94 PAID</strong>: removed engine, <strong>replaced broken cylinder-head studs</strong>, 24 engine case studs (911 101 172 00 ×12 + 993 101 170 54 ×12), valve springs/retainers/seats/stem seals (901 105 901 50HP), head gasket set, <strong>CHAIN TENSIONER — UPDATED PART (10 0445 105, $1,157)</strong>, thermostat, oil-temp sender, shifter-shaft coupler, crankcase gasket, idle/mixture set. Odo 153,660→153,668. Recs noted: oil leaks (seepage), original shocks, speedo INOP, no AC</td><td><strong>9,581</strong></td></tr>
-  <tr><td>9/26–10/4/22</td><td>Pelican / VertexAuto</td><td>Shift-rod bushings; <strong>Warm-Up Regulator professionally rebuilt</strong> ($811 w/ core); O2 sensor relay</td><td>~900</td></tr>
-  <tr><td>2023–24</td><td><span class="drew">DREW</span> Houston</td><td><strong>WEVO shifter</strong>, window tracks + felt, clutch adjusted, <strong>MOMO Prototipo</strong>, <strong>917 mahogany shift knob</strong> (Pelican 5/7/24, receipt on file), full paint correction</td><td>—</td></tr>
-</table>
+    <h3>Condition at Sale</h3>
+    <ul class="list">
+      <li>Antenna broken off. <span class="src">BaT</span></li>
+      <li>Paint chips on the nose; further blemishes shown in the listing gallery. Full paint correction since performed by the owner; any remaining nose chips to be re-confirmed. <span class="src">BaT · Owner</span></li>
+      <li>Wear to the driver's seat. <span class="src">BaT</span></li>
+    </ul>
+  </div>
+</section>
 
-<h2 class="sec">5 · Model-Typical Weak Points <span class="vf">confirm on this car</span></h2>
-<table>
-  <tr><th>Area</th><th>Known 911SC issue</th><th>Note / action</th></tr>
-  <tr><td>Timing chain tensioners</td><td><strong>#1 SC failure point</strong> on pre-update cars</td><td><span class="ok">RESOLVED</span> <strong>UPDATED tensioner installed 9/23/22</strong> — German Auto inv. 30125 line item "CHAIN TENSIONER (UPDATED PART)" P/N 10 0445 105, $1,157. Receipt on file.</td></tr>
-  <tr><td>CIS airbox</td><td>Backfire can crack the airbox</td><td>Confirm a pop-off valve is fitted</td></tr>
-  <tr><td>Valves</td><td>Solid lifters — periodic clearance adjustment (~15k mi)</td><td>Likely set during 2022 top-end; confirm &amp; log next interval</td></tr>
-  <tr><td>Oil leaks</td><td>Cam towers, chain boxes, valve covers seep with age</td><td>Track severity</td></tr>
-  <tr><td>915 gearbox</td><td>2nd-gear synchro wear, notchy cold shift, tired bushings</td><td><span class="drew">DREW</span> WEVO shifter fitted (improves gate/feel); clutch adjusted</td></tr>
-  <tr><td>CDI box</td><td>Can fail → no spark</td><td>Keep in mind for ignition faults</td></tr>
-  <tr><td>Mileage / TMU</td><td>Odometer reads 156k but is <strong>TMU</strong></td><td>Assume high-mileage chassis; budget accordingly</td></tr>
-</table>
+<section id="provenance" class="chapter">
+  <header>
+    <div class="roman">iii.</div>
+    <h2>Provenance</h2>
+    <p>Ownership and odometer, reconstructed from the receipt file.</p>
+  </header>
+  <div>
+    <p class="lead">Walter Glenn Boyd, Los Angeles area, documented 1996 to 2003 and later; Chris Gann, Santa Maria, 2022 to 2023, the Bring a Trailer seller “cngann”; the present owner from September 2023.</p>
+    <p>Gann acquired the car in 2022 and commissioned the top-end rebuild shortly after. The original paper file, 1996 to 2024, was photographed and archived on 12 July 2026: 27 documents, IMG_4219 to IMG_4245, held as HEIC originals with JPG working copies in <code>glovebox/receipts/911sc/</code>. Every service entry in chapter iv is receipt-backed.</p>
 
-<h2 class="sec">6 · Parts &amp; Reference</h2>
-<table>
-  <tr><th>System</th><th>Part / spec</th><th>Notes</th></tr>
-  <tr><td>Tensioners</td><td>Carrera oil-fed chain tensioner update</td><td>Verify if already fitted (see §5)</td></tr>
-  <tr><td>Tires</td><td>205/55-16 front, 225/50-16 rear (Hankook Ventus V2 fitted)</td><td>—</td></tr>
-  <tr><td>Fluids</td><td>Engine oil ~11–12 qt (dry sump); 915 gear oil <span class="vf">confirm specs</span></td><td>—</td></tr>
-</table>
+    <h3>Odometer Ladder</h3>
+    <div class="t"><table>
+      <tr><th>Date</th><th class="r">Reading</th><th>Source</th></tr>
+      <tr><td>November 1995</td><td class="r">98,046</td><td>Prestige Auto, Calabasas, RO 8024</td></tr>
+      <tr><td>May 2003</td><td class="r">143,934</td><td>Calabasas shop, smog and O2 repair order</td></tr>
+      <tr><td>7 March 2022</td><td class="r">152,960</td><td>German Auto of Santa Maria, invoice 29883</td></tr>
+      <tr><td>21 March 2022</td><td class="r">153,136</td><td>German Weeks, RO 0027</td></tr>
+      <tr><td>23 September 2022</td><td class="r">153,660 → 153,668</td><td>German Auto of Santa Maria, invoice 30125, top end</td></tr>
+      <tr><td>September 2023</td><td class="r">c. 156,000</td><td>Bring a Trailer listing, indicated</td></tr>
+    </table></div>
+    <p>The readings are monotonic and consistent across five independent shops and 27 years: approximately 12k miles in the last 23 years. The TMU designation traces to the “SPEEDOMETER INOP” note on the September 2022 invoice; the speedometer was repaired during Gann's sorting, and he added roughly 2–3k miles before the 2023 sale.</p>
+    <p>The one outlier, ECO-T's “156,478” of 13 April 2022, falls between 153,136 (21 March) and 153,660 (23 September) and is a keystroke error, approximately 153,4xx transposed.</p>
+    <div class="note ok">
+      <span class="label">Finding</span>
+      <p>The mileage history is documented, not unknown.</p>
+    </div>
+  </div>
+</section>
 
-<h2 class="sec">7 · Open Items to Verify</h2>
-<ol>
-  <li><s>Get the <strong>German Auto top-end invoice</strong></s> — <span class="ok">RESOLVED 12 Jul 2026</span>: full invoice #30125 on file. Scope: engine-out, broken head studs replaced, 24 case studs, valve springs/retainers/seats/seals, head gaskets, <strong>UPDATED chain tensioner</strong>, $9,580.94. Also inv. #29883 (high-idle fixed) + the 3/7/22 condition estimate.</li>
-  <li>Current <strong>mileage</strong> since Drew's purchase — odometer ladder now documented 1995→2023 (see §4); read current odo and append.</li>
-  <li>Confirm <strong>title/registration</strong> in Drew's name, and CA emissions status.</li>
-  <li><s>Verify A/C state</s> — <strong>confirmed: A/C compressor still removed</strong> (and the 2022 German Auto estimate documents "AC lines disconnected at compressor" pre-Drew). Open decision: reinstate or leave deleted.</li>
-  <li><span class="drew">SALE PREP</span> Remaining pre-listing items: current-odo photo, leak-down test, PPS (via Porsche N. Houston — chassis 91A0140115, online form rejects pre-'81 numbers), pro photos.</li>
-</ol>
+<section id="history" class="chapter">
+  <header>
+    <div class="roman">iv.</div>
+    <h2>Service History</h2>
+    <p>Most recent first. Every entry is supported by a receipt in the archived file.</p>
+  </header>
+  <div>
 
-<footer>Compiled for Drew Campbell · 1980 Porsche 911 SC Coupe · populated from Bring a Trailer (sold 09/11/2023) + computer-vision review of listing photos. Registry id: <code>911sc</code>.</footer>
+    <article class="entry">
+      <div class="entry-h">
+        <div class="date">2023 – 2024</div>
+        <div class="total">—</div>
+      </div>
+      <p class="title">Work under the present ownership, Houston</p>
+      <ul class="prose">
+        <li>WEVO shifter fitted</li>
+        <li>Window tracks and felts renewed</li>
+        <li>Clutch adjusted</li>
+        <li>MOMO Prototipo steering wheel</li>
+        <li>917 mahogany shift knob, Pelican Parts, 7 May 2024, receipt on file</li>
+        <li>Full paint correction</li>
+      </ul>
+    </article>
+
+    <article class="entry">
+      <div class="entry-h">
+        <div class="date">23 September 2022</div>
+        <div class="total">$9,580.94</div>
+      </div>
+      <p class="title">Engine-out top end, German Auto of Santa Maria</p>
+
+      <dl class="facts">
+        <div><dt>Odometer</dt><dd class="num">153,660 → 153,668</dd></div>
+        <div><dt>Invoice</dt><dd class="num">No. 30125</dd></div>
+        <div><dt>Account</dt><dd>Paid</dd></div>
+        <div><dt>Commissioned by</dt><dd>C. Gann</dd></div>
+      </dl>
+
+      <p>Engine removed. <strong>Broken cylinder-head studs replaced.</strong> Valve train and gaskets renewed, chain tensioner replaced with the updated part, idle and mixture set.</p>
+
+      <h3>Components</h3>
+      <dl class="inv">
+        <dt>Case studs</dt><dd>24 engine case studs: 911 101 172 00 × 12 and 993 101 170 54 × 12</dd>
+        <dt>Valve train</dt><dd>Valve springs, retainers, seats and stem seals, 901 105 901 50HP</dd>
+        <dt>Chain tensioner</dt><dd>Updated part, 10 0445 105, <span class="fig">$1,157</span></dd>
+        <dt>Gaskets</dt><dd>Head gasket set · crankcase gasket</dd>
+        <dt>Other</dt><dd>Thermostat · oil-temperature sender · shifter-shaft coupler</dd>
+      </dl>
+
+      <h3>Recommendations Recorded</h3>
+      <p>Oil leaks (seepage); original shock absorbers; speedometer inoperative; no air conditioning.</p>
+    </article>
+
+    <article class="entry">
+      <div class="entry-h">
+        <div class="date">7 March 2022</div>
+        <div class="total">$200</div>
+      </div>
+      <p class="title">High idle corrected, German Auto of Santa Maria</p>
+      <dl class="facts">
+        <div><dt>Odometer</dt><dd class="num">152,960</dd></div>
+        <div><dt>Invoice</dt><dd class="num">No. 29883</dd></div>
+        <div><dt>Idle</dt><dd class="num">925–950 rpm</dd></div>
+        <div><dt>Status</dt><dd>Fixed</dd></div>
+      </dl>
+      <p>Distributor vacuum-retard hose found removed and plugged; reconnected, idle and mixture set, timing verified.</p>
+      <p>A same-day estimate records the pre-rebuild condition: oil leaks, original shock absorbers, CV boot, tie-rod boots, air conditioning disconnected, brakes at 7 and 6 mm.</p>
+    </article>
+
+    <h3>Register of Receipts</h3>
+    <div class="t"><table>
+      <tr><th>Date</th><th>Workshop</th><th>Work</th><th class="r">Amount</th></tr>
+      <tr><td>2023 – 2024</td><td>Owner, Houston</td><td>WEVO shifter, window tracks and felts, clutch adjustment, MOMO Prototipo, 917 mahogany shift knob (Pelican Parts, 7 May 2024), paint correction</td><td class="r fig">—</td></tr>
+      <tr><td>26 Sep – 4 Oct 2022</td><td>Pelican Parts · VertexAuto</td><td>Shift-rod bushings; <strong>warm-up regulator professionally rebuilt</strong>, <span class="num">$811</span> with core; O2 sensor relay</td><td class="r fig">c. $900</td></tr>
+      <tr><td>23 Sep 2022</td><td>German Auto of Santa Maria</td><td>Engine-out top end, invoice 30125, paid <small>Odometer 153,660 → 153,668. Detailed above.</small></td><td class="r fig">$9,581</td></tr>
+      <tr><td>7 Mar – 13 Apr 2022</td><td>Pelican · PartsKlassik · German Weeks · ECO-T</td><td>Front-end refresh: tie rods and outer ends fitted; warm-up regulator fuel line; fuel-pump check valve; fuel accumulator; lock knobs; antenna; four-wheel alignment, specification sheet on file <small>Odometer 153,136 at German Weeks.</small></td><td class="r fig">c. $1,200</td></tr>
+      <tr><td>7 Mar 2022</td><td>German Auto of Santa Maria</td><td>High idle corrected, invoice 29883 <small>Odometer 152,960. Detailed above.</small></td><td class="r fig">$200</td></tr>
+      <tr><td>21 May 2003</td><td>Calabasas shop</td><td>O2 sensor wire repair, smog reset <small>Odometer 143,934.</small></td><td class="r fig">$70</td></tr>
+      <tr><td>23 Jul 1998</td><td>RS Enterprises</td><td>Clutch cable, 930.423.401.05</td><td class="r fig">$64</td></tr>
+      <tr><td>27 Feb 1998</td><td>RS Enterprises</td><td>Clutch pedal shaft and clevis; pedal bushings changed to brass</td><td class="r fig">$65</td></tr>
+      <tr><td>3 Jan 1997</td><td>Good Guys, Marina del Rey</td><td>Clarion CD, speakers and associated stereo work, owner Boyd</td><td class="r fig">$256</td></tr>
+      <tr><td>23 Apr 1996</td><td>RS Enterprises</td><td>Front pads, wheel-bearing adjustment, tyre repair</td><td class="r fig">$84</td></tr>
+      <tr><td>2 Mar 199x</td><td>AS Enterprises, Agoura Hills</td><td>Driver's seat belt; steering wheel removed and refitted <small>Year not legible on the receipt.</small></td><td class="r fig">$335</td></tr>
+      <tr><td>5 Jan 1996</td><td>RS Enterprises, Agoura Hills</td><td>Flat-spot check; valve adjustment and major tune noted as required</td><td class="r fig">$50</td></tr>
+      <tr><td>17 Nov 1995</td><td>Prestige Auto, Calabasas</td><td>Front wheels balanced, RO 8024 <small>Odometer 98,046.</small></td><td class="r fig">$35</td></tr>
+    </table></div>
+  </div>
+</section>
+
+<section id="model-notes" class="chapter">
+  <header>
+    <div class="roman">v.</div>
+    <h2>Model Notes</h2>
+    <p>Known characteristics of the 911 SC, and where this car stands against each.</p>
+  </header>
+  <div class="t"><table>
+    <tr><th>System</th><th>Characteristic</th><th>This car</th></tr>
+    <tr><td>Timing-chain tensioners</td><td>The principal SC failure point on cars without the update</td><td><span class="st ok">Resolved</span><small>Updated tensioner fitted 23 September 2022: invoice 30125, “CHAIN TENSIONER (UPDATED PART)”, P/N 10 0445 105, $1,157. Receipt on file.</small></td></tr>
+    <tr><td>CIS airbox</td><td>A backfire can crack the airbox</td><td><span class="st note">Confirm</span><small>Pop-off valve to be confirmed as fitted.</small></td></tr>
+    <tr><td>Valves</td><td>Solid lifters; clearances adjusted periodically, approximately every 15k miles</td><td><span class="st note">Confirm</span><small>Probably set during the 2022 top end. Confirm and log the next interval.</small></td></tr>
+    <tr><td>Oil leaks</td><td>Cam towers, chain boxes and valve covers seep with age</td><td><span class="st due">Monitor</span><small>Seepage recorded in 2022. Track severity.</small></td></tr>
+    <tr><td>915 gearbox</td><td>Second-gear synchro wear, notchy when cold, tired bushings</td><td><span class="st ok">Addressed</span><small>WEVO shifter fitted, improving gate and feel; clutch adjusted. Shift-rod bushings renewed 2022.</small></td></tr>
+    <tr><td>CDI box</td><td>Can fail, leaving no spark</td><td><span class="st note">Note</span><small>First suspect for ignition faults.</small></td></tr>
+    <tr><td>Mileage</td><td>Odometer reads 156k, listed as TMU</td><td><span class="st note">Documented</span><small>The ladder in chapter iii accounts for the history. Treat as a high-mileage chassis and budget accordingly.</small></td></tr>
+  </table></div>
+</section>
+
+<section id="reference" class="chapter">
+  <header>
+    <div class="roman">vi.</div>
+    <h2>Reference</h2>
+    <p>Parts, fluids, part numbers drawn from the receipts, and the archived file.</p>
+  </header>
+  <div>
+    <div class="t"><table>
+      <tr><th>Item</th><th>Specification</th><th>Source</th></tr>
+      <tr><td>Chain tensioners</td><td>Carrera oil-fed tensioner update; P/N 10 0445 105 as fitted <small>Fitted 2022; see chapter v.</small></td><td><span class="src">Invoice 30125</span></td></tr>
+      <tr><td>Case studs</td><td>911 101 172 00 · 993 101 170 54</td><td><span class="src">Invoice 30125</span></td></tr>
+      <tr><td>Valve springs &amp; seals</td><td>901 105 901 50HP</td><td><span class="src">Invoice 30125</span></td></tr>
+      <tr><td>Clutch cable</td><td>930.423.401.05</td><td><span class="src">RS Enterprises, 1998</span></td></tr>
+      <tr><td>Tyres</td><td>205/55-16 front, 225/50-16 rear; Hankook Ventus V2 fitted</td><td><span class="src">BaT</span></td></tr>
+      <tr><td>Fluids</td><td>Engine oil approximately 11–12 qt, dry sump · 915 gear oil <small>Specifications to be confirmed.</small></td><td><span class="st note">Confirm</span></td></tr>
+      <tr><td>Production specifications</td><td>Porsche North Houston, chassis 91A0140115 <small>The online form rejects pre-1981 chassis numbers; request through the dealer.</small></td><td></td></tr>
+    </table></div>
+
+    <h3>Archived Receipts</h3>
+    <p>Twenty-seven folios, photographed 12 July 2026. JPG working copies:</p>
+    <p class="aside">
+      <a href="../receipts/911sc/IMG_4219.jpg">4219</a> · <a href="../receipts/911sc/IMG_4220.jpg">4220</a> · <a href="../receipts/911sc/IMG_4221.jpg">4221</a> · <a href="../receipts/911sc/IMG_4222.jpg">4222</a> · <a href="../receipts/911sc/IMG_4223.jpg">4223</a> · <a href="../receipts/911sc/IMG_4224.jpg">4224</a> · <a href="../receipts/911sc/IMG_4225.jpg">4225</a> · <a href="../receipts/911sc/IMG_4226.jpg">4226</a> · <a href="../receipts/911sc/IMG_4227.jpg">4227</a> · <a href="../receipts/911sc/IMG_4228.jpg">4228</a> · <a href="../receipts/911sc/IMG_4229.jpg">4229</a> · <a href="../receipts/911sc/IMG_4230.jpg">4230</a> · <a href="../receipts/911sc/IMG_4231.jpg">4231</a> · <a href="../receipts/911sc/IMG_4232.jpg">4232</a> · <a href="../receipts/911sc/IMG_4233.jpg">4233</a> · <a href="../receipts/911sc/IMG_4234.jpg">4234</a> · <a href="../receipts/911sc/IMG_4235.jpg">4235</a> · <a href="../receipts/911sc/IMG_4236.jpg">4236</a> · <a href="../receipts/911sc/IMG_4237.jpg">4237</a> · <a href="../receipts/911sc/IMG_4238.jpg">4238</a> · <a href="../receipts/911sc/IMG_4239.jpg">4239</a> · <a href="../receipts/911sc/IMG_4240.jpg">4240</a> · <a href="../receipts/911sc/IMG_4241.jpg">4241</a> · <a href="../receipts/911sc/IMG_4242.jpg">4242</a> · <a href="../receipts/911sc/IMG_4243.jpg">4243</a> · <a href="../receipts/911sc/IMG_4244.jpg">4244</a> · <a href="../receipts/911sc/IMG_4245.jpg">4245</a>
+    </p>
+  </div>
+</section>
+
+<section id="agenda" class="chapter">
+  <header>
+    <div class="roman">vii.</div>
+    <h2>Agenda</h2>
+    <p>Outstanding items, then those closed.</p>
+  </header>
+  <ol class="agenda">
+    <li><span><strong>Pre-listing preparation.</strong> Current odometer photograph, leak-down test, production specifications through Porsche North Houston (chassis 91A0140115; the online form rejects pre-1981 numbers), professional photography.</span><span class="st due">Sale prep</span></li>
+    <li><span><strong>Catalytic converter.</strong> Confirm whether the Fabspeed bypass is installed or spare, and locate the original converter.</span><span class="st open">Confirm</span></li>
+    <li><span><strong>Odometer.</strong> Read the current figure and append it to the ladder, which is now documented from 1995 to 2023.</span><span class="st open">Record</span></li>
+    <li><span><strong>Title.</strong> Confirm title and registration in the owner's name, and California emissions status.</span><span class="st note">Confirm</span></li>
+    <li><span><strong>Air conditioning.</strong> Compressor confirmed removed. Reinstate or leave deleted.</span><span class="st note">Decide</span></li>
+    <li><span><strong>Documents conveyed.</strong> Confirm which records and literature passed to the owner at sale.</span><span class="st note">Confirm</span></li>
+    <li><span><strong>Inspection points.</strong> CIS pop-off valve; valve clearances, with the next interval logged; any remaining nose chips.</span><span class="st note">Confirm</span></li>
+    <li><span><strong>Top-end invoice.</strong> Obtained 12 July 2026: invoice 30125 in full, $9,580.94, covering engine removal, broken head studs, 24 case studs, valve springs, retainers, seats and seals, head gaskets and the updated chain tensioner. Invoice 29883 (high idle) and the 7 March 2022 condition estimate also on file.</span><span class="st ok">Closed</span></li>
+    <li><span><strong>Air-conditioning state.</strong> Verified: compressor still removed; the 2022 German Auto estimate records the lines disconnected at the compressor before the present ownership.</span><span class="st ok">Closed</span></li>
+  </ol>
+</section>
+
 </main>
+
+<footer class="colophon">
+  <div class="wrap">
+    <div>
+      <div class="brand">Glovebox</div>
+      <p>Private vehicle records. Porsche 911 SC Coupe, chassis 91A0140115. Registry reference 911sc.</p>
+    </div>
+    <div>
+      <p>Compiled from the Bring a Trailer listing (sold 11 September 2023), a computer-vision review of the listing photography, and the receipt file digitized 12 July 2026. Entries marked <span class="src">BaT</span> reflect the car as sold; <span class="src">Owner</span> marks work and changes under the present ownership.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (() => {
+    const links = [...document.querySelectorAll('.rail a')];
+    if (!('IntersectionObserver' in window)) return;
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (!e.isIntersecting) return;
+      links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + e.target.id));
+    }), { rootMargin: '-35% 0px -55% 0px' });
+    document.querySelectorAll('main section[id]').forEach(s => io.observe(s));
+  })();
+</script>
 </body>
 </html>

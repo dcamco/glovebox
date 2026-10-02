@@ -13,11 +13,15 @@ load the right car's manual whenever I talk about one of my cars.
 ```
 glovebox/
 ├── index.html        # landing page over all owned cars (open in a browser)
+├── assets/glovebox.css   # shared design system (all pages link it)
+├── media/<id>/           # web-sized photography per car
+├── receipts/<id>/        # invoice scans per car
 ├── manuals/              # one HTML manual per car
 │   ├── lazarus.html      #   1995 Range Rover Classic County LWB "Lazarus"
 │   ├── rrc88.html        #   1988 Range Rover Classic (skeleton)
 │   ├── 911sc.html        #   1980 Porsche 911 SC
-│   └── 308gtsi.html      #   1982 Ferrari 308 GTSi
+│   ├── 308gtsi.html      #   1982 Ferrari 308 GTSi
+│   └── 360modena.html    #   2000 Ferrari 360 Modena F1
 ├── registry.tsv          # one line per car: id, display, manual path, match regexes
 ├── router.py             # UserPromptSubmit hook — routes car talk to the right manual
 └── agents/
@@ -35,7 +39,7 @@ Invoices/records are kept **outside this repo** at `~/Documents/Garage/<id>/` (p
   loaded copy lives at `~/.claude/agents/garage-manager.md`; the copy here is versioned alongside the rest.
 
 ## Add a car
-1. Create `manuals/<id>.html` (copy an existing manual's structure).
+1. Create `manuals/<id>.html` by copying `manuals/308gtsi.html` (it links `assets/glovebox.css`; keep page-level styles to the hero watermark).
 2. Add a line to `registry.tsv` with a `model_regex` that won't collide with the other cars.
 3. (Optional) add a card to `index.html` and a `~/Documents/Garage/<id>/` folder for its records.
 
