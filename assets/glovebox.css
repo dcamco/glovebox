@@ -343,3 +343,37 @@ html.lb-open{overflow:hidden}
 @media print{.docs .sheet{box-shadow:none;border:1px solid #ccc}.lb{display:none}}
 .lb button:focus{outline:none}
 .lb button:focus-visible{outline:1px solid rgba(238,234,226,.5);outline-offset:6px}
+
+/* ---- Garage switcher (in the sticky rail) ---- */
+.rail .wrap{gap:0;overflow:visible;position:relative}
+.rail-sections{display:flex;gap:34px;align-items:center;overflow-x:auto;scrollbar-width:none;flex:1;min-width:0;height:56px;padding-left:28px}
+.rail-sections::-webkit-scrollbar{display:none}
+.switch{position:relative;flex:none;height:56px;display:flex;align-items:center;border-right:1px solid var(--rule);padding-right:24px;order:-1}
+.switch-btn{background:none;border:0;cursor:pointer;display:flex;align-items:baseline;gap:10px;padding:0;color:var(--ink)}
+.switch-btn .sk{font:500 10px var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.switch-btn .sc{font:italic 400 17px var(--serif);white-space:nowrap}
+.switch-btn .chev{width:7px;height:7px;border-right:1px solid var(--ink);border-bottom:1px solid var(--ink);transform:rotate(45deg) translateY(-3px);transition:transform .2s}
+.switch.open .chev{transform:rotate(-135deg) translateY(-1px)}
+.switch-btn:focus-visible{outline:1px solid var(--rule-2);outline-offset:6px}
+.switch-panel{position:absolute;top:56px;left:-24px;width:min(460px,calc(100vw - 32px));background:var(--sheet);border:1px solid var(--rule);box-shadow:0 30px 60px -30px rgba(0,0,0,.35);z-index:20}
+.sp-in{padding:22px 24px 18px}
+.switch-panel .label{display:block;margin:0 0 8px}
+.switch-panel .sp-former{margin-top:18px}
+.rail .switch-panel a{display:grid;grid-template-columns:44px minmax(0,1fr) auto;gap:12px;align-items:baseline;padding:11px 0;margin:0;border:0;border-top:1px solid var(--rule);color:var(--ink);text-transform:none;letter-spacing:normal;white-space:normal;font:400 15px var(--sans)}
+.rail .switch-panel a:hover{border-bottom:0}
+.switch-panel a .sy{font:italic 400 15px var(--serif);color:var(--brass)}
+.switch-panel a .sn{font:400 19px/1.2 var(--serif)}
+.switch-panel a .st{font-size:9.5px}
+.switch-panel a:hover .sn{color:var(--rosso)}
+.switch-panel a.cur .sn{font-style:italic;color:var(--muted)}
+.rail .switch-panel a.sp-home{display:block;margin-top:14px;padding-top:14px;font:500 10.5px var(--sans);letter-spacing:.2em;text-transform:uppercase}
+@media (max-width:640px){
+  .switch{padding-right:14px}
+  .switch-btn .sk{display:none}
+  .switch-btn .sc{font-size:16px;max-width:42vw;overflow:hidden;text-overflow:ellipsis}
+  .rail-sections{padding-left:16px;gap:24px}
+  .switch-panel{left:-20px;width:100vw;border-left:0;border-right:0}
+  .rail .switch-panel a{grid-template-columns:40px minmax(0,1fr)}
+  .switch-panel a .st{grid-column:2}
+}
+@media print{.switch{display:none}}

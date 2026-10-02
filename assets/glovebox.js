@@ -86,3 +86,49 @@
     x0 = null;
   });
 })();
+
+// Garage switcher in the sticky section bar: jump to any car from anywhere on a page.
+// Single list of vehicles for the switcher — keep in step with index.html.
+(() => {
+  const CARS = [
+    { id: '360modena', yr: '2000', name: 'Ferrari 360 Modena F1', st: 'due', label: 'Booked' },
+    { id: '308gtsi', yr: '1982', name: 'Ferrari 308 GTSi', st: 'open', label: 'Attention' },
+    { id: 'lazarus', yr: '1995', name: 'Range Rover County LWB “Lazarus”', st: 'open', label: 'Open' },
+    { id: 'rrc88', yr: '1988', name: 'Range Rover Classic', st: 'note', label: 'Sale preparation' },
+    { id: '911sc', yr: '1980', name: 'Porsche 911 SC', st: 'ok', label: 'Sold', former: true },
+  ];
+  const rail = document.querySelector('.rail .wrap');
+  if (!rail) return;
+  const here = (location.pathname.split('/').pop() || '').replace('.html', '');
+  const cur = CARS.find(c => c.id === here);
+
+  const sections = document.createElement('div');
+  sections.className = 'rail-sections';
+  while (rail.firstChild) sections.appendChild(rail.firstChild);
+
+  const sw = document.createElement('div');
+  sw.className = 'switch';
+  const row = c => `<a href="${c.id}.html" class="${c.id === here ? 'cur' : ''}"${c.id === here ? ' aria-current="page"' : ''}>
+      <span class="sy">${c.yr}</span><span class="sn">${c.name}</span><span class="st ${c.st}">${c.label}</span></a>`;
+  sw.innerHTML = `
+    <button class="switch-btn" aria-expanded="false" aria-haspopup="true">
+      <span class="sk">Garage</span><span class="sc">${cur ? cur.name.replace(/ “.*”/, '') : 'Vehicles'}</span><span class="chev"></span>
+    </button>
+    <div class="switch-panel" hidden>
+      <div class="sp-in">
+        <div class="label">The Collection</div>
+        ${CARS.filter(c => !c.former).map(row).join('')}
+        <div class="label sp-former">Formerly in the collection</div>
+        ${CARS.filter(c => c.former).map(row).join('')}
+        <a class="sp-home" href="../index.html">All vehicles</a>
+      </div>
+    </div>`;
+  rail.append(sw, sections);
+
+  const btn = sw.querySelector('.switch-btn');
+  const panel = sw.querySelector('.switch-panel');
+  const set = open => { panel.hidden = !open; btn.setAttribute('aria-expanded', String(open)); sw.classList.toggle('open', open); };
+  btn.addEventListener('click', e => { e.stopPropagation(); set(panel.hidden); });
+  document.addEventListener('click', e => { if (!sw.contains(e.target)) set(false); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') set(false); });
+})();
